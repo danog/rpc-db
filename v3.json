@@ -130,6 +130,7 @@
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
                 "CHAT_RESTRICTED": "CHAT_RESTRICTED",
                 "ENTITY_MENTION_USER_INVALID": "ENTITY_MENTION_USER_INVALID",
+                "FROM_MESSAGE_BOT_DISABLED": "FROM_MESSAGE_BOT_DISABLED",
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
                 "MESSAGE_EMPTY": "MESSAGE_EMPTY",
                 "MESSAGE_TOO_LONG": "MESSAGE_TOO_LONG",
@@ -358,6 +359,12 @@
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
+            "messages.getMessagesViews": {
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
+            },
             "messages.getPeerSettings": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
@@ -366,6 +373,7 @@
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "CHAT_RESTRICTED": "CHAT_RESTRICTED",
                 "EXTERNAL_URL_INVALID": "EXTERNAL_URL_INVALID",
                 "FILE_PART_LENGTH_INVALID": "FILE_PART_LENGTH_INVALID",
                 "FILE_PARTS_INVALID": "FILE_PARTS_INVALID",
@@ -397,14 +405,11 @@
             "updates.getChannelDifference": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "FROM_MESSAGE_BOT_DISABLED": "FROM_MESSAGE_BOT_DISABLED",
                 "PERSISTENT_TIMESTAMP_EMPTY": "PERSISTENT_TIMESTAMP_EMPTY",
                 "PERSISTENT_TIMESTAMP_INVALID": "PERSISTENT_TIMESTAMP_INVALID",
+                "PINNED_DIALOGS_TOO_MUCH": "PINNED_DIALOGS_TOO_MUCH",
                 "RANGES_INVALID": "RANGES_INVALID"
-            },
-            "messages.getMessagesViews": {
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "CHAT_ID_INVALID": "CHAT_ID_INVALID",
-                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.getPeerDialogs": {
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
@@ -907,6 +912,9 @@
             "phone.acceptCall": {
                 "CALL_OCCUPY_FAILED": "CALL_OCCUPY_FAILED"
             },
+            "messages.createChat": {
+                "CHAT_OCCUPY_LOC_FAILED": "CHAT_OCCUPY_LOC_FAILED"
+            },
             "messages.acceptEncryption": {
                 "ENCRYPTION_OCCUPY_FAILED": "ENCRYPTION_OCCUPY_FAILED"
             },
@@ -924,6 +932,9 @@
                 "MEMBER_OCCUPY_PRIMARY_LOC_FAILED": "MEMBER_OCCUPY_PRIMARY_LOC_FAILED",
                 "REG_ID_GENERATE_FAILED": "REG_ID_GENERATE_FAILED"
             },
+            "channels.createChannel": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
             "channels.editTitle": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
@@ -931,6 +942,9 @@
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
             "channels.getParticipants": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
+            "channels.joinChannel": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
             "contacts.getStatuses": {
@@ -942,6 +956,9 @@
             "help.getCdnConfig": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
+            "messages.checkChatInvite": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
             "messages.forwardMessages": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY",
                 "NEED_MEMBER_INVALID": "NEED_MEMBER_INVALID",
@@ -949,10 +966,19 @@
                 "RANDOM_ID_DUPLICATE": "RANDOM_ID_DUPLICATE",
                 "WORKER_BUSY_TOO_LONG_RETRY": "WORKER_BUSY_TOO_LONG_RETRY"
             },
+            "messages.getBotCallbackAnswer": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
             "messages.getDialogs": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
             "messages.getFullChat": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
+            "messages.getMessagesViews": {
+                "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
+            },
+            "messages.readHistory": {
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY"
             },
             "messages.sendMessage": {
@@ -997,6 +1023,9 @@
             },
             "messages.sendMedia": {
                 "RANDOM_ID_DUPLICATE": "RANDOM_ID_DUPLICATE",
+                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
+            },
+            "photos.uploadProfilePhoto": {
                 "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
             },
             "upload.getCdnFile": {
@@ -1120,10 +1149,16 @@
                 "CHAT_SEND_MEDIA_FORBIDDEN": "CHAT_SEND_MEDIA_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
+            "channels.editBanned": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
+            },
             "channels.inviteToChannel": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN",
                 "USER_CHANNELS_TOO_MUCH": "USER_CHANNELS_TOO_MUCH",
                 "USER_PRIVACY_RESTRICTED": "USER_PRIVACY_RESTRICTED"
+            },
+            "channels.updateUsername": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
             "invokeWithLayer": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
@@ -1307,6 +1342,7 @@
         "CHAT_ID_INVALID": "The provided chat id is invalid",
         "CHAT_INVALID": "Invalid chat",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified",
+        "CHAT_OCCUPY_LOC_FAILED": "An internal error occurred while creating the chat",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted",
         "CHAT_SEND_GIFS_FORBIDDEN": "You can't send gifs in this chat",
         "CHAT_SEND_MEDIA_FORBIDDEN": "You can't send media in this chat",
@@ -1351,6 +1387,7 @@
         "FLOOD_WAIT_666": "Spooky af m8",
         "FOLDER_ID_INVALID": "Invalid folder ID",
         "FRESH_RESET_AUTHORISATION_FORBIDDEN": "You can't logout other sessions if less than 24 hours have passed since you logged on the current session",
+        "FROM_MESSAGE_BOT_DISABLED": "Bots can't use fromMessage min constructors",
         "GIF_ID_INVALID": "The provided GIF ID is invalid",
         "GROUPED_MEDIA_INVALID": "Invalid grouped media",
         "HASH_INVALID": "The provided hash is invalid",
@@ -1398,7 +1435,7 @@
         "MESSAGE_IDS_EMPTY": "No message ids were provided",
         "MESSAGE_NOT_MODIFIED": "The message text has not changed",
         "MESSAGE_TOO_LONG": "The provided message is too long",
-        "MSG_ID_INVALID": "Provided reply_to_msg_id is invalid",
+        "MSG_ID_INVALID": "Invalid message ID provided",
         "MSG_WAIT_FAILED": "A waiting call returned an error",
         "MSGID_DECREASE_RETRY": "IDK TBH",
         "NEED_CHAT_INVALID": "The provided chat is invalid",
@@ -1438,6 +1475,7 @@
         "PHOTO_INVALID_DIMENSIONS": "The photo dimensions are invalid",
         "PHOTO_SAVE_FILE_INVALID": "",
         "PHOTO_THUMB_URL_EMPTY": "Photo thumbnail URL is empty",
+        "PINNED_DIALOGS_TOO_MUCH": "",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid",
         "PTS_CHANGE_EMPTY": "No PTS change",
         "QUERY_ID_EMPTY": "The query ID is empty",

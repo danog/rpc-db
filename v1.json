@@ -130,6 +130,7 @@
                 "CHAT_ID_INVALID",
                 "CHAT_RESTRICTED",
                 "ENTITY_MENTION_USER_INVALID",
+                "FROM_MESSAGE_BOT_DISABLED",
                 "INPUT_USER_DEACTIVATED",
                 "MESSAGE_EMPTY",
                 "MESSAGE_TOO_LONG",
@@ -358,6 +359,12 @@
                 "CHAT_ID_INVALID",
                 "PEER_ID_INVALID"
             ],
+            "messages.getMessagesViews": [
+                "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE",
+                "CHAT_ID_INVALID",
+                "PEER_ID_INVALID"
+            ],
             "messages.getPeerSettings": [
                 "CHANNEL_INVALID",
                 "PEER_ID_INVALID"
@@ -366,6 +373,7 @@
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
+                "CHAT_RESTRICTED",
                 "EXTERNAL_URL_INVALID",
                 "FILE_PART_LENGTH_INVALID",
                 "FILE_PARTS_INVALID",
@@ -397,14 +405,11 @@
             "updates.getChannelDifference": [
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
+                "FROM_MESSAGE_BOT_DISABLED",
                 "PERSISTENT_TIMESTAMP_EMPTY",
                 "PERSISTENT_TIMESTAMP_INVALID",
+                "PINNED_DIALOGS_TOO_MUCH",
                 "RANGES_INVALID"
-            ],
-            "messages.getMessagesViews": [
-                "CHANNEL_PRIVATE",
-                "CHAT_ID_INVALID",
-                "PEER_ID_INVALID"
             ],
             "messages.getPeerDialogs": [
                 "CHANNEL_PRIVATE",
@@ -1011,10 +1016,16 @@
                 "CHAT_SEND_MEDIA_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN"
             ],
+            "channels.editBanned": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
             "channels.inviteToChannel": [
                 "CHAT_WRITE_FORBIDDEN",
                 "USER_CHANNELS_TOO_MUCH",
                 "USER_PRIVACY_RESTRICTED"
+            ],
+            "channels.updateUsername": [
+                "CHAT_WRITE_FORBIDDEN"
             ],
             "invokeWithLayer": [
                 "CHAT_WRITE_FORBIDDEN"
@@ -1290,6 +1301,9 @@
         "CHAT_NOT_MODIFIED": [
             "The pinned message wasn't modified"
         ],
+        "CHAT_OCCUPY_LOC_FAILED": [
+            "An internal error occurred while creating the chat"
+        ],
         "CHAT_RESTRICTED": [
             "You can't send messages in this chat, you were restricted"
         ],
@@ -1421,6 +1435,9 @@
         ],
         "FRESH_RESET_AUTHORISATION_FORBIDDEN": [
             "You can't logout other sessions if less than 24 hours have passed since you logged on the current session"
+        ],
+        "FROM_MESSAGE_BOT_DISABLED": [
+            "Bots can't use fromMessage min constructors"
         ],
         "GIF_ID_INVALID": [
             "The provided GIF ID is invalid"
@@ -1564,7 +1581,7 @@
             "The provided message is too long"
         ],
         "MSG_ID_INVALID": [
-            "Provided reply_to_msg_id is invalid"
+            "Invalid message ID provided"
         ],
         "MSG_WAIT_FAILED": [
             "A waiting call returned an error"
@@ -1682,6 +1699,9 @@
         ],
         "PHOTO_THUMB_URL_EMPTY": [
             "Photo thumbnail URL is empty"
+        ],
+        "PINNED_DIALOGS_TOO_MUCH": [
+            ""
         ],
         "PRIVACY_KEY_INVALID": [
             "The privacy key is invalid"

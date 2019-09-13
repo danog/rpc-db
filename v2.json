@@ -414,6 +414,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "FROM_MESSAGE_BOT_DISABLED",
+                "error_description": "Bots can't use fromMessage min constructors"
+            },
+            {
+                "error_code": 400,
                 "error_message": "INPUT_USER_DEACTIVATED",
                 "error_description": "The specified user was deleted"
             },
@@ -430,7 +435,7 @@
             {
                 "error_code": 400,
                 "error_message": "MSG_ID_INVALID",
-                "error_description": "Provided reply_to_msg_id is invalid"
+                "error_description": "Invalid message ID provided"
             },
             {
                 "error_code": 400,
@@ -496,6 +501,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "FROM_MESSAGE_BOT_DISABLED",
+                "error_description": "Bots can't use fromMessage min constructors"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PERSISTENT_TIMESTAMP_EMPTY",
                 "error_description": "Persistent timestamp empty"
             },
@@ -503,6 +513,11 @@
                 "error_code": 400,
                 "error_message": "PERSISTENT_TIMESTAMP_INVALID",
                 "error_description": "Persistent timestamp invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PINNED_DIALOGS_TOO_MUCH",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -1128,6 +1143,11 @@
                 "error_description": "You must be an admin in this chat to do this"
             },
             {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
                 "error_code": 400,
                 "error_message": "USER_ADMIN_INVALID",
                 "error_description": "You're not an admin"
@@ -1498,6 +1518,11 @@
                 "error_description": "You must be an admin in this chat to do this"
             },
             {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
                 "error_code": 400,
                 "error_message": "USERNAME_INVALID",
                 "error_description": "The provided username is not valid"
@@ -1699,6 +1724,28 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
+        "messages.getMessagesViews": [
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            }
+        ],
         "messages.getPeerSettings": [
             {
                 "error_code": 400,
@@ -1726,6 +1773,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_RESTRICTED",
+                "error_description": "You can't send messages in this chat, you were restricted"
             },
             {
                 "error_code": 403,
@@ -1873,23 +1925,6 @@
                 "error_code": 400,
                 "error_message": "USER_IS_BOT",
                 "error_description": "Bots can't send messages to other bots"
-            }
-        ],
-        "messages.getMessagesViews": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ID_INVALID",
-                "error_description": "The provided chat id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
             }
         ],
         "messages.getPeerDialogs": [
