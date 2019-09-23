@@ -63,6 +63,7 @@
             ],
             "messages.editChatDefaultBannedRights": [
                 "BANNED_RIGHTS_INVALID",
+                "CHAT_NOT_MODIFIED",
                 "PEER_ID_INVALID"
             ],
             "channels.inviteToChannel": [
@@ -201,7 +202,8 @@
             ],
             "channels.deleteUserHistory": [
                 "CHANNEL_INVALID",
-                "CHAT_ADMIN_REQUIRED"
+                "CHAT_ADMIN_REQUIRED",
+                "MSG_ID_INVALID"
             ],
             "channels.editAbout": [
                 "CHANNEL_INVALID",
@@ -242,7 +244,8 @@
             ],
             "channels.getChannels": [
                 "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE"
+                "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID"
             ],
             "channels.getFullChannel": [
                 "CHANNEL_INVALID",
@@ -272,6 +275,7 @@
                 "CHANNELS_TOO_MUCH",
                 "INVITE_HASH_EXPIRED",
                 "INVITE_HASH_INVALID",
+                "MSG_ID_INVALID",
                 "USER_ALREADY_PARTICIPANT"
             ],
             "channels.leaveChannel": [
@@ -282,7 +286,8 @@
             ],
             "channels.readHistory": [
                 "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE"
+                "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID"
             ],
             "channels.readMessageContents": [
                 "CHANNEL_INVALID",
@@ -382,6 +387,7 @@
                 "MEDIA_CAPTION_TOO_LONG",
                 "MEDIA_EMPTY",
                 "MEDIA_INVALID",
+                "MSG_ID_INVALID",
                 "PEER_ID_INVALID",
                 "PHOTO_EXT_INVALID",
                 "PHOTO_INVALID_DIMENSIONS",
@@ -406,6 +412,7 @@
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "FROM_MESSAGE_BOT_DISABLED",
+                "MSG_ID_INVALID",
                 "PERSISTENT_TIMESTAMP_EMPTY",
                 "PERSISTENT_TIMESTAMP_INVALID",
                 "PINNED_DIALOGS_TOO_MUCH",
@@ -414,6 +421,10 @@
             "messages.getPeerDialogs": [
                 "CHANNEL_PRIVATE",
                 "PEER_ID_INVALID"
+            ],
+            "channels.createChannel": [
+                "CHANNELS_TOO_MUCH",
+                "CHAT_TITLE_EMPTY"
             ],
             "messages.importChatInvite": [
                 "CHANNELS_TOO_MUCH",
@@ -513,9 +524,6 @@
                 "INPUT_METHOD_INVALID_1604042050_X",
                 "SECONDS_INVALID"
             ],
-            "channels.createChannel": [
-                "CHAT_TITLE_EMPTY"
-            ],
             "auth.recoverPassword": [
                 "CODE_EMPTY"
             ],
@@ -531,7 +539,8 @@
                 "INPUT_FETCH_FAIL"
             ],
             "contacts.addContact": [
-                "CONTACT_ID_INVALID"
+                "CONTACT_ID_INVALID",
+                "CONTACT_NAME_EMPTY"
             ],
             "contacts.block": [
                 "CONTACT_ID_INVALID"
@@ -541,6 +550,9 @@
             ],
             "contacts.unblock": [
                 "CONTACT_ID_INVALID"
+            ],
+            "contacts.acceptContact": [
+                "CONTACT_REQ_MISSING"
             ],
             "messages.sendEncryptedService": [
                 "DATA_INVALID",
@@ -694,6 +706,9 @@
                 "MESSAGE_ID_INVALID",
                 "REACTION_EMPTY"
             ],
+            "messages.sendScheduledMessages": [
+                "MESSAGE_ID_INVALID"
+            ],
             "messages.setGameScore": [
                 "MESSAGE_ID_INVALID",
                 "PEER_ID_INVALID",
@@ -714,6 +729,9 @@
             ],
             "payments.validateRequestedInfo": [
                 "MESSAGE_ID_INVALID"
+            ],
+            "users.getUsers": [
+                "MSG_ID_INVALID"
             ],
             "messages.readEncryptedHistory": [
                 "MSG_WAIT_FAILED"
@@ -792,6 +810,10 @@
                 "PHONE_NUMBER_INVALID",
                 "PHONE_NUMBER_UNOCCUPIED"
             ],
+            "auth.resendCode": [
+                "PHONE_CODE_HASH_EMPTY",
+                "PHONE_NUMBER_INVALID"
+            ],
             "auth.checkPhone": [
                 "PHONE_NUMBER_BANNED",
                 "PHONE_NUMBER_INVALID"
@@ -803,9 +825,6 @@
                 "PHONE_NUMBER_INVALID"
             ],
             "auth.cancelCode": [
-                "PHONE_NUMBER_INVALID"
-            ],
-            "auth.resendCode": [
                 "PHONE_NUMBER_INVALID"
             ],
             "account.getPrivacy": [
@@ -900,6 +919,9 @@
             ]
         },
         "406": {
+            "channels.joinChannel": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "help.getCdnConfig": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -975,6 +997,9 @@
             "contacts.getStatuses": [
                 "SESSION_PASSWORD_NEEDED"
             ],
+            "messages.checkChatInvite": [
+                "SESSION_PASSWORD_NEEDED"
+            ],
             "messages.getDialogs": [
                 "SESSION_PASSWORD_NEEDED"
             ],
@@ -1017,6 +1042,9 @@
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "channels.editBanned": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
+            "channels.getAdminLog": [
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "channels.inviteToChannel": [
@@ -1080,6 +1108,9 @@
             ]
         },
         "420": {
+            "messages.forwardMessages": [
+                "SLOWMODE_WAIT_X"
+            ],
             "messages.sendMessage": [
                 "SLOWMODE_WAIT_X"
             ]
@@ -1348,6 +1379,12 @@
         ],
         "CONTACT_ID_INVALID": [
             "The provided contact ID is invalid"
+        ],
+        "CONTACT_NAME_EMPTY": [
+            "Contact name empty"
+        ],
+        "CONTACT_REQ_MISSING": [
+            "Missing contact request"
         ],
         "DATA_INVALID": [
             "Encrypted data invalid"
@@ -1644,7 +1681,7 @@
             "Persistent timestamp invalid"
         ],
         "PERSISTENT_TIMESTAMP_OUTDATED": [
-            "Persistent timestamp outdated"
+            "Channel internal replication issues, try again later (treat this like an RPC_CALL_FAIL)"
         ],
         "PHONE_CODE_EMPTY": [
             "phone_code is missing"
@@ -1695,13 +1732,13 @@
             "The photo dimensions are invalid"
         ],
         "PHOTO_SAVE_FILE_INVALID": [
-            ""
+            "Internal issues, try again later"
         ],
         "PHOTO_THUMB_URL_EMPTY": [
             "Photo thumbnail URL is empty"
         ],
         "PINNED_DIALOGS_TOO_MUCH": [
-            ""
+            "Too many pinned dialogs"
         ],
         "PRIVACY_KEY_INVALID": [
             "The privacy key is invalid"

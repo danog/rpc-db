@@ -285,6 +285,48 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
+        "channels.joinChannel": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNELS_TOO_MUCH",
+                "error_description": "You have joined too many channels\/supergroups"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_HASH_EXPIRED",
+                "error_description": "The invite link has expired"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_HASH_INVALID",
+                "error_description": "The invite hash is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_ALREADY_PARTICIPANT",
+                "error_description": "The user is already in the group"
+            }
+        ],
         "help.getCdnConfig": [
             {
                 "error_code": 406,
@@ -506,6 +548,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PERSISTENT_TIMESTAMP_EMPTY",
                 "error_description": "Persistent timestamp empty"
             },
@@ -517,7 +564,7 @@
             {
                 "error_code": 400,
                 "error_message": "PINNED_DIALOGS_TOO_MUCH",
-                "error_description": ""
+                "error_description": "Too many pinned dialogs"
             },
             {
                 "error_code": 400,
@@ -601,6 +648,11 @@
                 "error_description": "The temporary auth key must be binded to the permanent auth key to use these methods."
             },
             {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
                 "error_code": 401,
                 "error_message": "SESSION_PASSWORD_NEEDED",
                 "error_description": "2FA is enabled, use a password to login"
@@ -675,6 +727,11 @@
                 "error_code": 400,
                 "error_message": "BANNED_RIGHTS_INVALID",
                 "error_description": "You provided some invalid flags in the banned rights"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_NOT_MODIFIED",
+                "error_description": "The pinned message wasn't modified"
             },
             {
                 "error_code": 400,
@@ -1102,6 +1159,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
             }
         ],
         "channels.editAbout": [
@@ -1236,6 +1298,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
             }
         ],
         "channels.getChannels": [
@@ -1248,6 +1315,11 @@
                 "error_code": 400,
                 "error_message": "CHANNEL_PRIVATE",
                 "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
             }
         ],
         "channels.getFullChannel": [
@@ -1343,38 +1415,6 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
-        "channels.joinChannel": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_INVALID",
-                "error_description": "The provided channel is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHANNELS_TOO_MUCH",
-                "error_description": "You have joined too many channels\/supergroups"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INVITE_HASH_EXPIRED",
-                "error_description": "The invite link has expired"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INVITE_HASH_INVALID",
-                "error_description": "The invite hash is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_ALREADY_PARTICIPANT",
-                "error_description": "The user is already in the group"
-            }
-        ],
         "channels.leaveChannel": [
             {
                 "error_code": 400,
@@ -1412,6 +1452,11 @@
                 "error_code": 400,
                 "error_message": "CHANNEL_PRIVATE",
                 "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
             }
         ],
         "channels.readMessageContents": [
@@ -1672,6 +1717,11 @@
                 "error_description": "A provided random ID is invalid"
             },
             {
+                "error_code": 420,
+                "error_message": "SLOWMODE_WAIT_X",
+                "error_description": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat."
+            },
+            {
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
@@ -1831,6 +1881,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
             },
@@ -1847,7 +1902,7 @@
             {
                 "error_code": 400,
                 "error_message": "PHOTO_SAVE_FILE_INVALID",
-                "error_description": ""
+                "error_description": "Internal issues, try again later"
             },
             {
                 "error_code": -503,
@@ -1937,6 +1992,28 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            }
+        ],
+        "channels.createChannel": [
+            {
+                "error_code": 400,
+                "error_message": "CHANNELS_TOO_MUCH",
+                "error_description": "You have joined too many channels\/supergroups"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_TITLE_EMPTY",
+                "error_description": "No chat title provided"
+            },
+            {
+                "error_code": 403,
+                "error_message": "USER_RESTRICTED",
+                "error_description": "You're spamreported, you can't create channels or chats."
+            },
+            {
+                "error_code": 406,
+                "error_message": "USER_RESTRICTED",
+                "error_description": "You're spamreported, you can't create channels or chats."
             }
         ],
         "messages.importChatInvite": [
@@ -2297,23 +2374,6 @@
                 "error_description": "Invalid duration provided"
             }
         ],
-        "channels.createChannel": [
-            {
-                "error_code": 400,
-                "error_message": "CHAT_TITLE_EMPTY",
-                "error_description": "No chat title provided"
-            },
-            {
-                "error_code": 403,
-                "error_message": "USER_RESTRICTED",
-                "error_description": "You're spamreported, you can't create channels or chats."
-            },
-            {
-                "error_code": 406,
-                "error_message": "USER_RESTRICTED",
-                "error_description": "You're spamreported, you can't create channels or chats."
-            }
-        ],
         "messages.sendInlineBotResult": [
             {
                 "error_code": 403,
@@ -2382,6 +2442,11 @@
                 "error_code": 400,
                 "error_message": "CONTACT_ID_INVALID",
                 "error_description": "The provided contact ID is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CONTACT_NAME_EMPTY",
+                "error_description": "Contact name empty"
             }
         ],
         "contacts.block": [
@@ -2403,6 +2468,13 @@
                 "error_code": 400,
                 "error_message": "CONTACT_ID_INVALID",
                 "error_description": "The provided contact ID is invalid"
+            }
+        ],
+        "contacts.acceptContact": [
+            {
+                "error_code": 400,
+                "error_message": "CONTACT_REQ_MISSING",
+                "error_description": "Missing contact request"
             }
         ],
         "messages.sendEncryptedService": [
@@ -2735,6 +2807,11 @@
                 "error_code": 400,
                 "error_message": "INVITE_HASH_INVALID",
                 "error_description": "The invite hash is invalid"
+            },
+            {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
             }
         ],
         "langpack.getDifference": [
@@ -2887,6 +2964,13 @@
                 "error_code": 400,
                 "error_message": "REACTION_EMPTY",
                 "error_description": "Empty reaction provided"
+            }
+        ],
+        "messages.sendScheduledMessages": [
+            {
+                "error_code": 400,
+                "error_message": "MESSAGE_ID_INVALID",
+                "error_description": "The provided message id is invalid"
             }
         ],
         "messages.setGameScore": [
@@ -3142,6 +3226,18 @@
                 "error_description": "2FA is enabled, use a password to login"
             }
         ],
+        "auth.resendCode": [
+            {
+                "error_code": 400,
+                "error_message": "PHONE_CODE_HASH_EMPTY",
+                "error_description": "phone_code_hash is missing"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            }
+        ],
         "auth.checkPhone": [
             {
                 "error_code": 400,
@@ -3174,13 +3270,6 @@
             }
         ],
         "auth.cancelCode": [
-            {
-                "error_code": 400,
-                "error_message": "PHONE_NUMBER_INVALID",
-                "error_description": "The phone number is invalid"
-            }
-        ],
-        "auth.resendCode": [
             {
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_INVALID",
