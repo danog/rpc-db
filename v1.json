@@ -249,7 +249,8 @@
             ],
             "channels.getFullChannel": [
                 "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE"
+                "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID"
             ],
             "channels.getMessages": [
                 "CHANNEL_INVALID",
@@ -811,6 +812,7 @@
                 "PHONE_NUMBER_UNOCCUPIED"
             ],
             "auth.resendCode": [
+                "PHONE_CODE_EXPIRED",
                 "PHONE_CODE_HASH_EMPTY",
                 "PHONE_NUMBER_INVALID"
             ],
@@ -937,6 +939,9 @@
             "messages.sendMessage": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "messages.setTyping": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "updates.getChannelDifference": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1058,6 +1063,9 @@
             "invokeWithLayer": [
                 "CHAT_WRITE_FORBIDDEN"
             ],
+            "messages.editChatAbout": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
             "messages.editMessage": [
                 "CHAT_WRITE_FORBIDDEN",
                 "MESSAGE_AUTHOR_REQUIRED"
@@ -1088,6 +1096,9 @@
             ],
             "messages.setInlineBotResults": [
                 "USER_BOT_INVALID"
+            ],
+            "help.getUserInfo": [
+                "USER_INVALID"
             ],
             "messages.sendEncryptedService": [
                 "USER_IS_BLOCKED"
@@ -1910,6 +1921,9 @@
         ],
         "USER_ID_INVALID": [
             "The provided user ID is invalid"
+        ],
+        "USER_INVALID": [
+            "Invalid user provided"
         ],
         "USER_IS_BLOCKED": [
             "You were blocked by this user"

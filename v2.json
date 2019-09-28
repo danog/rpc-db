@@ -520,6 +520,58 @@
                 "error_description": "You blocked this user"
             }
         ],
+        "messages.setTyping": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_BANNED_IN_CHANNEL",
+                "error_description": "You're banned from sending messages in supergroups\/channels"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_IS_BOT",
+                "error_description": "Bots can't send messages to other bots"
+            }
+        ],
         "updates.getChannelDifference": [
             {
                 "error_code": 406,
@@ -1339,6 +1391,11 @@
                 "error_description": "channel\/supergroup not available"
             },
             {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
@@ -1935,53 +1992,6 @@
                 "error_description": "Webpage media empty"
             }
         ],
-        "messages.setTyping": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_INVALID",
-                "error_description": "The provided channel is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ADMIN_REQUIRED",
-                "error_description": "You must be an admin in this chat to do this"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ID_INVALID",
-                "error_description": "The provided chat id is invalid"
-            },
-            {
-                "error_code": 403,
-                "error_message": "CHAT_WRITE_FORBIDDEN",
-                "error_description": "You can't write in this chat"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_BANNED_IN_CHANNEL",
-                "error_description": "You're banned from sending messages in supergroups\/channels"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_IS_BLOCKED",
-                "error_description": "You were blocked by this user"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_IS_BOT",
-                "error_description": "Bots can't send messages to other bots"
-            }
-        ],
         "messages.getPeerDialogs": [
             {
                 "error_code": 400,
@@ -2372,6 +2382,18 @@
                 "error_code": 400,
                 "error_message": "SECONDS_INVALID",
                 "error_description": "Invalid duration provided"
+            }
+        ],
+        "messages.editChatAbout": [
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
             }
         ],
         "messages.sendInlineBotResult": [
@@ -3119,13 +3141,6 @@
                 "error_description": "The provided peer id is invalid"
             }
         ],
-        "messages.editChatAbout": [
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            }
-        ],
         "messages.getStatsURL": [
             {
                 "error_code": 400,
@@ -3227,6 +3242,11 @@
             }
         ],
         "auth.resendCode": [
+            {
+                "error_code": 400,
+                "error_message": "PHONE_CODE_EXPIRED",
+                "error_description": "The phone code you provided has expired, this may happen if it was sent to any chat on telegram (if the code is sent through a telegram chat (not the official account) to avoid it append or prepend to the code some chars)"
+            },
             {
                 "error_code": 400,
                 "error_message": "PHONE_CODE_HASH_EMPTY",
@@ -3524,6 +3544,13 @@
                 "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
+            }
+        ],
+        "help.getUserInfo": [
+            {
+                "error_code": 403,
+                "error_message": "USER_INVALID",
+                "error_description": "Invalid user provided"
             }
         ],
         "account.checkUsername": [

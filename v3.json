@@ -249,7 +249,8 @@
             },
             "channels.getFullChannel": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE"
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
             "channels.getMessages": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -811,6 +812,7 @@
                 "PHONE_NUMBER_UNOCCUPIED": "PHONE_NUMBER_UNOCCUPIED"
             },
             "auth.resendCode": {
+                "PHONE_CODE_EXPIRED": "PHONE_CODE_EXPIRED",
                 "PHONE_CODE_HASH_EMPTY": "PHONE_CODE_HASH_EMPTY",
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
             },
@@ -1070,6 +1072,9 @@
             "messages.sendMessage": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "messages.setTyping": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "updates.getChannelDifference": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1191,6 +1196,9 @@
             "invokeWithLayer": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
+            "messages.editChatAbout": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
+            },
             "messages.editMessage": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN",
                 "MESSAGE_AUTHOR_REQUIRED": "MESSAGE_AUTHOR_REQUIRED"
@@ -1221,6 +1229,9 @@
             },
             "messages.setInlineBotResults": {
                 "USER_BOT_INVALID": "USER_BOT_INVALID"
+            },
+            "help.getUserInfo": {
+                "USER_INVALID": "USER_INVALID"
             },
             "messages.sendEncryptedService": {
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED"
@@ -1566,6 +1577,7 @@
         "USER_DEACTIVATED": "The user was deactivated",
         "USER_DEACTIVATED_BAN": "The current account was banned from telegram due to abuse",
         "USER_ID_INVALID": "The provided user ID is invalid",
+        "USER_INVALID": "Invalid user provided",
         "USER_IS_BLOCKED": "You were blocked by this user",
         "USER_IS_BOT": "Bots can't send messages to other bots",
         "USER_KICKED": "This user was kicked from this supergroup\/channel",
