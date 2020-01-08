@@ -77,6 +77,11 @@
                 "error_description": "You can't write in this chat"
             },
             {
+                "error_code": 400,
+                "error_message": "INPUT_USER_DEACTIVATED",
+                "error_description": "The specified user was deleted"
+            },
+            {
                 "error_code": 403,
                 "error_message": "RIGHT_FORBIDDEN",
                 "error_description": "Your admin rights do not allow you to do this"
@@ -446,6 +451,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "INVITE_HASH_EMPTY",
+                "error_description": "The invite hash is empty"
+            },
+            {
+                "error_code": 400,
                 "error_message": "INVITE_HASH_EXPIRED",
                 "error_description": "The invite link has expired"
             },
@@ -458,6 +468,11 @@
                 "error_code": 400,
                 "error_message": "MSG_ID_INVALID",
                 "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
             },
             {
                 "error_code": 400,
@@ -504,6 +519,11 @@
                 "error_description": "The temporary auth key must be binded to the permanent auth key to use these methods."
             },
             {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
+            },
+            {
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
@@ -524,6 +544,11 @@
                 "error_code": 400,
                 "error_message": "CONNECTION_NOT_INITED",
                 "error_description": "Connection not initialized"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CONNECTION_SYSTEM_EMPTY",
+                "error_description": "Connection system empty"
             },
             {
                 "error_code": -503,
@@ -664,6 +689,58 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            }
+        ],
+        "messages.importChatInvite": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNELS_TOO_MUCH",
+                "error_description": "You have joined too many channels\/supergroups"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_HASH_EMPTY",
+                "error_description": "The invite hash is empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_HASH_EXPIRED",
+                "error_description": "The invite link has expired"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_HASH_INVALID",
+                "error_description": "The invite hash is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_ALREADY_PARTICIPANT",
+                "error_description": "The user is already in the group"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USERS_TOO_MUCH",
+                "error_description": "The maximum number of users has been exceeded (to create a chat, for example)"
             }
         ],
         "messages.search": [
@@ -922,6 +999,13 @@
                 "error_description": "Bots can't send messages to other bots"
             }
         ],
+        "phone.getCallConfig": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            }
+        ],
         "updates.getChannelDifference": [
             {
                 "error_code": 406,
@@ -1142,6 +1226,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
                 "error_message": "OFFSET_INVALID",
                 "error_description": "The provided offset is invalid"
             },
@@ -1322,6 +1411,11 @@
                 "error_code": 400,
                 "error_message": "START_PARAM_INVALID",
                 "error_description": "Start parameter invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "START_PARAM_TOO_LONG",
+                "error_description": "Start parameter is too long"
             }
         ],
         "messages.uploadMedia": [
@@ -1489,6 +1583,11 @@
             },
             {
                 "error_code": 403,
+                "error_message": "CHAT_SEND_GIFS_FORBIDDEN",
+                "error_description": "You can't send gifs in this chat"
+            },
+            {
+                "error_code": 403,
                 "error_message": "CHAT_SEND_MEDIA_FORBIDDEN",
                 "error_description": "You can't send media in this chat"
             },
@@ -1521,6 +1620,11 @@
                 "error_code": 400,
                 "error_message": "INPUT_USER_DEACTIVATED",
                 "error_description": "The specified user was deleted"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MD5_CHECKSUM_INVALID",
+                "error_description": "The MD5 checksums do not match"
             },
             {
                 "error_code": 400,
@@ -2017,6 +2121,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_TITLE_EMPTY",
                 "error_description": "No chat title provided"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
             }
         ],
         "channels.exportInvite": [
@@ -2090,6 +2199,11 @@
                 "error_code": 400,
                 "error_message": "MESSAGE_IDS_EMPTY",
                 "error_description": "No message ids were provided"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
             }
         ],
         "channels.getParticipant": [
@@ -2455,6 +2569,28 @@
                 "error_description": "This session was created less than 24 hours ago, try again in X seconds"
             }
         ],
+        "messages.exportChatInvite": [
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            }
+        ],
         "channels.createChannel": [
             {
                 "error_code": 400,
@@ -2480,43 +2616,6 @@
                 "error_code": 406,
                 "error_message": "USER_RESTRICTED",
                 "error_description": "You're spamreported, you can't create channels or chats."
-            }
-        ],
-        "messages.importChatInvite": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNELS_TOO_MUCH",
-                "error_description": "You have joined too many channels\/supergroups"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INVITE_HASH_EMPTY",
-                "error_description": "The invite hash is empty"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INVITE_HASH_EXPIRED",
-                "error_description": "The invite link has expired"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INVITE_HASH_INVALID",
-                "error_description": "The invite hash is invalid"
-            },
-            {
-                "error_code": 401,
-                "error_message": "SESSION_PASSWORD_NEEDED",
-                "error_description": "2FA is enabled, use a password to login"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_ALREADY_PARTICIPANT",
-                "error_description": "The user is already in the group"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USERS_TOO_MUCH",
-                "error_description": "The maximum number of users has been exceeded (to create a chat, for example)"
             }
         ],
         "messages.editChatAbout": [
@@ -2615,23 +2714,6 @@
                 "error_description": "You're not a member of this supergroup\/channel"
             }
         ],
-        "messages.exportChatInvite": [
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ADMIN_REQUIRED",
-                "error_description": "You must be an admin in this chat to do this"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ID_INVALID",
-                "error_description": "The provided chat id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            }
-        ],
         "messages.migrateChat": [
             {
                 "error_code": 403,
@@ -2687,6 +2769,16 @@
             },
             {
                 "error_code": 400,
+                "error_message": "RESULT_ID_EMPTY",
+                "error_description": "Result ID empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_BANNED_IN_CHANNEL",
+                "error_description": "You're banned from sending messages in supergroups\/channels"
+            },
+            {
+                "error_code": 400,
                 "error_message": "WEBPAGE_CURL_FAILED",
                 "error_description": "Failure while fetching the webpage with cURL"
             },
@@ -2711,6 +2803,16 @@
                 "error_code": 400,
                 "error_message": "CHAT_NOT_MODIFIED",
                 "error_description": "The pinned message wasn't modified"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MESSAGE_ID_INVALID",
+                "error_description": "The provided message id is invalid"
             }
         ],
         "messages.discardEncryption": [
@@ -2794,8 +2896,18 @@
             },
             {
                 "error_code": 400,
+                "error_message": "CHAT_NOT_MODIFIED",
+                "error_description": "The pinned message wasn't modified"
+            },
+            {
+                "error_code": 400,
                 "error_message": "CHAT_TITLE_EMPTY",
                 "error_description": "No chat title provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
             }
         ],
         "messages.forwardMessage": [
@@ -2914,6 +3026,13 @@
                 "error_description": "Not enough users (to create a chat, for example)"
             }
         ],
+        "channels.togglePreHistoryHidden": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_NOT_MODIFIED",
+                "error_description": "The pinned message wasn't modified"
+            }
+        ],
         "channels.toggleSlowMode": [
             {
                 "error_code": 400,
@@ -2996,6 +3115,11 @@
                 "error_code": 400,
                 "error_message": "CONTACT_ID_INVALID",
                 "error_description": "The provided contact ID is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INPUT_USER_DEACTIVATED",
+                "error_description": "The specified user was deleted"
             }
         ],
         "contacts.deleteContact": [
@@ -3029,6 +3153,11 @@
                 "error_code": 400,
                 "error_message": "ENCRYPTION_DECLINED",
                 "error_description": "The secret chat was declined"
+            },
+            {
+                "error_code": 400,
+                "error_message": "ENCRYPTION_ID_INVALID",
+                "error_description": "The provided secret chat ID is invalid"
             },
             {
                 "error_code": 400,
@@ -3378,11 +3507,25 @@
                 "error_description": "Invalid method, use req_pq_multi instead"
             }
         ],
+        "req_pq_multi": [
+            {
+                "error_code": 400,
+                "error_message": "INPUT_METHOD_INVALID_3195965169_X",
+                "error_description": ""
+            }
+        ],
         "req_DH_params": [
             {
                 "error_code": 400,
                 "error_message": "INPUT_METHOD_INVALID_3608339646_X",
                 "error_description": "Invalid method"
+            }
+        ],
+        "set_client_DH_params": [
+            {
+                "error_code": 400,
+                "error_message": "INPUT_METHOD_INVALID_4110704415_X",
+                "error_description": ""
             }
         ],
         "messages.checkChatInvite": [
@@ -3662,6 +3805,35 @@
                 "error_description": "The provided message id is invalid"
             }
         ],
+        "messages.getCommonChats": [
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_ID_INVALID",
+                "error_description": "The provided user ID is invalid"
+            }
+        ],
+        "messages.readHistory": [
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            }
+        ],
         "messages.readEncryptedHistory": [
             {
                 "error_code": 400,
@@ -3707,6 +3879,16 @@
                 "error_code": 400,
                 "error_message": "PASSWORD_HASH_INVALID",
                 "error_description": "The provided password hash is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SRP_ID_INVALID",
+                "error_description": "Invalid SRP ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SRP_PASSWORD_CHANGED",
+                "error_description": "Password has changed"
             }
         ],
         "account.getNotifySettings": [
@@ -3728,6 +3910,11 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SETTINGS_INVALID",
+                "error_description": "Invalid settings were provided"
             }
         ],
         "contacts.resetTopPeerRating": [
@@ -3777,18 +3964,6 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
-            }
-        ],
-        "messages.readHistory": [
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            },
-            {
-                "error_code": -503,
-                "error_message": "Timeout",
-                "error_description": "Timeout while fetching data"
             }
         ],
         "messages.reorderPinnedDialogs": [
@@ -4132,13 +4307,6 @@
                 "error_code": 400,
                 "error_message": "USER_BOT_INVALID",
                 "error_description": "This method can only be called by a bot"
-            }
-        ],
-        "messages.getCommonChats": [
-            {
-                "error_code": 400,
-                "error_message": "USER_ID_INVALID",
-                "error_description": "The provided user ID is invalid"
             }
         ],
         "users.setSecureValueErrors": [

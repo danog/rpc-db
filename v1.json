@@ -16,6 +16,7 @@
                 "BOT_CHANNELS_NA",
                 "CHANNEL_INVALID",
                 "CHAT_ADMIN_REQUIRED",
+                "INPUT_USER_DEACTIVATED",
                 "USER_CREATOR",
                 "USER_ID_INVALID",
                 "USER_NOT_MUTUAL_CONTACT"
@@ -124,7 +125,8 @@
                 "MSG_ID_INVALID",
                 "PEER_ID_INVALID",
                 "START_PARAM_EMPTY",
-                "START_PARAM_INVALID"
+                "START_PARAM_INVALID",
+                "START_PARAM_TOO_LONG"
             ],
             "messages.uploadMedia": [
                 "BOT_MISSING",
@@ -174,6 +176,7 @@
                 "FILE_PARTS_INVALID",
                 "IMAGE_PROCESS_FAILED",
                 "INPUT_USER_DEACTIVATED",
+                "MD5_CHECKSUM_INVALID",
                 "MEDIA_CAPTION_TOO_LONG",
                 "MEDIA_EMPTY",
                 "MEDIA_INVALID",
@@ -346,6 +349,7 @@
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "CHANNELS_TOO_MUCH",
+                "INVITE_HASH_EMPTY",
                 "INVITE_HASH_EXPIRED",
                 "INVITE_HASH_INVALID",
                 "MSG_ID_INVALID",
@@ -482,22 +486,30 @@
                 "PASSWORD_TOO_FRESH_X",
                 "SESSION_TOO_FRESH_X"
             ],
+            "messages.exportChatInvite": [
+                "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED",
+                "CHAT_ID_INVALID",
+                "PEER_ID_INVALID"
+            ],
             "messages.getPeerDialogs": [
                 "CHANNEL_PRIVATE",
                 "PEER_ID_INVALID"
+            ],
+            "messages.importChatInvite": [
+                "CHANNEL_PRIVATE",
+                "CHANNELS_TOO_MUCH",
+                "INVITE_HASH_EMPTY",
+                "INVITE_HASH_EXPIRED",
+                "INVITE_HASH_INVALID",
+                "PEER_ID_INVALID",
+                "USER_ALREADY_PARTICIPANT",
+                "USERS_TOO_MUCH"
             ],
             "channels.createChannel": [
                 "CHANNELS_TOO_MUCH",
                 "CHAT_ABOUT_TOO_LONG",
                 "CHAT_TITLE_EMPTY"
-            ],
-            "messages.importChatInvite": [
-                "CHANNELS_TOO_MUCH",
-                "INVITE_HASH_EMPTY",
-                "INVITE_HASH_EXPIRED",
-                "INVITE_HASH_INVALID",
-                "USER_ALREADY_PARTICIPANT",
-                "USERS_TOO_MUCH"
             ],
             "messages.editChatAbout": [
                 "CHAT_ABOUT_NOT_MODIFIED",
@@ -520,23 +532,21 @@
                 "PEER_ID_INVALID",
                 "USER_NOT_PARTICIPANT"
             ],
-            "messages.exportChatInvite": [
-                "CHAT_ADMIN_REQUIRED",
-                "CHAT_ID_INVALID",
-                "PEER_ID_INVALID"
-            ],
             "messages.sendInlineBotResult": [
                 "CHAT_ADMIN_REQUIRED",
                 "INLINE_RESULT_EXPIRED",
                 "PEER_ID_INVALID",
                 "QUERY_ID_EMPTY",
+                "RESULT_ID_EMPTY",
+                "USER_BANNED_IN_CHANNEL",
                 "WEBPAGE_CURL_FAILED",
                 "WEBPAGE_MEDIA_EMPTY",
                 "YOU_BLOCKED_USER"
             ],
             "messages.updatePinnedMessage": [
                 "CHAT_ADMIN_REQUIRED",
-                "CHAT_NOT_MODIFIED"
+                "CHAT_NOT_MODIFIED",
+                "MESSAGE_ID_INVALID"
             ],
             "messages.discardEncryption": [
                 "CHAT_ID_EMPTY",
@@ -561,7 +571,9 @@
             ],
             "messages.editChatTitle": [
                 "CHAT_ID_INVALID",
-                "CHAT_TITLE_EMPTY"
+                "CHAT_NOT_MODIFIED",
+                "CHAT_TITLE_EMPTY",
+                "PEER_ID_INVALID"
             ],
             "messages.forwardMessage": [
                 "CHAT_ID_INVALID",
@@ -602,6 +614,9 @@
                 "INPUT_USER_DEACTIVATED",
                 "USERS_TOO_FEW"
             ],
+            "channels.togglePreHistoryHidden": [
+                "CHAT_NOT_MODIFIED"
+            ],
             "channels.toggleSlowMode": [
                 "CHAT_NOT_MODIFIED",
                 "INPUT_METHOD_INVALID_1192227_X",
@@ -621,7 +636,8 @@
             ],
             "help.getConfig": [
                 "CONNECTION_DEVICE_MODEL_EMPTY",
-                "CONNECTION_NOT_INITED"
+                "CONNECTION_NOT_INITED",
+                "CONNECTION_SYSTEM_EMPTY"
             ],
             "initConnection": [
                 "CONNECTION_LAYER_INVALID",
@@ -632,7 +648,8 @@
                 "CONTACT_NAME_EMPTY"
             ],
             "contacts.block": [
-                "CONTACT_ID_INVALID"
+                "CONTACT_ID_INVALID",
+                "INPUT_USER_DEACTIVATED"
             ],
             "contacts.deleteContact": [
                 "CONTACT_ID_INVALID"
@@ -646,6 +663,7 @@
             "messages.sendEncryptedService": [
                 "DATA_INVALID",
                 "ENCRYPTION_DECLINED",
+                "ENCRYPTION_ID_INVALID",
                 "MSG_WAIT_FAILED"
             ],
             "messages.sendEncryptedFile": [
@@ -687,6 +705,7 @@
                 "INPUT_FETCH_FAIL",
                 "LIMIT_INVALID",
                 "LOCATION_INVALID",
+                "MSG_ID_INVALID",
                 "OFFSET_INVALID"
             ],
             "upload.saveBigFilePart": [
@@ -746,8 +765,14 @@
             "req_pq": [
                 "INPUT_METHOD_INVALID_1615239032_X"
             ],
+            "req_pq_multi": [
+                "INPUT_METHOD_INVALID_3195965169_X"
+            ],
             "req_DH_params": [
                 "INPUT_METHOD_INVALID_3608339646_X"
+            ],
+            "set_client_DH_params": [
+                "INPUT_METHOD_INVALID_4110704415_X"
             ],
             "messages.checkChatInvite": [
                 "INVITE_HASH_EMPTY",
@@ -838,6 +863,14 @@
             "payments.validateRequestedInfo": [
                 "MESSAGE_ID_INVALID"
             ],
+            "messages.getCommonChats": [
+                "MSG_ID_INVALID",
+                "USER_ID_INVALID"
+            ],
+            "messages.readHistory": [
+                "MSG_ID_INVALID",
+                "PEER_ID_INVALID"
+            ],
             "users.getFullUser": [
                 "MSG_ID_INVALID",
                 "USER_ID_INVALID"
@@ -862,7 +895,9 @@
                 "TMP_PASSWORD_DISABLED"
             ],
             "auth.checkPassword": [
-                "PASSWORD_HASH_INVALID"
+                "PASSWORD_HASH_INVALID",
+                "SRP_ID_INVALID",
+                "SRP_PASSWORD_CHANGED"
             ],
             "account.getNotifySettings": [
                 "PEER_ID_INVALID"
@@ -871,7 +906,8 @@
                 "PEER_ID_INVALID"
             ],
             "account.updateNotifySettings": [
-                "PEER_ID_INVALID"
+                "PEER_ID_INVALID",
+                "SETTINGS_INVALID"
             ],
             "contacts.resetTopPeerRating": [
                 "PEER_ID_INVALID"
@@ -895,9 +931,6 @@
                 "PEER_ID_INVALID"
             ],
             "messages.hideReportSpam": [
-                "PEER_ID_INVALID"
-            ],
-            "messages.readHistory": [
                 "PEER_ID_INVALID"
             ],
             "messages.reorderPinnedDialogs": [
@@ -1012,9 +1045,6 @@
             "bots.sendCustomRequest": [
                 "USER_BOT_INVALID"
             ],
-            "messages.getCommonChats": [
-                "USER_ID_INVALID"
-            ],
             "users.setSecureValueErrors": [
                 "USER_ID_INVALID"
             ],
@@ -1080,6 +1110,9 @@
             "messages.getPeerDialogs": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "messages.importChatInvite": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "messages.search": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1087,6 +1120,9 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.setTyping": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "phone.getCallConfig": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "updates.getChannelDifference": [
@@ -1136,7 +1172,8 @@
                 "SESSION_PASSWORD_NEEDED"
             ],
             "help.getCdnConfig": [
-                "AUTH_KEY_PERM_EMPTY"
+                "AUTH_KEY_PERM_EMPTY",
+                "SESSION_PASSWORD_NEEDED"
             ],
             "messages.getHistory": [
                 "AUTH_KEY_PERM_EMPTY"
@@ -1162,6 +1199,9 @@
                 "SESSION_PASSWORD_NEEDED"
             ],
             "auth.signIn": [
+                "SESSION_PASSWORD_NEEDED"
+            ],
+            "channels.joinChannel": [
                 "SESSION_PASSWORD_NEEDED"
             ],
             "contacts.getStatuses": [
@@ -1218,12 +1258,13 @@
                 "CHAT_SEND_STICKERS_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN"
             ],
-            "messages.sendInlineBotResult": [
-                "CHAT_SEND_INLINE_FORBIDDEN",
+            "messages.sendMedia": [
+                "CHAT_SEND_GIFS_FORBIDDEN",
                 "CHAT_SEND_MEDIA_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN"
             ],
-            "messages.sendMedia": [
+            "messages.sendInlineBotResult": [
+                "CHAT_SEND_INLINE_FORBIDDEN",
                 "CHAT_SEND_MEDIA_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN"
             ],
@@ -1231,6 +1272,9 @@
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "channels.editBanned": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
+            "channels.editTitle": [
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "channels.getAdminLog": [
@@ -1254,6 +1298,9 @@
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "messages.setTyping": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
+            "messages.updatePinnedMessage": [
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "messages.getMessageEditData": [
@@ -1323,6 +1370,9 @@
                 "Timeout"
             ],
             "channels.getFullChannel": [
+                "Timeout"
+            ],
+            "channels.getMessages": [
                 "Timeout"
             ],
             "channels.getParticipants": [
@@ -1757,8 +1807,14 @@
         "INPUT_METHOD_INVALID_1615239032_X": [
             "Invalid method, use req_pq_multi instead"
         ],
+        "INPUT_METHOD_INVALID_3195965169_X": [
+            ""
+        ],
         "INPUT_METHOD_INVALID_3608339646_X": [
             "Invalid method"
+        ],
+        "INPUT_METHOD_INVALID_4110704415_X": [
+            ""
         ],
         "INPUT_REQUEST_TOO_LONG": [
             "The request is too big"
@@ -2051,6 +2107,9 @@
         "REPLY_MARKUP_INVALID": [
             "The provided reply markup is invalid"
         ],
+        "RESULT_ID_EMPTY": [
+            "Result ID empty"
+        ],
         "RESULT_TYPE_INVALID": [
             "Result type invalid"
         ],
@@ -2090,6 +2149,9 @@
         "SESSION_TOO_FRESH_X": [
             "This session was created less than 24 hours ago, try again in X seconds"
         ],
+        "SETTINGS_INVALID": [
+            "Invalid settings were provided"
+        ],
         "SHA256_HASH_INVALID": [
             "The provided SHA256 hash is invalid"
         ],
@@ -2102,11 +2164,17 @@
         "SRP_ID_INVALID": [
             "Invalid SRP ID provided"
         ],
+        "SRP_PASSWORD_CHANGED": [
+            "Password has changed"
+        ],
         "START_PARAM_EMPTY": [
             "The start parameter is empty"
         ],
         "START_PARAM_INVALID": [
             "Start parameter invalid"
+        ],
+        "START_PARAM_TOO_LONG": [
+            "Start parameter is too long"
         ],
         "STICKER_EMOJI_INVALID": [
             "Sticker emoji invalid"
