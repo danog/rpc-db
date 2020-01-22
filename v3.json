@@ -45,6 +45,7 @@
                 "QUERY_ID_INVALID": "QUERY_ID_INVALID",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
                 "RESULT_TYPE_INVALID": "RESULT_TYPE_INVALID",
+                "RESULTS_TOO_MUCH": "RESULTS_TOO_MUCH",
                 "SEND_MESSAGE_TYPE_INVALID": "SEND_MESSAGE_TYPE_INVALID",
                 "START_PARAM_INVALID": "START_PARAM_INVALID",
                 "WEBDOCUMENT_SIZE_TOO_BIG": "WEBDOCUMENT_SIZE_TOO_BIG"
@@ -89,6 +90,7 @@
                 "MESSAGE_TOO_LONG": "MESSAGE_TOO_LONG",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "PINNED_DIALOGS_TOO_MUCH": "PINNED_DIALOGS_TOO_MUCH",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
                 "SCHEDULE_BOT_NOT_ALLOWED": "SCHEDULE_BOT_NOT_ALLOWED",
                 "SCHEDULE_TOO_MUCH": "SCHEDULE_TOO_MUCH",
@@ -164,9 +166,26 @@
                 "LINK_NOT_MODIFIED": "LINK_NOT_MODIFIED",
                 "MEGAGROUP_ID_INVALID": "MEGAGROUP_ID_INVALID"
             },
+            "messages.editMessage": {
+                "BUTTON_DATA_INVALID": "BUTTON_DATA_INVALID",
+                "BUTTON_TYPE_INVALID": "BUTTON_TYPE_INVALID",
+                "BUTTON_URL_INVALID": "BUTTON_URL_INVALID",
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
+                "MESSAGE_EDIT_TIME_EXPIRED": "MESSAGE_EDIT_TIME_EXPIRED",
+                "MESSAGE_EMPTY": "MESSAGE_EMPTY",
+                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
+                "MESSAGE_NOT_MODIFIED": "MESSAGE_NOT_MODIFIED",
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "SCHEDULE_DATE_INVALID": "SCHEDULE_DATE_INVALID",
+                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL"
+            },
             "messages.sendMedia": {
                 "BUTTON_DATA_INVALID": "BUTTON_DATA_INVALID",
                 "BUTTON_TYPE_INVALID": "BUTTON_TYPE_INVALID",
+                "BUTTON_URL_INVALID": "BUTTON_URL_INVALID",
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
@@ -186,27 +205,13 @@
                 "PHOTO_INVALID_DIMENSIONS": "PHOTO_INVALID_DIMENSIONS",
                 "PHOTO_SAVE_FILE_INVALID": "PHOTO_SAVE_FILE_INVALID",
                 "REPLY_MARKUP_BUY_EMPTY": "REPLY_MARKUP_BUY_EMPTY",
+                "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
                 "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED",
                 "USER_IS_BOT": "USER_IS_BOT",
                 "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
                 "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
                 "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
-            },
-            "messages.editMessage": {
-                "BUTTON_TYPE_INVALID": "BUTTON_TYPE_INVALID",
-                "BUTTON_URL_INVALID": "BUTTON_URL_INVALID",
-                "CHANNEL_INVALID": "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
-                "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
-                "MESSAGE_EDIT_TIME_EXPIRED": "MESSAGE_EDIT_TIME_EXPIRED",
-                "MESSAGE_EMPTY": "MESSAGE_EMPTY",
-                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
-                "MESSAGE_NOT_MODIFIED": "MESSAGE_NOT_MODIFIED",
-                "PEER_ID_INVALID": "PEER_ID_INVALID",
-                "SCHEDULE_DATE_INVALID": "SCHEDULE_DATE_INVALID",
-                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL"
             },
             "phone.acceptCall": {
                 "CALL_ALREADY_ACCEPTED": "CALL_ALREADY_ACCEPTED",
@@ -385,7 +390,8 @@
                 "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED"
             },
             "channels.toggleSignatures": {
-                "CHANNEL_INVALID": "CHANNEL_INVALID"
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHAT_ID_INVALID": "CHAT_ID_INVALID"
             },
             "channels.updatePinnedMessage": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -462,6 +468,7 @@
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED",
@@ -506,6 +513,19 @@
                 "USER_ALREADY_PARTICIPANT": "USER_ALREADY_PARTICIPANT",
                 "USERS_TOO_MUCH": "USERS_TOO_MUCH"
             },
+            "messages.sendInlineBotResult": {
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "CHAT_RESTRICTED": "CHAT_RESTRICTED",
+                "INLINE_RESULT_EXPIRED": "INLINE_RESULT_EXPIRED",
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "QUERY_ID_EMPTY": "QUERY_ID_EMPTY",
+                "RESULT_ID_EMPTY": "RESULT_ID_EMPTY",
+                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
+                "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
+                "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
+                "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
+            },
             "channels.createChannel": {
                 "CHANNELS_TOO_MUCH": "CHANNELS_TOO_MUCH",
                 "CHAT_ABOUT_TOO_LONG": "CHAT_ABOUT_TOO_LONG",
@@ -532,17 +552,6 @@
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "USER_NOT_PARTICIPANT": "USER_NOT_PARTICIPANT"
             },
-            "messages.sendInlineBotResult": {
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
-                "INLINE_RESULT_EXPIRED": "INLINE_RESULT_EXPIRED",
-                "PEER_ID_INVALID": "PEER_ID_INVALID",
-                "QUERY_ID_EMPTY": "QUERY_ID_EMPTY",
-                "RESULT_ID_EMPTY": "RESULT_ID_EMPTY",
-                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
-                "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
-                "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
-                "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
-            },
             "messages.updatePinnedMessage": {
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
@@ -567,6 +576,7 @@
                 "INPUT_CONSTRUCTOR_INVALID": "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "PHOTO_CROP_SIZE_SMALL": "PHOTO_CROP_SIZE_SMALL",
                 "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID"
             },
             "messages.editChatTitle": {
@@ -863,11 +873,19 @@
             "payments.validateRequestedInfo": {
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID"
             },
+            "messages.deleteHistory": {
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
+            },
             "messages.getCommonChats": {
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "USER_ID_INVALID": "USER_ID_INVALID"
             },
             "messages.readHistory": {
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
+            },
+            "messages.readMentions": {
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
@@ -910,9 +928,6 @@
                 "SETTINGS_INVALID": "SETTINGS_INVALID"
             },
             "contacts.resetTopPeerRating": {
-                "PEER_ID_INVALID": "PEER_ID_INVALID"
-            },
-            "messages.deleteHistory": {
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.getMessageEditData": {
@@ -958,6 +973,10 @@
             "account.verifyPhone": {
                 "PHONE_CODE_EXPIRED": "PHONE_CODE_EXPIRED"
             },
+            "auth.cancelCode": {
+                "PHONE_CODE_EXPIRED": "PHONE_CODE_EXPIRED",
+                "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
+            },
             "auth.resendCode": {
                 "PHONE_CODE_EXPIRED": "PHONE_CODE_EXPIRED",
                 "PHONE_CODE_HASH_EMPTY": "PHONE_CODE_HASH_EMPTY",
@@ -971,9 +990,6 @@
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
             },
             "account.sendChangePhoneCode": {
-                "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
-            },
-            "auth.cancelCode": {
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
             },
             "account.getPrivacy": {
@@ -1101,6 +1117,9 @@
                 "MEMBER_OCCUPY_PRIMARY_LOC_FAILED": "MEMBER_OCCUPY_PRIMARY_LOC_FAILED",
                 "REG_ID_GENERATE_FAILED": "REG_ID_GENERATE_FAILED"
             },
+            "account.updateUsername": {
+                "MEMBER_OCCUPY_USERNAME_FAILED": "MEMBER_OCCUPY_USERNAME_FAILED"
+            },
             "messages.getPeerDialogs": {
                 "MSG_RANGE_UNSYNC": "MSG_RANGE_UNSYNC"
             },
@@ -1211,6 +1230,9 @@
             }
         },
         "406": {
+            "account.checkUsername": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "account.updateProfile": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1223,10 +1245,16 @@
             "channels.getFullChannel": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "channels.getMessages": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "channels.getParticipants": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "channels.joinChannel": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "channels.readHistory": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "contacts.resolveUsername": {
@@ -1238,6 +1266,9 @@
             "help.getConfig": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "help.getNearestDc": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "help.getTermsOfServiceUpdate": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1245,6 +1276,9 @@
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "messages.getBotCallbackAnswer": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "messages.getDialogs": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "messages.getHistory": {
@@ -1280,14 +1314,15 @@
             "updates.getState": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "upload.getFile": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED",
+                "FILEREF_UPGRADE_NEEDED": "FILEREF_UPGRADE_NEEDED"
+            },
             "users.getFullUser": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "users.getUsers": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
-            },
-            "upload.getFile": {
-                "FILEREF_UPGRADE_NEEDED": "FILEREF_UPGRADE_NEEDED"
             },
             "account.resetAuthorization": {
                 "FRESH_RESET_AUTHORISATION_FORBIDDEN": "FRESH_RESET_AUTHORISATION_FORBIDDEN"
@@ -1309,6 +1344,10 @@
         "401": {
             "auth.importBotAuthorization": {
                 "AUTH_KEY_INVALID": "AUTH_KEY_INVALID"
+            },
+            "account.updateUsername": {
+                "AUTH_KEY_PERM_EMPTY": "AUTH_KEY_PERM_EMPTY",
+                "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
             "auth.checkPhone": {
                 "AUTH_KEY_PERM_EMPTY": "AUTH_KEY_PERM_EMPTY"
@@ -1339,9 +1378,6 @@
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
             "account.updateStatus": {
-                "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
-            },
-            "account.updateUsername": {
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
             "auth.signIn": {
@@ -1404,17 +1440,21 @@
                 "CHAT_SEND_STICKERS_FORBIDDEN": "CHAT_SEND_STICKERS_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
+            "messages.sendInlineBotResult": {
+                "CHAT_SEND_GIFS_FORBIDDEN": "CHAT_SEND_GIFS_FORBIDDEN",
+                "CHAT_SEND_INLINE_FORBIDDEN": "CHAT_SEND_INLINE_FORBIDDEN",
+                "CHAT_SEND_MEDIA_FORBIDDEN": "CHAT_SEND_MEDIA_FORBIDDEN",
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
+            },
             "messages.sendMedia": {
                 "CHAT_SEND_GIFS_FORBIDDEN": "CHAT_SEND_GIFS_FORBIDDEN",
                 "CHAT_SEND_MEDIA_FORBIDDEN": "CHAT_SEND_MEDIA_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
-            "messages.sendInlineBotResult": {
-                "CHAT_SEND_INLINE_FORBIDDEN": "CHAT_SEND_INLINE_FORBIDDEN",
-                "CHAT_SEND_MEDIA_FORBIDDEN": "CHAT_SEND_MEDIA_FORBIDDEN",
+            "channels.deleteChannel": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
-            "channels.deleteChannel": {
+            "channels.deleteUserHistory": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
             "channels.editBanned": {
@@ -1447,6 +1487,9 @@
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
             "messages.updatePinnedMessage": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
+            },
+            "messages.uploadMedia": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
             "messages.getMessageEditData": {
@@ -1527,6 +1570,9 @@
             "channels.inviteToChannel": {
                 "Timeout": "Timeout"
             },
+            "channels.joinChannel": {
+                "Timeout": "Timeout"
+            },
             "contacts.deleteContacts": {
                 "Timeout": "Timeout"
             },
@@ -1557,7 +1603,16 @@
             "messages.getInlineBotResults": {
                 "Timeout": "Timeout"
             },
+            "messages.getMessagesViews": {
+                "Timeout": "Timeout"
+            },
+            "messages.getPeerDialogs": {
+                "Timeout": "Timeout"
+            },
             "messages.readHistory": {
+                "Timeout": "Timeout"
+            },
+            "messages.sendInlineBotResult": {
                 "Timeout": "Timeout"
             },
             "messages.sendMedia": {
@@ -1742,6 +1797,7 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID",
         "MEMBER_NO_LOCATION": "An internal failure occurred while fetching user info (couldn't find location)",
         "MEMBER_OCCUPY_PRIMARY_LOC_FAILED": "Occupation of primary member location failed",
+        "MEMBER_OCCUPY_USERNAME_FAILED": "Internal error while occupying username, try again later",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -1813,6 +1869,7 @@
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid",
         "RESULT_ID_EMPTY": "Result ID empty",
         "RESULT_TYPE_INVALID": "Result type invalid",
+        "RESULTS_TOO_MUCH": "Too many results were provided",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this",
         "RPC_CALL_FAIL": "Telegram is having internal issues, please try again later.",
         "RPC_MCGET_FAIL": "Telegram is having internal issues, please try again later.",
