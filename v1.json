@@ -14,6 +14,7 @@
             "channels.editAdmin": [
                 "ADMINS_TOO_MUCH",
                 "BOT_CHANNELS_NA",
+                "BOTS_TOO_MUCH",
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
@@ -421,6 +422,14 @@
                 "USERNAME_NOT_MODIFIED",
                 "USERNAME_OCCUPIED"
             ],
+            "messages.editChatAbout": [
+                "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE",
+                "CHAT_ABOUT_NOT_MODIFIED",
+                "CHAT_ADMIN_REQUIRED",
+                "CHAT_NOT_MODIFIED",
+                "PEER_ID_INVALID"
+            ],
             "messages.forwardMessages": [
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
@@ -512,8 +521,19 @@
                 "PINNED_DIALOGS_TOO_MUCH",
                 "RANGES_INVALID"
             ],
+            "upload.getFile": [
+                "CHANNEL_INVALID",
+                "FILE_ID_INVALID",
+                "FILE_REFERENCE_EXPIRED",
+                "INPUT_FETCH_FAIL",
+                "LIMIT_INVALID",
+                "LOCATION_INVALID",
+                "MSG_ID_INVALID",
+                "OFFSET_INVALID"
+            ],
             "account.updateNotifySettings": [
                 "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID",
                 "PEER_ID_INVALID",
                 "SETTINGS_INVALID"
             ],
@@ -522,13 +542,6 @@
                 "PASSWORD_HASH_INVALID",
                 "PASSWORD_TOO_FRESH_X",
                 "SESSION_TOO_FRESH_X"
-            ],
-            "messages.editChatAbout": [
-                "CHANNEL_PRIVATE",
-                "CHAT_ABOUT_NOT_MODIFIED",
-                "CHAT_ADMIN_REQUIRED",
-                "CHAT_NOT_MODIFIED",
-                "PEER_ID_INVALID"
             ],
             "messages.exportChatInvite": [
                 "CHANNEL_PRIVATE",
@@ -559,6 +572,12 @@
                 "WEBPAGE_MEDIA_EMPTY",
                 "YOU_BLOCKED_USER"
             ],
+            "messages.updatePinnedMessage": [
+                "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED",
+                "CHAT_NOT_MODIFIED",
+                "MESSAGE_ID_INVALID"
+            ],
             "channels.createChannel": [
                 "CHANNELS_TOO_MUCH",
                 "CHAT_ABOUT_TOO_LONG",
@@ -579,10 +598,12 @@
                 "PEER_ID_INVALID",
                 "USER_NOT_PARTICIPANT"
             ],
-            "messages.updatePinnedMessage": [
+            "messages.getScheduledHistory": [
                 "CHAT_ADMIN_REQUIRED",
-                "CHAT_NOT_MODIFIED",
-                "MESSAGE_ID_INVALID"
+                "PEER_ID_INVALID"
+            ],
+            "messages.getScheduledMessages": [
+                "CHAT_ADMIN_REQUIRED"
             ],
             "messages.discardEncryption": [
                 "CHAT_ID_EMPTY",
@@ -682,6 +703,10 @@
                 "CONNECTION_LAYER_INVALID",
                 "INPUT_FETCH_FAIL"
             ],
+            "contacts.acceptContact": [
+                "CONTACT_ADD_MISSING",
+                "CONTACT_REQ_MISSING"
+            ],
             "contacts.addContact": [
                 "CONTACT_ID_INVALID",
                 "CONTACT_NAME_EMPTY"
@@ -695,9 +720,6 @@
             ],
             "contacts.unblock": [
                 "CONTACT_ID_INVALID"
-            ],
-            "contacts.acceptContact": [
-                "CONTACT_REQ_MISSING"
             ],
             "messages.sendEncryptedService": [
                 "DATA_INVALID",
@@ -741,14 +763,6 @@
             ],
             "contacts.importCard": [
                 "EXPORT_CARD_INVALID"
-            ],
-            "upload.getFile": [
-                "FILE_ID_INVALID",
-                "INPUT_FETCH_FAIL",
-                "LIMIT_INVALID",
-                "LOCATION_INVALID",
-                "MSG_ID_INVALID",
-                "OFFSET_INVALID"
             ],
             "upload.saveBigFilePart": [
                 "FILE_PART_EMPTY",
@@ -913,6 +927,10 @@
             "payments.validateRequestedInfo": [
                 "MESSAGE_ID_INVALID"
             ],
+            "bots.sendCustomRequest": [
+                "METHOD_INVALID",
+                "USER_BOT_INVALID"
+            ],
             "messages.deleteHistory": [
                 "MSG_ID_INVALID",
                 "PEER_ID_INVALID"
@@ -960,9 +978,6 @@
                 "PEER_ID_INVALID"
             ],
             "messages.getOnlines": [
-                "PEER_ID_INVALID"
-            ],
-            "messages.getScheduledHistory": [
                 "PEER_ID_INVALID"
             ],
             "messages.getStatsURL": [
@@ -1085,9 +1100,6 @@
             "contacts.getTopPeers": [
                 "TYPES_EMPTY"
             ],
-            "bots.sendCustomRequest": [
-                "USER_BOT_INVALID"
-            ],
             "users.setSecureValueErrors": [
                 "USER_ID_INVALID"
             ],
@@ -1171,6 +1183,9 @@
             "messages.importChatInvite": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "messages.readHistory": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "messages.readMentions": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1187,6 +1202,9 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "phone.getCallConfig": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "photos.getUserPhotos": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "updates.getChannelDifference": [
@@ -1270,6 +1288,9 @@
             "account.getAuthorizations": [
                 "SESSION_PASSWORD_NEEDED"
             ],
+            "account.updateProfile": [
+                "SESSION_PASSWORD_NEEDED"
+            ],
             "account.updateStatus": [
                 "SESSION_PASSWORD_NEEDED"
             ],
@@ -1283,6 +1304,9 @@
                 "SESSION_PASSWORD_NEEDED"
             ],
             "contacts.getStatuses": [
+                "SESSION_PASSWORD_NEEDED"
+            ],
+            "help.getTermsOfServiceUpdate": [
                 "SESSION_PASSWORD_NEEDED"
             ],
             "messages.checkChatInvite": [
@@ -1405,6 +1429,9 @@
             "messages.deleteMessages": [
                 "MESSAGE_DELETE_FORBIDDEN"
             ],
+            "messages.getPollVotes": [
+                "POLL_VOTE_REQUIRED"
+            ],
             "account.finishTakeoutSession": [
                 "TAKEOUT_REQUIRED"
             ],
@@ -1443,6 +1470,7 @@
         },
         "420": {
             "messages.forwardMessages": [
+                "P0NY_FLOODWAIT",
                 "SLOWMODE_WAIT_X"
             ],
             "messages.sendInlineBotResult": [
@@ -1762,6 +1790,9 @@
         "CONNECTION_SYSTEM_EMPTY": [
             "Connection system empty"
         ],
+        "CONTACT_ADD_MISSING": [
+            ""
+        ],
         "CONTACT_ID_INVALID": [
             "The provided contact ID is invalid"
         ],
@@ -1860,6 +1891,9 @@
         ],
         "FILE_PARTS_INVALID": [
             "The number of file parts is invalid"
+        ],
+        "FILE_REFERENCE_EXPIRED": [
+            "File reference expired, it must be refetched as described in https:\/\/core.telegram.org\/api\/file_reference"
         ],
         "FILEREF_UPGRADE_NEEDED": [
             "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference)"
@@ -2056,6 +2090,9 @@
         "MESSAGE_TOO_LONG": [
             "The provided message is too long"
         ],
+        "METHOD_INVALID": [
+            "The specified method is invalid"
+        ],
         "MSG_ID_INVALID": [
             "Invalid message ID provided"
         ],
@@ -2094,6 +2131,9 @@
         ],
         "OPTION_INVALID": [
             "Invalid option selected"
+        ],
+        "P0NY_FLOODWAIT": [
+            ""
         ],
         "PACK_SHORT_NAME_INVALID": [
             "Short pack name invalid"
@@ -2202,6 +2242,9 @@
         ],
         "POLL_OPTION_DUPLICATE": [
             "Duplicate poll options provided"
+        ],
+        "POLL_VOTE_REQUIRED": [
+            "Cast a vote in the poll before calling this method"
         ],
         "PRIVACY_KEY_INVALID": [
             "The privacy key is invalid"
