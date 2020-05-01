@@ -233,6 +233,7 @@
         "photos.deletePhotos",
         "photos.updateProfilePhoto",
         "photos.uploadProfilePhoto",
+        "stats.getBroadcastStats",
         "upload.getCdnFile",
         "upload.getWebFile"
     ]
