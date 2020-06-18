@@ -1,6 +1,26 @@
 {
     "ok": true,
     "result": {
+        "420": {
+            "account.deleteAccount": [
+                "2FA_CONFIRM_WAIT_X"
+            ],
+            "messages.forwardMessages": [
+                "SLOWMODE_WAIT_X"
+            ],
+            "messages.sendInlineBotResult": [
+                "SLOWMODE_WAIT_X"
+            ],
+            "messages.sendMedia": [
+                "SLOWMODE_WAIT_X"
+            ],
+            "messages.sendMessage": [
+                "SLOWMODE_WAIT_X"
+            ],
+            "account.initTakeoutSession": [
+                "TAKEOUT_INIT_DELAY_X"
+            ]
+        },
         "400": {
             "account.updateProfile": [
                 "ABOUT_TOO_LONG",
@@ -42,12 +62,15 @@
                 "GIF_CONTENT_TYPE_INVALID",
                 "MESSAGE_EMPTY",
                 "MESSAGE_TOO_LONG",
+                "PHOTO_CONTENT_TYPE_INVALID",
+                "PHOTO_CONTENT_URL_EMPTY",
                 "PHOTO_INVALID",
                 "PHOTO_THUMB_URL_EMPTY",
                 "QUERY_ID_INVALID",
                 "REPLY_MARKUP_INVALID",
                 "RESULT_TYPE_INVALID",
                 "RESULTS_TOO_MUCH",
+                "SEND_MESSAGE_MEDIA_INVALID",
                 "SEND_MESSAGE_TYPE_INVALID",
                 "START_PARAM_INVALID",
                 "WEBDOCUMENT_INVALID",
@@ -116,6 +139,7 @@
                 "USER_BANNED_IN_CHANNEL",
                 "USER_BLOCKED",
                 "USER_BOT",
+                "USER_CHANNELS_TOO_MUCH",
                 "USER_ID_INVALID",
                 "USER_KICKED",
                 "USER_NOT_MUTUAL_CONTACT",
@@ -237,9 +261,11 @@
                 "PHOTO_SAVE_FILE_INVALID",
                 "POLL_ANSWERS_INVALID",
                 "POLL_OPTION_DUPLICATE",
+                "POLL_OPTION_INVALID",
                 "QUIZ_CORRECT_ANSWERS_EMPTY",
                 "REPLY_MARKUP_BUY_EMPTY",
                 "REPLY_MARKUP_INVALID",
+                "SCHEDULE_TOO_MUCH",
                 "TTL_MEDIA_INVALID",
                 "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED",
@@ -495,6 +521,11 @@
                 "CHANNEL_INVALID",
                 "PEER_ID_INVALID"
             ],
+            "messages.getUnreadMentions": [
+                "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE",
+                "PEER_ID_INVALID"
+            ],
             "messages.importChatInvite": [
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
@@ -608,6 +639,7 @@
                 "CHAT_ADMIN_REQUIRED",
                 "CHAT_RESTRICTED",
                 "INLINE_RESULT_EXPIRED",
+                "INPUT_USER_DEACTIVATED",
                 "MEDIA_EMPTY",
                 "PEER_ID_INVALID",
                 "QUERY_ID_EMPTY",
@@ -621,7 +653,8 @@
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
                 "CHAT_NOT_MODIFIED",
-                "MESSAGE_ID_INVALID"
+                "MESSAGE_ID_INVALID",
+                "PIN_RESTRICTED"
             ],
             "channels.createChannel": [
                 "CHANNELS_TOO_MUCH",
@@ -675,6 +708,7 @@
             ],
             "messages.editChatAdmin": [
                 "CHAT_ID_INVALID",
+                "USER_ID_INVALID",
                 "USER_NOT_PARTICIPANT"
             ],
             "messages.editChatPhoto": [
@@ -755,6 +789,7 @@
                 "CONNECTION_LAYER_INVALID",
                 "CONNECTION_NOT_INITED",
                 "CONNECTION_SYSTEM_EMPTY",
+                "DATA_INVALID",
                 "INPUT_LAYER_INVALID"
             ],
             "contacts.resolveUsername": [
@@ -867,6 +902,11 @@
             "folders.editPeerFolders": [
                 "FOLDER_ID_INVALID"
             ],
+            "messages.getDialogs": [
+                "FOLDER_ID_INVALID",
+                "INPUT_CONSTRUCTOR_INVALID",
+                "OFFSET_PEER_ID_INVALID"
+            ],
             "messages.getPinnedDialogs": [
                 "FOLDER_ID_INVALID"
             ],
@@ -884,10 +924,6 @@
             ],
             "account.sendConfirmPhoneCode": [
                 "HASH_INVALID"
-            ],
-            "messages.getDialogs": [
-                "INPUT_CONSTRUCTOR_INVALID",
-                "OFFSET_PEER_ID_INVALID"
             ],
             "invokeWithTakeout": [
                 "INPUT_FETCH_FAIL",
@@ -1051,9 +1087,6 @@
                 "PEER_ID_INVALID"
             ],
             "messages.getStatsURL": [
-                "PEER_ID_INVALID"
-            ],
-            "messages.getUnreadMentions": [
                 "PEER_ID_INVALID"
             ],
             "messages.hideReportSpam": [
@@ -1220,6 +1253,9 @@
             "channels.joinChannel": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "channels.leaveChannel": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "channels.readHistory": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1248,6 +1284,9 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.checkChatInvite": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "messages.deleteHistory": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.editMessage": [
@@ -1287,6 +1326,9 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.sendMessage": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "messages.sendMultiMedia": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.setTyping": [
@@ -1335,6 +1377,9 @@
             "auth.sendCode": [
                 "PHONE_NUMBER_INVALID",
                 "PHONE_PASSWORD_FLOOD"
+            ],
+            "contacts.getLocated": [
+                "USERPIC_UPLOAD_REQUIRED"
             ]
         },
         "401": {
@@ -1466,6 +1511,7 @@
                 "CHAT_SEND_GIFS_FORBIDDEN",
                 "CHAT_SEND_INLINE_FORBIDDEN",
                 "CHAT_SEND_MEDIA_FORBIDDEN",
+                "CHAT_SEND_STICKERS_FORBIDDEN",
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "messages.sendMedia": [
@@ -1580,6 +1626,9 @@
             "msgs_state_req": [
                 "Invalid msgs_state_req query"
             ],
+            "help.getCdnConfig": [
+                "No workers running"
+            ],
             "updates.getChannelDifference": [
                 "No workers running"
             ],
@@ -1588,28 +1637,23 @@
             ]
         },
         "-504": {
+            "messages.getDialogs": [
+                "memory limit exit"
+            ],
             "messages.getHistory": [
+                "memory limit exit"
+            ],
+            "messages.sendMedia": [
+                "memory limit exit"
+            ],
+            "messages.sendMessage": [
                 "memory limit exit"
             ],
             "updates.getChannelDifference": [
                 "memory limit exit"
-            ]
-        },
-        "420": {
-            "messages.forwardMessages": [
-                "SLOWMODE_WAIT_X"
             ],
-            "messages.sendInlineBotResult": [
-                "SLOWMODE_WAIT_X"
-            ],
-            "messages.sendMedia": [
-                "SLOWMODE_WAIT_X"
-            ],
-            "messages.sendMessage": [
-                "SLOWMODE_WAIT_X"
-            ],
-            "account.initTakeoutSession": [
-                "TAKEOUT_INIT_DELAY_X"
+            "updates.getDifference": [
+                "memory limit exit"
             ]
         },
         "-503": {
@@ -1697,6 +1741,18 @@
             "messages.sendMessage": [
                 "Timeout"
             ],
+            "messages.setTyping": [
+                "Timeout"
+            ],
+            "messages.uploadMedia": [
+                "Timeout"
+            ],
+            "photos.deletePhotos": [
+                "Timeout"
+            ],
+            "photos.uploadProfilePhoto": [
+                "Timeout"
+            ],
             "stats.getBroadcastStats": [
                 "Timeout"
             ],
@@ -1729,6 +1785,9 @@
     "human_result": {
         "-429": [
             "Too many requests"
+        ],
+        "2FA_CONFIRM_WAIT_X": [
+            "Since this account is active and protected by a 2FA password, we will delete it in 1 week for security purposes. You can cancel this process at any time, you'll be able to reset your account in X seconds."
         ],
         "ABOUT_TOO_LONG": [
             "About string too long"
@@ -1845,7 +1904,7 @@
             "channel\/supergroup not available"
         ],
         "CHANNEL_TOO_LARGE": [
-            ""
+            "Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change)"
         ],
         "CHANNELS_ADMIN_PUBLIC_TOO_MUCH": [
             "You're admin of too many public channels, make some channels private to change the username of this channel"
@@ -2405,6 +2464,12 @@
         "PHONE_PASSWORD_PROTECTED": [
             "This phone is password protected"
         ],
+        "PHOTO_CONTENT_TYPE_INVALID": [
+            "Photo mime-type invalid"
+        ],
+        "PHOTO_CONTENT_URL_EMPTY": [
+            "Photo URL invalid"
+        ],
         "PHOTO_CROP_FILE_MISSING": [
             "Photo crop file missing"
         ],
@@ -2426,6 +2491,9 @@
         "PHOTO_THUMB_URL_EMPTY": [
             "Photo thumbnail URL is empty"
         ],
+        "PIN_RESTRICTED": [
+            "You can't pin messages"
+        ],
         "PINNED_DIALOGS_TOO_MUCH": [
             "Too many pinned dialogs"
         ],
@@ -2434,6 +2502,9 @@
         ],
         "POLL_OPTION_DUPLICATE": [
             "Duplicate poll options provided"
+        ],
+        "POLL_OPTION_INVALID": [
+            "Invalid poll option provided"
         ],
         "POLL_VOTE_REQUIRED": [
             "Cast a vote in the poll before calling this method"
@@ -2539,6 +2610,9 @@
         ],
         "SECONDS_INVALID": [
             "Invalid duration provided"
+        ],
+        "SEND_MESSAGE_MEDIA_INVALID": [
+            "Invalid media provided"
         ],
         "SEND_MESSAGE_TYPE_INVALID": [
             "The message type is invalid"
@@ -2719,6 +2793,9 @@
         ],
         "USERNAME_OCCUPIED": [
             "The provided username is already occupied"
+        ],
+        "USERPIC_UPLOAD_REQUIRED": [
+            "You must have a profile picture to publish your geolocation"
         ],
         "USERS_TOO_FEW": [
             "Not enough users (to create a chat, for example)"
