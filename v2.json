@@ -1112,6 +1112,11 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
             }
         ],
         "messages.editMessage": [
@@ -1335,7 +1340,7 @@
             {
                 "error_code": 420,
                 "error_message": "SLOWMODE_WAIT_X",
-                "error_description": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat."
+                "error_description": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat."
             },
             {
                 "error_code": -503,
@@ -1905,7 +1910,7 @@
             {
                 "error_code": 420,
                 "error_message": "SLOWMODE_WAIT_X",
-                "error_description": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat."
+                "error_description": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat."
             },
             {
                 "error_code": -503,
@@ -2082,7 +2087,7 @@
             {
                 "error_code": 420,
                 "error_message": "SLOWMODE_WAIT_X",
-                "error_description": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat."
+                "error_description": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat."
             },
             {
                 "error_code": -503,
@@ -3763,7 +3768,7 @@
             {
                 "error_code": 420,
                 "error_message": "SLOWMODE_WAIT_X",
-                "error_description": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat."
+                "error_description": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat."
             },
             {
                 "error_code": -503,
@@ -3992,6 +3997,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
             },
@@ -4189,16 +4199,6 @@
             },
             {
                 "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_1192227_X",
-                "error_description": "Invalid method"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_1604042050_X",
-                "error_description": "Invalid method"
-            },
-            {
-                "error_code": 400,
                 "error_message": "SECONDS_INVALID",
                 "error_description": "Invalid duration provided"
             }
@@ -4343,6 +4343,11 @@
                 "error_code": 400,
                 "error_message": "DATA_TOO_LONG",
                 "error_description": "Data too long"
+            },
+            {
+                "error_code": 400,
+                "error_message": "ENCRYPTION_DECLINED",
+                "error_description": "The secret chat was declined"
             },
             {
                 "error_code": 400,
@@ -4628,67 +4633,6 @@
                 "error_code": 400,
                 "error_message": "INPUT_FETCH_FAIL",
                 "error_description": "Failed deserializing TL payload"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_1400137063_X",
-                "error_description": "Invalid method"
-            }
-        ],
-        "req_pq": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_1615239032_X",
-                "error_description": "Invalid method, use req_pq_multi instead"
-            }
-        ],
-        "msg_resend_ans_req": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_2249243371_X",
-                "error_description": ""
-            }
-        ],
-        "auth.sendCall": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_2792825930_X",
-                "error_description": ""
-            }
-        ],
-        "req_pq_multi": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_3195965169_X",
-                "error_description": "Invalid method"
-            }
-        ],
-        "req_DH_params": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_3608339646_X",
-                "error_description": "Invalid method"
-            }
-        ],
-        "test.useError": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_4000689921_X",
-                "error_description": "Invalid method"
-            }
-        ],
-        "set_client_DH_params": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_4110704415_X",
-                "error_description": "Invalid method"
-            }
-        ],
-        "test.useConfigSimple": [
-            {
-                "error_code": 400,
-                "error_message": "INPUT_METHOD_INVALID_4189565501_X",
-                "error_description": "Invalid method"
             }
         ],
         "msg_resend_req": [
@@ -5356,6 +5300,11 @@
             }
         ],
         "account.getTheme": [
+            {
+                "error_code": 400,
+                "error_message": "THEME_FORMAT_INVALID",
+                "error_description": "Invalid theme format provided"
+            },
             {
                 "error_code": 400,
                 "error_message": "THEME_INVALID",

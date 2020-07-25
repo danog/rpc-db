@@ -721,6 +721,7 @@
             },
             "messages.editChatAdmin": {
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "USER_ID_INVALID": "USER_ID_INVALID",
                 "USER_NOT_PARTICIPANT": "USER_NOT_PARTICIPANT"
             },
@@ -785,8 +786,6 @@
             },
             "channels.toggleSlowMode": {
                 "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
-                "INPUT_METHOD_INVALID_1192227_X": "INPUT_METHOD_INVALID_1192227_X",
-                "INPUT_METHOD_INVALID_1604042050_X": "INPUT_METHOD_INVALID_1604042050_X",
                 "SECONDS_INVALID": "SECONDS_INVALID"
             },
             "auth.recoverPassword": {
@@ -849,6 +848,7 @@
             },
             "messages.sendEncryptedFile": {
                 "DATA_TOO_LONG": "DATA_TOO_LONG",
+                "ENCRYPTION_DECLINED": "ENCRYPTION_DECLINED",
                 "MD5_CHECKSUM_INVALID": "MD5_CHECKSUM_INVALID",
                 "MSG_WAIT_FAILED": "MSG_WAIT_FAILED"
             },
@@ -951,36 +951,11 @@
                 "HASH_INVALID": "HASH_INVALID"
             },
             "invokeWithTakeout": {
-                "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL",
-                "INPUT_METHOD_INVALID_1400137063_X": "INPUT_METHOD_INVALID_1400137063_X"
+                "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL"
             },
             "users.getUsers": {
                 "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID",
                 "MSG_ID_INVALID": "MSG_ID_INVALID"
-            },
-            "req_pq": {
-                "INPUT_METHOD_INVALID_1615239032_X": "INPUT_METHOD_INVALID_1615239032_X"
-            },
-            "msg_resend_ans_req": {
-                "INPUT_METHOD_INVALID_2249243371_X": "INPUT_METHOD_INVALID_2249243371_X"
-            },
-            "auth.sendCall": {
-                "INPUT_METHOD_INVALID_2792825930_X": "INPUT_METHOD_INVALID_2792825930_X"
-            },
-            "req_pq_multi": {
-                "INPUT_METHOD_INVALID_3195965169_X": "INPUT_METHOD_INVALID_3195965169_X"
-            },
-            "req_DH_params": {
-                "INPUT_METHOD_INVALID_3608339646_X": "INPUT_METHOD_INVALID_3608339646_X"
-            },
-            "test.useError": {
-                "INPUT_METHOD_INVALID_4000689921_X": "INPUT_METHOD_INVALID_4000689921_X"
-            },
-            "set_client_DH_params": {
-                "INPUT_METHOD_INVALID_4110704415_X": "INPUT_METHOD_INVALID_4110704415_X"
-            },
-            "test.useConfigSimple": {
-                "INPUT_METHOD_INVALID_4189565501_X": "INPUT_METHOD_INVALID_4189565501_X"
             },
             "messages.checkChatInvite": {
                 "INVITE_HASH_EMPTY": "INVITE_HASH_EMPTY",
@@ -1214,6 +1189,7 @@
                 "THEME_FILE_INVALID": "THEME_FILE_INVALID"
             },
             "account.getTheme": {
+                "THEME_FORMAT_INVALID": "THEME_FORMAT_INVALID",
                 "THEME_INVALID": "THEME_INVALID"
             },
             "account.registerDevice": {
@@ -1262,6 +1238,9 @@
             },
             "channels.updateUsername": {
                 "CHAT_OCCUPY_USERNAME_FAILED": "CHAT_OCCUPY_USERNAME_FAILED"
+            },
+            "stats.getBroadcastStats": {
+                "CHP_CALL_FAIL": "CHP_CALL_FAIL"
             },
             "messages.acceptEncryption": {
                 "ENCRYPTION_OCCUPY_ADMIN_FAILED": "ENCRYPTION_OCCUPY_ADMIN_FAILED",
@@ -1968,6 +1947,9 @@
             "invokeWithLayer": {
                 "Timeout": "Timeout"
             },
+            "messages.deleteHistory": {
+                "Timeout": "Timeout"
+            },
             "messages.forwardMessages": {
                 "Timeout": "Timeout"
             },
@@ -2111,6 +2093,7 @@
         "CHAT_SEND_STICKERS_FORBIDDEN": "You can't send stickers in this chat.",
         "CHAT_TITLE_EMPTY": "No chat title provided",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat",
+        "CHP_CALL_FAIL": "Internal failure",
         "CODE_EMPTY": "The provided code is empty",
         "CODE_HASH_INVALID": "Code hash invalid",
         "CODE_INVALID": "Code invalid",
@@ -2180,18 +2163,6 @@
         "INPUT_FETCH_ERROR": "An error occurred while deserializing TL parameters",
         "INPUT_FETCH_FAIL": "Failed deserializing TL payload",
         "INPUT_LAYER_INVALID": "The provided layer is invalid",
-        "INPUT_METHOD_INVALID": "The provided method is invalid",
-        "INPUT_METHOD_INVALID_1192227_X": "Invalid method",
-        "INPUT_METHOD_INVALID_1400137063_X": "Invalid method",
-        "INPUT_METHOD_INVALID_1604042050_X": "Invalid method",
-        "INPUT_METHOD_INVALID_1615239032_X": "Invalid method, use req_pq_multi instead",
-        "INPUT_METHOD_INVALID_2249243371_X": "",
-        "INPUT_METHOD_INVALID_2792825930_X": "",
-        "INPUT_METHOD_INVALID_3195965169_X": "Invalid method",
-        "INPUT_METHOD_INVALID_3608339646_X": "Invalid method",
-        "INPUT_METHOD_INVALID_4000689921_X": "Invalid method",
-        "INPUT_METHOD_INVALID_4110704415_X": "Invalid method",
-        "INPUT_METHOD_INVALID_4189565501_X": "Invalid method",
         "INPUT_REQUEST_TOO_LONG": "The request is too big",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted",
         "INTERDC_1_CALL_ERROR": "An error occurred while communicating with DC 1",
@@ -2308,12 +2279,6 @@
         "RANDOM_LENGTH_INVALID": "Random length invalid",
         "RANGES_INVALID": "Invalid range provided",
         "REACTION_EMPTY": "Empty reaction provided",
-        "Received bad_msg_notification: container msg_id is the same as msg_id of a previously received message (this must never happen)": "",
-        "Received bad_msg_notification: invalid container": "",
-        "Received bad_msg_notification: message too old, and it cannot be verified whether the server has received a message with this msg_id or not": "",
-        "Received bad_msg_notification: msg_seqno too high (similarly, there is a message with a higher msg_id but with either a lower or an equal and odd seqno)": "",
-        "Received bad_msg_notification: msg_seqno too low (the server has already received a message with a lower msg_id but with either a higher or an equal and odd seqno)": "",
-        "Received bad_msg_notification: odd msg_seqno expected (relevant message), but even received": "",
         "REG_ID_GENERATE_FAILED": "Failure while generating registration ID",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid",
@@ -2337,7 +2302,7 @@
         "SETTINGS_INVALID": "Invalid settings were provided",
         "SHA256_HASH_INVALID": "The provided SHA256 hash is invalid",
         "SIGN_IN_FAILED": "Failure while signing in",
-        "SLOWMODE_WAIT_X": "Slowmode is enabled in this chat: you must wait for the specified number of seconds before sending another message to the chat.",
+        "SLOWMODE_WAIT_X": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat.",
         "SMS_CODE_CREATE_FAILED": "An error occurred while creating the SMS code",
         "SRP_ID_INVALID": "Invalid SRP ID provided",
         "SRP_PASSWORD_CHANGED": "Password has changed",
@@ -2357,6 +2322,7 @@
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first",
         "TEMP_AUTH_KEY_EMPTY": "No temporary auth key provided",
         "THEME_FILE_INVALID": "Invalid theme file provided",
+        "THEME_FORMAT_INVALID": "Invalid theme format provided",
         "THEME_INVALID": "Invalid theme provided",
         "Timeout": "Timeout while fetching data",
         "TMP_PASSWORD_DISABLED": "The temporary password is disabled",
