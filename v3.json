@@ -34,15 +34,18 @@
             "channels.editAdmin": {
                 "ADMINS_TOO_MUCH": "ADMINS_TOO_MUCH",
                 "BOT_CHANNELS_NA": "BOT_CHANNELS_NA",
+                "BOT_GROUPS_BLOCKED": "BOT_GROUPS_BLOCKED",
                 "BOTS_TOO_MUCH": "BOTS_TOO_MUCH",
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "USER_BLOCKED": "USER_BLOCKED",
                 "USER_CREATOR": "USER_CREATOR",
                 "USER_ID_INVALID": "USER_ID_INVALID",
-                "USER_NOT_MUTUAL_CONTACT": "USER_NOT_MUTUAL_CONTACT"
+                "USER_NOT_MUTUAL_CONTACT": "USER_NOT_MUTUAL_CONTACT",
+                "USERS_TOO_MUCH": "USERS_TOO_MUCH"
             },
             "auth.sendCode": {
                 "API_ID_INVALID": "API_ID_INVALID",
@@ -69,6 +72,7 @@
                 "PHOTO_THUMB_URL_EMPTY": "PHOTO_THUMB_URL_EMPTY",
                 "QUERY_ID_INVALID": "QUERY_ID_INVALID",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
+                "RESULT_ID_DUPLICATE": "RESULT_ID_DUPLICATE",
                 "RESULT_TYPE_INVALID": "RESULT_TYPE_INVALID",
                 "RESULTS_TOO_MUCH": "RESULTS_TOO_MUCH",
                 "SEND_MESSAGE_MEDIA_INVALID": "SEND_MESSAGE_MEDIA_INVALID",
@@ -92,6 +96,12 @@
                 "CONNECTION_SYSTEM_EMPTY": "CONNECTION_SYSTEM_EMPTY",
                 "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID",
                 "INVITE_HASH_EXPIRED": "INVITE_HASH_EXPIRED"
+            },
+            "auth.importLoginToken": {
+                "AUTH_TOKEN_EXPIRED": "AUTH_TOKEN_EXPIRED"
+            },
+            "auth.acceptLoginToken": {
+                "AUTH_TOKEN_INVALIDX": "AUTH_TOKEN_INVALIDX"
             },
             "messages.editChatDefaultBannedRights": {
                 "BANNED_RIGHTS_INVALID": "BANNED_RIGHTS_INVALID",
@@ -122,6 +132,7 @@
                 "PINNED_DIALOGS_TOO_MUCH": "PINNED_DIALOGS_TOO_MUCH",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
                 "SCHEDULE_BOT_NOT_ALLOWED": "SCHEDULE_BOT_NOT_ALLOWED",
+                "SCHEDULE_DATE_TOO_LATE": "SCHEDULE_DATE_TOO_LATE",
                 "SCHEDULE_TOO_MUCH": "SCHEDULE_TOO_MUCH",
                 "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED",
@@ -165,12 +176,17 @@
             },
             "messages.uploadMedia": {
                 "BOT_MISSING": "BOT_MISSING",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "FILE_PARTS_INVALID": "FILE_PARTS_INVALID",
                 "IMAGE_PROCESS_FAILED": "IMAGE_PROCESS_FAILED",
+                "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
                 "MEDIA_INVALID": "MEDIA_INVALID",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID",
+                "PHOTO_SAVE_FILE_INVALID": "PHOTO_SAVE_FILE_INVALID",
+                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
                 "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED"
             },
             "stickers.addStickerToSet": {
@@ -185,10 +201,13 @@
                 "BOT_MISSING": "BOT_MISSING",
                 "PACK_SHORT_NAME_INVALID": "PACK_SHORT_NAME_INVALID",
                 "PACK_SHORT_NAME_OCCUPIED": "PACK_SHORT_NAME_OCCUPIED",
+                "PACK_TITLE_INVALID": "PACK_TITLE_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "SHORTNAME_OCCUPY_FAILED": "SHORTNAME_OCCUPY_FAILED",
                 "STICKER_EMOJI_INVALID": "STICKER_EMOJI_INVALID",
                 "STICKER_FILE_INVALID": "STICKER_FILE_INVALID",
                 "STICKER_PNG_DIMENSIONS": "STICKER_PNG_DIMENSIONS",
+                "STICKER_PNG_NOPNG": "STICKER_PNG_NOPNG",
                 "STICKERS_EMPTY": "STICKERS_EMPTY",
                 "USER_ID_INVALID": "USER_ID_INVALID"
             },
@@ -224,6 +243,8 @@
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "RANDOM_ID_INVALID": "RANDOM_ID_INVALID",
+                "SCHEDULE_TOO_MUCH": "SCHEDULE_TOO_MUCH",
+                "SLOWMODE_MULTI_MSGS_DISABLED": "SLOWMODE_MULTI_MSGS_DISABLED",
                 "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED",
                 "USER_IS_BOT": "USER_IS_BOT",
@@ -255,6 +276,7 @@
                 "POLL_ANSWERS_INVALID": "POLL_ANSWERS_INVALID",
                 "POLL_OPTION_DUPLICATE": "POLL_OPTION_DUPLICATE",
                 "POLL_OPTION_INVALID": "POLL_OPTION_INVALID",
+                "QUIZ_CORRECT_ANSWER_INVALID": "QUIZ_CORRECT_ANSWER_INVALID",
                 "QUIZ_CORRECT_ANSWERS_EMPTY": "QUIZ_CORRECT_ANSWERS_EMPTY",
                 "REPLY_MARKUP_BUY_EMPTY": "REPLY_MARKUP_BUY_EMPTY",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
@@ -266,6 +288,12 @@
                 "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
                 "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
                 "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
+            },
+            "stats.getBroadcastStats": {
+                "BROADCAST_REQUIRED": "BROADCAST_REQUIRED",
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
             },
             "messages.editMessage": {
                 "BUTTON_DATA_INVALID": "BUTTON_DATA_INVALID",
@@ -281,6 +309,7 @@
                 "MESSAGE_EMPTY": "MESSAGE_EMPTY",
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "MESSAGE_NOT_MODIFIED": "MESSAGE_NOT_MODIFIED",
+                "MESSAGE_TOO_LONG": "MESSAGE_TOO_LONG",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "REPLY_MARKUP_INVALID": "REPLY_MARKUP_INVALID",
@@ -392,7 +421,8 @@
             "channels.exportMessageLink": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID"
+                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
             "channels.getAdminLog": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -457,7 +487,8 @@
             },
             "channels.readMessageContents": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE"
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
             "channels.reportSpam": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -497,6 +528,7 @@
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHANNELS_ADMIN_PUBLIC_TOO_MUCH": "CHANNELS_ADMIN_PUBLIC_TOO_MUCH",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
                 "USERNAME_INVALID": "USERNAME_INVALID",
                 "USERNAME_NOT_MODIFIED": "USERNAME_NOT_MODIFIED",
                 "USERNAME_OCCUPIED": "USERNAME_OCCUPIED"
@@ -514,6 +546,7 @@
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
@@ -521,6 +554,13 @@
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
+            },
+            "messages.getPeerDialogs": {
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
@@ -543,6 +583,7 @@
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "USER_ALREADY_PARTICIPANT": "USER_ALREADY_PARTICIPANT",
+                "USER_CHANNELS_TOO_MUCH": "USER_CHANNELS_TOO_MUCH",
                 "USERS_TOO_MUCH": "USERS_TOO_MUCH"
             },
             "messages.readMentions": {
@@ -557,10 +598,28 @@
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "INPUT_CONSTRUCTOR_INVALID": "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "PEER_ID_NOT_SUPPORTED": "PEER_ID_NOT_SUPPORTED",
                 "SEARCH_QUERY_EMPTY": "SEARCH_QUERY_EMPTY",
                 "USER_ID_INVALID": "USER_ID_INVALID"
+            },
+            "messages.sendInlineBotResult": {
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "CHAT_RESTRICTED": "CHAT_RESTRICTED",
+                "INLINE_RESULT_EXPIRED": "INLINE_RESULT_EXPIRED",
+                "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
+                "MEDIA_EMPTY": "MEDIA_EMPTY",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "QUERY_ID_EMPTY": "QUERY_ID_EMPTY",
+                "RESULT_ID_EMPTY": "RESULT_ID_EMPTY",
+                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
+                "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
+                "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
+                "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
             },
             "messages.setTyping": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -579,12 +638,12 @@
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID"
             },
             "msgs_state_req": {
-                "CHANNEL_INVALID": "CHANNEL_INVALID"
-            },
-            "stats.getBroadcastStats": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
+            },
+            "stats.getMessagePublicForwards": {
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID"
             },
             "updates.getChannelDifference": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -605,7 +664,8 @@
                 "LIMIT_INVALID": "LIMIT_INVALID",
                 "LOCATION_INVALID": "LOCATION_INVALID",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
-                "OFFSET_INVALID": "OFFSET_INVALID"
+                "OFFSET_INVALID": "OFFSET_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "account.reportPeer": {
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
@@ -636,26 +696,6 @@
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
-            "messages.getPeerDialogs": {
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "MSG_ID_INVALID": "MSG_ID_INVALID",
-                "PEER_ID_INVALID": "PEER_ID_INVALID"
-            },
-            "messages.sendInlineBotResult": {
-                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
-                "CHAT_RESTRICTED": "CHAT_RESTRICTED",
-                "INLINE_RESULT_EXPIRED": "INLINE_RESULT_EXPIRED",
-                "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
-                "MEDIA_EMPTY": "MEDIA_EMPTY",
-                "PEER_ID_INVALID": "PEER_ID_INVALID",
-                "QUERY_ID_EMPTY": "QUERY_ID_EMPTY",
-                "RESULT_ID_EMPTY": "RESULT_ID_EMPTY",
-                "USER_BANNED_IN_CHANNEL": "USER_BANNED_IN_CHANNEL",
-                "WEBPAGE_CURL_FAILED": "WEBPAGE_CURL_FAILED",
-                "WEBPAGE_MEDIA_EMPTY": "WEBPAGE_MEDIA_EMPTY",
-                "YOU_BLOCKED_USER": "YOU_BLOCKED_USER"
-            },
             "messages.updatePinnedMessage": {
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
@@ -663,10 +703,26 @@
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "PIN_RESTRICTED": "PIN_RESTRICTED"
             },
+            "users.getFullUser": {
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "USER_ID_INVALID": "USER_ID_INVALID"
+            },
+            "users.getUsers": {
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CONNECTION_NOT_INITED": "CONNECTION_NOT_INITED",
+                "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID",
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
+            },
             "channels.createChannel": {
                 "CHANNELS_TOO_MUCH": "CHANNELS_TOO_MUCH",
                 "CHAT_ABOUT_TOO_LONG": "CHAT_ABOUT_TOO_LONG",
                 "CHAT_TITLE_EMPTY": "CHAT_TITLE_EMPTY"
+            },
+            "channels.toggleSlowMode": {
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
+                "SECONDS_INVALID": "SECONDS_INVALID"
             },
             "messages.addChatUser": {
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
@@ -681,6 +737,7 @@
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "USER_ID_INVALID": "USER_ID_INVALID",
                 "USER_NOT_PARTICIPANT": "USER_NOT_PARTICIPANT"
             },
             "messages.getMessageEditData": {
@@ -693,7 +750,8 @@
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.getScheduledMessages": {
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.sendMultiMedia": {
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
@@ -702,6 +760,9 @@
                 "MULTI_MEDIA_TOO_LONG": "MULTI_MEDIA_TOO_LONG",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "RANDOM_ID_EMPTY": "RANDOM_ID_EMPTY"
+            },
+            "stats.getMessageStats": {
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
             },
             "messages.discardEncryption": {
                 "CHAT_ID_EMPTY": "CHAT_ID_EMPTY",
@@ -727,11 +788,13 @@
             },
             "messages.editChatPhoto": {
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
                 "INPUT_CONSTRUCTOR_INVALID": "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "PHOTO_CROP_SIZE_SMALL": "PHOTO_CROP_SIZE_SMALL",
-                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID"
+                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID",
+                "PHOTO_INVALID": "PHOTO_INVALID"
             },
             "messages.editChatTitle": {
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
@@ -784,10 +847,6 @@
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
                 "USERS_TOO_FEW": "USERS_TOO_FEW"
             },
-            "channels.toggleSlowMode": {
-                "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
-                "SECONDS_INVALID": "SECONDS_INVALID"
-            },
             "auth.recoverPassword": {
                 "CODE_EMPTY": "CODE_EMPTY"
             },
@@ -803,14 +862,17 @@
                 "CONNECTION_API_ID_INVALID": "CONNECTION_API_ID_INVALID",
                 "CONNECTION_APP_VERSION_EMPTY": "CONNECTION_APP_VERSION_EMPTY",
                 "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
+                "CONNECTION_LANG_PACK_INVALID": "CONNECTION_LANG_PACK_INVALID",
                 "CONNECTION_LAYER_INVALID": "CONNECTION_LAYER_INVALID",
                 "CONNECTION_NOT_INITED": "CONNECTION_NOT_INITED",
                 "CONNECTION_SYSTEM_EMPTY": "CONNECTION_SYSTEM_EMPTY",
                 "CONNECTION_SYSTEM_LANG_CODE_EMPTY": "CONNECTION_SYSTEM_LANG_CODE_EMPTY",
                 "DATA_INVALID": "DATA_INVALID",
-                "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID"
+                "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID",
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
             "contacts.resolveUsername": {
+                "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "CONNECTION_LAYER_INVALID": "CONNECTION_LAYER_INVALID",
                 "USERNAME_INVALID": "USERNAME_INVALID",
                 "USERNAME_NOT_OCCUPIED": "USERNAME_NOT_OCCUPIED"
@@ -832,7 +894,8 @@
             "contacts.block": {
                 "CONTACT_ID_INVALID": "CONTACT_ID_INVALID",
                 "INPUT_USER_DEACTIVATED": "INPUT_USER_DEACTIVATED",
-                "MSG_ID_INVALID": "MSG_ID_INVALID"
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "contacts.deleteContact": {
                 "CONTACT_ID_INVALID": "CONTACT_ID_INVALID"
@@ -889,6 +952,7 @@
                 "FILE_PART_INVALID": "FILE_PART_INVALID",
                 "FILE_PART_SIZE_CHANGED": "FILE_PART_SIZE_CHANGED",
                 "FILE_PART_SIZE_INVALID": "FILE_PART_SIZE_INVALID",
+                "FILE_PART_TOO_BIG": "FILE_PART_TOO_BIG",
                 "FILE_PARTS_INVALID": "FILE_PARTS_INVALID"
             },
             "upload.saveFilePart": {
@@ -901,14 +965,20 @@
                 "IMAGE_PROCESS_FAILED": "IMAGE_PROCESS_FAILED",
                 "LOCATION_INVALID": "LOCATION_INVALID",
                 "PHOTO_CROP_SIZE_SMALL": "PHOTO_CROP_SIZE_SMALL",
-                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID"
+                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID",
+                "PHOTO_ID_INVALID": "PHOTO_ID_INVALID"
             },
             "photos.uploadProfilePhoto": {
                 "FILE_PARTS_INVALID": "FILE_PARTS_INVALID",
                 "IMAGE_PROCESS_FAILED": "IMAGE_PROCESS_FAILED",
                 "PHOTO_CROP_FILE_MISSING": "PHOTO_CROP_FILE_MISSING",
                 "PHOTO_CROP_SIZE_SMALL": "PHOTO_CROP_SIZE_SMALL",
-                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID"
+                "PHOTO_EXT_INVALID": "PHOTO_EXT_INVALID",
+                "PHOTO_FILE_MISSING": "PHOTO_FILE_MISSING",
+                "VIDEO_FILE_INVALID": "VIDEO_FILE_INVALID"
+            },
+            "messages.updateDialogFilter": {
+                "FILTER_ID_INVALID": "FILTER_ID_INVALID"
             },
             "auth.signUp": {
                 "FIRSTNAME_INVALID": "FIRSTNAME_INVALID",
@@ -942,7 +1012,8 @@
                 "GIF_ID_INVALID": "GIF_ID_INVALID"
             },
             "stats.loadAsyncGraph": {
-                "GRAPH_INVALID_RELOAD": "GRAPH_INVALID_RELOAD"
+                "GRAPH_INVALID_RELOAD": "GRAPH_INVALID_RELOAD",
+                "GRAPH_OUTDATED_RELOAD": "GRAPH_OUTDATED_RELOAD"
             },
             "account.resetAuthorization": {
                 "HASH_INVALID": "HASH_INVALID"
@@ -952,10 +1023,6 @@
             },
             "invokeWithTakeout": {
                 "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL"
-            },
-            "users.getUsers": {
-                "INPUT_LAYER_INVALID": "INPUT_LAYER_INVALID",
-                "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
             "messages.checkChatInvite": {
                 "INVITE_HASH_EMPTY": "INVITE_HASH_EMPTY",
@@ -983,6 +1050,9 @@
             "photos.getUserPhotos": {
                 "MAX_ID_INVALID": "MAX_ID_INVALID",
                 "USER_ID_INVALID": "USER_ID_INVALID"
+            },
+            "channels.editLocation": {
+                "MEGAGROUP_REQUIRED": "MEGAGROUP_REQUIRED"
             },
             "auth.sendInvites": {
                 "MESSAGE_EMPTY": "MESSAGE_EMPTY"
@@ -1017,7 +1087,8 @@
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "MESSAGE_POLL_CLOSED": "MESSAGE_POLL_CLOSED",
                 "OPTION_INVALID": "OPTION_INVALID",
-                "OPTIONS_TOO_MUCH": "OPTIONS_TOO_MUCH"
+                "OPTIONS_TOO_MUCH": "OPTIONS_TOO_MUCH",
+                "REVOTE_NOT_ALLOWED": "REVOTE_NOT_ALLOWED"
             },
             "messages.setGameScore": {
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
@@ -1048,13 +1119,12 @@
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "USER_ID_INVALID": "USER_ID_INVALID"
             },
+            "messages.getPollVotes": {
+                "MSG_ID_INVALID": "MSG_ID_INVALID"
+            },
             "messages.reportSpam": {
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
-            },
-            "users.getFullUser": {
-                "MSG_ID_INVALID": "MSG_ID_INVALID",
-                "USER_ID_INVALID": "USER_ID_INVALID"
             },
             "messages.readEncryptedHistory": {
                 "MSG_WAIT_FAILED": "MSG_WAIT_FAILED"
@@ -1138,7 +1208,8 @@
                 "PRIVACY_KEY_INVALID": "PRIVACY_KEY_INVALID"
             },
             "account.setPrivacy": {
-                "PRIVACY_KEY_INVALID": "PRIVACY_KEY_INVALID"
+                "PRIVACY_KEY_INVALID": "PRIVACY_KEY_INVALID",
+                "PRIVACY_VALUE_INVALID": "PRIVACY_VALUE_INVALID"
             },
             "bots.answerWebhookJSONQuery": {
                 "QUERY_ID_INVALID": "QUERY_ID_INVALID",
@@ -1242,6 +1313,10 @@
             "stats.getBroadcastStats": {
                 "CHP_CALL_FAIL": "CHP_CALL_FAIL"
             },
+            "stats.loadAsyncGraph": {
+                "CHP_CALL_FAIL": "CHP_CALL_FAIL",
+                "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT"
+            },
             "messages.acceptEncryption": {
                 "ENCRYPTION_OCCUPY_ADMIN_FAILED": "ENCRYPTION_OCCUPY_ADMIN_FAILED",
                 "ENCRYPTION_OCCUPY_FAILED": "ENCRYPTION_OCCUPY_FAILED"
@@ -1270,16 +1345,26 @@
                 "STORE_INVALID_SCALAR_TYPE": "STORE_INVALID_SCALAR_TYPE",
                 "VOLUME_LOC_NOT_FOUND": "VOLUME_LOC_NOT_FOUND"
             },
+            "messages.sendMedia": {
+                "IMAGE_ENGINE_DOWN": "IMAGE_ENGINE_DOWN",
+                "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT",
+                "RANDOM_ID_DUPLICATE": "RANDOM_ID_DUPLICATE",
+                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED",
+                "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
+            },
             "photos.updateProfilePhoto": {
                 "IMAGE_ENGINE_DOWN": "IMAGE_ENGINE_DOWN",
+                "MEMBER_FETCH_FAILED": "MEMBER_FETCH_FAILED",
                 "NEED_MEMBER_INVALID": "NEED_MEMBER_INVALID",
-                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
+                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED",
+                "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
             "photos.uploadProfilePhoto": {
                 "IMAGE_ENGINE_DOWN": "IMAGE_ENGINE_DOWN",
                 "MEMBER_FETCH_FAILED": "MEMBER_FETCH_FAILED",
                 "NEED_MEMBER_INVALID": "NEED_MEMBER_INVALID",
-                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
+                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED",
+                "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
             "users.getUsers": {
                 "MEMBER_NO_LOCATION": "MEMBER_NO_LOCATION",
@@ -1293,6 +1378,9 @@
             },
             "account.updateUsername": {
                 "MEMBER_OCCUPY_USERNAME_FAILED": "MEMBER_OCCUPY_USERNAME_FAILED"
+            },
+            "messages.deleteHistory": {
+                "MSG_RANGE_UNSYNC": "MSG_RANGE_UNSYNC"
             },
             "messages.getHistory": {
                 "MSG_RANGE_UNSYNC": "MSG_RANGE_UNSYNC",
@@ -1365,6 +1453,10 @@
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY",
                 "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
             },
+            "messages.editMessage": {
+                "MT_SEND_QUEUE_TOO_LONG": "MT_SEND_QUEUE_TOO_LONG",
+                "PTS_CHANGE_EMPTY": "PTS_CHANGE_EMPTY"
+            },
             "messages.sendInlineBotResult": {
                 "MT_SEND_QUEUE_TOO_LONG": "MT_SEND_QUEUE_TOO_LONG",
                 "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT",
@@ -1375,13 +1467,18 @@
                 "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
             },
             "messages.editChatPhoto": {
-                "NEED_CHAT_INVALID": "NEED_CHAT_INVALID"
+                "NEED_CHAT_INVALID": "NEED_CHAT_INVALID",
+                "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
             "messages.editChatTitle": {
                 "NEED_CHAT_INVALID": "NEED_CHAT_INVALID"
             },
             "messages.updatePinnedMessage": {
                 "NEED_CHAT_INVALID": "NEED_CHAT_INVALID"
+            },
+            "channels.readHistory": {
+                "NEED_MEMBER_INVALID": "NEED_MEMBER_INVALID",
+                "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
             },
             "contacts.deleteContacts": {
                 "NEED_MEMBER_INVALID": "NEED_MEMBER_INVALID"
@@ -1398,14 +1495,6 @@
             "auth.resendCode": {
                 "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT"
             },
-            "messages.sendMedia": {
-                "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT",
-                "RANDOM_ID_DUPLICATE": "RANDOM_ID_DUPLICATE",
-                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
-            },
-            "stats.loadAsyncGraph": {
-                "POSTPONED_TIMEOUT": "POSTPONED_TIMEOUT"
-            },
             "messages.sendMultiMedia": {
                 "RANDOM_ID_DUPLICATE": "RANDOM_ID_DUPLICATE",
                 "WORKER_BUSY_TOO_LONG_RETRY": "WORKER_BUSY_TOO_LONG_RETRY"
@@ -1414,9 +1503,6 @@
                 "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
             },
             "channels.inviteToChannel": {
-                "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
-            },
-            "channels.readHistory": {
                 "RPC_CONNECT_FAILED": "RPC_CONNECT_FAILED"
             },
             "help.getConfig": {
@@ -1435,7 +1521,8 @@
                 "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
             },
             "upload.saveBigFilePart": {
-                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED"
+                "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED",
+                "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
             "upload.getCdnFile": {
                 "UNKNOWN_METHOD": "UNKNOWN_METHOD"
@@ -1446,6 +1533,9 @@
         },
         "406": {
             "account.checkUsername": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "account.getAuthorizations": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "account.updateProfile": {
@@ -1491,6 +1581,9 @@
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "channels.updateUsername": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "contacts.getContacts": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "contacts.importContacts": {
@@ -1541,6 +1634,9 @@
             "messages.getPeerDialogs": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "messages.getUnreadMentions": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "messages.importChatInvite": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1562,7 +1658,16 @@
             "messages.sendMultiMedia": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "messages.sendVote": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "messages.setTyping": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "messages.startBot": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "messages.updatePinnedMessage": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "phone.getCallConfig": {
@@ -1672,13 +1777,22 @@
             "auth.signIn": {
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
+            "channels.createChannel": {
+                "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
+            },
             "channels.getChannels": {
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
             "channels.joinChannel": {
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
+            "contacts.getContacts": {
+                "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
+            },
             "contacts.getStatuses": {
+                "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
+            },
+            "contacts.importContacts": {
                 "SESSION_PASSWORD_NEEDED": "SESSION_PASSWORD_NEEDED"
             },
             "help.getTermsOfServiceUpdate": {
@@ -1707,6 +1821,10 @@
             }
         },
         "403": {
+            "messages.getPollVotes": {
+                "BROADCAST_FORBIDDEN": "BROADCAST_FORBIDDEN",
+                "POLL_VOTE_REQUIRED": "POLL_VOTE_REQUIRED"
+            },
             "channels.getFullChannel": {
                 "CHANNEL_PUBLIC_GROUP_NA": "CHANNEL_PUBLIC_GROUP_NA"
             },
@@ -1782,6 +1900,11 @@
             "invokeWithLayer": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
+            "messages.addChatUser": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN",
+                "USER_NOT_MUTUAL_CONTACT": "USER_NOT_MUTUAL_CONTACT",
+                "USER_PRIVACY_RESTRICTED": "USER_PRIVACY_RESTRICTED"
+            },
             "messages.editChatAbout": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
@@ -1809,9 +1932,6 @@
             "messages.deleteMessages": {
                 "MESSAGE_DELETE_FORBIDDEN": "MESSAGE_DELETE_FORBIDDEN"
             },
-            "messages.getPollVotes": {
-                "POLL_VOTE_REQUIRED": "POLL_VOTE_REQUIRED"
-            },
             "account.finishTakeoutSession": {
                 "TAKEOUT_REQUIRED": "TAKEOUT_REQUIRED"
             },
@@ -1837,10 +1957,6 @@
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED",
                 "USER_PRIVACY_RESTRICTED": "USER_PRIVACY_RESTRICTED"
             },
-            "messages.addChatUser": {
-                "USER_NOT_MUTUAL_CONTACT": "USER_NOT_MUTUAL_CONTACT",
-                "USER_PRIVACY_RESTRICTED": "USER_PRIVACY_RESTRICTED"
-            },
             "channels.createChannel": {
                 "USER_RESTRICTED": "USER_RESTRICTED"
             },
@@ -1859,13 +1975,49 @@
             "msgs_state_req": {
                 "Invalid msgs_state_req query": "Invalid msgs_state_req query"
             },
+            "account.updateProfile": {
+                "No workers running": "No workers running"
+            },
+            "auth.sendCode": {
+                "No workers running": "No workers running"
+            },
+            "channels.getMessages": {
+                "No workers running": "No workers running"
+            },
+            "channels.getParticipants": {
+                "No workers running": "No workers running"
+            },
             "help.getCdnConfig": {
+                "No workers running": "No workers running"
+            },
+            "help.getConfig": {
+                "No workers running": "No workers running"
+            },
+            "help.getNearestDc": {
+                "No workers running": "No workers running"
+            },
+            "messages.getMessagesViews": {
+                "No workers running": "No workers running"
+            },
+            "messages.readHistory": {
+                "No workers running": "No workers running"
+            },
+            "messages.sendMessage": {
+                "No workers running": "No workers running"
+            },
+            "photos.deletePhotos": {
+                "No workers running": "No workers running"
+            },
+            "photos.updateProfilePhoto": {
                 "No workers running": "No workers running"
             },
             "updates.getChannelDifference": {
                 "No workers running": "No workers running"
             },
             "updates.getDifference": {
+                "No workers running": "No workers running"
+            },
+            "users.getFullUser": {
                 "No workers running": "No workers running"
             }
         },
@@ -1902,6 +2054,9 @@
             "auth.resetAuthorizations": {
                 "Timeout": "Timeout"
             },
+            "auth.sendCode": {
+                "Timeout": "Timeout"
+            },
             "channels.deleteMessages": {
                 "Timeout": "Timeout"
             },
@@ -1935,6 +2090,9 @@
             "contacts.deleteContacts": {
                 "Timeout": "Timeout"
             },
+            "contacts.resolveUsername": {
+                "Timeout": "Timeout"
+            },
             "contacts.search": {
                 "Timeout": "Timeout"
             },
@@ -1950,10 +2108,16 @@
             "messages.deleteHistory": {
                 "Timeout": "Timeout"
             },
+            "messages.editMessage": {
+                "Timeout": "Timeout"
+            },
             "messages.forwardMessages": {
                 "Timeout": "Timeout"
             },
             "messages.getBotCallbackAnswer": {
+                "Timeout": "Timeout"
+            },
+            "messages.getDhConfig": {
                 "Timeout": "Timeout"
             },
             "messages.getDialogs": {
@@ -1971,10 +2135,16 @@
             "messages.getPeerDialogs": {
                 "Timeout": "Timeout"
             },
+            "messages.getUnreadMentions": {
+                "Timeout": "Timeout"
+            },
             "messages.importChatInvite": {
                 "Timeout": "Timeout"
             },
             "messages.readHistory": {
+                "Timeout": "Timeout"
+            },
+            "messages.search": {
                 "Timeout": "Timeout"
             },
             "messages.sendInlineBotResult": {
@@ -2019,6 +2189,9 @@
             "upload.saveBigFilePart": {
                 "Timeout": "Timeout"
             },
+            "upload.saveFilePart": {
+                "Timeout": "Timeout"
+            },
             "users.getFullUser": {
                 "Timeout": "Timeout"
             },
@@ -2045,6 +2218,8 @@
         "AUTH_KEY_PERM_EMPTY": "The temporary auth key must be binded to the permanent auth key to use these methods.",
         "AUTH_KEY_UNREGISTERED": "The authorization key has expired",
         "AUTH_RESTART": "Restart the authorization process",
+        "AUTH_TOKEN_EXPIRED": "The authorization token has expired",
+        "AUTH_TOKEN_INVALIDX": "The specified auth token is invalid",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges",
         "BOT_DOMAIN_INVALID": "Bot domain invalid",
@@ -2055,8 +2230,10 @@
         "BOT_MISSING": "This method can only be run by a bot",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel",
+        "BROADCAST_FORBIDDEN": "",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid",
         "BROADCAST_PUBLIC_VOTERS_FORBIDDEN": "You can't forward polls with public voters",
+        "BROADCAST_REQUIRED": "This method can only be called on a channel, please use stats.getMegagroupStats for supergroups",
         "BUTTON_DATA_INVALID": "The data of one or more of the buttons you provided is invalid",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid",
         "BUTTON_URL_INVALID": "Button URL invalid",
@@ -2138,9 +2315,11 @@
         "FILE_PART_LENGTH_INVALID": "The length of a file part is invalid",
         "FILE_PART_SIZE_CHANGED": "Provided file part size has changed",
         "FILE_PART_SIZE_INVALID": "The provided file part size is invalid",
+        "FILE_PART_TOO_BIG": "The uploaded file part is too big",
         "FILE_PARTS_INVALID": "The number of file parts is invalid",
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in https:\/\/core.telegram.org\/api\/file_reference",
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference)",
+        "FILTER_ID_INVALID": "The specified filter ID is invalid",
         "FIRSTNAME_INVALID": "The first name is invalid",
         "FLOOD_WAIT_666": "Spooky af m8",
         "FOLDER_ID_INVALID": "Invalid folder ID",
@@ -2151,6 +2330,7 @@
         "GIF_CONTENT_TYPE_INVALID": "GIF content-type invalid",
         "GIF_ID_INVALID": "The provided GIF ID is invalid",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token",
+        "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats",
         "GROUPED_ID_OCCUPY_FAULED": "Internal error",
         "GROUPED_MEDIA_INVALID": "Invalid grouped media",
         "HASH_INVALID": "The provided hash is invalid",
@@ -2193,6 +2373,7 @@
         "MEDIA_INVALID": "Media invalid",
         "MEDIA_PREV_INVALID": "Previous media invalid",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID",
+        "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup",
         "MEMBER_FETCH_FAILED": "Internal error",
         "MEMBER_NO_LOCATION": "An internal failure occurred while fetching user info (couldn't find location)",
         "MEMBER_OCCUPY_PRIMARY_LOC_FAILED": "Occupation of primary member location failed",
@@ -2226,6 +2407,7 @@
         "P0NY_FLOODWAIT": "No",
         "PACK_SHORT_NAME_INVALID": "Short pack name invalid",
         "PACK_SHORT_NAME_OCCUPIED": "A stickerpack with this name already exists",
+        "PACK_TITLE_INVALID": "The stickerpack title is invalid",
         "PARTICIPANT_CALL_FAILED": "Failure while making call",
         "PARTICIPANT_VERSION_OUTDATED": "The other participant does not use an up to date telegram client with support for calls",
         "PARTICIPANTS_TOO_FEW": "Not enough participants",
@@ -2256,6 +2438,8 @@
         "PHOTO_CROP_FILE_MISSING": "Photo crop file missing",
         "PHOTO_CROP_SIZE_SMALL": "Photo is too small",
         "PHOTO_EXT_INVALID": "The extension of the photo is invalid",
+        "PHOTO_FILE_MISSING": "Profile photo file missing",
+        "PHOTO_ID_INVALID": "Photo ID invalid",
         "PHOTO_INVALID": "Photo invalid",
         "PHOTO_INVALID_DIMENSIONS": "The photo dimensions are invalid",
         "PHOTO_SAVE_FILE_INVALID": "Internal issues, try again later",
@@ -2268,10 +2452,12 @@
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method",
         "POSTPONED_TIMEOUT": "Internal error",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid",
+        "PRIVACY_VALUE_INVALID": "The specified privacy rule combination is invalid",
         "PTS_CHANGE_EMPTY": "No PTS change",
         "QUERY_ID_EMPTY": "The query ID is empty",
         "QUERY_ID_INVALID": "The query ID is invalid",
         "QUERY_TOO_SHORT": "The query string is too short",
+        "QUIZ_CORRECT_ANSWER_INVALID": "An invalid value was provided to the correct_answers field",
         "QUIZ_CORRECT_ANSWERS_EMPTY": "No correct quiz answer was specified",
         "RANDOM_ID_DUPLICATE": "You provided a random ID that was already used",
         "RANDOM_ID_EMPTY": "Random ID empty",
@@ -2282,9 +2468,11 @@
         "REG_ID_GENERATE_FAILED": "Failure while generating registration ID",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid",
+        "RESULT_ID_DUPLICATE": "You provided a duplicate result ID",
         "RESULT_ID_EMPTY": "Result ID empty",
         "RESULT_TYPE_INVALID": "Result type invalid",
         "RESULTS_TOO_MUCH": "Too many results were provided",
+        "REVOTE_NOT_ALLOWED": "You cannot change your vote",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this",
         "RPC_CALL_FAIL": "Telegram is having internal issues, please try again later.",
         "RPC_CONNECT_FAILED": "Internal error",
@@ -2292,6 +2480,7 @@
         "RSA_DECRYPT_FAILED": "Internal RSA decryption failed",
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided",
+        "SCHEDULE_DATE_TOO_LATE": "You can't schedule a message this far in the future",
         "SCHEDULE_TOO_MUCH": "There are too many scheduled messages",
         "SEARCH_QUERY_EMPTY": "The search query is empty",
         "SECONDS_INVALID": "Invalid duration provided",
@@ -2301,7 +2490,9 @@
         "SESSION_TOO_FRESH_X": "This session was created less than 24 hours ago, try again in X seconds",
         "SETTINGS_INVALID": "Invalid settings were provided",
         "SHA256_HASH_INVALID": "The provided SHA256 hash is invalid",
+        "SHORTNAME_OCCUPY_FAILED": "An internal error occurred",
         "SIGN_IN_FAILED": "Failure while signing in",
+        "SLOWMODE_MULTI_MSGS_DISABLED": "Slowmode is enabled, you cannot forward multiple messages to this group.",
         "SLOWMODE_WAIT_X": "Slowmode is enabled in this chat: wait X seconds before sending another message to this chat.",
         "SMS_CODE_CREATE_FAILED": "An error occurred while creating the SMS code",
         "SRP_ID_INVALID": "Invalid SRP ID provided",
@@ -2314,6 +2505,7 @@
         "STICKER_ID_INVALID": "The provided sticker ID is invalid",
         "STICKER_INVALID": "The provided sticker is invalid",
         "STICKER_PNG_DIMENSIONS": "Sticker png dimensions invalid",
+        "STICKER_PNG_NOPNG": "One of the specified stickers is not a valid PNG file",
         "STICKERS_EMPTY": "No sticker provided",
         "STICKERSET_INVALID": "The provided sticker set is invalid",
         "STORAGE_CHECK_FAILED": "Server storage check failed",
@@ -2333,6 +2525,7 @@
         "TYPES_EMPTY": "No top peer type was provided",
         "UNKNOWN_METHOD": "The method you tried to call cannot be called on non-CDN DCs",
         "UNTIL_DATE_INVALID": "Invalid until date provided",
+        "UPLOAD_NO_VOLUME": "An internal error occurred",
         "URL_INVALID": "Invalid URL provided",
         "USER_ADMIN_INVALID": "You're not an admin",
         "USER_ALREADY_PARTICIPANT": "The user is already in the group",
@@ -2361,6 +2554,7 @@
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example)",
         "USERS_TOO_MUCH": "The maximum number of users has been exceeded (to create a chat, for example)",
+        "VIDEO_FILE_INVALID": "The specified video file is invalid",
         "VOLUME_LOC_NOT_FOUND": "Internal error",
         "WC_CONVERT_URL_INVALID": "WC convert URL invalid",
         "WEBDOCUMENT_INVALID": "Invalid webdocument URL provided",
