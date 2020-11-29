@@ -348,6 +348,7 @@
             ],
             "updates.getDifference": [
                 "CDN_METHOD_INVALID",
+                "CONNECTION_DEVICE_MODEL_EMPTY",
                 "DATE_EMPTY",
                 "PERSISTENT_TIMESTAMP_EMPTY",
                 "PERSISTENT_TIMESTAMP_INVALID"
@@ -639,7 +640,8 @@
             ],
             "msgs_state_req": [
                 "CHANNEL_INVALID",
-                "MSG_ID_INVALID"
+                "MSG_ID_INVALID",
+                "USER_IS_BLOCKED"
             ],
             "stats.getMessagePublicForwards": [
                 "CHANNEL_INVALID",
@@ -648,6 +650,7 @@
             "updates.getChannelDifference": [
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
+                "CONNECTION_DEVICE_MODEL_EMPTY",
                 "FROM_MESSAGE_BOT_DISABLED",
                 "MSG_ID_INVALID",
                 "PERSISTENT_TIMESTAMP_EMPTY",
@@ -685,6 +688,13 @@
                 "PASSWORD_TOO_FRESH_X",
                 "SESSION_TOO_FRESH_X",
                 "USER_ID_INVALID"
+            ],
+            "messages.deleteHistory": [
+                "CHANNEL_PRIVATE",
+                "CHAT_ID_INVALID",
+                "MESSAGE_ID_INVALID",
+                "MSG_ID_INVALID",
+                "PEER_ID_INVALID"
             ],
             "messages.exportChatInvite": [
                 "CHANNEL_PRIVATE",
@@ -761,6 +771,9 @@
                 "PEER_ID_INVALID",
                 "RANDOM_ID_EMPTY"
             ],
+            "stats.getMegagroupStats": [
+                "CHAT_ADMIN_REQUIRED"
+            ],
             "stats.getMessageStats": [
                 "CHAT_ADMIN_REQUIRED"
             ],
@@ -773,12 +786,6 @@
                 "CHAT_ID_INVALID",
                 "ENCRYPTION_ALREADY_ACCEPTED",
                 "ENCRYPTION_ALREADY_DECLINED"
-            ],
-            "messages.deleteHistory": [
-                "CHAT_ID_INVALID",
-                "MESSAGE_ID_INVALID",
-                "MSG_ID_INVALID",
-                "PEER_ID_INVALID"
             ],
             "messages.editChatAdmin": [
                 "CHAT_ID_INVALID",
@@ -928,7 +935,8 @@
                 "NEW_SALT_INVALID",
                 "NEW_SETTINGS_INVALID",
                 "PASSWORD_HASH_INVALID",
-                "SRP_ID_INVALID"
+                "SRP_ID_INVALID",
+                "SRP_PASSWORD_CHANGED"
             ],
             "account.verifyEmail": [
                 "EMAIL_VERIFY_EXPIRED"
@@ -939,7 +947,8 @@
                 "TEMP_AUTH_KEY_EMPTY"
             ],
             "msgs_ack": [
-                "ENCRYPTED_MESSAGE_INVALID"
+                "ENCRYPTED_MESSAGE_INVALID",
+                "USER_IS_BLOCKED"
             ],
             "messages.setBotPrecheckoutResults": [
                 "ERROR_TEXT_EMPTY"
@@ -1294,6 +1303,9 @@
             "account.checkUsername": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "account.deleteAccount": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "account.getAuthorizations": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1339,6 +1351,9 @@
             "channels.readHistory": [
                 "AUTH_KEY_DUPLICATED"
             ],
+            "channels.readMessageContents": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "channels.updateUsername": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1376,6 +1391,9 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.forwardMessages": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "messages.getAllChats": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.getBotCallbackAnswer": [
@@ -1737,6 +1755,9 @@
             "account.updateProfile": [
                 "No workers running"
             ],
+            "auth.bindTempAuthKey": [
+                "No workers running"
+            ],
             "auth.sendCode": [
                 "No workers running"
             ],
@@ -1774,6 +1795,9 @@
                 "No workers running"
             ],
             "updates.getDifference": [
+                "No workers running"
+            ],
+            "upload.getFile": [
                 "No workers running"
             ],
             "users.getFullUser": [
@@ -1849,6 +1873,9 @@
             "contacts.deleteContacts": [
                 "Timeout"
             ],
+            "contacts.getContactIDs": [
+                "Timeout"
+            ],
             "contacts.resolveUsername": [
                 "Timeout"
             ],
@@ -1888,6 +1915,9 @@
             "messages.getInlineBotResults": [
                 "Timeout"
             ],
+            "messages.getMessages": [
+                "Timeout"
+            ],
             "messages.getMessagesViews": [
                 "Timeout"
             ],
@@ -1922,6 +1952,9 @@
                 "Timeout"
             ],
             "photos.deletePhotos": [
+                "Timeout"
+            ],
+            "photos.updateProfilePhoto": [
                 "Timeout"
             ],
             "photos.uploadProfilePhoto": [

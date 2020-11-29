@@ -6,6 +6,11 @@
                 "error_code": 420,
                 "error_message": "2FA_CONFIRM_WAIT_X",
                 "error_description": "Since this account is active and protected by a 2FA password, we will delete it in 1 week for security purposes. You can cancel this process at any time, you'll be able to reset your account in X seconds."
+            },
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
             }
         ],
         "account.updateProfile": [
@@ -933,6 +938,33 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
+        "channels.readMessageContents": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            }
+        ],
         "channels.updateUsername": [
             {
                 "error_code": 406,
@@ -1206,6 +1238,11 @@
                 "error_code": 406,
                 "error_message": "AUTH_KEY_DUPLICATED",
                 "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
             },
             {
                 "error_code": 400,
@@ -1500,6 +1537,18 @@
                 "error_code": 400,
                 "error_message": "YOU_BLOCKED_USER",
                 "error_description": "You blocked this user"
+            }
+        ],
+        "messages.getAllChats": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
             }
         ],
         "messages.getBotCallbackAnswer": [
@@ -2610,6 +2659,11 @@
                 "error_code": 400,
                 "error_message": "PHOTO_ID_INVALID",
                 "error_description": "Photo ID invalid"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
             }
         ],
         "updates.getChannelDifference": [
@@ -2632,6 +2686,11 @@
                 "error_code": 403,
                 "error_message": "CHANNEL_PUBLIC_GROUP_NA",
                 "error_description": "channel\/supergroup not available"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CONNECTION_DEVICE_MODEL_EMPTY",
+                "error_description": "Device model empty"
             },
             {
                 "error_code": 400,
@@ -2694,6 +2753,11 @@
                 "error_code": 400,
                 "error_message": "CDN_METHOD_INVALID",
                 "error_description": "You can't call this method in a CDN DC"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CONNECTION_DEVICE_MODEL_EMPTY",
+                "error_description": "Device model empty"
             },
             {
                 "error_code": 400,
@@ -2803,6 +2867,11 @@
                 "error_code": 400,
                 "error_message": "MSG_ID_INVALID",
                 "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": -500,
+                "error_message": "No workers running",
+                "error_description": "Internal error"
             },
             {
                 "error_code": 400,
@@ -3771,28 +3840,6 @@
                 "error_description": "You're not a member of this supergroup\/channel"
             }
         ],
-        "channels.readMessageContents": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_INVALID",
-                "error_description": "The provided channel is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 400,
-                "error_message": "MSG_ID_INVALID",
-                "error_description": "Invalid message ID provided"
-            },
-            {
-                "error_code": -503,
-                "error_message": "Timeout",
-                "error_description": "Timeout while fetching data"
-            }
-        ],
         "channels.reportSpam": [
             {
                 "error_code": 400,
@@ -4103,6 +4150,11 @@
                 "error_code": 400,
                 "error_message": "MSG_ID_INVALID",
                 "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
             }
         ],
         "stats.getMessagePublicForwards": [
@@ -4384,6 +4436,13 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            }
+        ],
+        "stats.getMegagroupStats": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
             }
         ],
         "stats.getMessageStats": [
@@ -4850,6 +4909,11 @@
                 "error_code": 400,
                 "error_message": "SRP_ID_INVALID",
                 "error_description": "Invalid SRP ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SRP_PASSWORD_CHANGED",
+                "error_description": "Password has changed"
             }
         ],
         "account.verifyEmail": [
@@ -4869,6 +4933,11 @@
                 "error_code": 400,
                 "error_message": "INPUT_REQUEST_TOO_LONG",
                 "error_description": "The request is too big"
+            },
+            {
+                "error_code": -500,
+                "error_message": "No workers running",
+                "error_description": "Internal error"
             },
             {
                 "error_code": 400,
@@ -4891,6 +4960,11 @@
                 "error_code": -500,
                 "error_message": "Invalid msgs_ack query",
                 "error_description": "Invalid msgs_ack query"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
             }
         ],
         "messages.setBotPrecheckoutResults": [
@@ -5664,13 +5738,6 @@
                 "error_description": "2FA is enabled, use a password to login"
             }
         ],
-        "messages.getAllChats": [
-            {
-                "error_code": 401,
-                "error_message": "SESSION_PASSWORD_NEEDED",
-                "error_description": "2FA is enabled, use a password to login"
-            }
-        ],
         "messages.getDocumentByHash": [
             {
                 "error_code": 400,
@@ -5768,6 +5835,20 @@
             }
         ],
         "contacts.deleteContacts": [
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            }
+        ],
+        "contacts.getContactIDs": [
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            }
+        ],
+        "messages.getMessages": [
             {
                 "error_code": -503,
                 "error_message": "Timeout",

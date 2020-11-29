@@ -348,6 +348,7 @@
             },
             "updates.getDifference": {
                 "CDN_METHOD_INVALID": "CDN_METHOD_INVALID",
+                "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "DATE_EMPTY": "DATE_EMPTY",
                 "PERSISTENT_TIMESTAMP_EMPTY": "PERSISTENT_TIMESTAMP_EMPTY",
                 "PERSISTENT_TIMESTAMP_INVALID": "PERSISTENT_TIMESTAMP_INVALID"
@@ -639,7 +640,8 @@
             },
             "msgs_state_req": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
-                "MSG_ID_INVALID": "MSG_ID_INVALID"
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "USER_IS_BLOCKED": "USER_IS_BLOCKED"
             },
             "stats.getMessagePublicForwards": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -648,6 +650,7 @@
             "updates.getChannelDifference": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CONNECTION_DEVICE_MODEL_EMPTY": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "FROM_MESSAGE_BOT_DISABLED": "FROM_MESSAGE_BOT_DISABLED",
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "PERSISTENT_TIMESTAMP_EMPTY": "PERSISTENT_TIMESTAMP_EMPTY",
@@ -685,6 +688,13 @@
                 "PASSWORD_TOO_FRESH_X": "PASSWORD_TOO_FRESH_X",
                 "SESSION_TOO_FRESH_X": "SESSION_TOO_FRESH_X",
                 "USER_ID_INVALID": "USER_ID_INVALID"
+            },
+            "messages.deleteHistory": {
+                "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
+                "MSG_ID_INVALID": "MSG_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.exportChatInvite": {
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
@@ -761,6 +771,9 @@
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "RANDOM_ID_EMPTY": "RANDOM_ID_EMPTY"
             },
+            "stats.getMegagroupStats": {
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
+            },
             "stats.getMessageStats": {
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
             },
@@ -773,12 +786,6 @@
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
                 "ENCRYPTION_ALREADY_ACCEPTED": "ENCRYPTION_ALREADY_ACCEPTED",
                 "ENCRYPTION_ALREADY_DECLINED": "ENCRYPTION_ALREADY_DECLINED"
-            },
-            "messages.deleteHistory": {
-                "CHAT_ID_INVALID": "CHAT_ID_INVALID",
-                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
-                "MSG_ID_INVALID": "MSG_ID_INVALID",
-                "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
             "messages.editChatAdmin": {
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
@@ -928,7 +935,8 @@
                 "NEW_SALT_INVALID": "NEW_SALT_INVALID",
                 "NEW_SETTINGS_INVALID": "NEW_SETTINGS_INVALID",
                 "PASSWORD_HASH_INVALID": "PASSWORD_HASH_INVALID",
-                "SRP_ID_INVALID": "SRP_ID_INVALID"
+                "SRP_ID_INVALID": "SRP_ID_INVALID",
+                "SRP_PASSWORD_CHANGED": "SRP_PASSWORD_CHANGED"
             },
             "account.verifyEmail": {
                 "EMAIL_VERIFY_EXPIRED": "EMAIL_VERIFY_EXPIRED"
@@ -939,7 +947,8 @@
                 "TEMP_AUTH_KEY_EMPTY": "TEMP_AUTH_KEY_EMPTY"
             },
             "msgs_ack": {
-                "ENCRYPTED_MESSAGE_INVALID": "ENCRYPTED_MESSAGE_INVALID"
+                "ENCRYPTED_MESSAGE_INVALID": "ENCRYPTED_MESSAGE_INVALID",
+                "USER_IS_BLOCKED": "USER_IS_BLOCKED"
             },
             "messages.setBotPrecheckoutResults": {
                 "ERROR_TEXT_EMPTY": "ERROR_TEXT_EMPTY"
@@ -1366,6 +1375,9 @@
                 "STORAGE_CHECK_FAILED": "STORAGE_CHECK_FAILED",
                 "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
+            "account.updateProfile": {
+                "MEMBER_FETCH_FAILED": "MEMBER_FETCH_FAILED"
+            },
             "users.getUsers": {
                 "MEMBER_NO_LOCATION": "MEMBER_NO_LOCATION",
                 "MSGID_DECREASE_RETRY": "MSGID_DECREASE_RETRY",
@@ -1535,6 +1547,9 @@
             "account.checkUsername": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "account.deleteAccount": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "account.getAuthorizations": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1580,6 +1595,9 @@
             "channels.readHistory": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "channels.readMessageContents": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "channels.updateUsername": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
@@ -1617,6 +1635,9 @@
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "messages.forwardMessages": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
+            "messages.getAllChats": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
             "messages.getBotCallbackAnswer": {
@@ -1978,6 +1999,9 @@
             "account.updateProfile": {
                 "No workers running": "No workers running"
             },
+            "auth.bindTempAuthKey": {
+                "No workers running": "No workers running"
+            },
             "auth.sendCode": {
                 "No workers running": "No workers running"
             },
@@ -2015,6 +2039,9 @@
                 "No workers running": "No workers running"
             },
             "updates.getDifference": {
+                "No workers running": "No workers running"
+            },
+            "upload.getFile": {
                 "No workers running": "No workers running"
             },
             "users.getFullUser": {
@@ -2090,6 +2117,9 @@
             "contacts.deleteContacts": {
                 "Timeout": "Timeout"
             },
+            "contacts.getContactIDs": {
+                "Timeout": "Timeout"
+            },
             "contacts.resolveUsername": {
                 "Timeout": "Timeout"
             },
@@ -2129,6 +2159,9 @@
             "messages.getInlineBotResults": {
                 "Timeout": "Timeout"
             },
+            "messages.getMessages": {
+                "Timeout": "Timeout"
+            },
             "messages.getMessagesViews": {
                 "Timeout": "Timeout"
             },
@@ -2163,6 +2196,9 @@
                 "Timeout": "Timeout"
             },
             "photos.deletePhotos": {
+                "Timeout": "Timeout"
+            },
+            "photos.updateProfilePhoto": {
                 "Timeout": "Timeout"
             },
             "photos.uploadProfilePhoto": {
