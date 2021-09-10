@@ -2164,11 +2164,6 @@
                 "memory limit(?)"
             ]
         },
-        "20": {
-            "messages.sendMedia": [
-                "Received bad_msg_notification: message too old, and it cannot be verified whether the server has received a message with this msg_id or not"
-            ]
-        },
         "-503": {
             "account.resetAuthorization": [
                 "Timeout"
@@ -2358,11 +2353,6 @@
             ],
             "users.getUsers": [
                 "Timeout"
-            ]
-        },
-        "666": {
-            "daemon.summon": [
-                "venus"
             ]
         }
     },
@@ -3514,7 +3504,7 @@
             "The maximum number of users has been exceeded (to create a chat, for example)"
         ],
         "venus": [
-            ""
+            "delete"
         ],
         "VIDEO_FILE_INVALID": [
             "The specified video file is invalid"

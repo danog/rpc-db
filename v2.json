@@ -406,7 +406,7 @@
             {
                 "error_code": 400,
                 "error_message": "PARTICIPANT_ID_INVALID",
-                "error_description": ""
+                "error_description": "The specified participant ID is invalid"
             },
             {
                 "error_code": -503,
@@ -1099,11 +1099,6 @@
             },
             {
                 "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID",
-                "error_description": "The provided constructor is invalid"
-            },
-            {
-                "error_code": 400,
                 "error_message": "INPUT_FETCH_FAIL",
                 "error_description": "Failed deserializing TL payload"
             },
@@ -1638,486 +1633,6 @@
             },
             {
                 "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_0303BFFX",
-                "error_description": "Internal error"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_0683CX",
-                "error_description": "Internal error"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_08EE69BD",
-                "error_description": "Internal error"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_093A408B",
-                "error_description": "Internal error"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_0949E9DB",
-                "error_description": "Internal error"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_0963342E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_0BCEFAFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_13AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1699330E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_18D28B8C",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_18EE099D",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_198CX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1C1ADX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1E5C9EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1F5E599B",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_1FB5599E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_20CAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_223E7B9E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_284ECX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_290B197C",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_2B069D4A",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_2DE81FAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_2DFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_3258E6EE",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_383CCX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_3858231D",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_3CFECA3F",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_3EB374DX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_41EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_46E822AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_4D89BD8D",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_57CX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_5983204E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_5CDX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_674812EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_67BF0BX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_6B160F7F",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_6D2034FF",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_701F8EAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_7455AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_74D124BA",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_76CX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_786E26FC",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_78EA40AD",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_7BB660EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_7C68CF6E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_7D00B15F",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_7DA737BX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_81778AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_822515DE",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_892786DC",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_89C54FAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_8A9EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_8BB30DFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_9056AE5E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_9211EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_9254BFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_927C7DX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_96F861FF",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_9C0DCAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_9FA3080C",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_A0C74CAX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_A2940E0E",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_A30CBX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_A55E9CFB",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_A7A2EAFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_AACCDAEX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_B1EX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_B458AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_B4A9459B",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_B66BDCFF",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_B6A8FBCX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_C54B3D1D",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_C72654DX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_C732A3FE",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_CX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_D1D77FDX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_D27476FC",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_D3EF7A2C",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_D8AF11DD",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_DAD71FX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_DDC985DF",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_DFAFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_E1FD680A",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_ECFX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_EEBDX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F29EC26F",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F3C2B1BC",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F4DE5A2B",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F50AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F5CB2D2C",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F79993AX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_F882F78B",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_FB1DE1BE",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID_FF8D18FX",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
                 "error_message": "INPUT_FETCH_FAIL",
                 "error_description": "Failed deserializing TL payload"
             },
@@ -2216,7 +1731,7 @@
             {
                 "error_code": -504,
                 "error_message": "memory limit(?)",
-                "error_description": ""
+                "error_description": "Internal error"
             },
             {
                 "error_code": 400,
@@ -2643,7 +2158,7 @@
             {
                 "error_code": 400,
                 "error_message": "VIDEO_TITLE_EMPTY",
-                "error_description": ""
+                "error_description": "The specified video title is empty"
             },
             {
                 "error_code": 400,
@@ -2832,7 +2347,7 @@
             {
                 "error_code": 400,
                 "error_message": "CHANNELS_ADMIN_LOCATED_TOO_MUCH",
-                "error_description": ""
+                "error_description": "The user has reached the limit of public geogroups"
             },
             {
                 "error_code": 400,
@@ -2927,11 +2442,6 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
-            },
-            {
-                "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID",
-                "error_description": "The provided constructor is invalid"
             },
             {
                 "error_code": 400,
@@ -3540,13 +3050,8 @@
             },
             {
                 "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID",
-                "error_description": "The provided constructor is invalid"
-            },
-            {
-                "error_code": 400,
                 "error_message": "INPUT_FILTER_INVALID",
-                "error_description": ""
+                "error_description": "The specified filter is invalid"
             },
             {
                 "error_code": 400,
@@ -3738,7 +3243,7 @@
             {
                 "error_code": 400,
                 "error_message": "POLL_ANSWER_INVALID",
-                "error_description": ""
+                "error_description": "One of the poll answers is not acceptable"
             },
             {
                 "error_code": 400,
@@ -3758,7 +3263,7 @@
             {
                 "error_code": 400,
                 "error_message": "POLL_QUESTION_INVALID",
-                "error_description": ""
+                "error_description": "One of the poll questions is not acceptable"
             },
             {
                 "error_code": 400,
@@ -4764,7 +4269,7 @@
             {
                 "error_code": 400,
                 "error_message": "CHANNEL_ADD_INVALID",
-                "error_description": ""
+                "error_description": "Internal error"
             },
             {
                 "error_code": 400,
@@ -4799,7 +4304,7 @@
             {
                 "error_code": 400,
                 "error_message": "PARTICIPANT_ID_INVALID",
-                "error_description": ""
+                "error_description": "The specified participant ID is invalid"
             },
             {
                 "error_code": 400,
@@ -5935,11 +5440,6 @@
             },
             {
                 "error_code": 400,
-                "error_message": "INPUT_CONSTRUCTOR_INVALID",
-                "error_description": "The provided constructor is invalid"
-            },
-            {
-                "error_code": 400,
                 "error_message": "INPUT_FETCH_FAIL",
                 "error_description": "Failed deserializing TL payload"
             },
@@ -6245,7 +5745,7 @@
             {
                 "error_code": 403,
                 "error_message": "USER_DELETED",
-                "error_description": ""
+                "error_description": "You can't send this secret message because the other participant deleted their account."
             },
             {
                 "error_code": 403,
@@ -6574,7 +6074,7 @@
             {
                 "error_code": 406,
                 "error_message": "USERPIC_PRIVACY_REQUIRED",
-                "error_description": ""
+                "error_description": "You need to disable privacy settings for your profile picture in order to make your geolocation public."
             },
             {
                 "error_code": 406,
@@ -6670,7 +6170,7 @@
             {
                 "error_code": 400,
                 "error_message": "UNKNOWN_ERROR",
-                "error_description": ""
+                "error_description": "Internal error"
             }
         ],
         "langpack.getDifference": [
@@ -7249,7 +6749,7 @@
             {
                 "error_code": 403,
                 "error_message": "SENSITIVE_CHANGE_FORBIDDEN",
-                "error_description": ""
+                "error_description": "You can't change your sensitive content settings."
             }
         ],
         "channels.getGroupsForDiscussion": [
@@ -7378,17 +6878,17 @@
             {
                 "error_code": 400,
                 "error_message": "WEBPUSH_AUTH_INVALID",
-                "error_description": ""
+                "error_description": "The specified web push authentication secret is invalid."
             },
             {
                 "error_code": 400,
                 "error_message": "WEBPUSH_KEY_INVALID",
-                "error_description": ""
+                "error_description": "The specified web push elliptic curve Diffie-Hellman public key is invalid."
             },
             {
                 "error_code": 400,
                 "error_message": "WEBPUSH_TOKEN_INVALID",
-                "error_description": ""
+                "error_description": "The specified web push token is invalid."
             }
         ],
         "account.unregisterDevice": [
@@ -7416,14 +6916,14 @@
             {
                 "error_code": 400,
                 "error_message": "UNKNOWN_ERROR",
-                "error_description": ""
+                "error_description": "Internal error"
             }
         ],
         "set_client_DH_params": [
             {
                 "error_code": 400,
                 "error_message": "UNKNOWN_ERROR",
-                "error_description": ""
+                "error_description": "Internal error"
             }
         ],
         "users.setSecureValueErrors": [
@@ -7447,18 +6947,11 @@
                 "error_description": "Invalid user provided"
             }
         ],
-        "daemon.summon": [
-            {
-                "error_code": 666,
-                "error_message": "venus",
-                "error_description": ""
-            }
-        ],
         "account.uploadWallPaper": [
             {
                 "error_code": 400,
                 "error_message": "WALLPAPER_MIME_INVALID",
-                "error_description": ""
+                "error_description": "The specified wallpaper MIME type is invalid"
             }
         ],
         "messages.getWebPage": [
