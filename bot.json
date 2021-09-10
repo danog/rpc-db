@@ -130,6 +130,7 @@
         "help.getInviteText",
         "help.getNearestDc",
         "help.getPassportConfig",
+        "help.getPromoData",
         "help.getProxyData",
         "help.getRecentMeUrls",
         "help.getSupport",
