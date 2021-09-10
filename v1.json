@@ -522,7 +522,6 @@
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
-                "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FETCH_FAIL"
             ],
             "channels.joinChannel": [
@@ -674,7 +673,6 @@
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
-                "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FILTER_INVALID",
                 "INPUT_USER_DEACTIVATED",
                 "MSG_ID_INVALID",
@@ -744,102 +742,6 @@
                 "CONNECTION_DEVICE_MODEL_EMPTY",
                 "CONNECTION_SYSTEM_LANG_CODE_EMPTY",
                 "FROM_MESSAGE_BOT_DISABLED",
-                "INPUT_CONSTRUCTOR_INVALID_0303BFFX",
-                "INPUT_CONSTRUCTOR_INVALID_0683CX",
-                "INPUT_CONSTRUCTOR_INVALID_08EE69BD",
-                "INPUT_CONSTRUCTOR_INVALID_093A408B",
-                "INPUT_CONSTRUCTOR_INVALID_0949E9DB",
-                "INPUT_CONSTRUCTOR_INVALID_0963342E",
-                "INPUT_CONSTRUCTOR_INVALID_0BCEFAFX",
-                "INPUT_CONSTRUCTOR_INVALID_13AX",
-                "INPUT_CONSTRUCTOR_INVALID_1699330E",
-                "INPUT_CONSTRUCTOR_INVALID_18D28B8C",
-                "INPUT_CONSTRUCTOR_INVALID_18EE099D",
-                "INPUT_CONSTRUCTOR_INVALID_198CX",
-                "INPUT_CONSTRUCTOR_INVALID_1AX",
-                "INPUT_CONSTRUCTOR_INVALID_1C1ADX",
-                "INPUT_CONSTRUCTOR_INVALID_1E5C9EX",
-                "INPUT_CONSTRUCTOR_INVALID_1F5E599B",
-                "INPUT_CONSTRUCTOR_INVALID_1FB5599E",
-                "INPUT_CONSTRUCTOR_INVALID_20CAX",
-                "INPUT_CONSTRUCTOR_INVALID_223E7B9E",
-                "INPUT_CONSTRUCTOR_INVALID_284ECX",
-                "INPUT_CONSTRUCTOR_INVALID_290B197C",
-                "INPUT_CONSTRUCTOR_INVALID_2B069D4A",
-                "INPUT_CONSTRUCTOR_INVALID_2DE81FAX",
-                "INPUT_CONSTRUCTOR_INVALID_2DFX",
-                "INPUT_CONSTRUCTOR_INVALID_3258E6EE",
-                "INPUT_CONSTRUCTOR_INVALID_383CCX",
-                "INPUT_CONSTRUCTOR_INVALID_3858231D",
-                "INPUT_CONSTRUCTOR_INVALID_3CFECA3F",
-                "INPUT_CONSTRUCTOR_INVALID_3EB374DX",
-                "INPUT_CONSTRUCTOR_INVALID_41EX",
-                "INPUT_CONSTRUCTOR_INVALID_46E822AX",
-                "INPUT_CONSTRUCTOR_INVALID_4D89BD8D",
-                "INPUT_CONSTRUCTOR_INVALID_57CX",
-                "INPUT_CONSTRUCTOR_INVALID_5983204E",
-                "INPUT_CONSTRUCTOR_INVALID_5CDX",
-                "INPUT_CONSTRUCTOR_INVALID_674812EX",
-                "INPUT_CONSTRUCTOR_INVALID_67BF0BX",
-                "INPUT_CONSTRUCTOR_INVALID_6B160F7F",
-                "INPUT_CONSTRUCTOR_INVALID_6D2034FF",
-                "INPUT_CONSTRUCTOR_INVALID_701F8EAX",
-                "INPUT_CONSTRUCTOR_INVALID_7455AX",
-                "INPUT_CONSTRUCTOR_INVALID_74D124BA",
-                "INPUT_CONSTRUCTOR_INVALID_76CX",
-                "INPUT_CONSTRUCTOR_INVALID_786E26FC",
-                "INPUT_CONSTRUCTOR_INVALID_78EA40AD",
-                "INPUT_CONSTRUCTOR_INVALID_7BB660EX",
-                "INPUT_CONSTRUCTOR_INVALID_7C68CF6E",
-                "INPUT_CONSTRUCTOR_INVALID_7D00B15F",
-                "INPUT_CONSTRUCTOR_INVALID_7DA737BX",
-                "INPUT_CONSTRUCTOR_INVALID_81778AX",
-                "INPUT_CONSTRUCTOR_INVALID_822515DE",
-                "INPUT_CONSTRUCTOR_INVALID_892786DC",
-                "INPUT_CONSTRUCTOR_INVALID_89C54FAX",
-                "INPUT_CONSTRUCTOR_INVALID_8A9EX",
-                "INPUT_CONSTRUCTOR_INVALID_8BB30DFX",
-                "INPUT_CONSTRUCTOR_INVALID_9056AE5E",
-                "INPUT_CONSTRUCTOR_INVALID_9211EX",
-                "INPUT_CONSTRUCTOR_INVALID_9254BFX",
-                "INPUT_CONSTRUCTOR_INVALID_927C7DX",
-                "INPUT_CONSTRUCTOR_INVALID_96F861FF",
-                "INPUT_CONSTRUCTOR_INVALID_9C0DCAX",
-                "INPUT_CONSTRUCTOR_INVALID_9FA3080C",
-                "INPUT_CONSTRUCTOR_INVALID_A0C74CAX",
-                "INPUT_CONSTRUCTOR_INVALID_A2940E0E",
-                "INPUT_CONSTRUCTOR_INVALID_A30CBX",
-                "INPUT_CONSTRUCTOR_INVALID_A55E9CFB",
-                "INPUT_CONSTRUCTOR_INVALID_A7A2EAFX",
-                "INPUT_CONSTRUCTOR_INVALID_AACCDAEX",
-                "INPUT_CONSTRUCTOR_INVALID_B1EX",
-                "INPUT_CONSTRUCTOR_INVALID_B458AX",
-                "INPUT_CONSTRUCTOR_INVALID_B4A9459B",
-                "INPUT_CONSTRUCTOR_INVALID_B66BDCFF",
-                "INPUT_CONSTRUCTOR_INVALID_B6A8FBCX",
-                "INPUT_CONSTRUCTOR_INVALID_C54B3D1D",
-                "INPUT_CONSTRUCTOR_INVALID_C72654DX",
-                "INPUT_CONSTRUCTOR_INVALID_C732A3FE",
-                "INPUT_CONSTRUCTOR_INVALID_CX",
-                "INPUT_CONSTRUCTOR_INVALID_D1D77FDX",
-                "INPUT_CONSTRUCTOR_INVALID_D27476FC",
-                "INPUT_CONSTRUCTOR_INVALID_D3EF7A2C",
-                "INPUT_CONSTRUCTOR_INVALID_D8AF11DD",
-                "INPUT_CONSTRUCTOR_INVALID_DAD71FX",
-                "INPUT_CONSTRUCTOR_INVALID_DDC985DF",
-                "INPUT_CONSTRUCTOR_INVALID_DFAFX",
-                "INPUT_CONSTRUCTOR_INVALID_E1FD680A",
-                "INPUT_CONSTRUCTOR_INVALID_ECFX",
-                "INPUT_CONSTRUCTOR_INVALID_EEBDX",
-                "INPUT_CONSTRUCTOR_INVALID_F29EC26F",
-                "INPUT_CONSTRUCTOR_INVALID_F3C2B1BC",
-                "INPUT_CONSTRUCTOR_INVALID_F4DE5A2B",
-                "INPUT_CONSTRUCTOR_INVALID_F50AX",
-                "INPUT_CONSTRUCTOR_INVALID_F5CB2D2C",
-                "INPUT_CONSTRUCTOR_INVALID_F79993AX",
-                "INPUT_CONSTRUCTOR_INVALID_F882F78B",
-                "INPUT_CONSTRUCTOR_INVALID_FB1DE1BE",
-                "INPUT_CONSTRUCTOR_INVALID_FF8D18FX",
                 "INPUT_FETCH_FAIL",
                 "MSG_ID_INVALID",
                 "PERSISTENT_TIMESTAMP_EMPTY",
@@ -1034,7 +936,6 @@
             "messages.editChatPhoto": [
                 "CHAT_ID_INVALID",
                 "CHAT_NOT_MODIFIED",
-                "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FETCH_FAIL",
                 "PEER_ID_INVALID",
                 "PHOTO_CROP_SIZE_SMALL",
@@ -1236,7 +1137,6 @@
             ],
             "messages.getDialogs": [
                 "FOLDER_ID_INVALID",
-                "INPUT_CONSTRUCTOR_INVALID",
                 "INPUT_FETCH_FAIL",
                 "OFFSET_PEER_ID_INVALID"
             ],
@@ -2264,6 +2164,11 @@
                 "memory limit(?)"
             ]
         },
+        "20": {
+            "messages.sendMedia": [
+                "Received bad_msg_notification: message too old, and it cannot be verified whether the server has received a message with this msg_id or not"
+            ]
+        },
         "-503": {
             "account.resetAuthorization": [
                 "Timeout"
@@ -2604,10 +2509,10 @@
             "You can't call this method in a CDN DC"
         ],
         "CHANNEL_ADD_INVALID": [
-            ""
+            "Internal error"
         ],
         "CHANNEL_ADMINS_INVALID": [
-            ""
+            "Internal error"
         ],
         "CHANNEL_INVALID": [
             "The provided channel is invalid"
@@ -2622,7 +2527,7 @@
             "Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change)"
         ],
         "CHANNELS_ADMIN_LOCATED_TOO_MUCH": [
-            ""
+            "The user has reached the limit of public geogroups"
         ],
         "CHANNELS_ADMIN_PUBLIC_TOO_MUCH": [
             "You're admin of too many public channels, make some channels private to change the username of this channel"
@@ -2921,297 +2826,6 @@
         "INLINE_RESULT_EXPIRED": [
             "The inline query expired"
         ],
-        "INPUT_CONSTRUCTOR_INVALID": [
-            "The provided constructor is invalid"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_0303BFFX": [
-            "Internal error"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_0683CX": [
-            "Internal error"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_08EE69BD": [
-            "Internal error"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_093A408B": [
-            "Internal error"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_0949E9DB": [
-            "Internal error"
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_0963342E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_0BCEFAFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_13AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1699330E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_18D28B8C": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_18EE099D": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_198CX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1C1ADX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1E5C9EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1F5E599B": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_1FB5599E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_20CAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_223E7B9E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_284ECX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_290B197C": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_2B069D4A": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_2DE81FAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_2DFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_3258E6EE": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_383CCX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_3858231D": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_3CFECA3F": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_3EB374DX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_41EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_46E822AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_4D89BD8D": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_57CX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_5983204E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_5CDX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_674812EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_67BF0BX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_6B160F7F": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_6D2034FF": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_701F8EAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_7455AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_74D124BA": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_76CX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_786E26FC": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_78EA40AD": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_7BB660EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_7C68CF6E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_7D00B15F": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_7DA737BX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_81778AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_822515DE": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_892786DC": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_89C54FAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_8A9EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_8BB30DFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_9056AE5E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_9211EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_9254BFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_927C7DX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_96F861FF": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_9C0DCAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_9FA3080C": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_A0C74CAX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_A2940E0E": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_A30CBX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_A55E9CFB": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_A7A2EAFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_AACCDAEX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_B1EX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_B458AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_B4A9459B": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_B66BDCFF": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_B6A8FBCX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_C54B3D1D": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_C72654DX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_C732A3FE": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_CX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_D1D77FDX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_D27476FC": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_D3EF7A2C": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_D8AF11DD": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_DAD71FX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_DDC985DF": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_DFAFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_E1FD680A": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_ECFX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_EEBDX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F29EC26F": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F3C2B1BC": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F4DE5A2B": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F50AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F5CB2D2C": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F79993AX": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_F882F78B": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_FB1DE1BE": [
-            ""
-        ],
-        "INPUT_CONSTRUCTOR_INVALID_FF8D18FX": [
-            ""
-        ],
         "INPUT_FETCH_ERROR": [
             "An error occurred while deserializing TL parameters"
         ],
@@ -3219,7 +2833,7 @@
             "Failed deserializing TL payload"
         ],
         "INPUT_FILTER_INVALID": [
-            ""
+            "The specified filter is invalid"
         ],
         "INPUT_LAYER_INVALID": [
             "The provided layer is invalid"
@@ -3294,7 +2908,7 @@
             "The provided location is invalid"
         ],
         "LOG_WRAP_FAIL": [
-            ""
+            "Internal error"
         ],
         "MAX_ID_INVALID": [
             "The provided max ID is invalid"
@@ -3339,7 +2953,7 @@
             "Internal error"
         ],
         "memory limit(?)": [
-            ""
+            "Internal error"
         ],
         "MESSAGE_AUTHOR_REQUIRED": [
             "Message author required"
@@ -3432,7 +3046,7 @@
             "Failure while making call"
         ],
         "PARTICIPANT_ID_INVALID": [
-            ""
+            "The specified participant ID is invalid"
         ],
         "PARTICIPANT_VERSION_OUTDATED": [
             "The other participant does not use an up to date telegram client with support for calls"
@@ -3546,7 +3160,7 @@
             "Too many pinned dialogs"
         ],
         "POLL_ANSWER_INVALID": [
-            ""
+            "One of the poll answers is not acceptable"
         ],
         "POLL_ANSWERS_INVALID": [
             "Invalid poll answers were provided"
@@ -3558,7 +3172,7 @@
             "Invalid poll option provided"
         ],
         "POLL_QUESTION_INVALID": [
-            ""
+            "One of the poll questions is not acceptable"
         ],
         "POLL_VOTE_REQUIRED": [
             "Cast a vote in the poll before calling this method"
@@ -3672,7 +3286,7 @@
             "The message type is invalid"
         ],
         "SENSITIVE_CHANGE_FORBIDDEN": [
-            ""
+            "You can't change your sensitive content settings."
         ],
         "SESSION_PASSWORD_NEEDED": [
             "2FA is enabled, use a password to login"
@@ -3747,7 +3361,7 @@
             "Server storage check failed"
         ],
         "STORE_INVALID_OBJECT_TYPE": [
-            ""
+            "Internal error"
         ],
         "STORE_INVALID_SCALAR_TYPE": [
             "Tried storing an invalid scalar type"
@@ -3777,7 +3391,7 @@
             "The temporary password is disabled"
         ],
         "TMSG_ADD_FAILED": [
-            ""
+            "Internal error"
         ],
         "TOKEN_INVALID": [
             "The provided token is invalid"
@@ -3795,7 +3409,7 @@
             "No top peer type was provided"
         ],
         "UNKNOWN_ERROR": [
-            ""
+            "Internal error"
         ],
         "UNKNOWN_METHOD": [
             "The method you tried to call cannot be called on non-CDN DCs"
@@ -3843,7 +3457,7 @@
             "The current account was banned from telegram due to abuse"
         ],
         "USER_DELETED": [
-            ""
+            "You can't send this secret message because the other participant deleted their account."
         ],
         "USER_ID_INVALID": [
             "The provided user ID is invalid"
@@ -3861,7 +3475,7 @@
             "This user was kicked from this supergroup\/channel"
         ],
         "USER_NOT_AVAILABLE": [
-            ""
+            "Internal error"
         ],
         "USER_NOT_MUTUAL_CONTACT": [
             "The provided user is not a mutual contact"
@@ -3888,7 +3502,7 @@
             "The provided username is already occupied"
         ],
         "USERPIC_PRIVACY_REQUIRED": [
-            ""
+            "You need to disable privacy settings for your profile picture in order to make your geolocation public."
         ],
         "USERPIC_UPLOAD_REQUIRED": [
             "You must have a profile picture to publish your geolocation"
@@ -3906,13 +3520,13 @@
             "The specified video file is invalid"
         ],
         "VIDEO_TITLE_EMPTY": [
-            ""
+            "The specified video title is empty"
         ],
         "VOLUME_LOC_NOT_FOUND": [
             "Internal error"
         ],
         "WALLPAPER_MIME_INVALID": [
-            ""
+            "The specified wallpaper MIME type is invalid"
         ],
         "WC_CONVERT_URL_INVALID": [
             "WC convert URL invalid"
@@ -3933,13 +3547,13 @@
             "Webpage media empty"
         ],
         "WEBPUSH_AUTH_INVALID": [
-            ""
+            "The specified web push authentication secret is invalid."
         ],
         "WEBPUSH_KEY_INVALID": [
-            ""
+            "The specified web push elliptic curve Diffie-Hellman public key is invalid."
         ],
         "WEBPUSH_TOKEN_INVALID": [
-            ""
+            "The specified web push token is invalid."
         ],
         "WORKER_BUSY_TOO_LONG_RETRY": [
             "Worker busy, try again later"
