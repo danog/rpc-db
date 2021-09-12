@@ -1319,6 +1319,9 @@
             "messages.deleteChat": {
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
+            "messages.editExportedChatInvite": {
+                "PEER_ID_INVALID": "PEER_ID_INVALID"
+            },
             "messages.getSearchCounters": {
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
@@ -1761,6 +1764,9 @@
                 "UPLOAD_NO_VOLUME": "UPLOAD_NO_VOLUME"
             },
             "messages.editChatTitle": {
+                "NEED_CHAT_INVALID": "NEED_CHAT_INVALID"
+            },
+            "messages.unpinAllMessages": {
                 "NEED_CHAT_INVALID": "NEED_CHAT_INVALID"
             },
             "messages.updatePinnedMessage": {

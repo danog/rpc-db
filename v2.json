@@ -6527,6 +6527,13 @@
                 "error_description": "The provided peer id is invalid"
             }
         ],
+        "messages.editExportedChatInvite": [
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            }
+        ],
         "messages.getSearchCounters": [
             {
                 "error_code": 400,

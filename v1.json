@@ -1319,6 +1319,9 @@
             "messages.deleteChat": [
                 "PEER_ID_INVALID"
             ],
+            "messages.editExportedChatInvite": [
+                "PEER_ID_INVALID"
+            ],
             "messages.getSearchCounters": [
                 "PEER_ID_INVALID"
             ],
