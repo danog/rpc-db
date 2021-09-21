@@ -409,6 +409,7 @@
                 "INPUT_USER_DEACTIVATED",
                 "MSG_ID_INVALID",
                 "PARTICIPANT_ID_INVALID",
+                "PEER_ID_INVALID",
                 "PINNED_DIALOGS_TOO_MUCH",
                 "USER_ADMIN_INVALID",
                 "USER_ID_INVALID"
@@ -736,6 +737,10 @@
                 "CHAT_ADMIN_REQUIRED",
                 "MESSAGE_ID_INVALID"
             ],
+            "stats.getMessageStats": [
+                "CHANNEL_INVALID",
+                "CHAT_ADMIN_REQUIRED"
+            ],
             "updates.getChannelDifference": [
                 "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE",
@@ -913,9 +918,6 @@
             "stats.getMegagroupStats": [
                 "CHAT_ADMIN_REQUIRED",
                 "MEGAGROUP_REQUIRED"
-            ],
-            "stats.getMessageStats": [
-                "CHAT_ADMIN_REQUIRED"
             ],
             "messages.discardEncryption": [
                 "CHAT_ID_EMPTY",
@@ -1588,6 +1590,9 @@
                 "AUTH_KEY_DUPLICATED",
                 "USER_RESTRICTED"
             ],
+            "channels.deleteMessages": [
+                "AUTH_KEY_DUPLICATED"
+            ],
             "channels.getChannels": [
                 "AUTH_KEY_DUPLICATED"
             ],
@@ -1777,6 +1782,9 @@
             ],
             "auth.checkPhone": [
                 "PHONE_NUMBER_INVALID"
+            ],
+            "auth.resendCode": [
+                "SEND_CODE_UNAVAILABLE"
             ],
             "contacts.getLocated": [
                 "USERPIC_PRIVACY_REQUIRED",
@@ -3271,6 +3279,9 @@
         ],
         "SECONDS_INVALID": [
             "Invalid duration provided"
+        ],
+        "SEND_CODE_UNAVAILABLE": [
+            ""
         ],
         "SEND_MESSAGE_MEDIA_INVALID": [
             "Invalid media provided"

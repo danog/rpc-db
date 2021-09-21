@@ -2380,6 +2380,38 @@
                 "error_description": "You're spamreported, you can't create channels or chats."
             }
         ],
+        "channels.deleteMessages": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 403,
+                "error_message": "MESSAGE_DELETE_FORBIDDEN",
+                "error_description": "You can't delete one of the messages you tried to delete, most likely because it is a service message."
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_ID_INVALID",
+                "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            }
+        ],
         "channels.getMessages": [
             {
                 "error_code": 406,
@@ -4308,6 +4340,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PINNED_DIALOGS_TOO_MUCH",
                 "error_description": "Too many pinned dialogs"
             },
@@ -4418,33 +4455,6 @@
                 "error_code": 400,
                 "error_message": "CHANNEL_PRIVATE",
                 "error_description": "You haven't joined this channel\/supergroup"
-            }
-        ],
-        "channels.deleteMessages": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_INVALID",
-                "error_description": "The provided channel is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 403,
-                "error_message": "MESSAGE_DELETE_FORBIDDEN",
-                "error_description": "You can't delete one of the messages you tried to delete, most likely because it is a service message."
-            },
-            {
-                "error_code": 400,
-                "error_message": "MSG_ID_INVALID",
-                "error_description": "Invalid message ID provided"
-            },
-            {
-                "error_code": -503,
-                "error_message": "Timeout",
-                "error_description": "Timeout while fetching data"
             }
         ],
         "channels.deleteUserHistory": [
@@ -5010,6 +5020,18 @@
                 "error_description": "The provided message id is invalid"
             }
         ],
+        "stats.getMessageStats": [
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            }
+        ],
         "account.reportPeer": [
             {
                 "error_code": 400,
@@ -5362,13 +5384,6 @@
                 "error_code": 400,
                 "error_message": "MEGAGROUP_REQUIRED",
                 "error_description": "You can only use this method on a supergroup"
-            }
-        ],
-        "stats.getMessageStats": [
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ADMIN_REQUIRED",
-                "error_description": "You must be an admin in this chat to do this"
             }
         ],
         "messages.discardEncryption": [
@@ -6674,6 +6689,11 @@
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_INVALID",
                 "error_description": "The phone number is invalid"
+            },
+            {
+                "error_code": 406,
+                "error_message": "SEND_CODE_UNAVAILABLE",
+                "error_description": ""
             }
         ],
         "account.sendChangePhoneCode": [
