@@ -255,6 +255,12 @@
                 "MESSAGE_ID_INVALID",
                 "PEER_ID_INVALID"
             ],
+            "messages.setGameScore": [
+                "BOT_SCORE_NOT_MODIFIED",
+                "MESSAGE_ID_INVALID",
+                "PEER_ID_INVALID",
+                "USER_BOT_REQUIRED"
+            ],
             "channels.setDiscussionGroup": [
                 "BROADCAST_ID_INVALID",
                 "CHANNEL_INVALID",
@@ -814,7 +820,8 @@
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID",
-                "PEER_ID_INVALID"
+                "PEER_ID_INVALID",
+                "USAGE_LIMIT_INVALID"
             ],
             "messages.getOnlines": [
                 "CHANNEL_PRIVATE",
@@ -1242,11 +1249,6 @@
                 "MESSAGE_ID_INVALID",
                 "PEER_ID_INVALID"
             ],
-            "messages.setGameScore": [
-                "MESSAGE_ID_INVALID",
-                "PEER_ID_INVALID",
-                "USER_BOT_REQUIRED"
-            ],
             "messages.setInlineGameScore": [
                 "MESSAGE_ID_INVALID",
                 "USER_BOT_REQUIRED"
@@ -1457,6 +1459,9 @@
             ],
             "users.setSecureValueErrors": [
                 "USER_ID_INVALID"
+            ],
+            "messages.checkHistoryImportPeer": [
+                "USER_NOT_MUTUAL_CONTACT"
             ],
             "account.checkUsername": [
                 "USERNAME_INVALID"
@@ -2329,6 +2334,9 @@
             "photos.deletePhotos": [
                 "Timeout"
             ],
+            "photos.getUserPhotos": [
+                "Timeout"
+            ],
             "photos.updateProfilePhoto": [
                 "Timeout"
             ],
@@ -2466,6 +2474,9 @@
         ],
         "BOT_RESPONSE_TIMEOUT": [
             "A timeout occurred while fetching data from the bot"
+        ],
+        "BOT_SCORE_NOT_MODIFIED": [
+            "The score wasn't modified"
         ],
         "BOTS_TOO_MUCH": [
             "There are too many bots in this chat\/channel"
@@ -3426,6 +3437,9 @@
         ],
         "URL_INVALID": [
             "Invalid URL provided"
+        ],
+        "USAGE_LIMIT_INVALID": [
+            "The specified usage limit is invalid"
         ],
         "USER_ADMIN_INVALID": [
             "You're not an admin"

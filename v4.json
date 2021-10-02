@@ -93,6 +93,9 @@
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
             ],
+            "BOT_SCORE_NOT_MODIFIED": [
+                "messages.setGameScore"
+            ],
             "BOTS_TOO_MUCH": [
                 "channels.editAdmin",
                 "channels.inviteToChannel"
@@ -1380,6 +1383,9 @@
             "URL_INVALID": [
                 "messages.setBotCallbackAnswer"
             ],
+            "USAGE_LIMIT_INVALID": [
+                "messages.exportChatInvite"
+            ],
             "USER_ADMIN_INVALID": [
                 "channels.editBanned"
             ],
@@ -1467,7 +1473,8 @@
             ],
             "USER_NOT_MUTUAL_CONTACT": [
                 "channels.editAdmin",
-                "channels.inviteToChannel"
+                "channels.inviteToChannel",
+                "messages.checkHistoryImportPeer"
             ],
             "USER_NOT_PARTICIPANT": [
                 "channels.getParticipant",
@@ -2211,6 +2218,7 @@
                 "messages.setTyping",
                 "messages.uploadMedia",
                 "photos.deletePhotos",
+                "photos.getUserPhotos",
                 "photos.updateProfilePhoto",
                 "photos.uploadProfilePhoto",
                 "stats.getBroadcastStats",
@@ -2260,6 +2268,7 @@
         "BOT_METHOD_INVALID": "This method cannot be run by a bot",
         "BOT_MISSING": "This method can only be run by a bot",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot",
+        "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel",
         "BROADCAST_FORBIDDEN": "",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid",
@@ -2580,6 +2589,7 @@
         "UNTIL_DATE_INVALID": "Invalid until date provided",
         "UPLOAD_NO_VOLUME": "An internal error occurred",
         "URL_INVALID": "Invalid URL provided",
+        "USAGE_LIMIT_INVALID": "The specified usage limit is invalid",
         "USER_ADMIN_INVALID": "You're not an admin",
         "USER_ALREADY_PARTICIPANT": "The user is already in the group",
         "USER_BANNED_IN_CHANNEL": "You're banned from sending messages in supergroups\/channels",

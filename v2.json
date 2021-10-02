@@ -3786,6 +3786,11 @@
                 "error_description": "Invalid message ID provided"
             },
             {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            },
+            {
                 "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
@@ -4108,6 +4113,28 @@
                 "error_code": 400,
                 "error_message": "STICKER_INVALID",
                 "error_description": "The provided sticker is invalid"
+            }
+        ],
+        "messages.setGameScore": [
+            {
+                "error_code": 400,
+                "error_message": "BOT_SCORE_NOT_MODIFIED",
+                "error_description": "The score wasn't modified"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MESSAGE_ID_INVALID",
+                "error_description": "The provided message id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_BOT_REQUIRED",
+                "error_description": "This method can only be called by a bot"
             }
         ],
         "messages.getPollVotes": [
@@ -5133,6 +5160,11 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USAGE_LIMIT_INVALID",
+                "error_description": "The specified usage limit is invalid"
             }
         ],
         "messages.getOnlines": [
@@ -6330,23 +6362,6 @@
                 "error_description": "The provided peer id is invalid"
             }
         ],
-        "messages.setGameScore": [
-            {
-                "error_code": 400,
-                "error_message": "MESSAGE_ID_INVALID",
-                "error_description": "The provided message id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USER_BOT_REQUIRED",
-                "error_description": "This method can only be called by a bot"
-            }
-        ],
         "messages.setInlineGameScore": [
             {
                 "error_code": 400,
@@ -6972,6 +6987,13 @@
                 "error_code": 403,
                 "error_message": "USER_INVALID",
                 "error_description": "Invalid user provided"
+            }
+        ],
+        "messages.checkHistoryImportPeer": [
+            {
+                "error_code": 400,
+                "error_message": "USER_NOT_MUTUAL_CONTACT",
+                "error_description": "The provided user is not a mutual contact"
             }
         ],
         "account.uploadWallPaper": [

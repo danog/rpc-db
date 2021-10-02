@@ -255,6 +255,12 @@
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
+            "messages.setGameScore": {
+                "BOT_SCORE_NOT_MODIFIED": "BOT_SCORE_NOT_MODIFIED",
+                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "USER_BOT_REQUIRED": "USER_BOT_REQUIRED"
+            },
             "channels.setDiscussionGroup": {
                 "BROADCAST_ID_INVALID": "BROADCAST_ID_INVALID",
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
@@ -814,7 +820,8 @@
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
-                "PEER_ID_INVALID": "PEER_ID_INVALID"
+                "PEER_ID_INVALID": "PEER_ID_INVALID",
+                "USAGE_LIMIT_INVALID": "USAGE_LIMIT_INVALID"
             },
             "messages.getOnlines": {
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
@@ -1242,11 +1249,6 @@
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID"
             },
-            "messages.setGameScore": {
-                "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
-                "PEER_ID_INVALID": "PEER_ID_INVALID",
-                "USER_BOT_REQUIRED": "USER_BOT_REQUIRED"
-            },
             "messages.setInlineGameScore": {
                 "MESSAGE_ID_INVALID": "MESSAGE_ID_INVALID",
                 "USER_BOT_REQUIRED": "USER_BOT_REQUIRED"
@@ -1457,6 +1459,9 @@
             },
             "users.setSecureValueErrors": {
                 "USER_ID_INVALID": "USER_ID_INVALID"
+            },
+            "messages.checkHistoryImportPeer": {
+                "USER_NOT_MUTUAL_CONTACT": "USER_NOT_MUTUAL_CONTACT"
             },
             "account.checkUsername": {
                 "USERNAME_INVALID": "USERNAME_INVALID"
@@ -2626,6 +2631,9 @@
             "photos.deletePhotos": {
                 "Timeout": "Timeout"
             },
+            "photos.getUserPhotos": {
+                "Timeout": "Timeout"
+            },
             "photos.updateProfilePhoto": {
                 "Timeout": "Timeout"
             },
@@ -2698,6 +2706,7 @@
         "BOT_METHOD_INVALID": "This method cannot be run by a bot",
         "BOT_MISSING": "This method can only be run by a bot",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot",
+        "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel",
         "BROADCAST_FORBIDDEN": "",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid",
@@ -3018,6 +3027,7 @@
         "UNTIL_DATE_INVALID": "Invalid until date provided",
         "UPLOAD_NO_VOLUME": "An internal error occurred",
         "URL_INVALID": "Invalid URL provided",
+        "USAGE_LIMIT_INVALID": "The specified usage limit is invalid",
         "USER_ADMIN_INVALID": "You're not an admin",
         "USER_ALREADY_PARTICIPANT": "The user is already in the group",
         "USER_BANNED_IN_CHANNEL": "You're banned from sending messages in supergroups\/channels",
