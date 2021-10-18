@@ -211,6 +211,7 @@
                 "msg_container",
                 "msgs_state_req",
                 "stats.getBroadcastStats",
+                "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "updates.getChannelDifference",
@@ -395,6 +396,7 @@
                 "channels.deleteChannel",
                 "channels.editPhoto",
                 "channels.editTitle",
+                "channels.getFullChannel",
                 "channels.toggleInvites",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSlowMode",
@@ -711,7 +713,8 @@
                 "account.updatePasswordSettings",
                 "auth.bindTempAuthKey",
                 "auth.sendCode",
-                "auth.signUp"
+                "auth.signUp",
+                "channels.createChannel"
             ],
             "INPUT_USER_DEACTIVATED": [
                 "channels.editAdmin",
@@ -1099,6 +1102,7 @@
             ],
             "PHONE_NUMBER_OCCUPIED": [
                 "account.changePhone",
+                "account.sendChangePhoneCode",
                 "auth.signUp"
             ],
             "PHONE_NUMBER_UNOCCUPIED": [
@@ -1842,6 +1846,7 @@
                 "account.updateStatus",
                 "account.updateUsername",
                 "auth.exportAuthorization",
+                "auth.logOut",
                 "auth.sendCode",
                 "channels.createChannel",
                 "channels.deleteMessages",
@@ -1912,6 +1917,9 @@
             ],
             "FRESH_CHANGE_ADMINS_FORBIDDEN": [
                 "channels.editAdmin"
+            ],
+            "FRESH_CHANGE_PHONE_FORBIDDEN": [
+                "account.sendChangePhoneCode"
             ],
             "FRESH_RESET_AUTHORISATION_FORBIDDEN": [
                 "account.resetAuthorization",
@@ -2054,7 +2062,8 @@
                 "messages.setTyping",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
-                "updates.getChannelDifference"
+                "updates.getChannelDifference",
+                "updates.getDifference"
             ],
             "INLINE_BOT_REQUIRED": [
                 "messages.editMessage"
@@ -2129,6 +2138,7 @@
                 "req_pq_multi"
             ],
             "No workers running": [
+                "account.getPrivacy",
                 "account.updateProfile",
                 "account.updateStatus",
                 "auth.bindTempAuthKey",
@@ -2154,6 +2164,7 @@
         },
         "-504": {
             "memory limit exit": [
+                "channels.deleteMessages",
                 "messages.getDialogs",
                 "messages.getHistory",
                 "messages.sendMedia",
@@ -2171,6 +2182,7 @@
                 "account.updateProfile",
                 "account.updateStatus",
                 "auth.bindTempAuthKey",
+                "auth.checkPassword",
                 "auth.exportAuthorization",
                 "auth.resetAuthorizations",
                 "auth.sendCode",
@@ -2372,6 +2384,7 @@
         "FLOOD_WAIT_666": "Spooky af m8",
         "FOLDER_ID_INVALID": "Invalid folder ID",
         "FRESH_CHANGE_ADMINS_FORBIDDEN": "You were just elected admin, you can't add or modify other admins yet",
+        "FRESH_CHANGE_PHONE_FORBIDDEN": "",
         "FRESH_RESET_AUTHORISATION_FORBIDDEN": "You can't logout other sessions if less than 24 hours have passed since you logged on the current session",
         "FROM_MESSAGE_BOT_DISABLED": "Bots can't use fromMessage min constructors",
         "GEO_POINT_INVALID": "Invalid geoposition provided",

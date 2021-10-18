@@ -353,6 +353,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "CHAT_NOT_MODIFIED",
+                "error_description": "The pinned message wasn't modified"
+            },
+            {
+                "error_code": 400,
                 "error_message": "INPUT_FETCH_FAIL",
                 "error_description": "Failed deserializing TL payload"
             },
@@ -1709,6 +1714,11 @@
                 "error_description": "You can't call this method in a CDN DC"
             },
             {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
                 "error_code": 400,
                 "error_message": "CONNECTION_DEVICE_MODEL_EMPTY",
                 "error_description": "Device model empty"
@@ -2338,6 +2348,13 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
+        "auth.logOut": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            }
+        ],
         "channels.createChannel": [
             {
                 "error_code": 406,
@@ -2363,6 +2380,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_TITLE_EMPTY",
                 "error_description": "No chat title provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INPUT_REQUEST_TOO_LONG",
+                "error_description": "The request is too big"
             },
             {
                 "error_code": 401,
@@ -2395,6 +2417,11 @@
                 "error_code": 400,
                 "error_message": "CHANNEL_PRIVATE",
                 "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": -504,
+                "error_message": "memory limit exit",
+                "error_description": "Internal error"
             },
             {
                 "error_code": 403,
@@ -5030,6 +5057,23 @@
                 "error_description": "You were blocked by this user"
             }
         ],
+        "stats.getMegagroupStats": [
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_INVALID",
+                "error_description": "The provided channel is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MEGAGROUP_REQUIRED",
+                "error_description": "You can only use this method on a supergroup"
+            }
+        ],
         "stats.getMessagePublicForwards": [
             {
                 "error_code": 400,
@@ -5404,18 +5448,6 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
-            }
-        ],
-        "stats.getMegagroupStats": [
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ADMIN_REQUIRED",
-                "error_description": "You must be an admin in this chat to do this"
-            },
-            {
-                "error_code": 400,
-                "error_message": "MEGAGROUP_REQUIRED",
-                "error_description": "You can only use this method on a supergroup"
             }
         ],
         "messages.discardEncryption": [
@@ -6083,6 +6115,23 @@
                 "error_description": "The search query is empty"
             }
         ],
+        "account.sendChangePhoneCode": [
+            {
+                "error_code": 406,
+                "error_message": "FRESH_CHANGE_PHONE_FORBIDDEN",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHONE_NUMBER_OCCUPIED",
+                "error_description": "The phone number is already in use"
+            }
+        ],
         "account.resetAuthorization": [
             {
                 "error_code": 406,
@@ -6493,6 +6542,23 @@
                 "error_description": "A waiting call returned an error"
             }
         ],
+        "account.getPrivacy": [
+            {
+                "error_code": -500,
+                "error_message": "No workers running",
+                "error_description": "Internal error"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PRIVACY_KEY_INVALID",
+                "error_description": "The privacy key is invalid"
+            },
+            {
+                "error_code": 401,
+                "error_message": "SESSION_PASSWORD_NEEDED",
+                "error_description": "2FA is enabled, use a password to login"
+            }
+        ],
         "auth.requestPasswordRecovery": [
             {
                 "error_code": 400,
@@ -6534,6 +6600,11 @@
                 "error_code": 400,
                 "error_message": "SRP_PASSWORD_CHANGED",
                 "error_description": "Password has changed"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
             }
         ],
         "account.getNotifySettings": [
@@ -6711,30 +6782,11 @@
                 "error_description": ""
             }
         ],
-        "account.sendChangePhoneCode": [
-            {
-                "error_code": 400,
-                "error_message": "PHONE_NUMBER_INVALID",
-                "error_description": "The phone number is invalid"
-            }
-        ],
         "account.sendVerifyPhoneCode": [
             {
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_INVALID",
                 "error_description": "The phone number is invalid"
-            }
-        ],
-        "account.getPrivacy": [
-            {
-                "error_code": 400,
-                "error_message": "PRIVACY_KEY_INVALID",
-                "error_description": "The privacy key is invalid"
-            },
-            {
-                "error_code": 401,
-                "error_message": "SESSION_PASSWORD_NEEDED",
-                "error_description": "2FA is enabled, use a password to login"
             }
         ],
         "account.setPrivacy": [

@@ -505,6 +505,7 @@
             "channels.getFullChannel": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
+                "CHAT_NOT_MODIFIED": "CHAT_NOT_MODIFIED",
                 "INPUT_FETCH_FAIL": "INPUT_FETCH_FAIL",
                 "MSG_ID_INVALID": "MSG_ID_INVALID"
             },
@@ -738,6 +739,11 @@
                 "MSG_ID_INVALID": "MSG_ID_INVALID",
                 "USER_IS_BLOCKED": "USER_IS_BLOCKED"
             },
+            "stats.getMegagroupStats": {
+                "CHANNEL_INVALID": "CHANNEL_INVALID",
+                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
+                "MEGAGROUP_REQUIRED": "MEGAGROUP_REQUIRED"
+            },
             "stats.getMessagePublicForwards": {
                 "CHANNEL_INVALID": "CHANNEL_INVALID",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
@@ -876,7 +882,8 @@
                 "CHANNELS_ADMIN_LOCATED_TOO_MUCH": "CHANNELS_ADMIN_LOCATED_TOO_MUCH",
                 "CHANNELS_TOO_MUCH": "CHANNELS_TOO_MUCH",
                 "CHAT_ABOUT_TOO_LONG": "CHAT_ABOUT_TOO_LONG",
-                "CHAT_TITLE_EMPTY": "CHAT_TITLE_EMPTY"
+                "CHAT_TITLE_EMPTY": "CHAT_TITLE_EMPTY",
+                "INPUT_REQUEST_TOO_LONG": "INPUT_REQUEST_TOO_LONG"
             },
             "messages.migrateChat": {
                 "CHANNELS_TOO_MUCH": "CHANNELS_TOO_MUCH",
@@ -921,10 +928,6 @@
             },
             "phone.createGroupCall": {
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED"
-            },
-            "stats.getMegagroupStats": {
-                "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
-                "MEGAGROUP_REQUIRED": "MEGAGROUP_REQUIRED"
             },
             "messages.discardEncryption": {
                 "CHAT_ID_EMPTY": "CHAT_ID_EMPTY",
@@ -1376,7 +1379,8 @@
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
             },
             "account.sendChangePhoneCode": {
-                "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
+                "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID",
+                "PHONE_NUMBER_OCCUPIED": "PHONE_NUMBER_OCCUPIED"
             },
             "account.sendVerifyPhoneCode": {
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
@@ -1883,6 +1887,9 @@
             "auth.exportAuthorization": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
             },
+            "auth.logOut": {
+                "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED"
+            },
             "auth.sendCode": {
                 "AUTH_KEY_DUPLICATED": "AUTH_KEY_DUPLICATED",
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID",
@@ -2075,6 +2082,9 @@
             },
             "channels.editAdmin": {
                 "FRESH_CHANGE_ADMINS_FORBIDDEN": "FRESH_CHANGE_ADMINS_FORBIDDEN"
+            },
+            "account.sendChangePhoneCode": {
+                "FRESH_CHANGE_PHONE_FORBIDDEN": "FRESH_CHANGE_PHONE_FORBIDDEN"
             },
             "account.resetAuthorization": {
                 "FRESH_RESET_AUTHORISATION_FORBIDDEN": "FRESH_RESET_AUTHORISATION_FORBIDDEN"
@@ -2327,6 +2337,9 @@
             "messages.uploadMedia": {
                 "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
             },
+            "updates.getDifference": {
+                "CHAT_WRITE_FORBIDDEN": "CHAT_WRITE_FORBIDDEN"
+            },
             "messages.getMessageEditData": {
                 "MESSAGE_AUTHOR_REQUIRED": "MESSAGE_AUTHOR_REQUIRED"
             },
@@ -2391,6 +2404,9 @@
             },
             "req_pq_multi": {
                 "Invalid msgs_state_req query": "Invalid msgs_state_req query"
+            },
+            "account.getPrivacy": {
+                "No workers running": "No workers running"
             },
             "account.updateProfile": {
                 "No workers running": "No workers running"
@@ -2457,6 +2473,9 @@
             }
         },
         "-504": {
+            "channels.deleteMessages": {
+                "memory limit exit": "memory limit exit"
+            },
             "messages.getDialogs": {
                 "memory limit exit": "memory limit exit"
             },
@@ -2488,6 +2507,9 @@
                 "Timeout": "Timeout"
             },
             "auth.bindTempAuthKey": {
+                "Timeout": "Timeout"
+            },
+            "auth.checkPassword": {
                 "Timeout": "Timeout"
             },
             "auth.exportAuthorization": {
@@ -2810,6 +2832,7 @@
         "FLOOD_WAIT_666": "Spooky af m8",
         "FOLDER_ID_INVALID": "Invalid folder ID",
         "FRESH_CHANGE_ADMINS_FORBIDDEN": "You were just elected admin, you can't add or modify other admins yet",
+        "FRESH_CHANGE_PHONE_FORBIDDEN": "",
         "FRESH_RESET_AUTHORISATION_FORBIDDEN": "You can't logout other sessions if less than 24 hours have passed since you logged on the current session",
         "FROM_MESSAGE_BOT_DISABLED": "Bots can't use fromMessage min constructors",
         "GEO_POINT_INVALID": "Invalid geoposition provided",
