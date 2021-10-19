@@ -85,6 +85,11 @@
         "channels.editAdmin": [
             {
                 "error_code": 400,
+                "error_message": "ADMIN_RANK_EMOJI_NOT_ALLOWED",
+                "error_description": "An admin rank cannot contain emojis"
+            },
+            {
+                "error_code": 400,
                 "error_message": "ADMIN_RANK_INVALID",
                 "error_description": "The specified admin rank is invalid."
             },
@@ -134,6 +139,11 @@
                 "error_description": "You can't write in this chat"
             },
             {
+                "error_code": 400,
+                "error_message": "FRESH_CHANGE_ADMINS_FORBIDDEN",
+                "error_description": "You were just elected admin, you can't add or modify other admins yet"
+            },
+            {
                 "error_code": 406,
                 "error_message": "FRESH_CHANGE_ADMINS_FORBIDDEN",
                 "error_description": "You were just elected admin, you can't add or modify other admins yet"
@@ -175,6 +185,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "USER_NOT_MUTUAL_CONTACT",
+                "error_description": "The provided user is not a mutual contact"
+            },
+            {
+                "error_code": 403,
                 "error_message": "USER_NOT_MUTUAL_CONTACT",
                 "error_description": "The provided user is not a mutual contact"
             },
@@ -244,6 +259,53 @@
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
+            }
+        ],
+        "photos.uploadProfilePhoto": [
+            {
+                "error_code": 400,
+                "error_message": "ALBUM_PHOTOS_TOO_MANY",
+                "error_description": "Too many "
+            },
+            {
+                "error_code": 400,
+                "error_message": "FILE_PARTS_INVALID",
+                "error_description": "The number of file parts is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "IMAGE_PROCESS_FAILED",
+                "error_description": "Failure while processing image"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHOTO_CROP_FILE_MISSING",
+                "error_description": "Photo crop file missing"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHOTO_CROP_SIZE_SMALL",
+                "error_description": "Photo is too small"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHOTO_EXT_INVALID",
+                "error_description": "The extension of the photo is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHOTO_FILE_MISSING",
+                "error_description": "Profile photo file missing"
+            },
+            {
+                "error_code": -503,
+                "error_message": "Timeout",
+                "error_description": "Timeout while fetching data"
+            },
+            {
+                "error_code": 400,
+                "error_message": "VIDEO_FILE_INVALID",
+                "error_description": "The specified video file is invalid"
             }
         ],
         "account.updateStatus": [
@@ -973,6 +1035,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "SCHEDULE_DATE_TOO_LATE",
+                "error_description": "You can't schedule a message this far in the future"
+            },
+            {
+                "error_code": 400,
                 "error_message": "SCHEDULE_TOO_MUCH",
                 "error_description": "There are too many scheduled messages"
             },
@@ -998,6 +1065,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
+                "error_code": 403,
                 "error_message": "USER_IS_BLOCKED",
                 "error_description": "You were blocked by this user"
             },
@@ -1541,8 +1613,18 @@
             },
             {
                 "error_code": 400,
+                "error_message": "POLL_OPTION_INVALID",
+                "error_description": "Invalid poll option provided"
+            },
+            {
+                "error_code": 400,
                 "error_message": "REPLY_MARKUP_INVALID",
                 "error_description": "The provided reply markup is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "REPLY_MARKUP_TOO_LONG",
+                "error_description": "The specified reply_markup is too long"
             },
             {
                 "error_code": 400,
@@ -1553,6 +1635,11 @@
                 "error_code": 400,
                 "error_message": "SCHEDULE_DATE_TOO_LATE",
                 "error_description": "You can't schedule a message this far in the future"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_STATUS_PRIVATE",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -1576,6 +1663,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
+                "error_code": 403,
                 "error_message": "USER_IS_BLOCKED",
                 "error_description": "You were blocked by this user"
             },
@@ -2067,6 +2159,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "AUDIO_CONTENT_URL_EMPTY",
+                "error_description": "The remote URL specified in the content field is empty"
+            },
+            {
+                "error_code": 400,
                 "error_message": "AUDIO_TITLE_EMPTY",
                 "error_description": "An empty audio title was provided."
             },
@@ -2087,6 +2184,21 @@
             },
             {
                 "error_code": 400,
+                "error_message": "DOCUMENT_INVALID",
+                "error_description": "The specified document is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "FILE_CONTENT_TYPE_INVALID",
+                "error_description": "File content-type is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "FILE_TITLE_EMPTY",
+                "error_description": "An empty file title was specified"
+            },
+            {
+                "error_code": 400,
                 "error_message": "GIF_CONTENT_TYPE_INVALID",
                 "error_description": "GIF content-type invalid"
             },
@@ -2099,6 +2211,11 @@
                 "error_code": 400,
                 "error_message": "MESSAGE_TOO_LONG",
                 "error_description": "The provided message is too long"
+            },
+            {
+                "error_code": 400,
+                "error_message": "NEXT_OFFSET_INVALID",
+                "error_description": "The specified offset is longer than 64 bytes."
             },
             {
                 "error_code": 400,
@@ -2161,6 +2278,16 @@
                 "error_description": "Start parameter invalid"
             },
             {
+                "error_code": 400,
+                "error_message": "STICKER_DOCUMENT_INVALID",
+                "error_description": "The specified sticker document is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_BOT_INVALID",
+                "error_description": "This method can only be called by a bot"
+            },
+            {
                 "error_code": 403,
                 "error_message": "USER_BOT_INVALID",
                 "error_description": "This method can only be called by a bot"
@@ -2184,6 +2311,11 @@
                 "error_code": 400,
                 "error_message": "WEBDOCUMENT_SIZE_TOO_BIG",
                 "error_description": "Webdocument is too big!"
+            },
+            {
+                "error_code": 400,
+                "error_message": "WEBDOCUMENT_URL_INVALID",
+                "error_description": "The specified webdocument URL is invalid"
             }
         ],
         "auth.importAuthorization": [
@@ -2621,6 +2753,11 @@
             },
             {
                 "error_code": 403,
+                "error_message": "USER_NOT_MUTUAL_CONTACT",
+                "error_description": "The provided user is not a mutual contact"
+            },
+            {
+                "error_code": 403,
                 "error_message": "USER_PRIVACY_RESTRICTED",
                 "error_description": "The user's privacy settings do not allow you to do this"
             },
@@ -2927,7 +3064,12 @@
             {
                 "error_code": 400,
                 "error_message": "MEDIA_GROUPED_INVALID",
-                "error_description": ""
+                "error_description": "You tried to send media of different types in an album."
+            },
+            {
+                "error_code": 400,
+                "error_message": "MEDIA_NEW_INVALID",
+                "error_description": "The new media is invalid"
             },
             {
                 "error_code": 400,
@@ -3109,6 +3251,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "FROM_PEER_INVALID",
+                "error_description": "The specified from_id is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "INPUT_FILTER_INVALID",
                 "error_description": "The specified filter is invalid"
             },
@@ -3153,6 +3300,16 @@
                 "error_code": 406,
                 "error_message": "AUTH_KEY_DUPLICATED",
                 "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "BOT_PAYMENTS_DISABLED",
+                "error_description": "Please enable bot payments in botfather before calling this method."
+            },
+            {
+                "error_code": 400,
+                "error_message": "BOT_POLLS_DISABLED",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -3221,6 +3378,16 @@
             },
             {
                 "error_code": 400,
+                "error_message": "CURRENCY_TOTAL_AMOUNT_INVALID",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "EMOTICON_INVALID",
+                "error_description": "The specified emoji is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "EXTERNAL_URL_INVALID",
                 "error_description": "External URL invalid"
             },
@@ -3233,6 +3400,21 @@
                 "error_code": 400,
                 "error_message": "FILE_PARTS_INVALID",
                 "error_description": "The number of file parts is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "FILE_REFERENCE_EMPTY",
+                "error_description": "An empty [file reference](https:\/\/core.telegram.org\/api\/file_reference) was specified"
+            },
+            {
+                "error_code": 400,
+                "error_message": "FILE_REFERENCE_EXPIRED",
+                "error_description": "File reference expired, it must be refetched as described in https:\/\/core.telegram.org\/api\/file_reference"
+            },
+            {
+                "error_code": 400,
+                "error_message": "GAME_BOT_INVALID",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -3278,6 +3460,11 @@
                 "error_code": 400,
                 "error_message": "MSG_ID_INVALID",
                 "error_description": "Invalid message ID provided"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PAYMENT_PROVIDER_INVALID",
+                "error_description": "The specified payment provider is invalid"
             },
             {
                 "error_code": 400,
@@ -3336,6 +3523,16 @@
             },
             {
                 "error_code": 400,
+                "error_message": "QUIZ_CORRECT_ANSWERS_TOO_MUCH",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "QUIZ_MULTIPLE_INVALID",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
                 "error_message": "REPLY_MARKUP_BUY_EMPTY",
                 "error_description": "Reply markup for buy button empty"
             },
@@ -3348,6 +3545,11 @@
                 "error_code": 400,
                 "error_message": "SCHEDULE_BOT_NOT_ALLOWED",
                 "error_description": "Bots cannot schedule messages"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_DATE_TOO_LATE",
+                "error_description": "You can't schedule a message this far in the future"
             },
             {
                 "error_code": 400,
@@ -3380,9 +3582,19 @@
                 "error_description": "You were blocked by this user"
             },
             {
+                "error_code": 403,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
                 "error_code": 400,
                 "error_message": "USER_IS_BOT",
                 "error_description": "Bots can't send messages to other bots"
+            },
+            {
+                "error_code": 400,
+                "error_message": "VIDEO_CONTENT_TYPE_INVALID",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -3445,6 +3657,11 @@
                 "error_code": 400,
                 "error_message": "RANDOM_ID_EMPTY",
                 "error_description": "Random ID empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_DATE_TOO_LATE",
+                "error_description": "You can't schedule a message this far in the future"
             },
             {
                 "error_code": 400,
@@ -3571,6 +3788,11 @@
                 "error_description": "You were blocked by this user"
             },
             {
+                "error_code": 403,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
                 "error_code": 400,
                 "error_message": "USER_IS_BOT",
                 "error_description": "Bots can't send messages to other bots"
@@ -3628,6 +3850,11 @@
                 "error_code": 406,
                 "error_message": "AUTH_KEY_DUPLICATED",
                 "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "BOT_ONESIDE_NOT_AVAIL",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -3949,8 +4176,18 @@
         "auth.importLoginToken": [
             {
                 "error_code": 400,
+                "error_message": "AUTH_TOKEN_ALREADY_ACCEPTED",
+                "error_description": "The specified auth token was already accepted"
+            },
+            {
+                "error_code": 400,
                 "error_message": "AUTH_TOKEN_EXPIRED",
                 "error_description": "The authorization token has expired"
+            },
+            {
+                "error_code": 400,
+                "error_message": "AUTH_TOKEN_INVALID",
+                "error_description": "The specified auth token is invalid"
             },
             {
                 "error_code": 400,
@@ -3963,6 +4200,20 @@
                 "error_code": 400,
                 "error_message": "AUTH_TOKEN_INVALIDX",
                 "error_description": "The specified auth token is invalid"
+            }
+        ],
+        "account.setGlobalPrivacySettings": [
+            {
+                "error_code": 400,
+                "error_message": "AUTOARCHIVE_NOT_AVAILABLE",
+                "error_description": "The autoarchive setting is not available at this time: please check the value of the [autoarchive_setting_available field in client config &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration) before calling this method."
+            }
+        ],
+        "payments.getBankCardData": [
+            {
+                "error_code": 400,
+                "error_message": "BANK_CARD_NUMBER_INVALID",
+                "error_description": "The specified card number is invalid"
             }
         ],
         "messages.editChatDefaultBannedRights": [
@@ -3995,6 +4246,23 @@
                 "error_code": 400,
                 "error_message": "UNTIL_DATE_INVALID",
                 "error_description": "Invalid until date provided"
+            }
+        ],
+        "bots.setBotCommands": [
+            {
+                "error_code": 400,
+                "error_message": "BOT_COMMAND_DESCRIPTION_INVALID",
+                "error_description": "The specified command description is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "BOT_COMMAND_INVALID",
+                "error_description": "The specified command is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "LANG_CODE_INVALID",
+                "error_description": "The specified language code is invalid"
             }
         ],
         "messages.getInlineBotResults": [
@@ -4044,6 +4312,16 @@
                 "error_code": 400,
                 "error_message": "BOT_MISSING",
                 "error_description": "This method can only be run by a bot"
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_PNG_NOPNG",
+                "error_description": "One of the specified stickers is not a valid PNG file"
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_TGS_NOTGS",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -4117,6 +4395,21 @@
             {
                 "error_code": 400,
                 "error_message": "STICKER_TGS_NODOC",
+                "error_description": "Incorrect document type for sticker."
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_TGS_NOTGS",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_THUMB_PNG_NOPNG",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_THUMB_TGS_NOTGS",
                 "error_description": ""
             },
             {
@@ -4168,7 +4461,7 @@
             {
                 "error_code": 403,
                 "error_message": "BROADCAST_FORBIDDEN",
-                "error_description": ""
+                "error_description": "Participants of polls in channels should stay anonymous."
             },
             {
                 "error_code": 400,
@@ -4206,6 +4499,11 @@
                 "error_code": 400,
                 "error_message": "MEGAGROUP_ID_INVALID",
                 "error_description": "Invalid supergroup ID"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MEGAGROUP_PREHISTORY_HIDDEN",
+                "error_description": ""
             }
         ],
         "stats.getBroadcastStats": [
@@ -4327,6 +4625,11 @@
                 "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
             },
             {
                 "error_code": 403,
@@ -4598,6 +4901,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "FILE_REFERENCE_INVALID",
+                "error_description": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PHOTO_CROP_SIZE_SMALL",
                 "error_description": "Photo is too small"
             },
@@ -4752,6 +5060,11 @@
                 "error_code": 400,
                 "error_message": "PARTICIPANTS_TOO_FEW",
                 "error_description": "Not enough participants"
+            },
+            {
+                "error_code": 406,
+                "error_message": "STICKERSET_OWNER_ANONYMOUS",
+                "error_description": ""
             }
         ],
         "channels.toggleInvites": [
@@ -4933,6 +5246,11 @@
                 "error_description": "You can't send gifs in this chat"
             },
             {
+                "error_code": 400,
+                "error_message": "CHAT_SEND_INLINE_FORBIDDEN",
+                "error_description": "You can't send inline messages in this group"
+            },
+            {
                 "error_code": 403,
                 "error_message": "CHAT_SEND_INLINE_FORBIDDEN",
                 "error_description": "You can't send inline messages in this group"
@@ -4986,6 +5304,16 @@
                 "error_code": 400,
                 "error_message": "RESULT_ID_EMPTY",
                 "error_description": "Result ID empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_DATE_TOO_LATE",
+                "error_description": "You can't schedule a message this far in the future"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_TOO_MUCH",
+                "error_description": "There are too many scheduled messages"
             },
             {
                 "error_code": 420,
@@ -5153,6 +5481,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "SRP_ID_INVALID",
+                "error_description": "Invalid SRP ID provided"
+            },
+            {
+                "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
             }
@@ -5276,6 +5609,11 @@
                 "error_description": "You have joined too many channels\/supergroups"
             },
             {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
                 "error_code": 403,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
@@ -5348,6 +5686,11 @@
                 "error_code": 400,
                 "error_message": "USER_IS_BLOCKED",
                 "error_description": "You were blocked by this user"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USER_NOT_MUTUAL_CONTACT",
+                "error_description": "The provided user is not a mutual contact"
             },
             {
                 "error_code": 403,
@@ -5448,6 +5791,11 @@
                 "error_code": 400,
                 "error_message": "CHAT_ADMIN_REQUIRED",
                 "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SCHEDULE_DATE_INVALID",
+                "error_description": "Invalid schedule date provided"
             }
         ],
         "messages.discardEncryption": [
@@ -5701,11 +6049,35 @@
                 "error_description": "Not enough users (to create a chat, for example)"
             }
         ],
+        "messages.setHistoryTTL": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_NOT_MODIFIED",
+                "error_description": "The pinned message wasn't modified"
+            },
+            {
+                "error_code": 400,
+                "error_message": "TTL_PERIOD_INVALID",
+                "error_description": "The specified TTL period is invalid"
+            }
+        ],
+        "messages.getMessagesReadParticipants": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_TOO_BIG",
+                "error_description": ""
+            }
+        ],
         "auth.recoverPassword": [
             {
                 "error_code": 400,
                 "error_message": "CODE_EMPTY",
                 "error_description": "The provided code is empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "NEW_SETTINGS_INVALID",
+                "error_description": "The new settings are invalid"
             }
         ],
         "account.confirmPhone": [
@@ -5827,6 +6199,11 @@
                 "error_description": "You can't send this secret message because the other participant deleted their account."
             },
             {
+                "error_code": 400,
+                "error_message": "USER_IS_BLOCKED",
+                "error_description": "You were blocked by this user"
+            },
+            {
                 "error_code": 403,
                 "error_message": "USER_IS_BLOCKED",
                 "error_description": "You were blocked by this user"
@@ -5869,6 +6246,25 @@
                 "error_code": 400,
                 "error_message": "USER_ID_INVALID",
                 "error_description": "The provided user ID is invalid"
+            }
+        ],
+        "account.sendVerifyEmailCode": [
+            {
+                "error_code": 400,
+                "error_message": "EMAIL_INVALID",
+                "error_description": "The specified email is invalid"
+            }
+        ],
+        "account.verifyEmail": [
+            {
+                "error_code": 400,
+                "error_message": "EMAIL_INVALID",
+                "error_description": "The specified email is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "EMAIL_VERIFY_EXPIRED",
+                "error_description": "The verification email has expired"
             }
         ],
         "account.updatePasswordSettings": [
@@ -5918,11 +6314,35 @@
                 "error_description": "Password has changed"
             }
         ],
-        "account.verifyEmail": [
+        "messages.setChatTheme": [
             {
                 "error_code": 400,
-                "error_message": "EMAIL_VERIFY_EXPIRED",
-                "error_description": "The verification email has expired"
+                "error_message": "EMOJI_INVALID",
+                "error_description": "The specified theme emoji is valid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "EMOJI_NOT_MODIFIED",
+                "error_description": "The theme wasn't changed"
+            }
+        ],
+        "messages.getStickers": [
+            {
+                "error_code": 400,
+                "error_message": "EMOTICON_EMPTY",
+                "error_description": "The emoji is empty"
+            }
+        ],
+        "messages.getStickerSet": [
+            {
+                "error_code": 400,
+                "error_message": "EMOTICON_STICKERPACK_MISSING",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKERSET_INVALID",
+                "error_description": "The provided sticker set is invalid"
             }
         ],
         "auth.bindTempAuthKey": [
@@ -5988,48 +6408,6 @@
                 "error_description": "Provided card is invalid"
             }
         ],
-        "photos.uploadProfilePhoto": [
-            {
-                "error_code": 400,
-                "error_message": "FILE_PARTS_INVALID",
-                "error_description": "The number of file parts is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "IMAGE_PROCESS_FAILED",
-                "error_description": "Failure while processing image"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PHOTO_CROP_FILE_MISSING",
-                "error_description": "Photo crop file missing"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PHOTO_CROP_SIZE_SMALL",
-                "error_description": "Photo is too small"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PHOTO_EXT_INVALID",
-                "error_description": "The extension of the photo is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PHOTO_FILE_MISSING",
-                "error_description": "Profile photo file missing"
-            },
-            {
-                "error_code": -503,
-                "error_message": "Timeout",
-                "error_description": "Timeout while fetching data"
-            },
-            {
-                "error_code": 400,
-                "error_message": "VIDEO_FILE_INVALID",
-                "error_description": "The specified video file is invalid"
-            }
-        ],
         "messages.updateDialogFilter": [
             {
                 "error_code": 400,
@@ -6084,9 +6462,21 @@
                 "error_description": "The phone number is invalid"
             },
             {
+                "error_code": 406,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_OCCUPIED",
                 "error_description": "The phone number is already in use"
+            }
+        ],
+        "folders.deleteFolder": [
+            {
+                "error_code": 400,
+                "error_message": "FOLDER_ID_EMPTY",
+                "error_description": "An empty folder ID was specified"
             }
         ],
         "folders.editPeerFolders": [
@@ -6119,10 +6509,20 @@
             {
                 "error_code": 406,
                 "error_message": "FRESH_CHANGE_PHONE_FORBIDDEN",
-                "error_description": ""
+                "error_description": "You can't change phone number right after logging in, please wait at least 24 hours."
             },
             {
                 "error_code": 400,
+                "error_message": "PHONE_NUMBER_BANNED",
+                "error_description": "The provided phone number is banned from telegram"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
+                "error_code": 406,
                 "error_message": "PHONE_NUMBER_INVALID",
                 "error_description": "The phone number is invalid"
             },
@@ -6173,6 +6573,11 @@
                 "error_description": "You need to disable privacy settings for your profile picture in order to make your geolocation public."
             },
             {
+                "error_code": 400,
+                "error_message": "USERPIC_UPLOAD_REQUIRED",
+                "error_description": "You must have a profile picture to publish your geolocation"
+            },
+            {
                 "error_code": 406,
                 "error_message": "USERPIC_UPLOAD_REQUIRED",
                 "error_description": "You must have a profile picture to publish your geolocation"
@@ -6207,6 +6612,34 @@
                 "error_description": "Timeout while fetching data"
             }
         ],
+        "phone.discardGroupCallRequest": [
+            {
+                "error_code": 400,
+                "error_message": "GROUPCALL_ALREADY_DISCARDED",
+                "error_description": "The group call was already discarded"
+            }
+        ],
+        "phone.inviteToGroupCall": [
+            {
+                "error_code": 403,
+                "error_message": "GROUPCALL_FORBIDDEN",
+                "error_description": ""
+            }
+        ],
+        "phone.toggleGroupCallSettings": [
+            {
+                "error_code": 400,
+                "error_message": "GROUPCALL_NOT_MODIFIED",
+                "error_description": "Group call settings weren't modified"
+            }
+        ],
+        "phone.joinGroupCall": [
+            {
+                "error_code": 400,
+                "error_message": "GROUPCALL_SSRC_DUPLICATE_MUCH",
+                "error_description": ""
+            }
+        ],
         "account.resetWebAuthorization": [
             {
                 "error_code": 400,
@@ -6219,6 +6652,25 @@
                 "error_code": 400,
                 "error_message": "HASH_INVALID",
                 "error_description": "The provided hash is invalid"
+            }
+        ],
+        "messages.initHistoryImport": [
+            {
+                "error_code": 400,
+                "error_message": "IMPORT_FILE_INVALID",
+                "error_description": "The specified chat export file is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "IMPORT_FORMAT_UNRECOGNIZED",
+                "error_description": "The specified chat export file was exported from an unsupported chat app"
+            }
+        ],
+        "messages.startHistoryImport": [
+            {
+                "error_code": 400,
+                "error_message": "IMPORT_ID_INVALID",
+                "error_description": "The specified import ID is invalid"
             }
         ],
         "invokeWithTakeout": [
@@ -6309,6 +6761,18 @@
                 "error_code": 400,
                 "error_message": "LOCATION_INVALID",
                 "error_description": "The provided location is invalid"
+            }
+        ],
+        "messages.receivedQueue": [
+            {
+                "error_code": 400,
+                "error_message": "MAX_QTS_INVALID",
+                "error_description": "The specified max_qts is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "MSG_WAIT_FAILED",
+                "error_description": "A waiting call returned an error"
             }
         ],
         "channels.editLocation": [
@@ -6478,6 +6942,23 @@
                 "error_code": 400,
                 "error_message": "USER_BOT_INVALID",
                 "error_description": "This method can only be called by a bot"
+            },
+            {
+                "error_code": 403,
+                "error_message": "USER_BOT_INVALID",
+                "error_description": "This method can only be called by a bot"
+            }
+        ],
+        "messages.searchGifs": [
+            {
+                "error_code": 400,
+                "error_message": "METHOD_INVALID",
+                "error_description": "The specified method is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SEARCH_QUERY_EMPTY",
+                "error_description": "The search query is empty"
             }
         ],
         "messages.getCommonChats": [
@@ -6535,13 +7016,6 @@
                 "error_description": "A waiting call returned an error"
             }
         ],
-        "messages.receivedQueue": [
-            {
-                "error_code": 400,
-                "error_message": "MSG_WAIT_FAILED",
-                "error_description": "A waiting call returned an error"
-            }
-        ],
         "account.getPrivacy": [
             {
                 "error_code": -500,
@@ -6559,11 +7033,30 @@
                 "error_description": "2FA is enabled, use a password to login"
             }
         ],
+        "phone.joinGroupCallPresentation": [
+            {
+                "error_code": 403,
+                "error_message": "PARTICIPANT_JOIN_MISSING",
+                "error_description": ""
+            }
+        ],
+        "channels.convertToGigagroup": [
+            {
+                "error_code": 400,
+                "error_message": "PARTICIPANTS_TOO_FEW",
+                "error_description": "Not enough participants"
+            }
+        ],
         "auth.requestPasswordRecovery": [
             {
                 "error_code": 400,
                 "error_message": "PASSWORD_EMPTY",
                 "error_description": "The provided password is empty"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PASSWORD_RECOVERY_NA",
+                "error_description": ""
             }
         ],
         "account.getPasswordSettings": [
@@ -6605,6 +7098,20 @@
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
+            }
+        ],
+        "auth.checkRecoveryPassword": [
+            {
+                "error_code": 400,
+                "error_message": "PASSWORD_RECOVERY_EXPIRED",
+                "error_description": "The recovery code has expired"
+            }
+        ],
+        "account.saveSecureValue": [
+            {
+                "error_code": 400,
+                "error_message": "PASSWORD_REQUIRED",
+                "error_description": ""
             }
         ],
         "account.getNotifySettings": [
@@ -6694,6 +7201,11 @@
                 "error_description": "The phone number is invalid"
             },
             {
+                "error_code": 406,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_OCCUPIED",
                 "error_description": "The phone number is already in use"
@@ -6738,6 +7250,11 @@
                 "error_description": "The phone number is invalid"
             },
             {
+                "error_code": 406,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
                 "error_code": 400,
                 "error_message": "PHONE_NUMBER_UNOCCUPIED",
                 "error_description": "The phone number is not yet being used"
@@ -6756,6 +7273,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
+                "error_code": 406,
                 "error_message": "PHONE_NUMBER_INVALID",
                 "error_description": "The phone number is invalid"
             }
@@ -6778,8 +7300,13 @@
             },
             {
                 "error_code": 406,
+                "error_message": "PHONE_NUMBER_INVALID",
+                "error_description": "The phone number is invalid"
+            },
+            {
+                "error_code": 406,
                 "error_message": "SEND_CODE_UNAVAILABLE",
-                "error_description": ""
+                "error_description": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend)"
             }
         ],
         "account.sendVerifyPhoneCode": [
@@ -6797,6 +7324,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PRIVACY_TOO_LONG",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
                 "error_message": "PRIVACY_VALUE_INVALID",
                 "error_description": "The specified privacy rule combination is invalid"
             },
@@ -6804,6 +7336,13 @@
                 "error_code": 401,
                 "error_message": "SESSION_PASSWORD_NEEDED",
                 "error_description": "2FA is enabled, use a password to login"
+            }
+        ],
+        "account.getAuthorizationForm": [
+            {
+                "error_code": 400,
+                "error_message": "PUBLIC_KEY_REQUIRED",
+                "error_description": "A public key is required"
             }
         ],
         "bots.answerWebhookJSONQuery": [
@@ -6816,6 +7355,11 @@
                 "error_code": 400,
                 "error_message": "USER_BOT_INVALID",
                 "error_description": "This method can only be called by a bot"
+            },
+            {
+                "error_code": 403,
+                "error_message": "USER_BOT_INVALID",
+                "error_description": "This method can only be called by a bot"
             }
         ],
         "messages.setBotShippingResults": [
@@ -6825,18 +7369,18 @@
                 "error_description": "The query ID is invalid"
             }
         ],
+        "account.declinePasswordReset": [
+            {
+                "error_code": 400,
+                "error_message": "RESET_REQUEST_MISSING",
+                "error_description": "No password reset is in progress"
+            }
+        ],
         "upload.reuploadCdnFile": [
             {
                 "error_code": 400,
                 "error_message": "RSA_DECRYPT_FAILED",
                 "error_description": "Internal RSA decryption failed"
-            }
-        ],
-        "messages.searchGifs": [
-            {
-                "error_code": 400,
-                "error_message": "SEARCH_QUERY_EMPTY",
-                "error_description": "The search query is empty"
             }
         ],
         "account.setContentSettings": [
@@ -6867,6 +7411,18 @@
                 "error_description": "The provided SHA256 hash is invalid"
             }
         ],
+        "stickers.checkShortName": [
+            {
+                "error_code": 400,
+                "error_message": "SHORT_NAME_INVALID",
+                "error_description": "The specified short name is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SHORT_NAME_OCCUPIED",
+                "error_description": "The specified short name is already in use"
+            }
+        ],
         "messages.faveSticker": [
             {
                 "error_code": 400,
@@ -6881,7 +7437,17 @@
                 "error_description": "The provided sticker ID is invalid"
             }
         ],
-        "messages.getStickerSet": [
+        "stickers.setStickerSetThumb": [
+            {
+                "error_code": 400,
+                "error_message": "STICKER_THUMB_PNG_NOPNG",
+                "error_description": ""
+            },
+            {
+                "error_code": 400,
+                "error_message": "STICKER_THUMB_TGS_NOTGS",
+                "error_description": ""
+            },
             {
                 "error_code": 400,
                 "error_message": "STICKERSET_INVALID",
@@ -6896,13 +7462,6 @@
             }
         ],
         "messages.uninstallStickerSet": [
-            {
-                "error_code": 400,
-                "error_message": "STICKERSET_INVALID",
-                "error_description": "The provided sticker set is invalid"
-            }
-        ],
-        "stickers.setStickerSetThumb": [
             {
                 "error_code": 400,
                 "error_message": "STICKERSET_INVALID",
@@ -6932,6 +7491,11 @@
         ],
         "contacts.getSaved": [
             {
+                "error_code": 400,
+                "error_message": "TAKEOUT_REQUIRED",
+                "error_description": "A takeout session has to be initialized, first"
+            },
+            {
                 "error_code": 403,
                 "error_message": "TAKEOUT_REQUIRED",
                 "error_description": "A takeout session has to be initialized, first"
@@ -6956,11 +7520,32 @@
                 "error_description": "Invalid theme provided"
             }
         ],
+        "account.updateTheme": [
+            {
+                "error_code": 400,
+                "error_message": "THEME_INVALID",
+                "error_description": "Invalid theme provided"
+            }
+        ],
+        "account.createTheme": [
+            {
+                "error_code": 400,
+                "error_message": "THEME_MIME_INVALID",
+                "error_description": "The theme's MIME type is invalid"
+            }
+        ],
         "contacts.deleteContacts": [
             {
                 "error_code": -503,
                 "error_message": "Timeout",
                 "error_description": "Timeout while fetching data"
+            }
+        ],
+        "stickers.suggestShortName": [
+            {
+                "error_code": 400,
+                "error_message": "TITLE_INVALID",
+                "error_description": "The specified stickerpack title is invalid"
             }
         ],
         "account.registerDevice": [
@@ -7006,6 +7591,13 @@
                 "error_description": "No top peer type was provided"
             }
         ],
+        "channels.viewSponsoredMessage": [
+            {
+                "error_code": 400,
+                "error_message": "UNKNOWN_ERROR",
+                "error_description": "Internal error"
+            }
+        ],
         "req_DH_params": [
             {
                 "error_code": 400,
@@ -7027,7 +7619,19 @@
                 "error_description": "The provided user ID is invalid"
             }
         ],
+        "help.editUserInfo": [
+            {
+                "error_code": 400,
+                "error_message": "USER_INVALID",
+                "error_description": "Invalid user provided"
+            }
+        ],
         "help.getSupportName": [
+            {
+                "error_code": 400,
+                "error_message": "USER_INVALID",
+                "error_description": "Invalid user provided"
+            },
             {
                 "error_code": 403,
                 "error_message": "USER_INVALID",
@@ -7035,6 +7639,11 @@
             }
         ],
         "help.getUserInfo": [
+            {
+                "error_code": 400,
+                "error_message": "USER_INVALID",
+                "error_description": "Invalid user provided"
+            },
             {
                 "error_code": 403,
                 "error_message": "USER_INVALID",
@@ -7048,11 +7657,44 @@
                 "error_description": "The provided user is not a mutual contact"
             }
         ],
+        "phone.editGroupCallParticipant": [
+            {
+                "error_code": 400,
+                "error_message": "USER_VOLUME_INVALID",
+                "error_description": "The specified user volume is invalid"
+            }
+        ],
         "account.uploadWallPaper": [
+            {
+                "error_code": 400,
+                "error_message": "WALLPAPER_FILE_INVALID",
+                "error_description": "The specified wallpaper file is invalid"
+            },
             {
                 "error_code": 400,
                 "error_message": "WALLPAPER_MIME_INVALID",
                 "error_description": "The specified wallpaper MIME type is invalid"
+            }
+        ],
+        "account.getWallPaper": [
+            {
+                "error_code": 400,
+                "error_message": "WALLPAPER_INVALID",
+                "error_description": "The specified wallpaper is invalid"
+            }
+        ],
+        "account.installWallPaper": [
+            {
+                "error_code": 400,
+                "error_message": "WALLPAPER_INVALID",
+                "error_description": "The specified wallpaper is invalid"
+            }
+        ],
+        "account.saveWallPaper": [
+            {
+                "error_code": 400,
+                "error_message": "WALLPAPER_INVALID",
+                "error_description": "The specified wallpaper is invalid"
             }
         ],
         "messages.getWebPage": [
