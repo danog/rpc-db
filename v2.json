@@ -7111,7 +7111,7 @@
             {
                 "error_code": 400,
                 "error_message": "PASSWORD_REQUIRED",
-                "error_description": ""
+                "error_description": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport"
             }
         ],
         "account.getNotifySettings": [

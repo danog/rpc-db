@@ -3169,7 +3169,7 @@
         "PASSWORD_MISSING": "You must enable 2FA in order to transfer ownership of a channel",
         "PASSWORD_RECOVERY_EXPIRED": "The recovery code has expired",
         "PASSWORD_RECOVERY_NA": "",
-        "PASSWORD_REQUIRED": "",
+        "PASSWORD_REQUIRED": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport",
         "PASSWORD_TOO_FRESH_X": "The password was modified less than 24 hours ago, try again in X seconds",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid",
         "PEER_FLOOD": "Too many requests",
