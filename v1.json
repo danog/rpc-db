@@ -3578,10 +3578,10 @@
             "No correct quiz answer was specified"
         ],
         "QUIZ_CORRECT_ANSWERS_TOO_MUCH": [
-            ""
+            "You specified too many correct answers in a quiz, quizes can only have one right answer!"
         ],
         "QUIZ_MULTIPLE_INVALID": [
-            ""
+            "Quizes can't have the multiple_choice flag set!"
         ],
         "RANDOM_ID_DUPLICATE": [
             "You provided a random ID that was already used"
@@ -3944,7 +3944,7 @@
             "delete"
         ],
         "VIDEO_CONTENT_TYPE_INVALID": [
-            ""
+            "The video's content type is invalid"
         ],
         "VIDEO_FILE_INVALID": [
             "The specified video file is invalid"
