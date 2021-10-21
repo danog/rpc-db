@@ -298,7 +298,6 @@
             ],
             "messages.sendMedia": [
                 "BOT_PAYMENTS_DISABLED",
-                "BOT_POLLS_DISABLED",
                 "BROADCAST_PUBLIC_VOTERS_FORBIDDEN",
                 "BUTTON_DATA_INVALID",
                 "BUTTON_TYPE_INVALID",
@@ -898,6 +897,7 @@
                 "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID",
+                "EXPIRE_DATE_INVALID",
                 "PEER_ID_INVALID",
                 "USAGE_LIMIT_INVALID"
             ],
@@ -1182,10 +1182,6 @@
             ],
             "messages.getStickers": [
                 "EMOTICON_EMPTY"
-            ],
-            "messages.getStickerSet": [
-                "EMOTICON_STICKERPACK_MISSING",
-                "STICKERSET_INVALID"
             ],
             "auth.bindTempAuthKey": [
                 "ENCRYPTED_MESSAGE_INVALID",
@@ -1548,6 +1544,9 @@
             "stickers.setStickerSetThumb": [
                 "STICKER_THUMB_PNG_NOPNG",
                 "STICKER_THUMB_TGS_NOTGS",
+                "STICKERSET_INVALID"
+            ],
+            "messages.getStickerSet": [
                 "STICKERSET_INVALID"
             ],
             "messages.installStickerSet": [
@@ -1977,6 +1976,9 @@
             ],
             "auth.signUp": [
                 "PHONE_NUMBER_INVALID"
+            ],
+            "messages.initHistoryImport": [
+                "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN"
             ],
             "channels.setStickers": [
                 "STICKERSET_OWNER_ANONYMOUS"
@@ -2717,7 +2719,7 @@
             "This method can only be run by a bot"
         ],
         "BOT_ONESIDE_NOT_AVAIL": [
-            ""
+            "Bots can't pin messages in PM just for themselves"
         ],
         "BOT_PAYMENTS_DISABLED": [
             "Please enable bot payments in botfather before calling this method."
@@ -2864,7 +2866,7 @@
             "No chat title provided"
         ],
         "CHAT_TOO_BIG": [
-            ""
+            "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration)."
         ],
         "CHAT_WRITE_FORBIDDEN": [
             "You can't write in this chat"
@@ -2918,7 +2920,7 @@
             "Missing contact request"
         ],
         "CURRENCY_TOTAL_AMOUNT_INVALID": [
-            ""
+            "The total amount of all prices is invalid"
         ],
         "DATA_INVALID": [
             "Encrypted data invalid"
@@ -3000,6 +3002,9 @@
         ],
         "ERROR_TEXT_EMPTY": [
             "The provided error message is empty"
+        ],
+        "EXPIRE_DATE_INVALID": [
+            "The specified expiration date is invalid"
         ],
         "EXPORT_CARD_INVALID": [
             "Provided card is invalid"
@@ -3095,7 +3100,7 @@
             "The specified from_id is invalid"
         ],
         "GAME_BOT_INVALID": [
-            ""
+            "Bots can't send another bot's game."
         ],
         "GEO_POINT_INVALID": [
             "Invalid geoposition provided"
@@ -3119,13 +3124,13 @@
             "The group call was already discarded"
         ],
         "GROUPCALL_FORBIDDEN": [
-            ""
+            "The group call has already ended"
         ],
         "GROUPCALL_NOT_MODIFIED": [
             "Group call settings weren't modified"
         ],
         "GROUPCALL_SSRC_DUPLICATE_MUCH": [
-            ""
+            "The app needs to retry joining the group call with a new SSRC value."
         ],
         "GROUPED_ID_OCCUPY_FAILED": [
             "Internal error"
@@ -3281,7 +3286,7 @@
             "Invalid supergroup ID"
         ],
         "MEGAGROUP_PREHISTORY_HIDDEN": [
-            ""
+            "Group with hidden history for new members can't be set as discussion groups"
         ],
         "MEGAGROUP_REQUIRED": [
             "You can only use this method on a supergroup"
@@ -3401,7 +3406,7 @@
             "The specified participant ID is invalid"
         ],
         "PARTICIPANT_JOIN_MISSING": [
-            ""
+            "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](\/method\/phone.joinGroupCall)"
         ],
         "PARTICIPANT_VERSION_OUTDATED": [
             "The other participant does not use an up to date telegram client with support for calls"
@@ -3422,7 +3427,7 @@
             "The recovery code has expired"
         ],
         "PASSWORD_RECOVERY_NA": [
-            ""
+            "No email was set, can't recover password via email."
         ],
         "PASSWORD_REQUIRED": [
             "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport"
@@ -3547,11 +3552,14 @@
         "POSTPONED_TIMEOUT": [
             "Internal error"
         ],
+        "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN": [
+            "Import for this chat is already in progress, wait 5 minutes before starting a new one."
+        ],
         "PRIVACY_KEY_INVALID": [
             "The privacy key is invalid"
         ],
         "PRIVACY_TOO_LONG": [
-            ""
+            "Too many privacy rules were specified, the current limit is 1000"
         ],
         "PRIVACY_VALUE_INVALID": [
             "The specified privacy rule combination is invalid"
@@ -3656,7 +3664,7 @@
             "You can't schedule a message this far in the future"
         ],
         "SCHEDULE_STATUS_PRIVATE": [
-            ""
+            "Can't schedule until user is online, if the user's last seen timestamp is hidden by their privacy settings."
         ],
         "SCHEDULE_TOO_MUCH": [
             "There are too many scheduled messages"
@@ -3752,13 +3760,13 @@
             "Incorrect document type for sticker."
         ],
         "STICKER_TGS_NOTGS": [
-            ""
+            "Invalid TGS sticker provided."
         ],
         "STICKER_THUMB_PNG_NOPNG": [
-            ""
+            "Incorrect stickerset thumb file provided, PNG \/ WEBP expected."
         ],
         "STICKER_THUMB_TGS_NOTGS": [
-            ""
+            "Incorrect stickerset TGS thumb file provided."
         ],
         "STICKERS_EMPTY": [
             "No sticker provided"
@@ -3767,7 +3775,7 @@
             "The provided sticker set is invalid"
         ],
         "STICKERSET_OWNER_ANONYMOUS": [
-            ""
+            "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation."
         ],
         "STORAGE_CHECK_FAILED": [
             "Server storage check failed"

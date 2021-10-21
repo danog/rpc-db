@@ -1639,7 +1639,7 @@
             {
                 "error_code": 400,
                 "error_message": "SCHEDULE_STATUS_PRIVATE",
-                "error_description": ""
+                "error_description": "Can't schedule until user is online, if the user's last seen timestamp is hidden by their privacy settings."
             },
             {
                 "error_code": 400,
@@ -3308,11 +3308,6 @@
             },
             {
                 "error_code": 400,
-                "error_message": "BOT_POLLS_DISABLED",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
                 "error_message": "BROADCAST_PUBLIC_VOTERS_FORBIDDEN",
                 "error_description": "You can't forward polls with public voters"
             },
@@ -3379,7 +3374,7 @@
             {
                 "error_code": 400,
                 "error_message": "CURRENCY_TOTAL_AMOUNT_INVALID",
-                "error_description": ""
+                "error_description": "The total amount of all prices is invalid"
             },
             {
                 "error_code": 400,
@@ -3414,7 +3409,7 @@
             {
                 "error_code": 400,
                 "error_message": "GAME_BOT_INVALID",
-                "error_description": ""
+                "error_description": "Bots can't send another bot's game."
             },
             {
                 "error_code": 400,
@@ -3854,7 +3849,7 @@
             {
                 "error_code": 400,
                 "error_message": "BOT_ONESIDE_NOT_AVAIL",
-                "error_description": ""
+                "error_description": "Bots can't pin messages in PM just for themselves"
             },
             {
                 "error_code": 400,
@@ -4321,7 +4316,7 @@
             {
                 "error_code": 400,
                 "error_message": "STICKER_TGS_NOTGS",
-                "error_description": ""
+                "error_description": "Invalid TGS sticker provided."
             },
             {
                 "error_code": 400,
@@ -4400,17 +4395,17 @@
             {
                 "error_code": 400,
                 "error_message": "STICKER_TGS_NOTGS",
-                "error_description": ""
+                "error_description": "Invalid TGS sticker provided."
             },
             {
                 "error_code": 400,
                 "error_message": "STICKER_THUMB_PNG_NOPNG",
-                "error_description": ""
+                "error_description": "Incorrect stickerset thumb file provided, PNG \/ WEBP expected."
             },
             {
                 "error_code": 400,
                 "error_message": "STICKER_THUMB_TGS_NOTGS",
-                "error_description": ""
+                "error_description": "Incorrect stickerset TGS thumb file provided."
             },
             {
                 "error_code": 400,
@@ -4503,7 +4498,7 @@
             {
                 "error_code": 400,
                 "error_message": "MEGAGROUP_PREHISTORY_HIDDEN",
-                "error_description": ""
+                "error_description": "Group with hidden history for new members can't be set as discussion groups"
             }
         ],
         "stats.getBroadcastStats": [
@@ -5064,7 +5059,7 @@
             {
                 "error_code": 406,
                 "error_message": "STICKERSET_OWNER_ANONYMOUS",
-                "error_description": ""
+                "error_description": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation."
             }
         ],
         "channels.toggleInvites": [
@@ -5532,6 +5527,11 @@
                 "error_code": 403,
                 "error_message": "CHAT_WRITE_FORBIDDEN",
                 "error_description": "You can't write in this chat"
+            },
+            {
+                "error_code": 400,
+                "error_message": "EXPIRE_DATE_INVALID",
+                "error_description": "The specified expiration date is invalid"
             },
             {
                 "error_code": 400,
@@ -6065,7 +6065,7 @@
             {
                 "error_code": 400,
                 "error_message": "CHAT_TOO_BIG",
-                "error_description": ""
+                "error_description": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration)."
             }
         ],
         "auth.recoverPassword": [
@@ -6331,18 +6331,6 @@
                 "error_code": 400,
                 "error_message": "EMOTICON_EMPTY",
                 "error_description": "The emoji is empty"
-            }
-        ],
-        "messages.getStickerSet": [
-            {
-                "error_code": 400,
-                "error_message": "EMOTICON_STICKERPACK_MISSING",
-                "error_description": ""
-            },
-            {
-                "error_code": 400,
-                "error_message": "STICKERSET_INVALID",
-                "error_description": "The provided sticker set is invalid"
             }
         ],
         "auth.bindTempAuthKey": [
@@ -6623,7 +6611,7 @@
             {
                 "error_code": 403,
                 "error_message": "GROUPCALL_FORBIDDEN",
-                "error_description": ""
+                "error_description": "The group call has already ended"
             }
         ],
         "phone.toggleGroupCallSettings": [
@@ -6637,7 +6625,7 @@
             {
                 "error_code": 400,
                 "error_message": "GROUPCALL_SSRC_DUPLICATE_MUCH",
-                "error_description": ""
+                "error_description": "The app needs to retry joining the group call with a new SSRC value."
             }
         ],
         "account.resetWebAuthorization": [
@@ -6664,6 +6652,11 @@
                 "error_code": 400,
                 "error_message": "IMPORT_FORMAT_UNRECOGNIZED",
                 "error_description": "The specified chat export file was exported from an unsupported chat app"
+            },
+            {
+                "error_code": 406,
+                "error_message": "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN",
+                "error_description": "Import for this chat is already in progress, wait 5 minutes before starting a new one."
             }
         ],
         "messages.startHistoryImport": [
@@ -7037,7 +7030,7 @@
             {
                 "error_code": 403,
                 "error_message": "PARTICIPANT_JOIN_MISSING",
-                "error_description": ""
+                "error_description": "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](\/method\/phone.joinGroupCall)"
             }
         ],
         "channels.convertToGigagroup": [
@@ -7056,7 +7049,7 @@
             {
                 "error_code": 400,
                 "error_message": "PASSWORD_RECOVERY_NA",
-                "error_description": ""
+                "error_description": "No email was set, can't recover password via email."
             }
         ],
         "account.getPasswordSettings": [
@@ -7325,7 +7318,7 @@
             {
                 "error_code": 400,
                 "error_message": "PRIVACY_TOO_LONG",
-                "error_description": ""
+                "error_description": "Too many privacy rules were specified, the current limit is 1000"
             },
             {
                 "error_code": 400,
@@ -7441,13 +7434,20 @@
             {
                 "error_code": 400,
                 "error_message": "STICKER_THUMB_PNG_NOPNG",
-                "error_description": ""
+                "error_description": "Incorrect stickerset thumb file provided, PNG \/ WEBP expected."
             },
             {
                 "error_code": 400,
                 "error_message": "STICKER_THUMB_TGS_NOTGS",
-                "error_description": ""
+                "error_description": "Incorrect stickerset TGS thumb file provided."
             },
+            {
+                "error_code": 400,
+                "error_message": "STICKERSET_INVALID",
+                "error_description": "The provided sticker set is invalid"
+            }
+        ],
+        "messages.getStickerSet": [
             {
                 "error_code": 400,
                 "error_message": "STICKERSET_INVALID",

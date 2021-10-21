@@ -298,7 +298,6 @@
             },
             "messages.sendMedia": {
                 "BOT_PAYMENTS_DISABLED": "BOT_PAYMENTS_DISABLED",
-                "BOT_POLLS_DISABLED": "BOT_POLLS_DISABLED",
                 "BROADCAST_PUBLIC_VOTERS_FORBIDDEN": "BROADCAST_PUBLIC_VOTERS_FORBIDDEN",
                 "BUTTON_DATA_INVALID": "BUTTON_DATA_INVALID",
                 "BUTTON_TYPE_INVALID": "BUTTON_TYPE_INVALID",
@@ -898,6 +897,7 @@
                 "CHANNEL_PRIVATE": "CHANNEL_PRIVATE",
                 "CHAT_ADMIN_REQUIRED": "CHAT_ADMIN_REQUIRED",
                 "CHAT_ID_INVALID": "CHAT_ID_INVALID",
+                "EXPIRE_DATE_INVALID": "EXPIRE_DATE_INVALID",
                 "PEER_ID_INVALID": "PEER_ID_INVALID",
                 "USAGE_LIMIT_INVALID": "USAGE_LIMIT_INVALID"
             },
@@ -1182,10 +1182,6 @@
             },
             "messages.getStickers": {
                 "EMOTICON_EMPTY": "EMOTICON_EMPTY"
-            },
-            "messages.getStickerSet": {
-                "EMOTICON_STICKERPACK_MISSING": "EMOTICON_STICKERPACK_MISSING",
-                "STICKERSET_INVALID": "STICKERSET_INVALID"
             },
             "auth.bindTempAuthKey": {
                 "ENCRYPTED_MESSAGE_INVALID": "ENCRYPTED_MESSAGE_INVALID",
@@ -1548,6 +1544,9 @@
             "stickers.setStickerSetThumb": {
                 "STICKER_THUMB_PNG_NOPNG": "STICKER_THUMB_PNG_NOPNG",
                 "STICKER_THUMB_TGS_NOTGS": "STICKER_THUMB_TGS_NOTGS",
+                "STICKERSET_INVALID": "STICKERSET_INVALID"
+            },
+            "messages.getStickerSet": {
                 "STICKERSET_INVALID": "STICKERSET_INVALID"
             },
             "messages.installStickerSet": {
@@ -2275,6 +2274,9 @@
             "auth.signUp": {
                 "PHONE_NUMBER_INVALID": "PHONE_NUMBER_INVALID"
             },
+            "messages.initHistoryImport": {
+                "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN": "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN"
+            },
             "channels.setStickers": {
                 "STICKERSET_OWNER_ANONYMOUS": "STICKERSET_OWNER_ANONYMOUS"
             },
@@ -2933,7 +2935,7 @@
         "BOT_INVALID": "This is not a valid bot",
         "BOT_METHOD_INVALID": "This method cannot be run by a bot",
         "BOT_MISSING": "This method can only be run by a bot",
-        "BOT_ONESIDE_NOT_AVAIL": "",
+        "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_POLLS_DISABLED": "",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot",
@@ -2982,7 +2984,7 @@
         "CHAT_SEND_POLL_FORBIDDEN": "You can't send polls in this chat",
         "CHAT_SEND_STICKERS_FORBIDDEN": "You can't send stickers in this chat.",
         "CHAT_TITLE_EMPTY": "No chat title provided",
-        "CHAT_TOO_BIG": "",
+        "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat",
         "CHP_CALL_FAIL": "Internal failure",
         "CODE_EMPTY": "The provided code is empty",
@@ -3000,7 +3002,7 @@
         "CONTACT_ID_INVALID": "The provided contact ID is invalid",
         "CONTACT_NAME_EMPTY": "Contact name empty",
         "CONTACT_REQ_MISSING": "Missing contact request",
-        "CURRENCY_TOTAL_AMOUNT_INVALID": "",
+        "CURRENCY_TOTAL_AMOUNT_INVALID": "The total amount of all prices is invalid",
         "DATA_INVALID": "Encrypted data invalid",
         "DATA_JSON_INVALID": "The provided JSON data is invalid",
         "DATA_TOO_LONG": "Data too long",
@@ -3028,6 +3030,7 @@
         "ENTITIES_TOO_LONG": "You provided too many styled message entities",
         "ENTITY_MENTION_USER_INVALID": "You mentioned an invalid user",
         "ERROR_TEXT_EMPTY": "The provided error message is empty",
+        "EXPIRE_DATE_INVALID": "The specified expiration date is invalid",
         "EXPORT_CARD_INVALID": "Provided card is invalid",
         "EXTERNAL_URL_INVALID": "External URL invalid",
         "FIELD_NAME_EMPTY": "The field with the name FIELD_NAME is missing",
@@ -3059,7 +3062,7 @@
         "FRESH_RESET_AUTHORISATION_FORBIDDEN": "You can't logout other sessions if less than 24 hours have passed since you logged on the current session",
         "FROM_MESSAGE_BOT_DISABLED": "Bots can't use fromMessage min constructors",
         "FROM_PEER_INVALID": "The specified from_id is invalid",
-        "GAME_BOT_INVALID": "",
+        "GAME_BOT_INVALID": "Bots can't send another bot's game.",
         "GEO_POINT_INVALID": "Invalid geoposition provided",
         "GIF_CONTENT_TYPE_INVALID": "GIF content-type invalid",
         "GIF_ID_INVALID": "The provided GIF ID is invalid",
@@ -3067,9 +3070,9 @@
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats",
         "GROUPCALL_ALREADY_DISCARDED": "The group call was already discarded",
-        "GROUPCALL_FORBIDDEN": "",
+        "GROUPCALL_FORBIDDEN": "The group call has already ended",
         "GROUPCALL_NOT_MODIFIED": "Group call settings weren't modified",
-        "GROUPCALL_SSRC_DUPLICATE_MUCH": "",
+        "GROUPCALL_SSRC_DUPLICATE_MUCH": "The app needs to retry joining the group call with a new SSRC value.",
         "GROUPED_ID_OCCUPY_FAILED": "Internal error",
         "GROUPED_ID_OCCUPY_FAULED": "Internal error",
         "GROUPED_MEDIA_INVALID": "Invalid grouped media",
@@ -3121,7 +3124,7 @@
         "MEDIA_NEW_INVALID": "The new media is invalid",
         "MEDIA_PREV_INVALID": "Previous media invalid",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID",
-        "MEGAGROUP_PREHISTORY_HIDDEN": "",
+        "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup",
         "MEMBER_FETCH_FAILED": "Internal error",
         "MEMBER_NO_LOCATION": "An internal failure occurred while fetching user info (couldn't find location)",
@@ -3161,14 +3164,14 @@
         "PACK_TITLE_INVALID": "The stickerpack title is invalid",
         "PARTICIPANT_CALL_FAILED": "Failure while making call",
         "PARTICIPANT_ID_INVALID": "The specified participant ID is invalid",
-        "PARTICIPANT_JOIN_MISSING": "",
+        "PARTICIPANT_JOIN_MISSING": "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](\/method\/phone.joinGroupCall)",
         "PARTICIPANT_VERSION_OUTDATED": "The other participant does not use an up to date telegram client with support for calls",
         "PARTICIPANTS_TOO_FEW": "Not enough participants",
         "PASSWORD_EMPTY": "The provided password is empty",
         "PASSWORD_HASH_INVALID": "The provided password hash is invalid",
         "PASSWORD_MISSING": "You must enable 2FA in order to transfer ownership of a channel",
         "PASSWORD_RECOVERY_EXPIRED": "The recovery code has expired",
-        "PASSWORD_RECOVERY_NA": "",
+        "PASSWORD_RECOVERY_NA": "No email was set, can't recover password via email.",
         "PASSWORD_REQUIRED": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport",
         "PASSWORD_TOO_FRESH_X": "The password was modified less than 24 hours ago, try again in X seconds",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid",
@@ -3210,8 +3213,9 @@
         "POLL_QUESTION_INVALID": "One of the poll questions is not acceptable",
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method",
         "POSTPONED_TIMEOUT": "Internal error",
+        "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_5MIN": "Import for this chat is already in progress, wait 5 minutes before starting a new one.",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid",
-        "PRIVACY_TOO_LONG": "",
+        "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000",
         "PRIVACY_VALUE_INVALID": "The specified privacy rule combination is invalid",
         "PTS_CHANGE_EMPTY": "No PTS change",
         "PUBLIC_KEY_REQUIRED": "A public key is required",
@@ -3246,7 +3250,7 @@
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided",
         "SCHEDULE_DATE_TOO_LATE": "You can't schedule a message this far in the future",
-        "SCHEDULE_STATUS_PRIVATE": "",
+        "SCHEDULE_STATUS_PRIVATE": "Can't schedule until user is online, if the user's last seen timestamp is hidden by their privacy settings.",
         "SCHEDULE_TOO_MUCH": "There are too many scheduled messages",
         "SEARCH_QUERY_EMPTY": "The search query is empty",
         "SECONDS_INVALID": "Invalid duration provided",
@@ -3278,12 +3282,12 @@
         "STICKER_PNG_DIMENSIONS": "Sticker png dimensions invalid",
         "STICKER_PNG_NOPNG": "One of the specified stickers is not a valid PNG file",
         "STICKER_TGS_NODOC": "Incorrect document type for sticker.",
-        "STICKER_TGS_NOTGS": "",
-        "STICKER_THUMB_PNG_NOPNG": "",
-        "STICKER_THUMB_TGS_NOTGS": "",
+        "STICKER_TGS_NOTGS": "Invalid TGS sticker provided.",
+        "STICKER_THUMB_PNG_NOPNG": "Incorrect stickerset thumb file provided, PNG \/ WEBP expected.",
+        "STICKER_THUMB_TGS_NOTGS": "Incorrect stickerset TGS thumb file provided.",
         "STICKERS_EMPTY": "No sticker provided",
         "STICKERSET_INVALID": "The provided sticker set is invalid",
-        "STICKERSET_OWNER_ANONYMOUS": "",
+        "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation.",
         "STORAGE_CHECK_FAILED": "Server storage check failed",
         "STORE_INVALID_OBJECT_TYPE": "Internal error",
         "STORE_INVALID_SCALAR_TYPE": "Tried storing an invalid scalar type",
