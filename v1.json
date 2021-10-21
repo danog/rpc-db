@@ -1068,7 +1068,7 @@
                 "CHAT_NOT_MODIFIED",
                 "TTL_PERIOD_INVALID"
             ],
-            "messages.getMessagesReadParticipants": [
+            "messages.getMessageReadParticipants": [
                 "CHAT_TOO_BIG"
             ],
             "auth.recoverPassword": [

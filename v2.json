@@ -6061,7 +6061,7 @@
                 "error_description": "The specified TTL period is invalid"
             }
         ],
-        "messages.getMessagesReadParticipants": [
+        "messages.getMessageReadParticipants": [
             {
                 "error_code": 400,
                 "error_message": "CHAT_TOO_BIG",

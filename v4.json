@@ -459,7 +459,7 @@
                 "messages.editChatTitle"
             ],
             "CHAT_TOO_BIG": [
-                "messages.getMessagesReadParticipants"
+                "messages.getMessageReadParticipants"
             ],
             "CODE_EMPTY": [
                 "auth.recoverPassword"
