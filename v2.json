@@ -3878,6 +3878,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "PIN_RESTRICTED",
                 "error_description": "You can't pin messages"
             },

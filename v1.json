@@ -293,6 +293,7 @@
                 "CHAT_ADMIN_REQUIRED",
                 "CHAT_NOT_MODIFIED",
                 "MESSAGE_ID_INVALID",
+                "PEER_ID_INVALID",
                 "PIN_RESTRICTED",
                 "USER_BANNED_IN_CHANNEL"
             ],

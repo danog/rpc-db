@@ -1178,6 +1178,7 @@
                 "messages.setTyping",
                 "messages.startBot",
                 "messages.toggleDialogPin",
+                "messages.updatePinnedMessage",
                 "messages.uploadMedia",
                 "stickers.createStickerSet",
                 "upload.getFile"
