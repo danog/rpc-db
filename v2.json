@@ -82,6 +82,18 @@
                 "error_description": "Auth key invalid"
             }
         ],
+        "messages.getExportedChatInvites": [
+            {
+                "error_code": 400,
+                "error_message": "ADMIN_ID_INVALID",
+                "error_description": "The specified admin ID is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            }
+        ],
         "channels.editAdmin": [
             {
                 "error_code": 400,
@@ -538,9 +550,19 @@
                 "error_description": "The invite link has expired"
             },
             {
+                "error_code": 406,
+                "error_message": "INVITE_HASH_EXPIRED",
+                "error_description": "The invite link has expired"
+            },
+            {
                 "error_code": 400,
                 "error_message": "INVITE_HASH_INVALID",
                 "error_description": "The invite hash is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_REQUEST_SENT",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -860,6 +882,11 @@
                 "error_description": "The invite link has expired"
             },
             {
+                "error_code": 406,
+                "error_message": "INVITE_HASH_EXPIRED",
+                "error_description": "The invite link has expired"
+            },
+            {
                 "error_code": 400,
                 "error_message": "INVITE_HASH_INVALID",
                 "error_description": "The invite hash is invalid"
@@ -1042,6 +1069,11 @@
                 "error_code": 400,
                 "error_message": "SCHEDULE_TOO_MUCH",
                 "error_description": "There are too many scheduled messages"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SEND_AS_PEER_INVALID",
+                "error_description": "You can't send messages as the specified peer"
             },
             {
                 "error_code": 400,
@@ -1403,9 +1435,19 @@
                 "error_description": "The invite link has expired"
             },
             {
+                "error_code": 406,
+                "error_message": "INVITE_HASH_EXPIRED",
+                "error_description": "The invite link has expired"
+            },
+            {
                 "error_code": 400,
                 "error_message": "INVITE_HASH_INVALID",
                 "error_description": "The invite hash is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "INVITE_REQUEST_SENT",
+                "error_description": ""
             },
             {
                 "error_code": 400,
@@ -1645,6 +1687,11 @@
                 "error_code": 400,
                 "error_message": "SCHEDULE_TOO_MUCH",
                 "error_description": "There are too many scheduled messages"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SEND_AS_PEER_INVALID",
+                "error_description": "You can't send messages as the specified peer"
             },
             {
                 "error_code": 420,
@@ -2281,6 +2328,11 @@
                 "error_code": 400,
                 "error_message": "STICKER_DOCUMENT_INVALID",
                 "error_description": "The specified sticker document is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "URL_INVALID",
+                "error_description": "Invalid URL provided"
             },
             {
                 "error_code": 400,
@@ -3137,6 +3189,48 @@
                 "error_description": "You're banned from sending messages in supergroups\/channels"
             }
         ],
+        "messages.exportChatInvite": [
+            {
+                "error_code": 406,
+                "error_message": "AUTH_KEY_DUPLICATED",
+                "error_description": "An auth key with the same ID was already generated"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHANNEL_PRIVATE",
+                "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            },
+            {
+                "error_code": 400,
+                "error_message": "EXPIRE_DATE_INVALID",
+                "error_description": "The specified expiration date is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "USAGE_LIMIT_INVALID",
+                "error_description": "The specified usage limit is invalid"
+            }
+        ],
         "messages.getMessages": [
             {
                 "error_code": 406,
@@ -3550,6 +3644,11 @@
                 "error_code": 400,
                 "error_message": "SCHEDULE_TOO_MUCH",
                 "error_description": "There are too many scheduled messages"
+            },
+            {
+                "error_code": 400,
+                "error_message": "SEND_AS_PEER_INVALID",
+                "error_description": "You can't send messages as the specified peer"
             },
             {
                 "error_code": 420,
@@ -5512,48 +5611,16 @@
                 "error_description": "The provided peer id is invalid"
             }
         ],
-        "messages.exportChatInvite": [
-            {
-                "error_code": 400,
-                "error_message": "CHANNEL_PRIVATE",
-                "error_description": "You haven't joined this channel\/supergroup"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ADMIN_REQUIRED",
-                "error_description": "You must be an admin in this chat to do this"
-            },
-            {
-                "error_code": 400,
-                "error_message": "CHAT_ID_INVALID",
-                "error_description": "The provided chat id is invalid"
-            },
-            {
-                "error_code": 403,
-                "error_message": "CHAT_WRITE_FORBIDDEN",
-                "error_description": "You can't write in this chat"
-            },
-            {
-                "error_code": 400,
-                "error_message": "EXPIRE_DATE_INVALID",
-                "error_description": "The specified expiration date is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            },
-            {
-                "error_code": 400,
-                "error_message": "USAGE_LIMIT_INVALID",
-                "error_description": "The specified usage limit is invalid"
-            }
-        ],
         "messages.getOnlines": [
             {
                 "error_code": 400,
                 "error_message": "CHANNEL_PRIVATE",
                 "error_description": "You haven't joined this channel\/supergroup"
+            },
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
             },
             {
                 "error_code": 400,
@@ -5745,6 +5812,25 @@
                 "error_description": "You're not a member of this supergroup\/channel"
             }
         ],
+        "messages.getAdminsWithInvites": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            },
+            {
+                "error_code": 403,
+                "error_message": "CHAT_WRITE_FORBIDDEN",
+                "error_description": "You can't write in this chat"
+            }
+        ],
+        "messages.getChatInviteImporters": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ADMIN_REQUIRED",
+                "error_description": "You must be an admin in this chat to do this"
+            }
+        ],
         "messages.getMessageEditData": [
             {
                 "error_code": 400,
@@ -5799,6 +5885,11 @@
             },
             {
                 "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
                 "error_message": "SCHEDULE_DATE_INVALID",
                 "error_description": "Invalid schedule date provided"
             }
@@ -5835,6 +5926,18 @@
                 "error_code": 400,
                 "error_message": "ENCRYPTION_ALREADY_DECLINED",
                 "error_description": "The secret chat was already declined"
+            }
+        ],
+        "messages.deleteChat": [
+            {
+                "error_code": 400,
+                "error_message": "CHAT_ID_INVALID",
+                "error_description": "The provided chat id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PEER_ID_INVALID",
+                "error_description": "The provided peer id is invalid"
             }
         ],
         "messages.editChatAdmin": [
@@ -5991,6 +6094,11 @@
                 "error_code": 400,
                 "error_message": "DATA_INVALID",
                 "error_description": "Encrypted data invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "DATA_TOO_LONG",
+                "error_description": "Data too long"
             },
             {
                 "error_code": 400,
@@ -7126,13 +7234,6 @@
                 "error_description": "The provided peer id is invalid"
             }
         ],
-        "messages.deleteChat": [
-            {
-                "error_code": 400,
-                "error_message": "PEER_ID_INVALID",
-                "error_description": "The provided peer id is invalid"
-            }
-        ],
         "messages.editExportedChatInvite": [
             {
                 "error_code": 400,
@@ -7152,6 +7253,11 @@
                 "error_code": 400,
                 "error_message": "PEER_ID_INVALID",
                 "error_description": "The provided peer id is invalid"
+            },
+            {
+                "error_code": 400,
+                "error_message": "UNKNOWN_ERROR",
+                "error_description": "Internal error"
             }
         ],
         "messages.hideReportSpam": [
@@ -7192,6 +7298,11 @@
                 "error_code": 400,
                 "error_message": "PHONE_CODE_EMPTY",
                 "error_description": "phone_code is missing"
+            },
+            {
+                "error_code": 400,
+                "error_message": "PHONE_CODE_EXPIRED",
+                "error_description": "The phone code you provided has expired, this may happen if it was sent to any chat on telegram (if the code is sent through a telegram chat (not the official account) to avoid it append or prepend to the code some chars)"
             },
             {
                 "error_code": 400,
@@ -7261,6 +7372,11 @@
                 "error_code": 401,
                 "error_message": "SESSION_PASSWORD_NEEDED",
                 "error_description": "2FA is enabled, use a password to login"
+            },
+            {
+                "error_code": 406,
+                "error_message": "UPDATE_APP_TO_LOGIN",
+                "error_description": "Please update to the latest version of MadelineProto to login."
             }
         ],
         "auth.cancelCode": [

@@ -26,6 +26,9 @@
             "ACCESS_TOKEN_INVALID": [
                 "auth.importBotAuthorization"
             ],
+            "ADMIN_ID_INVALID": [
+                "messages.getExportedChatInvites"
+            ],
             "ADMIN_RANK_EMOJI_NOT_ALLOWED": [
                 "channels.editAdmin"
             ],
@@ -364,6 +367,9 @@
                 "messages.editMessage",
                 "messages.exportChatInvite",
                 "messages.forwardMessages",
+                "messages.getAdminsWithInvites",
+                "messages.getChatInviteImporters",
+                "messages.getExportedChatInvites",
                 "messages.getMessageEditData",
                 "messages.getScheduledHistory",
                 "messages.getScheduledMessages",
@@ -393,6 +399,7 @@
                 "channels.updatePinnedMessage",
                 "messages.acceptEncryption",
                 "messages.addChatUser",
+                "messages.deleteChat",
                 "messages.deleteChatUser",
                 "messages.deleteHistory",
                 "messages.editChatAbout",
@@ -406,6 +413,7 @@
                 "messages.getFullChat",
                 "messages.getHistory",
                 "messages.getMessagesViews",
+                "messages.getOnlines",
                 "messages.migrateChat",
                 "messages.readHistory",
                 "messages.reportEncryptedSpam",
@@ -542,6 +550,7 @@
                 "phone.saveCallDebug"
             ],
             "DATA_TOO_LONG": [
+                "messages.sendEncrypted",
                 "messages.sendEncryptedFile"
             ],
             "DATE_EMPTY": [
@@ -857,6 +866,10 @@
             "INVITE_HASH_INVALID": [
                 "channels.joinChannel",
                 "messages.checkChatInvite",
+                "messages.importChatInvite"
+            ],
+            "INVITE_REQUEST_SENT": [
+                "channels.joinChannel",
                 "messages.importChatInvite"
             ],
             "LANG_CODE_INVALID": [
@@ -1180,6 +1193,7 @@
                 "messages.toggleDialogPin",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
+                "phone.createGroupCall",
                 "stickers.createStickerSet",
                 "upload.getFile"
             ],
@@ -1202,6 +1216,7 @@
                 "auth.signUp"
             ],
             "PHONE_CODE_EXPIRED": [
+                "account.changePhone",
                 "account.verifyPhone",
                 "auth.cancelCode",
                 "auth.resendCode",
@@ -1440,6 +1455,11 @@
             "SECONDS_INVALID": [
                 "channels.toggleSlowMode"
             ],
+            "SEND_AS_PEER_INVALID": [
+                "messages.forwardMessages",
+                "messages.sendMedia",
+                "messages.sendMessage"
+            ],
             "SEND_MESSAGE_MEDIA_INVALID": [
                 "messages.setInlineBotResults"
             ],
@@ -1581,6 +1601,7 @@
             ],
             "UNKNOWN_ERROR": [
                 "channels.viewSponsoredMessage",
+                "messages.getStatsURL",
                 "req_DH_params",
                 "req_pq_multi",
                 "set_client_DH_params"
@@ -1589,7 +1610,8 @@
                 "messages.editChatDefaultBannedRights"
             ],
             "URL_INVALID": [
-                "messages.setBotCallbackAnswer"
+                "messages.setBotCallbackAnswer",
+                "messages.setInlineBotResults"
             ],
             "USAGE_LIMIT_INVALID": [
                 "messages.exportChatInvite"
@@ -2108,6 +2130,7 @@
                 "messages.checkChatInvite",
                 "messages.deleteHistory",
                 "messages.editMessage",
+                "messages.exportChatInvite",
                 "messages.forwardMessages",
                 "messages.getAllChats",
                 "messages.getBotCallbackAnswer",
@@ -2158,6 +2181,11 @@
                 "account.resetAuthorization",
                 "auth.resetAuthorizations"
             ],
+            "INVITE_HASH_EXPIRED": [
+                "channels.joinChannel",
+                "messages.checkChatInvite",
+                "messages.importChatInvite"
+            ],
             "PHONE_NUMBER_INVALID": [
                 "account.changePhone",
                 "account.sendChangePhoneCode",
@@ -2179,6 +2207,9 @@
             ],
             "STICKERSET_OWNER_ANONYMOUS": [
                 "channels.setStickers"
+            ],
+            "UPDATE_APP_TO_LOGIN": [
+                "auth.signIn"
             ],
             "USER_RESTRICTED": [
                 "channels.createChannel"
@@ -2301,6 +2332,7 @@
                 "messages.editMessage",
                 "messages.exportChatInvite",
                 "messages.forwardMessages",
+                "messages.getAdminsWithInvites",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage",
@@ -2512,6 +2544,7 @@
         "ACCESS_TOKEN_EXPIRED": "Access token expired",
         "ACCESS_TOKEN_INVALID": "Access token invalid",
         "ACTIVE_USER_REQUIRED": "The method is only available to already activated users",
+        "ADMIN_ID_INVALID": "The specified admin ID is invalid",
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins",
@@ -2718,6 +2751,7 @@
         "INVITE_HASH_EMPTY": "The invite hash is empty",
         "INVITE_HASH_EXPIRED": "The invite link has expired",
         "INVITE_HASH_INVALID": "The invite hash is invalid",
+        "INVITE_REQUEST_SENT": "",
         "LANG_CODE_INVALID": "The specified language code is invalid",
         "LANG_PACK_INVALID": "The provided language pack is invalid",
         "LASTNAME_INVALID": "The last name is invalid",
@@ -2865,6 +2899,7 @@
         "SCHEDULE_TOO_MUCH": "There are too many scheduled messages",
         "SEARCH_QUERY_EMPTY": "The search query is empty",
         "SECONDS_INVALID": "Invalid duration provided",
+        "SEND_AS_PEER_INVALID": "You can't send messages as the specified peer",
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend)",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid",
@@ -2922,6 +2957,7 @@
         "UNKNOWN_ERROR": "Internal error",
         "UNKNOWN_METHOD": "The method you tried to call cannot be called on non-CDN DCs",
         "UNTIL_DATE_INVALID": "Invalid until date provided",
+        "UPDATE_APP_TO_LOGIN": "Please update to the latest version of MadelineProto to login.",
         "UPLOAD_NO_VOLUME": "An internal error occurred",
         "URL_INVALID": "Invalid URL provided",
         "USAGE_LIMIT_INVALID": "The specified usage limit is invalid",

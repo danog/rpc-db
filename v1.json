@@ -36,6 +36,10 @@
                 "API_ID_INVALID",
                 "API_ID_PUBLISHED_FLOOD"
             ],
+            "messages.getExportedChatInvites": [
+                "ADMIN_ID_INVALID",
+                "CHAT_ADMIN_REQUIRED"
+            ],
             "channels.editAdmin": [
                 "ADMIN_RANK_EMOJI_NOT_ALLOWED",
                 "ADMIN_RANK_INVALID",
@@ -115,6 +119,7 @@
                 "SEND_MESSAGE_TYPE_INVALID",
                 "START_PARAM_INVALID",
                 "STICKER_DOCUMENT_INVALID",
+                "URL_INVALID",
                 "USER_BOT_INVALID",
                 "VIDEO_TITLE_EMPTY",
                 "WEBDOCUMENT_INVALID",
@@ -194,6 +199,7 @@
                 "SCHEDULE_DATE_TOO_LATE",
                 "SCHEDULE_STATUS_PRIVATE",
                 "SCHEDULE_TOO_MUCH",
+                "SEND_AS_PEER_INVALID",
                 "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED",
                 "USER_IS_BOT",
@@ -342,6 +348,7 @@
                 "SCHEDULE_BOT_NOT_ALLOWED",
                 "SCHEDULE_DATE_TOO_LATE",
                 "SCHEDULE_TOO_MUCH",
+                "SEND_AS_PEER_INVALID",
                 "TTL_MEDIA_INVALID",
                 "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED",
@@ -392,6 +399,7 @@
                 "RANDOM_ID_INVALID",
                 "SCHEDULE_DATE_TOO_LATE",
                 "SCHEDULE_TOO_MUCH",
+                "SEND_AS_PEER_INVALID",
                 "SLOWMODE_MULTI_MSGS_DISABLED",
                 "USER_BANNED_IN_CHANNEL",
                 "USER_IS_BLOCKED",
@@ -608,6 +616,7 @@
                 "INVITE_HASH_EMPTY",
                 "INVITE_HASH_EXPIRED",
                 "INVITE_HASH_INVALID",
+                "INVITE_REQUEST_SENT",
                 "MSG_ID_INVALID",
                 "PEER_ID_INVALID",
                 "USER_ALREADY_PARTICIPANT",
@@ -732,6 +741,7 @@
                 "INVITE_HASH_EMPTY",
                 "INVITE_HASH_EXPIRED",
                 "INVITE_HASH_INVALID",
+                "INVITE_REQUEST_SENT",
                 "MSG_ID_INVALID",
                 "PEER_ID_INVALID",
                 "USER_ALREADY_PARTICIPANT",
@@ -904,6 +914,7 @@
             ],
             "messages.getOnlines": [
                 "CHANNEL_PRIVATE",
+                "CHAT_ID_INVALID",
                 "PEER_ID_INVALID"
             ],
             "messages.readHistory": [
@@ -981,6 +992,12 @@
                 "USER_ID_INVALID",
                 "USER_NOT_PARTICIPANT"
             ],
+            "messages.getAdminsWithInvites": [
+                "CHAT_ADMIN_REQUIRED"
+            ],
+            "messages.getChatInviteImporters": [
+                "CHAT_ADMIN_REQUIRED"
+            ],
             "messages.getMessageEditData": [
                 "CHAT_ADMIN_REQUIRED",
                 "MESSAGE_ID_INVALID",
@@ -996,6 +1013,7 @@
             ],
             "phone.createGroupCall": [
                 "CHAT_ADMIN_REQUIRED",
+                "PEER_ID_INVALID",
                 "SCHEDULE_DATE_INVALID"
             ],
             "messages.discardEncryption": [
@@ -1007,6 +1025,10 @@
                 "CHAT_ID_INVALID",
                 "ENCRYPTION_ALREADY_ACCEPTED",
                 "ENCRYPTION_ALREADY_DECLINED"
+            ],
+            "messages.deleteChat": [
+                "CHAT_ID_INVALID",
+                "PEER_ID_INVALID"
             ],
             "messages.editChatAdmin": [
                 "CHAT_ID_INVALID",
@@ -1049,6 +1071,7 @@
             "messages.sendEncrypted": [
                 "CHAT_ID_INVALID",
                 "DATA_INVALID",
+                "DATA_TOO_LONG",
                 "ENCRYPTION_DECLINED",
                 "MSG_WAIT_FAILED"
             ],
@@ -1438,9 +1461,6 @@
             "contacts.resetTopPeerRating": [
                 "PEER_ID_INVALID"
             ],
-            "messages.deleteChat": [
-                "PEER_ID_INVALID"
-            ],
             "messages.editExportedChatInvite": [
                 "PEER_ID_INVALID"
             ],
@@ -1448,7 +1468,8 @@
                 "PEER_ID_INVALID"
             ],
             "messages.getStatsURL": [
-                "PEER_ID_INVALID"
+                "PEER_ID_INVALID",
+                "UNKNOWN_ERROR"
             ],
             "messages.hideReportSpam": [
                 "PEER_ID_INVALID"
@@ -1465,6 +1486,7 @@
             ],
             "account.changePhone": [
                 "PHONE_CODE_EMPTY",
+                "PHONE_CODE_EXPIRED",
                 "PHONE_NUMBER_INVALID",
                 "PHONE_NUMBER_OCCUPIED"
             ],
@@ -1787,7 +1809,8 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "channels.joinChannel": [
-                "AUTH_KEY_DUPLICATED"
+                "AUTH_KEY_DUPLICATED",
+                "INVITE_HASH_EXPIRED"
             ],
             "channels.leaveChannel": [
                 "AUTH_KEY_DUPLICATED"
@@ -1835,12 +1858,16 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.checkChatInvite": [
-                "AUTH_KEY_DUPLICATED"
+                "AUTH_KEY_DUPLICATED",
+                "INVITE_HASH_EXPIRED"
             ],
             "messages.deleteHistory": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.editMessage": [
+                "AUTH_KEY_DUPLICATED"
+            ],
+            "messages.exportChatInvite": [
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.forwardMessages": [
@@ -1871,7 +1898,8 @@
                 "AUTH_KEY_DUPLICATED"
             ],
             "messages.importChatInvite": [
-                "AUTH_KEY_DUPLICATED"
+                "AUTH_KEY_DUPLICATED",
+                "INVITE_HASH_EXPIRED"
             ],
             "messages.readHistory": [
                 "AUTH_KEY_DUPLICATED"
@@ -1973,7 +2001,8 @@
                 "SEND_CODE_UNAVAILABLE"
             ],
             "auth.signIn": [
-                "PHONE_NUMBER_INVALID"
+                "PHONE_NUMBER_INVALID",
+                "UPDATE_APP_TO_LOGIN"
             ],
             "auth.signUp": [
                 "PHONE_NUMBER_INVALID"
@@ -2213,6 +2242,9 @@
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "messages.exportChatInvite": [
+                "CHAT_WRITE_FORBIDDEN"
+            ],
+            "messages.getAdminsWithInvites": [
                 "CHAT_WRITE_FORBIDDEN"
             ],
             "messages.sendMessage": [
@@ -2616,6 +2648,9 @@
         ],
         "ACTIVE_USER_REQUIRED": [
             "The method is only available to already activated users"
+        ],
+        "ADMIN_ID_INVALID": [
+            "The specified admin ID is invalid"
         ],
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": [
             "An admin rank cannot contain emojis"
@@ -3235,6 +3270,9 @@
         "INVITE_HASH_INVALID": [
             "The invite hash is invalid"
         ],
+        "INVITE_REQUEST_SENT": [
+            ""
+        ],
         "LANG_CODE_INVALID": [
             "The specified language code is invalid"
         ],
@@ -3676,6 +3714,9 @@
         "SECONDS_INVALID": [
             "Invalid duration provided"
         ],
+        "SEND_AS_PEER_INVALID": [
+            "You can't send messages as the specified peer"
+        ],
         "SEND_CODE_UNAVAILABLE": [
             "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend)"
         ],
@@ -3846,6 +3887,9 @@
         ],
         "UNTIL_DATE_INVALID": [
             "Invalid until date provided"
+        ],
+        "UPDATE_APP_TO_LOGIN": [
+            "Please update to the latest version of MadelineProto to login."
         ],
         "UPLOAD_NO_VOLUME": [
             "An internal error occurred"
