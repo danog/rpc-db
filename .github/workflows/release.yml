@@ -18,4 +18,4 @@ jobs:
           prerelease: false
           title: "Latest release"
           files: |
-            ./*.json
+            ./bot.json
