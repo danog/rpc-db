@@ -505,36 +505,10 @@
             "CONNECTION_APP_VERSION_EMPTY": [
                 "help.getConfig"
             ],
-            "CONNECTION_DEVICE_MODEL_EMPTY": [
-                "contacts.resolveUsername",
-                "help.getConfig",
-                "invokeWithLayer",
-                "messages.getHistory",
-                "messages.getPeerDialogs",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "users.getUsers"
-            ],
-            "CONNECTION_LANG_PACK_INVALID": [
-                "account.updateStatus",
-                "help.getCdnConfig",
-                "help.getConfig",
-                "invokeWithLayer",
-                "users.getUsers"
-            ],
             "CONNECTION_LAYER_INVALID": [
                 "contacts.resolveUsername",
                 "help.getConfig",
                 "initConnection"
-            ],
-            "CONNECTION_SYSTEM_EMPTY": [
-                "help.getConfig",
-                "invokeWithLayer",
-                "upload.saveFilePart"
-            ],
-            "CONNECTION_SYSTEM_LANG_CODE_EMPTY": [
-                "help.getConfig",
-                "updates.getChannelDifference"
             ],
             "CONTACT_ADD_MISSING": [
                 "contacts.acceptContact"
@@ -1861,38 +1835,6 @@
                 "messages.sendScreenshotNotification"
             ]
         },
-        "-3002": {
-            "All workers are busy. Active_queries = X": [
-                "account.updateProfile",
-                "account.updateStatus",
-                "channels.getChannels",
-                "channels.getFullChannel",
-                "channels.getParticipant",
-                "channels.joinChannel",
-                "channels.leaveChannel",
-                "contacts.resolveUsername",
-                "help.getCdnConfig",
-                "help.getConfig",
-                "help.getTermsOfServiceUpdate",
-                "messages.checkChatInvite",
-                "messages.deleteHistory",
-                "messages.forwardMessages",
-                "messages.getAllChats",
-                "messages.getBotCallbackAnswer",
-                "messages.getDialogs",
-                "messages.getHistory",
-                "messages.getMessagesViews",
-                "messages.getUnreadMentions",
-                "messages.importChatInvite",
-                "messages.readMentions",
-                "messages.sendMessage",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "upload.getFile",
-                "upload.saveFilePart",
-                "users.getUsers"
-            ]
-        },
         "500": {
             "API_CALL_ERROR": [
                 "upload.getCdnFileHashes",
@@ -2404,7 +2346,6 @@
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins",
         "ALBUM_PHOTOS_TOO_MANY": "",
-        "All workers are busy. Active_queries = X": "All workers are busy. Active_queries = X",
         "API_CALL_ERROR": "API call error",
         "API_ID_INVALID": "API ID invalid",
         "API_ID_PUBLISHED_FLOOD": "This API id was published somewhere, you can't use it now",
@@ -2487,11 +2428,7 @@
         "CODE_INVALID": "Code invalid",
         "CONNECTION_API_ID_INVALID": "The provided API id is invalid",
         "CONNECTION_APP_VERSION_EMPTY": "App version is empty",
-        "CONNECTION_DEVICE_MODEL_EMPTY": "Device model empty",
-        "CONNECTION_LANG_PACK_INVALID": "Language pack invalid",
         "CONNECTION_LAYER_INVALID": "Layer invalid",
-        "CONNECTION_SYSTEM_EMPTY": "Connection system empty",
-        "CONNECTION_SYSTEM_LANG_CODE_EMPTY": "The system_lang_code field is empty",
         "CONTACT_ADD_MISSING": "Contact to add is missing",
         "CONTACT_ID_INVALID": "The provided contact ID is invalid",
         "CONTACT_NAME_EMPTY": "Contact name empty",
