@@ -325,10 +325,12 @@
                 "channels.deleteChannel"
             ],
             "CHANNELS_ADMIN_LOCATED_TOO_MUCH": [
-                "channels.createChannel"
+                "channels.createChannel",
+                "channels.getAdminedPublicChannels"
             ],
             "CHANNELS_ADMIN_PUBLIC_TOO_MUCH": [
                 "channels.checkUsername",
+                "channels.getAdminedPublicChannels",
                 "channels.updateUsername"
             ],
             "CHANNELS_TOO_MUCH": [
@@ -686,6 +688,9 @@
                 "photos.uploadProfilePhoto",
                 "upload.saveBigFilePart"
             ],
+            "FILE_REFERENCE_*": [
+                "upload.getFile"
+            ],
             "FILE_REFERENCE_EMPTY": [
                 "messages.sendMedia"
             ],
@@ -906,9 +911,6 @@
             "INVITE_REVOKED_MISSING": [
                 "messages.deleteExportedChatInvite"
             ],
-            "LANG_CODE_EMPTY": [
-                "auth.sendCode"
-            ],
             "LANG_CODE_INVALID": [
                 "bots.setBotCommands"
             ],
@@ -917,6 +919,9 @@
                 "langpack.getLangPack",
                 "langpack.getLanguages",
                 "langpack.getStrings"
+            ],
+            "LASTNAME_INVALID": [
+                "auth.signUp"
             ],
             "LIMIT_INVALID": [
                 "upload.getFile"
@@ -1642,6 +1647,9 @@
             "TAKEOUT_REQUIRED": [
                 "contacts.getSaved"
             ],
+            "TEMP_AUTH_KEY_ALREADY_BOUND": [
+                "auth.bindTempAuthKey"
+            ],
             "TEMP_AUTH_KEY_EMPTY": [
                 "auth.bindTempAuthKey"
             ],
@@ -2173,9 +2181,6 @@
                 "help.getConfig",
                 "updates.getDifference"
             ],
-            "USERNAME_UNSYNCHRONIZED": [
-                "users.getFullUser"
-            ],
             "VOLUME_LOC_NOT_FOUND": [
                 "updates.getChannelDifference",
                 "updates.getDifference"
@@ -2674,7 +2679,7 @@
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins",
-        "ALBUM_PHOTOS_TOO_MANY": "Too many ",
+        "ALBUM_PHOTOS_TOO_MANY": "",
         "All workers are busy. Active_queries = X": "All workers are busy. Active_queries = X",
         "API_CALL_ERROR": "API call error",
         "API_ID_INVALID": "API ID invalid",
@@ -2810,6 +2815,7 @@
         "FILE_PART_SIZE_INVALID": "The provided file part size is invalid",
         "FILE_PART_TOO_BIG": "The uploaded file part is too big",
         "FILE_PARTS_INVALID": "The number of file parts is invalid",
+        "FILE_REFERENCE_*": "The file reference expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_EMPTY": "An empty [file reference](https:\/\/core.telegram.org\/api\/file_reference) was specified",
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in https:\/\/core.telegram.org\/api\/file_reference",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid",
@@ -2865,9 +2871,9 @@
         "INVITE_HASH_INVALID": "The invite hash is invalid",
         "INVITE_REQUEST_SENT": "",
         "INVITE_REVOKED_MISSING": "",
-        "LANG_CODE_EMPTY": "delete",
         "LANG_CODE_INVALID": "The specified language code is invalid",
         "LANG_PACK_INVALID": "The provided language pack is invalid",
+        "LASTNAME_INVALID": "The last name is invalid.",
         "LIMIT_INVALID": "The provided limit is invalid",
         "LINK_NOT_MODIFIED": "Discussion link not modified",
         "LOCATION_INVALID": "The provided location is invalid",
@@ -2938,7 +2944,7 @@
         "PERSISTENT_TIMESTAMP_INVALID": "Persistent timestamp invalid",
         "PERSISTENT_TIMESTAMP_OUTDATED": "Channel internal replication issues, try again later (treat this like an RPC_CALL_FAIL)",
         "PHONE_CODE_EMPTY": "phone_code is missing",
-        "PHONE_CODE_EXPIRED": "The phone code you provided has expired, this may happen if it was sent to any chat on telegram (if the code is sent through a telegram chat (not the official account) to avoid it append or prepend to the code some chars)",
+        "PHONE_CODE_EXPIRED": "The phone code you provided has expired",
         "PHONE_CODE_HASH_EMPTY": "phone_code_hash is missing",
         "PHONE_CODE_INVALID": "The provided phone code is invalid",
         "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": "You can't sign up using this app",
@@ -3057,6 +3063,7 @@
         "STORE_INVALID_SCALAR_TYPE": "Tried storing an invalid scalar type",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initing takeout",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first",
+        "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
         "TEMP_AUTH_KEY_EMPTY": "No temporary auth key provided",
         "THEME_FILE_INVALID": "Invalid theme file provided",
         "THEME_FORMAT_INVALID": "Invalid theme format provided",
@@ -3105,7 +3112,6 @@
         "USERNAME_NOT_MODIFIED": "The username was not modified",
         "USERNAME_NOT_OCCUPIED": "The provided username is not occupied",
         "USERNAME_OCCUPIED": "The provided username is already occupied",
-        "USERNAME_UNSYNCHRONIZED": "delete",
         "USERPIC_PRIVACY_REQUIRED": "You need to disable privacy settings for your profile picture in order to make your geolocation public.",
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example)",
