@@ -2193,153 +2193,6 @@
                 "messages.getInlineBotResults"
             ]
         },
-        "406": {
-            "AUTH_KEY_DUPLICATED": [
-                "account.checkUsername",
-                "account.deleteAccount",
-                "account.getAuthorizations",
-                "account.getPrivacy",
-                "account.updateProfile",
-                "account.updateStatus",
-                "account.updateUsername",
-                "auth.exportAuthorization",
-                "auth.logOut",
-                "auth.sendCode",
-                "channels.createChannel",
-                "channels.deleteMessages",
-                "channels.getAdminLog",
-                "channels.getChannels",
-                "channels.getFullChannel",
-                "channels.getMessages",
-                "channels.getParticipant",
-                "channels.getParticipants",
-                "channels.inviteToChannel",
-                "channels.joinChannel",
-                "channels.leaveChannel",
-                "channels.readHistory",
-                "channels.readMessageContents",
-                "channels.updateUsername",
-                "contacts.addContact",
-                "contacts.getContactIDs",
-                "contacts.getContacts",
-                "contacts.importContacts",
-                "contacts.resolveUsername",
-                "contacts.search",
-                "help.getCdnConfig",
-                "help.getConfig",
-                "help.getNearestDc",
-                "help.getTermsOfServiceUpdate",
-                "invokeWithLayer",
-                "messages.checkChatInvite",
-                "messages.deleteHistory",
-                "messages.editMessage",
-                "messages.exportChatInvite",
-                "messages.forwardMessages",
-                "messages.getAllChats",
-                "messages.getAllDrafts",
-                "messages.getBotCallbackAnswer",
-                "messages.getDialogs",
-                "messages.getHistory",
-                "messages.getMessages",
-                "messages.getMessagesViews",
-                "messages.getPeerDialogs",
-                "messages.getUnreadMentions",
-                "messages.importChatInvite",
-                "messages.readHistory",
-                "messages.readMentions",
-                "messages.search",
-                "messages.sendMedia",
-                "messages.sendMessage",
-                "messages.sendMultiMedia",
-                "messages.sendVote",
-                "messages.setTyping",
-                "messages.startBot",
-                "messages.updatePinnedMessage",
-                "messages.uploadMedia",
-                "phone.getCallConfig",
-                "photos.deletePhotos",
-                "photos.getUserPhotos",
-                "photos.updateProfilePhoto",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "updates.getState",
-                "upload.getFile",
-                "upload.saveBigFilePart",
-                "upload.saveFilePart",
-                "users.getFullUser",
-                "users.getUsers"
-            ],
-            "CHANNEL_PRIVATE": [
-                "channels.getFullChannel",
-                "messages.checkChatInvite"
-            ],
-            "CHANNEL_TOO_LARGE": [
-                "channels.deleteChannel"
-            ],
-            "CHAT_FORWARDS_RESTRICTED": [
-                "messages.forwardMessages"
-            ],
-            "FILEREF_UPGRADE_NEEDED": [
-                "upload.getFile"
-            ],
-            "FRESH_CHANGE_ADMINS_FORBIDDEN": [
-                "channels.editAdmin"
-            ],
-            "FRESH_CHANGE_PHONE_FORBIDDEN": [
-                "account.sendChangePhoneCode"
-            ],
-            "FRESH_RESET_AUTHORISATION_FORBIDDEN": [
-                "account.resetAuthorization",
-                "account.setAuthorizationTTL",
-                "auth.resetAuthorizations"
-            ],
-            "INVITE_HASH_EXPIRED": [
-                "channels.joinChannel",
-                "messages.checkChatInvite",
-                "messages.importChatInvite"
-            ],
-            "PHONE_NUMBER_INVALID": [
-                "account.changePhone",
-                "account.sendChangePhoneCode",
-                "auth.cancelCode",
-                "auth.checkPhone",
-                "auth.resendCode",
-                "auth.sendCode",
-                "auth.signIn",
-                "auth.signUp"
-            ],
-            "PHONE_PASSWORD_FLOOD": [
-                "auth.sendCode"
-            ],
-            "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": [
-                "messages.initHistoryImport"
-            ],
-            "SEND_CODE_UNAVAILABLE": [
-                "auth.resendCode"
-            ],
-            "STICKERSET_INVALID": [
-                "messages.getStickerSet"
-            ],
-            "STICKERSET_OWNER_ANONYMOUS": [
-                "channels.setStickers"
-            ],
-            "UPDATE_APP_REQUIRED": [
-                "account.updateStatus"
-            ],
-            "UPDATE_APP_TO_LOGIN": [
-                "auth.sendCode",
-                "auth.signIn"
-            ],
-            "USER_RESTRICTED": [
-                "channels.createChannel"
-            ],
-            "USERPIC_PRIVACY_REQUIRED": [
-                "contacts.getLocated"
-            ],
-            "USERPIC_UPLOAD_REQUIRED": [
-                "contacts.getLocated"
-            ]
-        },
         "401": {
             "AUTH_KEY_PERM_EMPTY": [
                 "account.updateUsername",
@@ -2538,6 +2391,78 @@
                 "messages.createChat"
             ]
         },
+        "406": {
+            "CHANNEL_PRIVATE": [
+                "channels.getFullChannel",
+                "messages.checkChatInvite"
+            ],
+            "CHANNEL_TOO_LARGE": [
+                "channels.deleteChannel"
+            ],
+            "CHAT_FORWARDS_RESTRICTED": [
+                "messages.forwardMessages"
+            ],
+            "FILEREF_UPGRADE_NEEDED": [
+                "upload.getFile"
+            ],
+            "FRESH_CHANGE_ADMINS_FORBIDDEN": [
+                "channels.editAdmin"
+            ],
+            "FRESH_CHANGE_PHONE_FORBIDDEN": [
+                "account.sendChangePhoneCode"
+            ],
+            "FRESH_RESET_AUTHORISATION_FORBIDDEN": [
+                "account.resetAuthorization",
+                "account.setAuthorizationTTL",
+                "auth.resetAuthorizations"
+            ],
+            "INVITE_HASH_EXPIRED": [
+                "channels.joinChannel",
+                "messages.checkChatInvite",
+                "messages.importChatInvite"
+            ],
+            "PHONE_NUMBER_INVALID": [
+                "account.changePhone",
+                "account.sendChangePhoneCode",
+                "auth.cancelCode",
+                "auth.checkPhone",
+                "auth.resendCode",
+                "auth.sendCode",
+                "auth.signIn",
+                "auth.signUp"
+            ],
+            "PHONE_PASSWORD_FLOOD": [
+                "auth.sendCode"
+            ],
+            "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": [
+                "messages.initHistoryImport"
+            ],
+            "SEND_CODE_UNAVAILABLE": [
+                "auth.resendCode"
+            ],
+            "STICKERSET_INVALID": [
+                "messages.getStickerSet"
+            ],
+            "STICKERSET_OWNER_ANONYMOUS": [
+                "channels.setStickers"
+            ],
+            "UPDATE_APP_REQUIRED": [
+                "account.updateStatus"
+            ],
+            "UPDATE_APP_TO_LOGIN": [
+                "auth.sendCode",
+                "auth.signIn"
+            ],
+            "USER_RESTRICTED": [
+                "channels.createChannel"
+            ],
+            "USERPIC_PRIVACY_REQUIRED": [
+                "contacts.getLocated"
+            ],
+            "USERPIC_UPLOAD_REQUIRED": [
+                "contacts.getLocated"
+            ]
+        },
         "-500": {
             "Invalid msg_resend_req query": [
                 "msg_resend_req"
@@ -2689,7 +2614,6 @@
         "AUDIO_CONTENT_URL_EMPTY": "The remote URL specified in the content field is empty",
         "AUDIO_TITLE_EMPTY": "An empty audio title was provided.",
         "AUTH_BYTES_INVALID": "The provided authorization is invalid",
-        "AUTH_KEY_DUPLICATED": "An auth key with the same ID was already generated",
         "AUTH_KEY_PERM_EMPTY": "The temporary auth key must be binded to the permanent auth key to use these methods.",
         "AUTH_RESTART": "Restart the authorization process",
         "AUTH_TOKEN_ALREADY_ACCEPTED": "The specified auth token was already accepted",
@@ -2785,7 +2709,7 @@
         "EMAIL_HASH_EXPIRED": "Email hash expired",
         "EMAIL_INVALID": "The specified email is invalid",
         "EMAIL_UNCONFIRMED": "Email unconfirmed",
-        "EMAIL_UNCONFIRMED_%d": "The provided email isn't confirmed, %d is the length of the verification code that was just sent to the email.",
+        "EMAIL_UNCONFIRMED_%d": "The provided email isn't confirmed, %d is the length of the verification code that was just sent to the email: use [account.verifyEmail](https:\/\/core.telegram.org\/method\/account.verifyEmail) to enter the received verification code and enable the recovery email.",
         "EMAIL_VERIFY_EXPIRED": "The verification email has expired",
         "EMOJI_INVALID": "The specified theme emoji is valid",
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed",
@@ -2817,7 +2741,7 @@
         "FILE_PARTS_INVALID": "The number of file parts is invalid",
         "FILE_REFERENCE_*": "The file reference expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_EMPTY": "An empty [file reference](https:\/\/core.telegram.org\/api\/file_reference) was specified",
-        "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in https:\/\/core.telegram.org\/api\/file_reference",
+        "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid",
         "FILE_TITLE_EMPTY": "An empty file title was specified",
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference)",
