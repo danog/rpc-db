@@ -124,6 +124,9 @@
             "BOT_PAYMENTS_DISABLED": [
                 "messages.sendMedia"
             ],
+            "BOT_POLLS_DISABLED": [
+                "messages.sendMedia"
+            ],
             "BOT_RESPONSE_TIMEOUT": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
@@ -481,7 +484,8 @@
                 "messages.editChatTitle"
             ],
             "CHAT_TOO_BIG": [
-                "messages.getMessageReadParticipants"
+                "messages.getMessageReadParticipants",
+                "messages.getMessagesReadParticipants"
             ],
             "CODE_EMPTY": [
                 "auth.recoverPassword"
@@ -602,6 +606,9 @@
             "EMOTICON_INVALID": [
                 "messages.sendMedia"
             ],
+            "EMOTICON_STICKERPACK_MISSING": [
+                "messages.getStickerSet"
+            ],
             "ENCRYPTED_MESSAGE_INVALID": [
                 "auth.bindTempAuthKey",
                 "msgs_ack"
@@ -697,6 +704,9 @@
             ],
             "FILTER_INCLUDE_EMPTY": [
                 "messages.updateDialogFilter"
+            ],
+            "FILTER_NOT_SUPPORTED": [
+                "messages.getSearchResultsCalendar"
             ],
             "FILTER_TITLE_EMPTY": [
                 "messages.updateDialogFilter"
@@ -867,6 +877,9 @@
                 "messages.uploadMedia",
                 "phone.requestCall"
             ],
+            "INVITE_FORBIDDEN_WITH_JOINAS": [
+                "phone.inviteToGroupCall"
+            ],
             "INVITE_HASH_EMPTY": [
                 "channels.joinChannel",
                 "messages.checkChatInvite",
@@ -984,6 +997,7 @@
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
                 "messages.getMessageEditData",
+                "messages.getMessagesReadParticipants",
                 "messages.getPollResults",
                 "messages.sendReaction",
                 "messages.sendScheduledMessages",
@@ -1226,6 +1240,7 @@
                 "messages.sendScheduledMessages",
                 "messages.sendScreenshotNotification",
                 "messages.sendVote",
+                "messages.setChatTheme",
                 "messages.setGameScore",
                 "messages.setTyping",
                 "messages.startBot",
@@ -1399,6 +1414,9 @@
             "QUERY_TOO_SHORT": [
                 "contacts.search"
             ],
+            "QUIZ_ANSWER_MISSING": [
+                "messages.forwardMessages"
+            ],
             "QUIZ_CORRECT_ANSWER_INVALID": [
                 "messages.sendMedia"
             ],
@@ -1488,6 +1506,9 @@
                 "messages.sendMessage",
                 "messages.sendMultiMedia"
             ],
+            "SCORE_INVALID": [
+                "messages.setGameScore"
+            ],
             "SEARCH_QUERY_EMPTY": [
                 "contacts.search",
                 "messages.search",
@@ -1563,6 +1584,9 @@
             "STICKER_FILE_INVALID": [
                 "stickers.createStickerSet"
             ],
+            "STICKER_GIF_DIMENSIONS": [
+                "stickers.createStickerSet"
+            ],
             "STICKER_ID_INVALID": [
                 "messages.faveSticker",
                 "messages.saveRecentSticker"
@@ -1593,8 +1617,20 @@
                 "stickers.createStickerSet",
                 "stickers.setStickerSetThumb"
             ],
+            "STICKER_VIDEO_BIG": [
+                "stickers.createStickerSet"
+            ],
+            "STICKER_VIDEO_NOWEBM": [
+                "stickers.createStickerSet"
+            ],
+            "STICKERPACK_STICKERS_TOO_MUCH": [
+                "stickers.addStickerToSet"
+            ],
             "STICKERS_EMPTY": [
                 "stickers.createStickerSet"
+            ],
+            "STICKERS_TOO_MUCH": [
+                "stickers.addStickerToSet"
             ],
             "STICKERSET_INVALID": [
                 "messages.getStickerSet",
@@ -1663,6 +1699,9 @@
             ],
             "USER_ADMIN_INVALID": [
                 "channels.editBanned"
+            ],
+            "USER_ALREADY_INVITED": [
+                "phone.inviteToGroupCall"
             ],
             "USER_ALREADY_PARTICIPANT": [
                 "channels.joinChannel",
@@ -2671,6 +2710,7 @@
         "BOT_MISSING": "This method can only be run by a bot",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
+        "BOT_POLLS_DISABLED": "",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel",
@@ -2752,6 +2792,7 @@
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed",
         "EMOTICON_EMPTY": "The emoji is empty",
         "EMOTICON_INVALID": "The specified emoji is invalid",
+        "EMOTICON_STICKERPACK_MISSING": "",
         "ENCRYPTED_MESSAGE_INVALID": "Encrypted message invalid",
         "ENCRYPTION_ALREADY_ACCEPTED": "Secret chat already accepted",
         "ENCRYPTION_ALREADY_DECLINED": "The secret chat was already declined",
@@ -2782,6 +2823,7 @@
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference)",
         "FILTER_ID_INVALID": "The specified filter ID is invalid",
         "FILTER_INCLUDE_EMPTY": "The include_peers vector of the filter is empty",
+        "FILTER_NOT_SUPPORTED": "",
         "FILTER_TITLE_EMPTY": "The title field of the filter is empty",
         "FIRSTNAME_INVALID": "The first name is invalid",
         "FOLDER_ID_EMPTY": "An empty folder ID was specified",
@@ -2823,6 +2865,7 @@
         "Invalid msg_resend_req query": "Invalid msg_resend_req query",
         "Invalid msgs_ack query": "Invalid msgs_ack query",
         "Invalid msgs_state_req query": "Invalid msgs_state_req query",
+        "INVITE_FORBIDDEN_WITH_JOINAS": "",
         "INVITE_HASH_EMPTY": "The invite hash is empty",
         "INVITE_HASH_EXPIRED": "The invite link has expired",
         "INVITE_HASH_INVALID": "The invite hash is invalid",
@@ -2941,6 +2984,7 @@
         "QUERY_ID_EMPTY": "The query ID is empty",
         "QUERY_ID_INVALID": "The query ID is invalid",
         "QUERY_TOO_SHORT": "The query string is too short",
+        "QUIZ_ANSWER_MISSING": "",
         "QUIZ_CORRECT_ANSWER_INVALID": "An invalid value was provided to the correct_answers field",
         "QUIZ_CORRECT_ANSWERS_EMPTY": "No correct quiz answer was specified",
         "QUIZ_CORRECT_ANSWERS_TOO_MUCH": "You specified too many correct answers in a quiz, quizes can only have one right answer!",
@@ -2970,6 +3014,7 @@
         "SCHEDULE_DATE_TOO_LATE": "You can't schedule a message this far in the future",
         "SCHEDULE_STATUS_PRIVATE": "Can't schedule until user is online, if the user's last seen timestamp is hidden by their privacy settings.",
         "SCHEDULE_TOO_MUCH": "There are too many scheduled messages",
+        "SCORE_INVALID": "",
         "SEARCH_QUERY_EMPTY": "The search query is empty",
         "SEARCH_WITH_LINK_NOT_SUPPROTED": "",
         "SECONDS_INVALID": "Invalid duration provided",
@@ -2997,6 +3042,7 @@
         "STICKER_DOCUMENT_INVALID": "The specified sticker document is invalid",
         "STICKER_EMOJI_INVALID": "Sticker emoji invalid",
         "STICKER_FILE_INVALID": "Sticker file invalid",
+        "STICKER_GIF_DIMENSIONS": "",
         "STICKER_ID_INVALID": "The provided sticker ID is invalid",
         "STICKER_INVALID": "The provided sticker is invalid",
         "STICKER_PNG_DIMENSIONS": "Sticker png dimensions invalid",
@@ -3005,7 +3051,11 @@
         "STICKER_TGS_NOTGS": "Invalid TGS sticker provided.",
         "STICKER_THUMB_PNG_NOPNG": "Incorrect stickerset thumb file provided, PNG \/ WEBP expected.",
         "STICKER_THUMB_TGS_NOTGS": "Incorrect stickerset TGS thumb file provided.",
+        "STICKER_VIDEO_BIG": "",
+        "STICKER_VIDEO_NOWEBM": "",
+        "STICKERPACK_STICKERS_TOO_MUCH": "",
         "STICKERS_EMPTY": "No sticker provided",
+        "STICKERS_TOO_MUCH": "",
         "STICKERSET_INVALID": "The provided sticker set is invalid",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation.",
         "STORAGE_CHECK_FAILED": "Server storage check failed",
@@ -3036,6 +3086,7 @@
         "URL_INVALID": "Invalid URL provided",
         "USAGE_LIMIT_INVALID": "The specified usage limit is invalid",
         "USER_ADMIN_INVALID": "You're not an admin",
+        "USER_ALREADY_INVITED": "",
         "USER_ALREADY_PARTICIPANT": "The user is already in the group",
         "USER_BANNED_IN_CHANNEL": "You're banned from sending messages in supergroups\/channels",
         "USER_BLOCKED": "User blocked",
