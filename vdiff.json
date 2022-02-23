@@ -2336,11 +2336,6 @@
             ]
         },
         "401": {
-            "AUTH_KEY_INVALID": [
-                "account.updateStatus",
-                "auth.importBotAuthorization",
-                "users.getUsers"
-            ],
             "AUTH_KEY_PERM_EMPTY": [
                 "account.updateUsername",
                 "auth.checkPhone",
@@ -2690,7 +2685,6 @@
         "AUDIO_TITLE_EMPTY": "An empty audio title was provided.",
         "AUTH_BYTES_INVALID": "The provided authorization is invalid",
         "AUTH_KEY_DUPLICATED": "An auth key with the same ID was already generated",
-        "AUTH_KEY_INVALID": "Auth key invalid",
         "AUTH_KEY_PERM_EMPTY": "The temporary auth key must be binded to the permanent auth key to use these methods.",
         "AUTH_RESTART": "Restart the authorization process",
         "AUTH_TOKEN_ALREADY_ACCEPTED": "The specified auth token was already accepted",
@@ -2915,7 +2909,7 @@
         "NEED_CHAT_INVALID": "The provided chat is invalid",
         "NEED_MEMBER_INVALID": "The provided member is invalid",
         "NEW_SALT_INVALID": "The new salt is invalid",
-        "NEW_SETTINGS_INVALID": "The new settings are invalid",
+        "NEW_SETTINGS_INVALID": "The new password settings are invalid.",
         "NEXT_OFFSET_INVALID": "The specified offset is longer than 64 bytes.",
         "No workers running": "Internal error",
         "OFFSET_INVALID": "The provided offset is invalid",
