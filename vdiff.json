@@ -917,9 +917,6 @@
                 "upload.getFileHashes",
                 "upload.getWebFile"
             ],
-            "LOCATION_NOT_AVAILABLE": [
-                "upload.getFile"
-            ],
             "MAX_ID_INVALID": [
                 "photos.getUserPhotos"
             ],
@@ -2837,7 +2834,6 @@
         "LIMIT_INVALID": "The provided limit is invalid",
         "LINK_NOT_MODIFIED": "Discussion link not modified",
         "LOCATION_INVALID": "The provided location is invalid",
-        "LOCATION_NOT_AVAILABLE": "delete",
         "LOG_WRAP_FAIL": "Internal error",
         "MAX_ID_INVALID": "The provided max ID is invalid",
         "MAX_QTS_INVALID": "The specified max_qts is invalid",
