@@ -1827,15 +1827,6 @@
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
             ],
-            "CHAT_OCCUPY_USERNAME_FAILED": [
-                "channels.updateUsername"
-            ],
-            "ENCRYPTION_OCCUPY_ADMIN_FAILED": [
-                "messages.acceptEncryption"
-            ],
-            "ENCRYPTION_OCCUPY_FAILED": [
-                "messages.acceptEncryption"
-            ],
             "PARTICIPANT_CALL_FAILED": [
                 "phone.requestCall"
             ],
@@ -1850,14 +1841,8 @@
                 "messages.sendMultiMedia",
                 "messages.startBot"
             ],
-            "REG_ID_GENERATE_FAILED": [
-                "auth.signUp"
-            ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
-            ],
-            "UNKNOWN_METHOD": [
-                "upload.getCdnFile"
             ]
         },
         "403": {
@@ -2170,7 +2155,6 @@
         "CHAT_INVALID": "Invalid chat.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified.",
-        "CHAT_OCCUPY_USERNAME_FAILED": "Could not occupy username.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
         "CHAT_SEND_GAME_FORBIDDEN": "You can't send a game to this chat.",
         "CHAT_SEND_GIFS_FORBIDDEN": "You can't send gifs in this chat.",
@@ -2215,8 +2199,6 @@
         "ENCRYPTION_ALREADY_DECLINED": "The secret chat was already declined.",
         "ENCRYPTION_DECLINED": "The secret chat was declined.",
         "ENCRYPTION_ID_INVALID": "The provided secret chat ID is invalid.",
-        "ENCRYPTION_OCCUPY_ADMIN_FAILED": "Failed occupying memory for admin info.",
-        "ENCRYPTION_OCCUPY_FAILED": "Internal server error while accepting secret chat.",
         "ENTITIES_TOO_LONG": "You provided too many styled message entities.",
         "ENTITY_MENTION_USER_INVALID": "You mentioned an invalid user.",
         "ERROR_TEXT_EMPTY": "The provided error message is empty.",
@@ -2392,7 +2374,6 @@
         "RANGES_INVALID": "Invalid range provided.",
         "REACTION_EMPTY": "Empty reaction provided.",
         "REACTION_INVALID": "The specified reaction is invalid.",
-        "REG_ID_GENERATE_FAILED": "Failure while generating registration ID.",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty.",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
@@ -2468,7 +2449,6 @@
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
         "TYPES_EMPTY": "No top peer type was provided.",
-        "UNKNOWN_METHOD": "The method you tried to call cannot be called on non-CDN DCs.",
         "UNTIL_DATE_INVALID": "Invalid until date provided.",
         "UPDATE_APP_REQUIRED": "Please update to the latest version of MadelineProto.",
         "UPDATE_APP_TO_LOGIN": "Please update to the latest version of MadelineProto to login.",
