@@ -774,11 +774,6 @@
             "INPUT_FILTER_INVALID": [
                 "messages.search"
             ],
-            "INPUT_LAYER_INVALID": [
-                "help.getConfig",
-                "invokeWithLayer",
-                "users.getUsers"
-            ],
             "INPUT_USER_DEACTIVATED": [
                 "channels.editAdmin",
                 "channels.editBanned",
@@ -1823,10 +1818,6 @@
             ]
         },
         "500": {
-            "API_CALL_ERROR": [
-                "upload.getCdnFileHashes",
-                "upload.reuploadCdnFile"
-            ],
             "AUTH_RESTART": [
                 "auth.sendCode"
             ],
@@ -1839,108 +1830,17 @@
             "CHAT_OCCUPY_USERNAME_FAILED": [
                 "channels.updateUsername"
             ],
-            "CHP_CALL_FAIL": [
-                "stats.getBroadcastStats",
-                "stats.loadAsyncGraph"
-            ],
             "ENCRYPTION_OCCUPY_ADMIN_FAILED": [
                 "messages.acceptEncryption"
             ],
             "ENCRYPTION_OCCUPY_FAILED": [
                 "messages.acceptEncryption"
             ],
-            "HISTORY_GET_FAILED": [
-                "updates.getChannelDifference",
-                "updates.getDifference"
-            ],
-            "IMAGE_ENGINE_DOWN": [
-                "messages.sendMedia",
-                "photos.updateProfilePhoto",
-                "photos.uploadProfilePhoto"
-            ],
-            "MSG_RANGE_UNSYNC": [
-                "messages.deleteHistory",
-                "messages.getHistory",
-                "messages.getPeerDialogs"
-            ],
-            "MSGID_DECREASE_RETRY": [
-                "channels.createChannel",
-                "channels.editTitle",
-                "channels.getFullChannel",
-                "channels.getParticipants",
-                "channels.joinChannel",
-                "contacts.getStatuses",
-                "contacts.resolveUsername",
-                "help.getCdnConfig",
-                "messages.checkChatInvite",
-                "messages.forwardMessages",
-                "messages.getBotCallbackAnswer",
-                "messages.getDialogs",
-                "messages.getFullChat",
-                "messages.getMessagesViews",
-                "messages.readHistory",
-                "messages.sendMessage",
-                "messages.setTyping",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "users.getFullUser",
-                "users.getUsers"
-            ],
-            "NEED_CHAT_INVALID": [
-                "channels.getChannels",
-                "messages.editChatPhoto",
-                "messages.editChatTitle",
-                "messages.forwardMessages",
-                "messages.getDialogs",
-                "messages.getExportedChatInvites",
-                "messages.getPeerDialogs",
-                "messages.sendMessage",
-                "messages.unpinAllMessages",
-                "messages.updatePinnedMessage",
-                "updates.getChannelDifference"
-            ],
-            "NEED_MEMBER_INVALID": [
-                "auth.sendCode",
-                "channels.deleteMessages",
-                "channels.getChannels",
-                "channels.getMessages",
-                "channels.inviteToChannel",
-                "channels.joinChannel",
-                "channels.readHistory",
-                "channels.readMessageContents",
-                "contacts.deleteContacts",
-                "contacts.importCard",
-                "help.getConfig",
-                "invokeWithLayer",
-                "messages.editMessage",
-                "messages.forwardMessages",
-                "messages.getBotCallbackAnswer",
-                "messages.getDialogs",
-                "messages.getHistory",
-                "messages.getMessagesViews",
-                "messages.getPeerDialogs",
-                "messages.getUnreadMentions",
-                "messages.readMentions",
-                "messages.search",
-                "messages.sendMedia",
-                "messages.sendMessage",
-                "photos.updateProfilePhoto",
-                "photos.uploadProfilePhoto",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "users.getUsers"
-            ],
             "PARTICIPANT_CALL_FAILED": [
                 "phone.requestCall"
             ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
-            ],
-            "PTS_CHANGE_EMPTY": [
-                "messages.editMessage",
-                "messages.forwardMessages",
-                "messages.sendMedia",
-                "messages.sendMessage"
             ],
             "RANDOM_ID_DUPLICATE": [
                 "messages.forwardMessages",
@@ -1956,31 +1856,8 @@
             "SIGN_IN_FAILED": [
                 "auth.signIn"
             ],
-            "STORAGE_CHECK_FAILED": [
-                "messages.editChatPhoto",
-                "messages.sendEncryptedFile",
-                "messages.sendMedia",
-                "messages.uploadMedia",
-                "photos.updateProfilePhoto",
-                "photos.uploadProfilePhoto",
-                "upload.saveBigFilePart"
-            ],
             "UNKNOWN_METHOD": [
                 "upload.getCdnFile"
-            ]
-        },
-        "401": {
-            "AUTH_KEY_PERM_EMPTY": [
-                "account.updateUsername",
-                "auth.checkPhone",
-                "auth.sendCode",
-                "contacts.resolveUsername",
-                "help.getCdnConfig",
-                "messages.getHistory",
-                "messages.sendMessage",
-                "updates.getDifference",
-                "upload.getFile",
-                "users.getUsers"
             ]
         },
         "403": {
@@ -2234,14 +2111,12 @@
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins.",
         "ALBUM_PHOTOS_TOO_MANY": "",
-        "API_CALL_ERROR": "API call error.",
         "API_ID_INVALID": "API ID invalid.",
         "API_ID_PUBLISHED_FLOOD": "This API id was published somewhere, you can't use it now.",
         "ARTICLE_TITLE_EMPTY": "The title of the article is empty.",
         "AUDIO_CONTENT_URL_EMPTY": "The remote URL specified in the content field is empty.",
         "AUDIO_TITLE_EMPTY": "An empty audio title was provided.",
         "AUTH_BYTES_INVALID": "The provided authorization is invalid.",
-        "AUTH_KEY_PERM_EMPTY": "The temporary auth key must be binded to the permanent auth key to use these methods.",
         "AUTH_RESTART": "Restart the authorization process.",
         "AUTH_TOKEN_ALREADY_ACCEPTED": "The specified auth token was already accepted.",
         "AUTH_TOKEN_EXPIRED": "The authorization token has expired.",
@@ -2306,7 +2181,6 @@
         "CHAT_TITLE_EMPTY": "No chat title provided.",
         "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat.",
-        "CHP_CALL_FAIL": "Internal failure.",
         "CODE_EMPTY": "The provided code is empty.",
         "CODE_HASH_INVALID": "Code hash invalid.",
         "CODE_INVALID": "Code invalid.",
@@ -2391,8 +2265,6 @@
         "GROUPCALL_SSRC_DUPLICATE_MUCH": "The app needs to retry joining the group call with a new SSRC value.",
         "GROUPED_MEDIA_INVALID": "Invalid grouped media.",
         "HASH_INVALID": "The provided hash is invalid.",
-        "HISTORY_GET_FAILED": "Fetching of history failed.",
-        "IMAGE_ENGINE_DOWN": "Image engine down.",
         "IMAGE_PROCESS_FAILED": "Failure while processing image.",
         "IMPORT_FILE_INVALID": "The specified chat export file is invalid.",
         "IMPORT_FORMAT_UNRECOGNIZED": "The specified chat export file was exported from an unsupported chat app.",
@@ -2400,7 +2272,6 @@
         "INLINE_BOT_REQUIRED": "Only the inline bot can edit message.",
         "INLINE_RESULT_EXPIRED": "The inline query expired.",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
-        "INPUT_LAYER_INVALID": "The provided layer is invalid.",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted.",
         "Invalid msg_resend_req query": "Invalid msg_resend_req query.",
         "Invalid msgs_ack query": "Invalid msgs_ack query.",
@@ -2440,12 +2311,8 @@
         "MESSAGE_TOO_LONG": "The provided message is too long.",
         "METHOD_INVALID": "The specified method is invalid.",
         "MSG_ID_INVALID": "Invalid message ID provided.",
-        "MSG_RANGE_UNSYNC": "Message range unsynchronized.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
-        "MSGID_DECREASE_RETRY": "IDK TBH.",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
-        "NEED_CHAT_INVALID": "The provided chat is invalid.",
-        "NEED_MEMBER_INVALID": "The provided member is invalid.",
         "NEW_SALT_INVALID": "The new salt is invalid.",
         "NEW_SETTINGS_INVALID": "The new password settings are invalid.",
         "NEXT_OFFSET_INVALID": "The specified offset is longer than 64 bytes.",
@@ -2509,7 +2376,6 @@
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
         "PRIVACY_VALUE_INVALID": "The specified privacy rule combination is invalid.",
-        "PTS_CHANGE_EMPTY": "No PTS change.",
         "PUBLIC_KEY_REQUIRED": "A public key is required.",
         "QUERY_ID_EMPTY": "The query ID is empty.",
         "QUERY_ID_INVALID": "The query ID is invalid.",
@@ -2586,7 +2452,6 @@
         "STICKERS_TOO_MUCH": "",
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation.",
-        "STORAGE_CHECK_FAILED": "Server storage check failed.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
