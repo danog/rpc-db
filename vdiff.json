@@ -1136,6 +1136,7 @@
                 "messages.getSearchCounters",
                 "messages.getStatsURL",
                 "messages.getUnreadMentions",
+                "messages.hideChatJoinRequest",
                 "messages.hideReportSpam",
                 "messages.importChatInvite",
                 "messages.markDialogUnread",
