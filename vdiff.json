@@ -938,7 +938,8 @@
             ],
             "MESSAGE_NOT_MODIFIED": [
                 "messages.editInlineBotMessage",
-                "messages.editMessage"
+                "messages.editMessage",
+                "messages.sendReaction"
             ],
             "MESSAGE_POLL_CLOSED": [
                 "messages.sendVote"
@@ -2368,8 +2369,8 @@
         "QUIZ_ANSWER_MISSING": "",
         "QUIZ_CORRECT_ANSWER_INVALID": "An invalid value was provided to the correct_answers field.",
         "QUIZ_CORRECT_ANSWERS_EMPTY": "No correct quiz answer was specified.",
-        "QUIZ_CORRECT_ANSWERS_TOO_MUCH": "You specified too many correct answers in a quiz, quizes can only have one right answer!",
-        "QUIZ_MULTIPLE_INVALID": "Quizes can't have the multiple_choice flag set!",
+        "QUIZ_CORRECT_ANSWERS_TOO_MUCH": "You specified too many correct answers in a quiz, quizzes can only have one right answer!",
+        "QUIZ_MULTIPLE_INVALID": "Quizzes can't have the multiple_choice flag set!",
         "RANDOM_ID_DUPLICATE": "You provided a random ID that was already used.",
         "RANDOM_ID_EMPTY": "Random ID empty.",
         "RANDOM_ID_INVALID": "A provided random ID is invalid.",
@@ -2435,8 +2436,8 @@
         "STICKERS_EMPTY": "No sticker provided.",
         "STICKERS_TOO_MUCH": "There are too many stickers in this stickerpack, you can't add any more.",
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
-        "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymisation.",
-        "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initing takeout.",
+        "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
+        "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
         "TEMP_AUTH_KEY_EMPTY": "No temporary auth key provided.",
