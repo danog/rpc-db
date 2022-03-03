@@ -2292,7 +2292,7 @@
         "MESSAGE_EMPTY": "The provided message is empty.",
         "MESSAGE_ID_INVALID": "The provided message id is invalid.",
         "MESSAGE_IDS_EMPTY": "No message ids were provided.",
-        "MESSAGE_NOT_MODIFIED": "The message text has not changed.",
+        "MESSAGE_NOT_MODIFIED": "The provided message data is identical to the previous message data, the message wasn't modified.",
         "MESSAGE_POLL_CLOSED": "Poll closed.",
         "MESSAGE_TOO_LONG": "The provided message is too long.",
         "METHOD_INVALID": "The specified method is invalid.",
