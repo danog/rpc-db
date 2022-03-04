@@ -2311,7 +2311,7 @@
         "PACK_TITLE_INVALID": "The stickerpack title is invalid.",
         "PARTICIPANT_CALL_FAILED": "Failure while making call.",
         "PARTICIPANT_ID_INVALID": "The specified participant ID is invalid.",
-        "PARTICIPANT_JOIN_MISSING": "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](\/method\/phone.joinGroupCall).",
+        "PARTICIPANT_JOIN_MISSING": "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](https:\/\/core.telegram.org\/method\/phone.joinGroupCall).",
         "PARTICIPANT_VERSION_OUTDATED": "The other participant does not use an up to date telegram client with support for calls.",
         "PARTICIPANTS_TOO_FEW": "Not enough participants.",
         "PASSWORD_EMPTY": "The provided password is empty.",
