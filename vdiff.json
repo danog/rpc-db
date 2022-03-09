@@ -356,6 +356,7 @@
                 "channels.editAdmin",
                 "channels.editBanned",
                 "channels.editCreator",
+                "channels.editLocation",
                 "channels.editPhoto",
                 "channels.editTitle",
                 "channels.exportInvite",
@@ -404,7 +405,8 @@
             ],
             "CHAT_FORWARDS_RESTRICTED": [
                 "messages.forwardMessages",
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "messages.sendMultiMedia"
             ],
             "CHAT_ID_EMPTY": [
                 "messages.discardEncryption"
@@ -452,6 +454,7 @@
             ],
             "CHAT_NOT_MODIFIED": [
                 "channels.deleteChannel",
+                "channels.editLocation",
                 "channels.editPhoto",
                 "channels.editTitle",
                 "channels.getFullChannel",
@@ -1289,7 +1292,6 @@
                 "messages.updatePinnedMessage"
             ],
             "PINNED_DIALOGS_TOO_MUCH": [
-                "channels.editBanned",
                 "messages.sendMessage",
                 "messages.toggleDialogPin",
                 "updates.getChannelDifference"
@@ -1436,7 +1438,7 @@
                 "messages.searchGifs",
                 "messages.searchGlobal"
             ],
-            "SEARCH_WITH_LINK_NOT_SUPPROTED": [
+            "SEARCH_WITH_LINK_NOT_SUPPORTED": [
                 "messages.getChatInviteImporters"
             ],
             "SECONDS_INVALID": [
@@ -2099,7 +2101,7 @@
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins.",
-        "ALBUM_PHOTOS_TOO_MANY": "",
+        "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "API_ID_INVALID": "API ID invalid.",
         "API_ID_PUBLISHED_FLOOD": "This API id was published somewhere, you can't use it now.",
         "ARTICLE_TITLE_EMPTY": "The title of the article is empty.",
@@ -2187,7 +2189,7 @@
         "DC_ID_INVALID": "The provided DC ID is invalid.",
         "DH_G_A_INVALID": "g_a invalid.",
         "DOCUMENT_INVALID": "The specified document is invalid.",
-        "EDIT_BOT_INVITE_FORBIDDEN": "",
+        "EDIT_BOT_INVITE_FORBIDDEN": "Normal users can't edit invites that were created by bots.",
         "EMAIL_HASH_EXPIRED": "Email hash expired.",
         "EMAIL_INVALID": "The specified email is invalid.",
         "EMAIL_UNCONFIRMED": "Email unconfirmed.",
@@ -2262,7 +2264,7 @@
         "Invalid msg_resend_req query": "Invalid msg_resend_req query.",
         "Invalid msgs_ack query": "Invalid msgs_ack query.",
         "Invalid msgs_state_req query": "Invalid msgs_state_req query.",
-        "INVITE_FORBIDDEN_WITH_JOINAS": "",
+        "INVITE_FORBIDDEN_WITH_JOINAS": "If the user has anonymously joined a group call as a channel, they can't invite other users to the group call because that would cause deanonymization, because the invite would be sent using the original user ID, not the anonymized channel ID.",
         "INVITE_HASH_EMPTY": "The invite hash is empty.",
         "INVITE_HASH_EXPIRED": "The invite link has expired.",
         "INVITE_HASH_INVALID": "The invite hash is invalid.",
@@ -2366,7 +2368,7 @@
         "QUERY_ID_EMPTY": "The query ID is empty.",
         "QUERY_ID_INVALID": "The query ID is invalid.",
         "QUERY_TOO_SHORT": "The query string is too short.",
-        "QUIZ_ANSWER_MISSING": "",
+        "QUIZ_ANSWER_MISSING": "You can forward a quiz while hiding the original author only after choosing an option in the quiz.",
         "QUIZ_CORRECT_ANSWER_INVALID": "An invalid value was provided to the correct_answers field.",
         "QUIZ_CORRECT_ANSWERS_EMPTY": "No correct quiz answer was specified.",
         "QUIZ_CORRECT_ANSWERS_TOO_MUCH": "You specified too many correct answers in a quiz, quizzes can only have one right answer!",
@@ -2396,7 +2398,7 @@
         "SCHEDULE_TOO_MUCH": "There are too many scheduled messages.",
         "SCORE_INVALID": "The specified game score is invalid.",
         "SEARCH_QUERY_EMPTY": "The search query is empty.",
-        "SEARCH_WITH_LINK_NOT_SUPPROTED": "You cannot provide a search query and an invite link at the same time.",
+        "SEARCH_WITH_LINK_NOT_SUPPORTED": "You cannot provide a search query and an invite link at the same time.",
         "SECONDS_INVALID": "Invalid duration provided.",
         "SEND_AS_PEER_INVALID": "You can't send messages as the specified peer.",
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
