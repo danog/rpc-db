@@ -741,7 +741,8 @@
                 "phone.discardGroupCallRequest"
             ],
             "GROUPCALL_INVALID": [
-                "phone.getGroupCall"
+                "phone.getGroupCall",
+                "phone.getGroupCallStreamChannels"
             ],
             "GROUPCALL_NOT_MODIFIED": [
                 "phone.toggleGroupCallSettings"
