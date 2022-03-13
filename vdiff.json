@@ -739,6 +739,9 @@
                 "phone.getGroupCall",
                 "phone.getGroupCallStreamChannels"
             ],
+            "GROUPCALL_JOIN_MISSING": [
+                "phone.getGroupCallStreamChannels"
+            ],
             "GROUPCALL_NOT_MODIFIED": [
                 "phone.toggleGroupCallSettings"
             ],
@@ -847,6 +850,9 @@
                 "upload.getFile",
                 "upload.getFileHashes",
                 "upload.getWebFile"
+            ],
+            "MAX_DATE_INVALID": [
+                "messages.deleteHistory"
             ],
             "MAX_ID_INVALID": [
                 "photos.getUserPhotos"
@@ -2122,7 +2128,6 @@
         "BOT_MISSING": "This method can only be run by a bot.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
-        "BOT_POLLS_DISABLED": "",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
@@ -2195,7 +2200,6 @@
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed.",
         "EMOTICON_EMPTY": "The emoji is empty.",
         "EMOTICON_INVALID": "The specified emoji is invalid.",
-        "EMOTICON_STICKERPACK_MISSING": "",
         "ENCRYPTED_MESSAGE_INVALID": "Encrypted message invalid.",
         "ENCRYPTION_ALREADY_ACCEPTED": "Secret chat already accepted.",
         "ENCRYPTION_ALREADY_DECLINED": "The secret chat was already declined.",
@@ -2245,6 +2249,7 @@
         "GROUPCALL_ALREADY_DISCARDED": "The group call was already discarded.",
         "GROUPCALL_FORBIDDEN": "The group call has already ended.",
         "GROUPCALL_INVALID": "The specified group call is invalid.",
+        "GROUPCALL_JOIN_MISSING": "You haven't joined this group call.",
         "GROUPCALL_NOT_MODIFIED": "Group call settings weren't modified.",
         "GROUPCALL_SSRC_DUPLICATE_MUCH": "The app needs to retry joining the group call with a new SSRC value.",
         "GROUPED_MEDIA_INVALID": "Invalid grouped media.",
@@ -2272,6 +2277,7 @@
         "LIMIT_INVALID": "The provided limit is invalid.",
         "LINK_NOT_MODIFIED": "Discussion link not modified.",
         "LOCATION_INVALID": "The provided location is invalid.",
+        "MAX_DATE_INVALID": "The specified maximum date is invalid.",
         "MAX_ID_INVALID": "The provided max ID is invalid.",
         "MAX_QTS_INVALID": "The specified max_qts is invalid.",
         "MD5_CHECKSUM_INVALID": "The MD5 checksums do not match.",
