@@ -124,9 +124,6 @@
             "BOT_PAYMENTS_DISABLED": [
                 "messages.sendMedia"
             ],
-            "BOT_POLLS_DISABLED": [
-                "messages.sendMedia"
-            ],
             "BOT_RESPONSE_TIMEOUT": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
@@ -561,6 +558,7 @@
             ],
             "EMAIL_INVALID": [
                 "account.sendVerifyEmailCode",
+                "account.updatePasswordSettings",
                 "account.verifyEmail"
             ],
             "EMAIL_UNCONFIRMED": [
@@ -583,9 +581,6 @@
             ],
             "EMOTICON_INVALID": [
                 "messages.sendMedia"
-            ],
-            "EMOTICON_STICKERPACK_MISSING": [
-                "messages.getStickerSet"
             ],
             "ENCRYPTED_MESSAGE_INVALID": [
                 "auth.bindTempAuthKey",
