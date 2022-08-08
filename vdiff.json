@@ -127,6 +127,9 @@
             "BOT_PAYMENTS_DISABLED": [
                 "messages.sendMedia"
             ],
+            "BOT_POLLS_DISABLED": [
+                "messages.sendMedia"
+            ],
             "BOT_RESPONSE_TIMEOUT": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
@@ -631,6 +634,9 @@
             "EMOTICON_INVALID": [
                 "messages.sendMedia"
             ],
+            "EMOTICON_STICKERPACK_MISSING": [
+                "messages.getStickerSet"
+            ],
             "ENCRYPTED_MESSAGE_INVALID": [
                 "auth.bindTempAuthKey",
                 "msgs_ack"
@@ -657,9 +663,15 @@
                 "messages.sendMessage"
             ],
             "ENTITY_BOUNDS_INVALID": [
+                "help.editUserInfo",
+                "messages.editInlineBotMessage",
                 "messages.editMessage",
+                "messages.getWebPagePreview",
+                "messages.saveDraft",
+                "messages.sendInlineBotResult",
                 "messages.sendMedia",
-                "messages.sendMessage"
+                "messages.sendMessage",
+                "messages.sendMultiMedia"
             ],
             "ENTITY_MENTION_USER_INVALID": [
                 "messages.sendMessage"
@@ -2071,6 +2083,7 @@
                 "messages.getAdminsWithInvites",
                 "messages.getChatInviteImporters",
                 "messages.getExportedChatInvite",
+                "messages.getExportedChatInvites",
                 "messages.getMessageEditData",
                 "messages.hideAllChatJoinRequests",
                 "messages.sendInlineBotResult",
@@ -2307,6 +2320,7 @@
         "BOT_MISSING": "This method can only be run by a bot.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
+        "BOT_POLLS_DISABLED": "",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
@@ -2388,6 +2402,7 @@
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed.",
         "EMOTICON_EMPTY": "The emoji is empty.",
         "EMOTICON_INVALID": "The specified emoji is invalid.",
+        "EMOTICON_STICKERPACK_MISSING": "",
         "ENCRYPTED_MESSAGE_INVALID": "Encrypted message invalid.",
         "ENCRYPTION_ALREADY_ACCEPTED": "Secret chat already accepted.",
         "ENCRYPTION_ALREADY_DECLINED": "The secret chat was already declined.",
@@ -2654,7 +2669,6 @@
         "THEME_INVALID": "Invalid theme provided.",
         "THEME_MIME_INVALID": "The theme's MIME type is invalid.",
         "THEME_TITLE_INVALID": "The specified theme title is invalid.",
-        "Timeou": "",
         "Timeout": "Timeout while fetching data.",
         "TITLE_INVALID": "The specified stickerpack title is invalid.",
         "TMP_PASSWORD_DISABLED": "The temporary password is disabled.",
