@@ -583,6 +583,8 @@
                 "messages.sendEncryptedService"
             ],
             "DATA_JSON_INVALID": [
+                "bots.answerWebhookJSONQuery",
+                "bots.sendCustomRequest",
                 "phone.joinGroupCall",
                 "phone.saveCallDebug"
             ],
@@ -970,7 +972,8 @@
             "MEDIA_INVALID": [
                 "messages.sendMedia",
                 "messages.sendMultiMedia",
-                "messages.uploadMedia"
+                "messages.uploadMedia",
+                "payments.exportInvoice"
             ],
             "MEDIA_NEW_INVALID": [
                 "messages.editMessage"
@@ -1446,6 +1449,7 @@
             ],
             "QUERY_ID_INVALID": [
                 "bots.answerWebhookJSONQuery",
+                "messages.sendWebViewResultMessage",
                 "messages.setBotCallbackAnswer",
                 "messages.setBotShippingResults",
                 "messages.setInlineBotResults"
@@ -1519,6 +1523,10 @@
             ],
             "REVOTE_NOT_ALLOWED": [
                 "messages.sendVote"
+            ],
+            "RIGHTS_NOT_MODIFIED": [
+                "bots.setBotBroadcastDefaultAdminRights",
+                "bots.setBotGroupDefaultAdminRights"
             ],
             "RSA_DECRYPT_FAILED": [
                 "upload.getCdnFileHashes",
@@ -2609,6 +2617,7 @@
         "RESULTS_TOO_MUCH": "Too many results were provided.",
         "REVOTE_NOT_ALLOWED": "You cannot change your vote.",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this.",
+        "RIGHTS_NOT_MODIFIED": "",
         "RSA_DECRYPT_FAILED": "Internal RSA decryption failed.",
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages.",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided.",
