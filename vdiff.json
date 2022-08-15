@@ -268,6 +268,7 @@
                 "messages.setTyping",
                 "messages.uploadMedia",
                 "msg_container",
+                "msg_resend_req",
                 "msgs_state_req",
                 "stats.getBroadcastStats",
                 "stats.getMegagroupStats",
@@ -1996,18 +1997,6 @@
             "CHAT_MEMBERS_CHANNEL": [
                 "messages.checkChatInvite"
             ],
-            "FILE_WRITE_FAILED": [
-                "messages.sendMedia"
-            ],
-            "GROUPCALL_ADD_PARTICIPANTS_FAILED": [
-                "phone.joinGroupCall"
-            ],
-            "MEMBER_CHAT_ADD_FAILED": [
-                "channels.joinChannel"
-            ],
-            "PARTICIPANT_CALL_FAILED": [
-                "phone.requestCall"
-            ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
             ],
@@ -2444,7 +2433,6 @@
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid.",
         "FILE_TITLE_EMPTY": "An empty file title was specified.",
-        "FILE_WRITE_FAILED": "An internal error occurred.",
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILTER_ID_INVALID": "The specified filter ID is invalid.",
         "FILTER_INCLUDE_EMPTY": "The include_peers vector of the filter is empty.",
@@ -2465,7 +2453,6 @@
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats.",
-        "GROUPCALL_ADD_PARTICIPANTS_FAILED": "An internal error occurred.",
         "GROUPCALL_ALREADY_DISCARDED": "The group call was already discarded.",
         "GROUPCALL_ALREADY_STARTED": "The groupcall has already started, you can join directly using [phone.joinGroupCall](https:\/\/core.telegram.org\/method\/phone.joinGroupCall).",
         "GROUPCALL_FORBIDDEN": "The group call has already ended.",
@@ -2514,7 +2501,6 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
-        "MEMBER_CHAT_ADD_FAILED": "An internal error occurred.",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -2539,7 +2525,6 @@
         "PACK_SHORT_NAME_INVALID": "Short pack name invalid.",
         "PACK_SHORT_NAME_OCCUPIED": "A stickerpack with this name already exists.",
         "PACK_TITLE_INVALID": "The stickerpack title is invalid.",
-        "PARTICIPANT_CALL_FAILED": "Failure while making call.",
         "PARTICIPANT_ID_INVALID": "The specified participant ID is invalid.",
         "PARTICIPANT_JOIN_MISSING": "Trying to enable a presentation, when the user hasn't joined the Video Chat with [phone.joinGroupCall](https:\/\/core.telegram.org\/method\/phone.joinGroupCall).",
         "PARTICIPANT_VERSION_OUTDATED": "The other participant does not use an up to date telegram client with support for calls.",
