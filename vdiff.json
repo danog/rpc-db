@@ -69,6 +69,9 @@
                 "auth.acceptLoginToken",
                 "auth.importLoginToken"
             ],
+            "AUTH_TOKEN_EXCEPTION": [
+                "auth.acceptLoginToken"
+            ],
             "AUTH_TOKEN_EXPIRED": [
                 "auth.acceptLoginToken",
                 "auth.importLoginToken"
@@ -157,6 +160,9 @@
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.setInlineBotResults"
+            ],
+            "BUTTON_TEXT_INVALID": [
+                "bots.setBotMenuButton"
             ],
             "BUTTON_TYPE_INVALID": [
                 "messages.editMessage",
@@ -394,6 +400,7 @@
                 "channels.reportSpam",
                 "channels.setDiscussionGroup",
                 "channels.toggleInvites",
+                "channels.toggleJoinToSend",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
                 "channels.toggleSlowMode",
@@ -1323,9 +1330,6 @@
                 "auth.signIn",
                 "auth.signUp"
             ],
-            "PHONE_NOT_OCCUPIED": [
-                "contacts.resolvePhone"
-            ],
             "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": [
                 "auth.sendCode"
             ],
@@ -1913,6 +1917,9 @@
             "VIDEO_TITLE_EMPTY": [
                 "messages.setInlineBotResults"
             ],
+            "VOICE_MESSAGES_FORBIDDEN": [
+                "messages.sendInlineBotResult"
+            ],
             "WALLPAPER_FILE_INVALID": [
                 "account.uploadWallPaper"
             ],
@@ -2131,9 +2138,6 @@
                 "channels.deleteMessages",
                 "messages.deleteMessages"
             ],
-            "MTPROTO_CLUSTER_INVALID": [
-                "upload.getFile"
-            ],
             "PARTICIPANT_JOIN_MISSING": [
                 "phone.joinGroupCallPresentation"
             ],
@@ -2312,6 +2316,7 @@
         "AUTH_BYTES_INVALID": "The provided authorization is invalid.",
         "AUTH_RESTART": "Restart the authorization process.",
         "AUTH_TOKEN_ALREADY_ACCEPTED": "The specified auth token was already accepted.",
+        "AUTH_TOKEN_EXCEPTION": "An error occurred while importing the auth token.",
         "AUTH_TOKEN_EXPIRED": "The authorization token has expired.",
         "AUTH_TOKEN_INVALID": "The specified auth token is invalid.",
         "AUTH_TOKEN_INVALIDX": "The specified auth token is invalid.",
@@ -2337,6 +2342,7 @@
         "BROADCAST_PUBLIC_VOTERS_FORBIDDEN": "You can't forward polls with public voters.",
         "BROADCAST_REQUIRED": "This method can only be called on a channel, please use stats.getMegagroupStats for supergroups.",
         "BUTTON_DATA_INVALID": "The data of one or more of the buttons you provided is invalid.",
+        "BUTTON_TEXT_INVALID": "The specified button text is invalid.",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid.",
         "BUTTON_URL_INVALID": "Button URL invalid.",
         "BUTTON_USER_PRIVACY_RESTRICTED": "",
@@ -2362,7 +2368,7 @@
         "CHAT_ADMIN_REQUIRED": "You must be an admin in this chat to do this.",
         "CHAT_FORWARDS_RESTRICTED": "You can't forward messages from a protected chat.",
         "CHAT_FROM_CALL_CHANGED": "",
-        "CHAT_GUEST_SEND_FORBIDDEN": "",
+        "CHAT_GUEST_SEND_FORBIDDEN": "You join the discussion group before commenting, see [here &raquo;](\/api\/discussion#requiring-users-to-join-the-group) for more info.",
         "CHAT_ID_EMPTY": "The provided chat ID is empty.",
         "CHAT_ID_GENERATE_FAILED": "Failure while generating the chat ID.",
         "CHAT_ID_INVALID": "The provided chat id is invalid.",
@@ -2391,7 +2397,7 @@
         "CONTACT_ID_INVALID": "The provided contact ID is invalid.",
         "CONTACT_NAME_EMPTY": "Contact name empty.",
         "CONTACT_REQ_MISSING": "Missing contact request.",
-        "CREATE_CALL_FAILED": "",
+        "CREATE_CALL_FAILED": "An error occurred while creating the call.",
         "CURRENCY_TOTAL_AMOUNT_INVALID": "The total amount of all prices is invalid.",
         "DATA_INVALID": "Encrypted data invalid.",
         "DATA_JSON_INVALID": "The provided JSON data is invalid.",
@@ -2410,7 +2416,7 @@
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed.",
         "EMOTICON_EMPTY": "The emoji is empty.",
         "EMOTICON_INVALID": "The specified emoji is invalid.",
-        "EMOTICON_STICKERPACK_MISSING": "",
+        "EMOTICON_STICKERPACK_MISSING": "inputStickerSetDice.emoji cannot be empty.",
         "ENCRYPTED_MESSAGE_INVALID": "Encrypted message invalid.",
         "ENCRYPTION_ALREADY_ACCEPTED": "Secret chat already accepted.",
         "ENCRYPTION_ALREADY_DECLINED": "The secret chat was already declined.",
@@ -2438,7 +2444,7 @@
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid.",
         "FILE_TITLE_EMPTY": "An empty file title was specified.",
-        "FILE_WRITE_FAILED": "",
+        "FILE_WRITE_FAILED": "An internal error occurred.",
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILTER_ID_INVALID": "The specified filter ID is invalid.",
         "FILTER_INCLUDE_EMPTY": "The include_peers vector of the filter is empty.",
@@ -2459,7 +2465,7 @@
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats.",
-        "GROUPCALL_ADD_PARTICIPANTS_FAILED": "",
+        "GROUPCALL_ADD_PARTICIPANTS_FAILED": "An internal error occurred.",
         "GROUPCALL_ALREADY_DISCARDED": "The group call was already discarded.",
         "GROUPCALL_ALREADY_STARTED": "The groupcall has already started, you can join directly using [phone.joinGroupCall](https:\/\/core.telegram.org\/method\/phone.joinGroupCall).",
         "GROUPCALL_FORBIDDEN": "The group call has already ended.",
@@ -2508,7 +2514,7 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
-        "MEMBER_CHAT_ADD_FAILED": "",
+        "MEMBER_CHAT_ADD_FAILED": "An internal error occurred.",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -2521,7 +2527,6 @@
         "METHOD_INVALID": "The specified method is invalid.",
         "MSG_ID_INVALID": "Invalid message ID provided.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
-        "MTPROTO_CLUSTER_INVALID": "",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
         "NEW_SALT_INVALID": "The new salt is invalid.",
         "NEW_SETTINGS_EMPTY": "No password is set on the current account, and no new password was specified in `new_settings`.",
@@ -2557,7 +2562,6 @@
         "PHONE_CODE_EXPIRED": "The phone code you provided has expired.",
         "PHONE_CODE_HASH_EMPTY": "phone_code_hash is missing.",
         "PHONE_CODE_INVALID": "The provided phone code is invalid.",
-        "PHONE_NOT_OCCUPIED": "",
         "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": "You can't sign up using this app.",
         "PHONE_NUMBER_BANNED": "The provided phone number is banned from telegram.",
         "PHONE_NUMBER_FLOOD": "You asked for the code too many times.",
@@ -2612,12 +2616,12 @@
         "RESET_REQUEST_MISSING": "No password reset is in progress.",
         "RESULT_ID_DUPLICATE": "You provided a duplicate result ID.",
         "RESULT_ID_EMPTY": "Result ID empty.",
-        "RESULT_ID_INVALID": "",
+        "RESULT_ID_INVALID": "One of the specified result IDs is invalid.",
         "RESULT_TYPE_INVALID": "Result type invalid.",
         "RESULTS_TOO_MUCH": "Too many results were provided.",
         "REVOTE_NOT_ALLOWED": "You cannot change your vote.",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this.",
-        "RIGHTS_NOT_MODIFIED": "",
+        "RIGHTS_NOT_MODIFIED": "The new admin rights are equal to the old rights, no change was made.",
         "RSA_DECRYPT_FAILED": "Internal RSA decryption failed.",
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages.",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided.",
@@ -2724,6 +2728,7 @@
         "VIDEO_CONTENT_TYPE_INVALID": "The video's content type is invalid.",
         "VIDEO_FILE_INVALID": "The specified video file is invalid.",
         "VIDEO_TITLE_EMPTY": "The specified video title is empty.",
+        "VOICE_MESSAGES_FORBIDDEN": "This user's privacy settings forbid you from sending voice messages.",
         "WALLPAPER_FILE_INVALID": "The specified wallpaper file is invalid.",
         "WALLPAPER_INVALID": "The specified wallpaper is invalid.",
         "WALLPAPER_MIME_INVALID": "The specified wallpaper MIME type is invalid.",
