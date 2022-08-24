@@ -2590,7 +2590,7 @@
         "RANGES_INVALID": "Invalid range provided.",
         "REACTION_EMPTY": "Empty reaction provided.",
         "REACTION_INVALID": "The specified reaction is invalid.",
-        "REACTIONS_TOO_MANY": "",
+        "REACTIONS_TOO_MANY": "The message already has exactly `reactions_uniq_max` reaction emojis, you can't react with a new emoji, see [the docs for more info &raquo;](\/api\/config#client-configuration).",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty.",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
