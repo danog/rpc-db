@@ -130,9 +130,6 @@
             "BOT_PAYMENTS_DISABLED": [
                 "messages.sendMedia"
             ],
-            "BOT_POLLS_DISABLED": [
-                "messages.sendMedia"
-            ],
             "BOT_RESPONSE_TIMEOUT": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
@@ -285,6 +282,7 @@
             "CHANNEL_PRIVATE": [
                 "account.reportPeer",
                 "account.updateNotifySettings",
+                "channels.checkUsername",
                 "channels.deleteChannel",
                 "channels.deleteHistory",
                 "channels.deleteMessages",
@@ -454,6 +452,7 @@
             ],
             "CHAT_ID_INVALID": [
                 "channels.checkUsername",
+                "channels.getSendAs",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
                 "channels.updatePinnedMessage",
@@ -611,7 +610,8 @@
             ],
             "DOCUMENT_INVALID": [
                 "messages.sendMedia",
-                "messages.setInlineBotResults"
+                "messages.setInlineBotResults",
+                "upload.getWebFile"
             ],
             "EMAIL_HASH_EXPIRED": [
                 "account.cancelPasswordEmail",
@@ -1261,6 +1261,7 @@
                 "messages.getSearchCounters",
                 "messages.getStatsURL",
                 "messages.getUnreadMentions",
+                "messages.hideAllChatJoinRequests",
                 "messages.hideChatJoinRequest",
                 "messages.hideReportSpam",
                 "messages.importChatInvite",
@@ -1269,6 +1270,7 @@
                 "messages.readDiscussion",
                 "messages.readHistory",
                 "messages.readMentions",
+                "messages.readReactions",
                 "messages.reorderPinnedDialogs",
                 "messages.report",
                 "messages.reportSpam",
@@ -1330,6 +1332,9 @@
             "PHONE_CODE_INVALID": [
                 "auth.signIn",
                 "auth.signUp"
+            ],
+            "PHONE_NOT_OCCUPIED": [
+                "contacts.resolvePhone"
             ],
             "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": [
                 "auth.sendCode"
@@ -1493,6 +1498,9 @@
                 "messages.sendReaction"
             ],
             "REACTION_INVALID": [
+                "messages.sendReaction"
+            ],
+            "REACTIONS_TOO_MANY": [
                 "messages.sendReaction"
             ],
             "REPLY_MARKUP_BUY_EMPTY": [
@@ -1803,7 +1811,8 @@
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
                 "messages.setGameScore",
-                "messages.setInlineGameScore"
+                "messages.setInlineGameScore",
+                "users.setSecureValueErrors"
             ],
             "USER_CHANNELS_TOO_MUCH": [
                 "channels.inviteToChannel",
@@ -1828,6 +1837,7 @@
                 "messages.deleteChatUser",
                 "messages.editChatAdmin",
                 "messages.getCommonChats",
+                "messages.hideChatJoinRequest",
                 "messages.requestEncryption",
                 "messages.search",
                 "phone.requestCall",
@@ -1988,14 +1998,8 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
-            "CHAT_FROM_CALL_CHANGED": [
-                "phone.createGroupCall"
-            ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
-            ],
-            "CHAT_MEMBERS_CHANNEL": [
-                "messages.checkChatInvite"
             ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
@@ -2007,9 +2011,6 @@
                 "messages.sendMessage",
                 "messages.sendMultiMedia",
                 "messages.startBot"
-            ],
-            "SEND_REACTION_RESULT1_INVALID": [
-                "messages.sendReaction"
             ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
@@ -2222,9 +2223,6 @@
                 "messages.checkChatInvite",
                 "messages.importChatInvite"
             ],
-            "PAYMENT_UNSUPPORTED": [
-                "messages.sendMessage"
-            ],
             "PHONE_NUMBER_INVALID": [
                 "account.changePhone",
                 "account.sendChangePhoneCode",
@@ -2322,7 +2320,6 @@
         "BOT_MISSING": "This method can only be run by a bot.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
-        "BOT_POLLS_DISABLED": "",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
@@ -2334,7 +2331,7 @@
         "BUTTON_TEXT_INVALID": "The specified button text is invalid.",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid.",
         "BUTTON_URL_INVALID": "Button URL invalid.",
-        "BUTTON_USER_PRIVACY_RESTRICTED": "",
+        "BUTTON_USER_PRIVACY_RESTRICTED": "The privacy setting of the user specified in a [inputKeyboardButtonUserProfile](\/constructor\/inputKeyboardButtonUserProfile) button do not allow creating such a button.",
         "CALL_ALREADY_ACCEPTED": "The call was already accepted.",
         "CALL_ALREADY_DECLINED": "The call was already declined.",
         "CALL_OCCUPY_FAILED": "The call failed because the user is already making another call.",
@@ -2344,7 +2341,7 @@
         "CDN_UPLOAD_TIMEOUT": "A server-side timeout occurred while reuploading the file to the CDN DC.",
         "CHANNEL_ID_INVALID": "The specified supergroup ID is invalid.",
         "CHANNEL_INVALID": "The provided channel is invalid.",
-        "CHANNEL_PARICIPANT_MISSING": "",
+        "CHANNEL_PARICIPANT_MISSING": "The current user is not in the channel.",
         "CHANNEL_PRIVATE": "You haven't joined this channel\/supergroup.",
         "CHANNEL_PUBLIC_GROUP_NA": "channel\/supergroup not available.",
         "CHANNEL_TOO_LARGE": "Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change).",
@@ -2356,15 +2353,13 @@
         "CHAT_ADMIN_INVITE_REQUIRED": "You do not have the rights to do this.",
         "CHAT_ADMIN_REQUIRED": "You must be an admin in this chat to do this.",
         "CHAT_FORWARDS_RESTRICTED": "You can't forward messages from a protected chat.",
-        "CHAT_FROM_CALL_CHANGED": "",
         "CHAT_GUEST_SEND_FORBIDDEN": "You join the discussion group before commenting, see [here &raquo;](\/api\/discussion#requiring-users-to-join-the-group) for more info.",
         "CHAT_ID_EMPTY": "The provided chat ID is empty.",
         "CHAT_ID_GENERATE_FAILED": "Failure while generating the chat ID.",
         "CHAT_ID_INVALID": "The provided chat id is invalid.",
         "CHAT_INVALID": "Invalid chat.",
-        "CHAT_INVITE_PERMANENT": "",
+        "CHAT_INVITE_PERMANENT": "You can't set an expiration date on permanent invite links.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
-        "CHAT_MEMBERS_CHANNEL": "",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
         "CHAT_SEND_GAME_FORBIDDEN": "You can't send a game to this chat.",
@@ -2537,7 +2532,6 @@
         "PASSWORD_REQUIRED": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport.",
         "PASSWORD_TOO_FRESH_%d": "The password was modified less than 24 hours ago, try again in %d seconds.",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid.",
-        "PAYMENT_UNSUPPORTED": "",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
@@ -2547,6 +2541,7 @@
         "PHONE_CODE_EXPIRED": "The phone code you provided has expired.",
         "PHONE_CODE_HASH_EMPTY": "phone_code_hash is missing.",
         "PHONE_CODE_INVALID": "The provided phone code is invalid.",
+        "PHONE_NOT_OCCUPIED": "No user is associated to the specified phone number.",
         "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": "You can't sign up using this app.",
         "PHONE_NUMBER_BANNED": "The provided phone number is banned from telegram.",
         "PHONE_NUMBER_FLOOD": "You asked for the code too many times.",
@@ -2595,6 +2590,7 @@
         "RANGES_INVALID": "Invalid range provided.",
         "REACTION_EMPTY": "Empty reaction provided.",
         "REACTION_INVALID": "The specified reaction is invalid.",
+        "REACTIONS_TOO_MANY": "",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty.",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
@@ -2621,7 +2617,6 @@
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
-        "SEND_REACTION_RESULT1_INVALID": "",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
         "SESSION_PASSWORD_NEEDED": "2FA is enabled, use a password to login.",
         "SESSION_TOO_FRESH_%d": "This session was created less than 24 hours ago, try again in %d seconds.",
