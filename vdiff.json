@@ -117,13 +117,6 @@
                 "messages.sendMessage",
                 "messages.startBot"
             ],
-            "BOT_MISSING": [
-                "messages.uploadMedia",
-                "stickers.addStickerToSet",
-                "stickers.changeStickerPosition",
-                "stickers.createStickerSet",
-                "stickers.removeStickerFromSet"
-            ],
             "BOT_ONESIDE_NOT_AVAIL": [
                 "messages.updatePinnedMessage"
             ],
@@ -318,6 +311,7 @@
                 "messages.forwardMessages",
                 "messages.getBotCallbackAnswer",
                 "messages.getChatInviteImporters",
+                "messages.getExportedChatInvites",
                 "messages.getHistory",
                 "messages.getInlineBotResults",
                 "messages.getMessagesViews",
@@ -581,7 +575,8 @@
                 "phone.createGroupCall"
             ],
             "CURRENCY_TOTAL_AMOUNT_INVALID": [
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "payments.exportInvoice"
             ],
             "DATA_INVALID": [
                 "help.getConfig",
@@ -916,6 +911,9 @@
             "INVITE_REVOKED_MISSING": [
                 "messages.deleteExportedChatInvite"
             ],
+            "INVOICE_PAYLOAD_INVALID": [
+                "payments.exportInvoice"
+            ],
             "JOIN_AS_PEER_INVALID": [
                 "phone.joinGroupCall",
                 "phone.saveDefaultGroupCallJoinAs"
@@ -1058,6 +1056,9 @@
             "METHOD_INVALID": [
                 "bots.sendCustomRequest",
                 "messages.searchGifs"
+            ],
+            "MIN_DATE_INVALID": [
+                "messages.deleteHistory"
             ],
             "MSG_ID_INVALID": [
                 "account.updateNotifySettings",
@@ -1207,7 +1208,8 @@
                 "channels.editCreator"
             ],
             "PAYMENT_PROVIDER_INVALID": [
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "payments.exportInvoice"
             ],
             "PEER_ID_INVALID": [
                 "account.getNotifySettings",
@@ -1629,6 +1631,7 @@
                 "auth.checkPassword"
             ],
             "START_PARAM_EMPTY": [
+                "messages.setInlineBotResults",
                 "messages.startBot"
             ],
             "START_PARAM_INVALID": [
@@ -1893,7 +1896,8 @@
                 "channels.checkUsername",
                 "channels.updateUsername",
                 "contacts.resolveUsername",
-                "help.getConfig"
+                "help.getConfig",
+                "updates.getDifference"
             ],
             "USERNAME_NOT_MODIFIED": [
                 "account.updateUsername",
@@ -2010,7 +2014,8 @@
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.sendMultiMedia",
-                "messages.startBot"
+                "messages.startBot",
+                "updates.getDifference"
             ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
@@ -2137,6 +2142,9 @@
             "PREMIUM_ACCOUNT_REQUIRED": [
                 "messages.sendMedia",
                 "messages.sendReaction"
+            ],
+            "PUBLIC_CHANNEL_MISSING": [
+                "phone.exportGroupCallInvite"
             ],
             "RIGHT_FORBIDDEN": [
                 "channels.editAdmin"
@@ -2317,7 +2325,6 @@
         "BOT_GROUPS_BLOCKED": "This bot can't be added to groups.",
         "BOT_INLINE_DISABLED": "This bot can't be used in inline mode.",
         "BOT_INVALID": "This is not a valid bot.",
-        "BOT_MISSING": "This method can only be run by a bot.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
@@ -2475,6 +2482,7 @@
         "INVITE_HASH_INVALID": "The invite hash is invalid.",
         "INVITE_REQUEST_SENT": "You have successfully requested to join this chat or channel.",
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
+        "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
         "JOIN_AS_PEER_INVALID": "The specified peer cannot be used to join a group call.",
         "LANG_CODE_INVALID": "The specified language code is invalid.",
         "LANG_CODE_NOT_SUPPORTED": "The specified language code is not supported.",
@@ -2506,6 +2514,7 @@
         "MESSAGE_POLL_CLOSED": "Poll closed.",
         "MESSAGE_TOO_LONG": "The provided message is too long.",
         "METHOD_INVALID": "The specified method is invalid.",
+        "MIN_DATE_INVALID": "The specified minimum date is invalid.",
         "MSG_ID_INVALID": "Invalid message ID provided.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
@@ -2574,6 +2583,7 @@
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
         "PRIVACY_VALUE_INVALID": "The specified privacy rule combination is invalid.",
+        "PUBLIC_CHANNEL_MISSING": "You can only export group call invite links for public chats or channels.",
         "PUBLIC_KEY_REQUIRED": "A public key is required.",
         "QUERY_ID_EMPTY": "The query ID is empty.",
         "QUERY_ID_INVALID": "The query ID is invalid.",
