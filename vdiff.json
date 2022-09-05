@@ -118,7 +118,8 @@
                 "messages.startBot"
             ],
             "BOT_MISSING": [
-                "stickers.addStickerToSet"
+                "stickers.addStickerToSet",
+                "stickers.removeStickerFromSet"
             ],
             "BOT_ONESIDE_NOT_AVAIL": [
                 "messages.updatePinnedMessage"
