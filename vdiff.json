@@ -864,6 +864,9 @@
             "INPUT_FILTER_INVALID": [
                 "messages.search"
             ],
+            "INPUT_TEXT_EMPTY": [
+                "messages.translateText"
+            ],
             "INPUT_USER_DEACTIVATED": [
                 "channels.editAdmin",
                 "channels.editBanned",
@@ -924,6 +927,7 @@
                 "phone.saveDefaultGroupCallJoinAs"
             ],
             "LANG_CODE_INVALID": [
+                "bots.resetBotCommands",
                 "bots.setBotCommands"
             ],
             "LANG_CODE_NOT_SUPPORTED": [
@@ -1188,6 +1192,7 @@
                 "channels.setStickers"
             ],
             "PASSWORD_EMPTY": [
+                "account.resetPassword",
                 "auth.requestPasswordRecovery"
             ],
             "PASSWORD_HASH_INVALID": [
@@ -1303,6 +1308,7 @@
                 "messages.uploadMedia",
                 "phone.createGroupCall",
                 "phone.getGroupCallJoinAs",
+                "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stickers.createStickerSet",
                 "upload.getFile"
@@ -1816,6 +1822,7 @@
             ],
             "USER_BOT_REQUIRED": [
                 "bots.getBotMenuButton",
+                "bots.setBotCommands",
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
                 "messages.setGameScore",
@@ -2478,6 +2485,7 @@
         "INLINE_BOT_REQUIRED": "Only the inline bot can edit message.",
         "INLINE_RESULT_EXPIRED": "The inline query expired.",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
+        "INPUT_TEXT_EMPTY": "The specified text is empty.",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted.",
         "Invalid msg_resend_req query": "Invalid msg_resend_req query.",
         "Invalid msgs_ack query": "Invalid msgs_ack query.",
