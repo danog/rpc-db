@@ -315,6 +315,7 @@
                 "messages.forwardMessages",
                 "messages.getBotCallbackAnswer",
                 "messages.getChatInviteImporters",
+                "messages.getDiscussionMessage",
                 "messages.getExportedChatInvites",
                 "messages.getHistory",
                 "messages.getInlineBotResults",
@@ -1132,6 +1133,9 @@
                 "users.getFullUser",
                 "users.getUsers"
             ],
+            "MSG_TOO_OLD": [
+                "messages.getMessageReadParticipants"
+            ],
             "MSG_WAIT_FAILED": [
                 "messages.readEncryptedHistory",
                 "messages.receivedQueue",
@@ -1718,6 +1722,9 @@
                 "messages.uninstallStickerSet",
                 "stickers.addStickerToSet",
                 "stickers.setStickerSetThumb"
+            ],
+            "SWITCH_PM_TEXT_EMPTY": [
+                "messages.setInlineBotResults"
             ],
             "TAKEOUT_REQUIRED": [
                 "contacts.getSaved"
@@ -2530,6 +2537,7 @@
         "METHOD_INVALID": "The specified method is invalid.",
         "MIN_DATE_INVALID": "The specified minimum date is invalid.",
         "MSG_ID_INVALID": "Invalid message ID provided.",
+        "MSG_TOO_OLD": "[`chat_read_mark_expire_period` seconds](https:\/\/core.telegram.org\/api\/config#chat-read-mark-expire-period) have passed since the message was sent, read receipts were deleted.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
         "NEW_SALT_INVALID": "The new salt is invalid.",
@@ -2677,6 +2685,7 @@
         "STICKERS_TOO_MUCH": "There are too many stickers in this stickerpack, you can't add any more.",
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
+        "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
