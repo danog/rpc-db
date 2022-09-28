@@ -241,6 +241,7 @@
                 "channels.viewSponsoredMessage",
                 "messages.editChatAbout",
                 "messages.editMessage",
+                "messages.exportChatInvite",
                 "messages.forwardMessages",
                 "messages.getBotCallbackAnswer",
                 "messages.getDiscussionMessage",
@@ -526,6 +527,9 @@
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.uploadMedia"
+            ],
+            "CHAT_REVOKE_DATE_UNSUPPORTED": [
+                "messages.deleteHistory"
             ],
             "CHAT_SEND_INLINE_FORBIDDEN": [
                 "messages.sendInlineBotResult"
@@ -1350,6 +1354,9 @@
                 "auth.signIn",
                 "auth.signUp"
             ],
+            "PHONE_HASH_EXPIRED": [
+                "account.sendVerifyEmailCode"
+            ],
             "PHONE_NOT_OCCUPIED": [
                 "contacts.resolvePhone"
             ],
@@ -1368,6 +1375,7 @@
             "PHONE_NUMBER_INVALID": [
                 "account.changePhone",
                 "account.sendChangePhoneCode",
+                "account.sendVerifyEmailCode",
                 "account.sendVerifyPhoneCode",
                 "account.verifyPhone",
                 "auth.cancelCode",
@@ -1515,7 +1523,8 @@
                 "messages.sendReaction"
             ],
             "REACTION_INVALID": [
-                "messages.sendReaction"
+                "messages.sendReaction",
+                "messages.setDefaultReaction"
             ],
             "REACTIONS_TOO_MANY": [
                 "messages.sendReaction"
@@ -2389,6 +2398,7 @@
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
+        "CHAT_REVOKE_DATE_UNSUPPORTED": "`min_date` and `max_date` are not available for using with non-user peers.",
         "CHAT_SEND_GAME_FORBIDDEN": "You can't send a game to this chat.",
         "CHAT_SEND_GIFS_FORBIDDEN": "You can't send gifs in this chat.",
         "CHAT_SEND_INLINE_FORBIDDEN": "You can't send inline messages in this group.",
@@ -2572,6 +2582,7 @@
         "PHONE_CODE_EXPIRED": "The phone code you provided has expired.",
         "PHONE_CODE_HASH_EMPTY": "phone_code_hash is missing.",
         "PHONE_CODE_INVALID": "The provided phone code is invalid.",
+        "PHONE_HASH_EXPIRED": "An invalid or expired `phone_code_hash` was provided.",
         "PHONE_NOT_OCCUPIED": "No user is associated to the specified phone number.",
         "PHONE_NUMBER_APP_SIGNUP_FORBIDDEN": "You can't sign up using this app.",
         "PHONE_NUMBER_BANNED": "The provided phone number is banned from telegram.",
