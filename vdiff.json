@@ -49,6 +49,7 @@
                 "auth.sendCode"
             ],
             "API_ID_PUBLISHED_FLOOD": [
+                "auth.exportLoginToken",
                 "auth.importBotAuthorization",
                 "auth.sendCode"
             ],
@@ -102,16 +103,19 @@
                 "bots.setBotCommands"
             ],
             "BOT_DOMAIN_INVALID": [
+                "messages.editMessage",
                 "messages.sendMessage"
             ],
             "BOT_GROUPS_BLOCKED": [
                 "channels.editAdmin",
-                "channels.inviteToChannel"
+                "channels.inviteToChannel",
+                "messages.addChatUser"
             ],
             "BOT_INLINE_DISABLED": [
                 "messages.getInlineBotResults"
             ],
             "BOT_INVALID": [
+                "messages.editMessage",
                 "messages.getAttachMenuBot",
                 "messages.getInlineBotResults",
                 "messages.sendMessage",
@@ -165,6 +169,7 @@
                 "messages.setInlineBotResults"
             ],
             "BUTTON_URL_INVALID": [
+                "bots.setBotMenuButton",
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage",
@@ -199,6 +204,9 @@
                 "updates.getDifference",
                 "upload.getCdnFileHashes"
             ],
+            "CHANNEL_FORUM_MISSING": [
+                "channels.getForumTopics"
+            ],
             "CHANNEL_ID_INVALID": [
                 "channels.convertToGigagroup"
             ],
@@ -220,6 +228,7 @@
                 "channels.exportMessageLink",
                 "channels.getAdminLog",
                 "channels.getChannels",
+                "channels.getForumTopics",
                 "channels.getFullChannel",
                 "channels.getMessages",
                 "channels.getParticipant",
@@ -234,8 +243,11 @@
                 "channels.setDiscussionGroup",
                 "channels.setStickers",
                 "channels.toggleInvites",
+                "channels.toggleJoinRequest",
+                "channels.toggleJoinToSend",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
+                "channels.toggleSlowMode",
                 "channels.updatePinnedMessage",
                 "channels.updateUsername",
                 "channels.viewSponsoredMessage",
@@ -245,6 +257,7 @@
                 "messages.forwardMessages",
                 "messages.getBotCallbackAnswer",
                 "messages.getDiscussionMessage",
+                "messages.getExportedChatInvites",
                 "messages.getHistory",
                 "messages.getInlineBotResults",
                 "messages.getMessagesViews",
@@ -317,9 +330,11 @@
                 "messages.getBotCallbackAnswer",
                 "messages.getChatInviteImporters",
                 "messages.getDiscussionMessage",
+                "messages.getExportedChatInvite",
                 "messages.getExportedChatInvites",
                 "messages.getHistory",
                 "messages.getInlineBotResults",
+                "messages.getMessagesReactions",
                 "messages.getMessagesViews",
                 "messages.getOnlines",
                 "messages.getPeerDialogs",
@@ -407,11 +422,13 @@
                 "channels.updatePinnedMessage",
                 "channels.updateUsername",
                 "messages.addChatUser",
+                "messages.checkHistoryImportPeer",
                 "messages.deleteChat",
                 "messages.deleteChatUser",
                 "messages.deleteHistory",
                 "messages.editChatAbout",
                 "messages.editChatDefaultBannedRights",
+                "messages.editExportedChatInvite",
                 "messages.editMessage",
                 "messages.exportChatInvite",
                 "messages.forwardMessages",
@@ -423,6 +440,7 @@
                 "messages.getScheduledHistory",
                 "messages.getScheduledMessages",
                 "messages.hideAllChatJoinRequests",
+                "messages.hideChatJoinRequest",
                 "messages.migrateChat",
                 "messages.search",
                 "messages.sendInlineBotResult",
@@ -454,6 +472,8 @@
             "CHAT_ID_INVALID": [
                 "channels.checkUsername",
                 "channels.getSendAs",
+                "channels.toggleJoinRequest",
+                "channels.toggleJoinToSend",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
                 "channels.updatePinnedMessage",
@@ -518,8 +538,12 @@
                 "messages.setChatAvailableReactions",
                 "messages.setHistoryTTL",
                 "messages.toggleChatAdmins",
+                "messages.toggleNoForwards",
                 "messages.unpinAllMessages",
                 "messages.updatePinnedMessage"
+            ],
+            "CHAT_PUBLIC_REQUIRED": [
+                "channels.toggleJoinRequest"
             ],
             "CHAT_RESTRICTED": [
                 "messages.forwardMessages",
@@ -597,6 +621,7 @@
             "DATA_JSON_INVALID": [
                 "bots.answerWebhookJSONQuery",
                 "bots.sendCustomRequest",
+                "help.acceptTermsOfService",
                 "phone.joinGroupCall",
                 "phone.saveCallDebug"
             ],
@@ -614,6 +639,7 @@
                 "messages.requestEncryption"
             ],
             "DOCUMENT_INVALID": [
+                "messages.editMessage",
                 "messages.sendMedia",
                 "messages.setInlineBotResults",
                 "upload.getWebFile"
@@ -734,6 +760,7 @@
                 "upload.saveBigFilePart"
             ],
             "FILE_PARTS_INVALID": [
+                "channels.editPhoto",
                 "messages.sendMedia",
                 "messages.uploadMedia",
                 "photos.updateProfilePhoto",
@@ -756,6 +783,9 @@
             "FILE_TITLE_EMPTY": [
                 "messages.setInlineBotResults"
             ],
+            "FILE_TOKEN_INVALID": [
+                "upload.reuploadCdnFile"
+            ],
             "FILTER_ID_INVALID": [
                 "messages.updateDialogFilter"
             ],
@@ -763,7 +793,8 @@
                 "messages.updateDialogFilter"
             ],
             "FILTER_NOT_SUPPORTED": [
-                "messages.getSearchResultsCalendar"
+                "messages.getSearchResultsCalendar",
+                "messages.searchSentMedia"
             ],
             "FILTER_TITLE_EMPTY": [
                 "messages.updateDialogFilter"
@@ -818,7 +849,11 @@
                 "phone.discardGroupCall",
                 "phone.discardGroupCallRequest"
             ],
+            "GROUPCALL_FORBIDDEN": [
+                "phone.editGroupCallParticipant"
+            ],
             "GROUPCALL_INVALID": [
+                "phone.discardGroupCall",
                 "phone.getGroupCall",
                 "phone.getGroupCallStreamChannels",
                 "phone.inviteToGroupCall",
@@ -845,7 +880,8 @@
                 "account.sendConfirmPhoneCode"
             ],
             "HIDE_REQUESTER_MISSING": [
-                "messages.hideAllChatJoinRequests"
+                "messages.hideAllChatJoinRequests",
+                "messages.hideChatJoinRequest"
             ],
             "IMAGE_PROCESS_FAILED": [
                 "messages.sendMedia",
@@ -883,6 +919,8 @@
                 "messages.editMessage",
                 "messages.forwardMessages",
                 "messages.getInlineBotResults",
+                "messages.hideChatJoinRequest",
+                "messages.requestEncryption",
                 "messages.search",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
@@ -908,6 +946,7 @@
                 "invokeWithLayer",
                 "messages.checkChatInvite",
                 "messages.deleteExportedChatInvite",
+                "messages.editExportedChatInvite",
                 "messages.getChatInviteImporters",
                 "messages.getExportedChatInvite",
                 "messages.importChatInvite"
@@ -981,6 +1020,7 @@
                 "messages.sendMultiMedia"
             ],
             "MEDIA_EMPTY": [
+                "messages.editMessage",
                 "messages.forwardMessages",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
@@ -1109,6 +1149,7 @@
                 "messages.getMessageReadParticipants",
                 "messages.getMessagesViews",
                 "messages.getPeerDialogs",
+                "messages.getPeerSettings",
                 "messages.getPollVotes",
                 "messages.getReplies",
                 "messages.getUnreadMentions",
@@ -1146,6 +1187,15 @@
                 "messages.sendEncrypted",
                 "messages.sendEncryptedFile",
                 "messages.sendEncryptedService"
+            ],
+            "MSG_WAIT_TIMEOUT": [
+                "messages.editMessage",
+                "messages.receivedQueue",
+                "messages.sendEncrypted",
+                "messages.sendEncryptedService",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.setTyping"
             ],
             "MULTI_MEDIA_TOO_LONG": [
                 "messages.sendMultiMedia"
@@ -1234,6 +1284,7 @@
                 "account.reportPeer",
                 "account.reportProfilePhoto",
                 "account.updateNotifySettings",
+                "bots.setBotCommands",
                 "channels.editAdmin",
                 "channels.editBanned",
                 "channels.getSendAs",
@@ -1311,6 +1362,7 @@
                 "messages.setTyping",
                 "messages.startBot",
                 "messages.toggleDialogPin",
+                "messages.toggleNoForwards",
                 "messages.translateText",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
@@ -1685,6 +1737,9 @@
                 "stickers.changeStickerPosition",
                 "stickers.removeStickerFromSet"
             ],
+            "STICKER_MIME_INVALID": [
+                "photos.uploadProfilePhoto"
+            ],
             "STICKER_PNG_DIMENSIONS": [
                 "stickers.createStickerSet"
             ],
@@ -1769,9 +1824,26 @@
             "TO_LANG_INVALID": [
                 "messages.translateText"
             ],
+            "TOKEN_EMPTY": [
+                "account.registerDevice"
+            ],
             "TOKEN_INVALID": [
                 "account.registerDevice",
                 "account.unregisterDevice"
+            ],
+            "TOKEN_TYPE_INVALID": [
+                "account.registerDevice"
+            ],
+            "TOPIC_CLOSED": [
+                "messages.forwardMessages",
+                "messages.sendMedia",
+                "messages.sendMessage"
+            ],
+            "TOPIC_ID_INVALID": [
+                "messages.getDiscussionMessage"
+            ],
+            "TRANSCRIPTION_FAILED": [
+                "messages.transcribeAudio"
             ],
             "TTL_DAYS_INVALID": [
                 "account.setAccountTTL"
@@ -1804,6 +1876,7 @@
             "USER_ALREADY_PARTICIPANT": [
                 "channels.joinChannel",
                 "messages.addChatUser",
+                "messages.hideChatJoinRequest",
                 "messages.importChatInvite"
             ],
             "USER_BANNED_IN_CHANNEL": [
@@ -1816,6 +1889,7 @@
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage",
+                "messages.sendMultiMedia",
                 "messages.sendReaction",
                 "messages.setTyping",
                 "messages.updatePinnedMessage",
@@ -1839,8 +1913,10 @@
             "USER_BOT_REQUIRED": [
                 "bots.getBotMenuButton",
                 "bots.setBotCommands",
+                "bots.setBotGroupDefaultAdminRights",
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
+                "messages.setBotCallbackAnswer",
                 "messages.setGameScore",
                 "messages.setInlineGameScore",
                 "users.setSecureValueErrors"
@@ -1857,6 +1933,7 @@
             ],
             "USER_ID_INVALID": [
                 "auth.importAuthorization",
+                "bots.setBotCommands",
                 "channels.deleteUserHistory",
                 "channels.editAdmin",
                 "channels.editBanned",
@@ -1913,7 +1990,8 @@
                 "channels.getParticipant",
                 "channels.leaveChannel",
                 "messages.deleteChatUser",
-                "messages.editChatAdmin"
+                "messages.editChatAdmin",
+                "updates.getDifference"
             ],
             "USER_VOLUME_INVALID": [
                 "phone.editGroupCallParticipant"
@@ -1935,7 +2013,15 @@
                 "contacts.resolveUsername"
             ],
             "USERNAME_OCCUPIED": [
+                "account.checkUsername",
                 "account.updateUsername",
+                "channels.checkUsername",
+                "channels.updateUsername"
+            ],
+            "USERNAME_PURCHASE_AVAILABLE": [
+                "account.checkUsername",
+                "account.updateUsername",
+                "channels.checkUsername",
                 "channels.updateUsername"
             ],
             "USERPIC_UPLOAD_REQUIRED": [
@@ -1961,12 +2047,14 @@
                 "messages.setInlineBotResults"
             ],
             "VOICE_MESSAGES_FORBIDDEN": [
-                "messages.sendInlineBotResult"
+                "messages.sendInlineBotResult",
+                "messages.sendMedia"
             ],
             "WALLPAPER_FILE_INVALID": [
                 "account.uploadWallPaper"
             ],
             "WALLPAPER_INVALID": [
+                "account.getMultiWallPapers",
                 "account.getWallPaper",
                 "account.installWallPaper",
                 "account.saveWallPaper"
@@ -2021,7 +2109,8 @@
         },
         "500": {
             "AUTH_RESTART": [
-                "auth.sendCode"
+                "auth.sendCode",
+                "auth.signIn"
             ],
             "CALL_OCCUPY_FAILED": [
                 "phone.acceptCall",
@@ -2030,8 +2119,32 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
+            "CHANNEL_ID_GENERATE_FAILED": [
+                "channels.createChannel"
+            ],
+            "CHAT_FROM_USERNAME_CHANGED": [
+                "channels.getFullChannel"
+            ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
+            ],
+            "CHAT_MEMBERS_CHANNEL": [
+                "messages.checkChatInvite"
+            ],
+            "INVITE_HASH_UNSYNC": [
+                "messages.getChatInviteImporters"
+            ],
+            "MEMBER_CHAT_ADD_FAILED": [
+                "channels.joinChannel"
+            ],
+            "NEED_DOC_INVALID": [
+                "channels.getMessages",
+                "messages.getDialogs",
+                "messages.getHistory",
+                "messages.getPeerDialogs",
+                "updates.getChannelDifference",
+                "updates.getDifference",
+                "users.getUsers"
             ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
@@ -2044,6 +2157,40 @@
                 "messages.sendMultiMedia",
                 "messages.startBot",
                 "updates.getDifference"
+            ],
+            "RPC_SEND_FAIL": [
+                "account.updateStatus",
+                "auth.bindTempAuthKey",
+                "auth.exportAuthorization",
+                "channels.getChannels",
+                "channels.getFullChannel",
+                "channels.getMessages",
+                "channels.getParticipant",
+                "channels.joinChannel",
+                "contacts.resolveUsername",
+                "help.getCdnConfig",
+                "help.getConfig",
+                "messages.checkChatInvite",
+                "messages.getAllChats",
+                "messages.getHistory",
+                "messages.getMessagesViews",
+                "messages.readHistory",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.sendReaction",
+                "messages.sendVote",
+                "messages.setTyping",
+                "messages.uploadMedia",
+                "updates.getChannelDifference",
+                "updates.getDifference",
+                "upload.getFile",
+                "upload.saveBigFilePart",
+                "upload.saveFilePart",
+                "users.getFullUser",
+                "users.getUsers"
+            ],
+            "SEND_REACTION_RESULT1_INVALID": [
+                "messages.sendReaction"
             ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
@@ -2067,14 +2214,24 @@
                 "messages.migrateChat"
             ],
             "CHAT_GUEST_SEND_FORBIDDEN": [
+                "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage"
+            ],
+            "CHAT_SEND_AUDIOS_FORBIDDEN": [
+                "messages.forwardMessages",
+                "messages.sendInlineBotResult",
+                "messages.sendMedia"
+            ],
+            "CHAT_SEND_DOCS_FORBIDDEN": [
+                "messages.sendMedia"
             ],
             "CHAT_SEND_GAME_FORBIDDEN": [
                 "messages.forwardMessages",
                 "messages.sendInlineBotResult"
             ],
             "CHAT_SEND_GIFS_FORBIDDEN": [
+                "messages.editMessage",
                 "messages.forwardMessages",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia"
@@ -2085,7 +2242,17 @@
             "CHAT_SEND_MEDIA_FORBIDDEN": [
                 "messages.forwardMessages",
                 "messages.sendInlineBotResult",
+                "messages.sendMedia",
+                "messages.sendMultiMedia"
+            ],
+            "CHAT_SEND_PHOTOS_FORBIDDEN": [
+                "messages.forwardMessages",
+                "messages.sendInlineBotResult",
                 "messages.sendMedia"
+            ],
+            "CHAT_SEND_PLAIN_FORBIDDEN": [
+                "messages.forwardMessages",
+                "messages.sendMessage"
             ],
             "CHAT_SEND_POLL_FORBIDDEN": [
                 "messages.forwardMessages",
@@ -2093,6 +2260,14 @@
             ],
             "CHAT_SEND_STICKERS_FORBIDDEN": [
                 "messages.forwardMessages",
+                "messages.sendInlineBotResult",
+                "messages.sendMedia"
+            ],
+            "CHAT_SEND_VIDEOS_FORBIDDEN": [
+                "messages.forwardMessages",
+                "messages.sendMedia"
+            ],
+            "CHAT_SEND_VOICES_FORBIDDEN": [
                 "messages.sendInlineBotResult",
                 "messages.sendMedia"
             ],
@@ -2115,11 +2290,13 @@
                 "messages.addChatUser",
                 "messages.editChatAbout",
                 "messages.editChatDefaultBannedRights",
+                "messages.editExportedChatInvite",
                 "messages.editMessage",
                 "messages.exportChatInvite",
                 "messages.forwardMessages",
                 "messages.getAdminsWithInvites",
                 "messages.getChatInviteImporters",
+                "messages.getDialogs",
                 "messages.getExportedChatInvite",
                 "messages.getExportedChatInvites",
                 "messages.getMessageEditData",
@@ -2144,6 +2321,7 @@
             ],
             "GROUPCALL_FORBIDDEN": [
                 "messages.setTyping",
+                "phone.discardGroupCall",
                 "phone.editGroupCallParticipant",
                 "phone.editGroupCallTitle",
                 "phone.inviteToGroupCall",
@@ -2169,7 +2347,8 @@
             ],
             "PREMIUM_ACCOUNT_REQUIRED": [
                 "messages.sendMedia",
-                "messages.sendReaction"
+                "messages.sendReaction",
+                "messages.transcribeAudio"
             ],
             "PUBLIC_CHANNEL_MISSING": [
                 "phone.exportGroupCallInvite"
@@ -2193,7 +2372,8 @@
             ],
             "USER_CHANNELS_TOO_MUCH": [
                 "channels.editAdmin",
-                "channels.inviteToChannel"
+                "channels.inviteToChannel",
+                "messages.hideChatJoinRequest"
             ],
             "USER_DELETED": [
                 "messages.sendEncryptedService"
@@ -2259,6 +2439,9 @@
                 "messages.checkChatInvite",
                 "messages.importChatInvite"
             ],
+            "PAYMENT_UNSUPPORTED": [
+                "messages.sendMessage"
+            ],
             "PHONE_NUMBER_INVALID": [
                 "account.changePhone",
                 "account.sendChangePhoneCode",
@@ -2283,6 +2466,16 @@
             ],
             "STICKERSET_OWNER_ANONYMOUS": [
                 "channels.setStickers"
+            ],
+            "TOPIC_CLOSED": [
+                "messages.forwardMessages",
+                "messages.sendMedia",
+                "messages.sendMessage"
+            ],
+            "TOPIC_DELETED": [
+                "messages.forwardMessages",
+                "messages.sendMedia",
+                "messages.sendMessage"
             ],
             "UPDATE_APP_REQUIRED": [
                 "account.updateStatus"
@@ -2318,6 +2511,48 @@
             "Timeout": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
+            ]
+        },
+        "-504": {
+            "UNHANDLED_EXCEPTION": [
+                "account.getPrivacy",
+                "account.updateStatus",
+                "account.updateUsername",
+                "auth.bindTempAuthKey",
+                "channels.createChannel",
+                "channels.getChannels",
+                "channels.getFullChannel",
+                "channels.getMessages",
+                "channels.getParticipant",
+                "channels.getParticipants",
+                "channels.getSponsoredMessages",
+                "channels.joinChannel",
+                "channels.readHistory",
+                "channels.updateUsername",
+                "contacts.resolveUsername",
+                "help.getCdnConfig",
+                "help.getConfig",
+                "help.getNearestDc",
+                "help.getTermsOfServiceUpdate",
+                "messages.checkChatInvite",
+                "messages.getAllChats",
+                "messages.getChatInviteImporters",
+                "messages.getDialogs",
+                "messages.getDiscussionMessage",
+                "messages.getHistory",
+                "messages.getMessages",
+                "messages.getMessagesViews",
+                "messages.getPeerDialogs",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.setTyping",
+                "messages.uploadMedia",
+                "updates.getChannelDifference",
+                "updates.getDifference",
+                "upload.getFile",
+                "upload.saveBigFilePart",
+                "users.getFullUser",
+                "users.getUsers"
             ]
         }
     },
@@ -2375,6 +2610,8 @@
         "CALL_PROTOCOL_FLAGS_INVALID": "Call protocol flags invalid.",
         "CDN_METHOD_INVALID": "You can't call this method in a CDN DC.",
         "CDN_UPLOAD_TIMEOUT": "A server-side timeout occurred while reuploading the file to the CDN DC.",
+        "CHANNEL_FORUM_MISSING": "",
+        "CHANNEL_ID_GENERATE_FAILED": "",
         "CHANNEL_ID_INVALID": "The specified supergroup ID is invalid.",
         "CHANNEL_INVALID": "The provided channel is invalid.",
         "CHANNEL_PARICIPANT_MISSING": "The current user is not in the channel.",
@@ -2389,6 +2626,7 @@
         "CHAT_ADMIN_INVITE_REQUIRED": "You do not have the rights to do this.",
         "CHAT_ADMIN_REQUIRED": "You must be an admin in this chat to do this.",
         "CHAT_FORWARDS_RESTRICTED": "You can't forward messages from a protected chat.",
+        "CHAT_FROM_USERNAME_CHANGED": "",
         "CHAT_GUEST_SEND_FORBIDDEN": "You join the discussion group before commenting, see [here &raquo;](\/api\/discussion#requiring-users-to-join-the-group) for more info.",
         "CHAT_ID_EMPTY": "The provided chat ID is empty.",
         "CHAT_ID_GENERATE_FAILED": "Failure while generating the chat ID.",
@@ -2396,15 +2634,23 @@
         "CHAT_INVALID": "Invalid chat.",
         "CHAT_INVITE_PERMANENT": "You can't set an expiration date on permanent invite links.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
+        "CHAT_MEMBERS_CHANNEL": "",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified.",
+        "CHAT_PUBLIC_REQUIRED": "",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
         "CHAT_REVOKE_DATE_UNSUPPORTED": "`min_date` and `max_date` are not available for using with non-user peers.",
+        "CHAT_SEND_AUDIOS_FORBIDDEN": "",
+        "CHAT_SEND_DOCS_FORBIDDEN": "",
         "CHAT_SEND_GAME_FORBIDDEN": "You can't send a game to this chat.",
         "CHAT_SEND_GIFS_FORBIDDEN": "You can't send gifs in this chat.",
         "CHAT_SEND_INLINE_FORBIDDEN": "You can't send inline messages in this group.",
         "CHAT_SEND_MEDIA_FORBIDDEN": "You can't send media in this chat.",
+        "CHAT_SEND_PHOTOS_FORBIDDEN": "",
+        "CHAT_SEND_PLAIN_FORBIDDEN": "",
         "CHAT_SEND_POLL_FORBIDDEN": "You can't send polls in this chat.",
         "CHAT_SEND_STICKERS_FORBIDDEN": "You can't send stickers in this chat.",
+        "CHAT_SEND_VIDEOS_FORBIDDEN": "",
+        "CHAT_SEND_VOICES_FORBIDDEN": "",
         "CHAT_TITLE_EMPTY": "No chat title provided.",
         "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat.",
@@ -2465,6 +2711,7 @@
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid.",
         "FILE_TITLE_EMPTY": "An empty file title was specified.",
+        "FILE_TOKEN_INVALID": "The specified file token is invalid.",
         "FILEREF_UPGRADE_NEEDED": "The client has to be updated in order to support [file references](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILTER_ID_INVALID": "The specified filter ID is invalid.",
         "FILTER_INCLUDE_EMPTY": "The include_peers vector of the filter is empty.",
@@ -2511,6 +2758,7 @@
         "INVITE_HASH_EMPTY": "The invite hash is empty.",
         "INVITE_HASH_EXPIRED": "The invite link has expired.",
         "INVITE_HASH_INVALID": "The invite hash is invalid.",
+        "INVITE_HASH_UNSYNC": "",
         "INVITE_REQUEST_SENT": "You have successfully requested to join this chat or channel.",
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
         "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
@@ -2535,6 +2783,7 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
+        "MEMBER_CHAT_ADD_FAILED": "",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -2549,7 +2798,9 @@
         "MSG_ID_INVALID": "Invalid message ID provided.",
         "MSG_TOO_OLD": "[`chat_read_mark_expire_period` seconds](https:\/\/core.telegram.org\/api\/config#chat-read-mark-expire-period) have passed since the message was sent, read receipts were deleted.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
+        "MSG_WAIT_TIMEOUT": "",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
+        "NEED_DOC_INVALID": "",
         "NEW_SALT_INVALID": "The new salt is invalid.",
         "NEW_SETTINGS_EMPTY": "No password is set on the current account, and no new password was specified in `new_settings`.",
         "NEW_SETTINGS_INVALID": "The new password settings are invalid.",
@@ -2573,6 +2824,7 @@
         "PASSWORD_REQUIRED": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport.",
         "PASSWORD_TOO_FRESH_%d": "The password was modified less than 24 hours ago, try again in %d seconds.",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid.",
+        "PAYMENT_UNSUPPORTED": "",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
@@ -2646,6 +2898,7 @@
         "REVOTE_NOT_ALLOWED": "You cannot change your vote.",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this.",
         "RIGHTS_NOT_MODIFIED": "The new admin rights are equal to the old rights, no change was made.",
+        "RPC_SEND_FAIL": "",
         "RSA_DECRYPT_FAILED": "Internal RSA decryption failed.",
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages.",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided.",
@@ -2660,6 +2913,7 @@
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
+        "SEND_REACTION_RESULT1_INVALID": "",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
         "SESSION_PASSWORD_NEEDED": "2FA is enabled, use a password to login.",
         "SESSION_TOO_FRESH_%d": "This session was created less than 24 hours ago, try again in %d seconds.",
@@ -2682,6 +2936,7 @@
         "STICKER_GIF_DIMENSIONS": "The specified video sticker has invalid dimensions.",
         "STICKER_ID_INVALID": "The provided sticker ID is invalid.",
         "STICKER_INVALID": "The provided sticker is invalid.",
+        "STICKER_MIME_INVALID": "",
         "STICKER_PNG_DIMENSIONS": "Sticker png dimensions invalid.",
         "STICKER_PNG_NOPNG": "One of the specified stickers is not a valid PNG file.",
         "STICKER_TGS_NODOC": "You must send the animated sticker as a document.",
@@ -2710,11 +2965,18 @@
         "TITLE_INVALID": "The specified stickerpack title is invalid.",
         "TMP_PASSWORD_DISABLED": "The temporary password is disabled.",
         "TO_LANG_INVALID": "The specified destination language is invalid.",
+        "TOKEN_EMPTY": "",
         "TOKEN_INVALID": "The provided token is invalid.",
+        "TOKEN_TYPE_INVALID": "",
+        "TOPIC_CLOSED": "",
+        "TOPIC_DELETED": "The specified topic was deleted.",
+        "TOPIC_ID_INVALID": "",
+        "TRANSCRIPTION_FAILED": "",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
         "TYPES_EMPTY": "No top peer type was provided.",
+        "UNHANDLED_EXCEPTION": "",
         "UNTIL_DATE_INVALID": "Invalid until date provided.",
         "UPDATE_APP_REQUIRED": "Please update to the latest version of MadelineProto.",
         "UPDATE_APP_TO_LOGIN": "Please update to the latest version of MadelineProto to login.",
@@ -2745,6 +3007,7 @@
         "USERNAME_NOT_MODIFIED": "The username was not modified.",
         "USERNAME_NOT_OCCUPIED": "The provided username is not occupied.",
         "USERNAME_OCCUPIED": "The provided username is already occupied.",
+        "USERNAME_PURCHASE_AVAILABLE": "",
         "USERPIC_PRIVACY_REQUIRED": "You need to disable privacy settings for your profile picture in order to make your geolocation public.",
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation.",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example).",
