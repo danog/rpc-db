@@ -366,6 +366,9 @@
                 "users.getFullUser",
                 "users.getUsers"
             ],
+            "CHANNEL_TOO_BIG": [
+                "channels.deleteHistory"
+            ],
             "CHANNEL_TOO_LARGE": [
                 "channels.deleteChannel"
             ],
@@ -459,6 +462,9 @@
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats"
+            ],
+            "CHAT_DISCUSSION_UNALLOWED": [
+                "channels.toggleForum"
             ],
             "CHAT_FORWARDS_RESTRICTED": [
                 "messages.editMessage",
@@ -1188,15 +1194,6 @@
                 "messages.sendEncryptedFile",
                 "messages.sendEncryptedService"
             ],
-            "MSG_WAIT_TIMEOUT": [
-                "messages.editMessage",
-                "messages.receivedQueue",
-                "messages.sendEncrypted",
-                "messages.sendEncryptedService",
-                "messages.sendMedia",
-                "messages.sendMessage",
-                "messages.setTyping"
-            ],
             "MULTI_MEDIA_TOO_LONG": [
                 "messages.sendMultiMedia"
             ],
@@ -1240,7 +1237,8 @@
                 "channels.getParticipant"
             ],
             "PARTICIPANT_JOIN_MISSING": [
-                "phone.editGroupCallParticipant"
+                "phone.editGroupCallParticipant",
+                "phone.joinGroupCallPresentation"
             ],
             "PARTICIPANT_VERSION_OUTDATED": [
                 "phone.requestCall"
@@ -1278,6 +1276,9 @@
             "PAYMENT_PROVIDER_INVALID": [
                 "messages.sendMedia",
                 "payments.exportInvoice"
+            ],
+            "PEER_HISTORY_EMPTY": [
+                "messages.toggleDialogPin"
             ],
             "PEER_ID_INVALID": [
                 "account.getNotifySettings",
@@ -1839,6 +1840,13 @@
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
+            "TOPIC_DELETED": [
+                "messages.forwardMessages",
+                "messages.sendInlineBotResult",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.sendMultiMedia"
+            ],
             "TOPIC_ID_INVALID": [
                 "messages.getDiscussionMessage"
             ],
@@ -2119,9 +2127,6 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
-            "CHANNEL_ID_GENERATE_FAILED": [
-                "channels.createChannel"
-            ],
             "CHAT_FROM_USERNAME_CHANGED": [
                 "channels.getFullChannel"
             ],
@@ -2158,40 +2163,6 @@
                 "messages.startBot",
                 "updates.getDifference"
             ],
-            "RPC_SEND_FAIL": [
-                "account.updateStatus",
-                "auth.bindTempAuthKey",
-                "auth.exportAuthorization",
-                "channels.getChannels",
-                "channels.getFullChannel",
-                "channels.getMessages",
-                "channels.getParticipant",
-                "channels.joinChannel",
-                "contacts.resolveUsername",
-                "help.getCdnConfig",
-                "help.getConfig",
-                "messages.checkChatInvite",
-                "messages.getAllChats",
-                "messages.getHistory",
-                "messages.getMessagesViews",
-                "messages.readHistory",
-                "messages.sendMedia",
-                "messages.sendMessage",
-                "messages.sendReaction",
-                "messages.sendVote",
-                "messages.setTyping",
-                "messages.uploadMedia",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "upload.getFile",
-                "upload.saveBigFilePart",
-                "upload.saveFilePart",
-                "users.getFullUser",
-                "users.getUsers"
-            ],
-            "SEND_REACTION_RESULT1_INVALID": [
-                "messages.sendReaction"
-            ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
             ]
@@ -2210,8 +2181,25 @@
                 "channels.editAdmin"
             ],
             "CHAT_ADMIN_REQUIRED": [
+                "channels.deleteUserHistory",
+                "channels.editAdmin",
+                "channels.editBanned",
+                "channels.editPhoto",
+                "channels.editTitle",
+                "channels.getAdminLog",
+                "channels.getParticipant",
+                "channels.getParticipants",
+                "channels.inviteToChannel",
+                "channels.updateUsername",
+                "messages.addChatUser",
                 "messages.editMessage",
-                "messages.migrateChat"
+                "messages.forwardMessages",
+                "messages.migrateChat",
+                "messages.search",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "stats.getBroadcastStats",
+                "stats.getMegagroupStats"
             ],
             "CHAT_GUEST_SEND_FORBIDDEN": [
                 "messages.sendInlineBotResult",
@@ -2379,6 +2367,7 @@
                 "messages.sendEncryptedService"
             ],
             "USER_INVALID": [
+                "help.editUserInfo",
                 "help.getSupportName",
                 "help.getUserInfo"
             ],
@@ -2411,8 +2400,31 @@
         },
         "406": {
             "CHANNEL_PRIVATE": [
+                "channels.deleteChannel",
+                "channels.deleteMessages",
+                "channels.editBanned",
+                "channels.getAdminLog",
+                "channels.getChannels",
                 "channels.getFullChannel",
-                "messages.checkChatInvite"
+                "channels.getMessages",
+                "channels.getParticipant",
+                "channels.getParticipants",
+                "channels.inviteToChannel",
+                "channels.joinChannel",
+                "channels.leaveChannel",
+                "channels.readHistory",
+                "channels.readMessageContents",
+                "messages.checkChatInvite",
+                "messages.editMessage",
+                "messages.forwardMessages",
+                "messages.getHistory",
+                "messages.getInlineBotResults",
+                "messages.getMessagesViews",
+                "messages.getPeerDialogs",
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.setTyping",
+                "updates.getChannelDifference"
             ],
             "CHANNEL_TOO_LARGE": [
                 "channels.deleteChannel"
@@ -2436,6 +2448,7 @@
             ],
             "INVITE_HASH_EXPIRED": [
                 "channels.joinChannel",
+                "invokeWithLayer",
                 "messages.checkChatInvite",
                 "messages.importChatInvite"
             ],
@@ -2462,7 +2475,10 @@
                 "auth.resendCode"
             ],
             "STICKERSET_INVALID": [
-                "messages.getStickerSet"
+                "messages.getStickerSet",
+                "messages.installStickerSet",
+                "messages.uninstallStickerSet",
+                "stickers.addStickerToSet"
             ],
             "STICKERSET_OWNER_ANONYMOUS": [
                 "channels.setStickers"
@@ -2485,7 +2501,8 @@
                 "auth.signIn"
             ],
             "USER_RESTRICTED": [
-                "channels.createChannel"
+                "channels.createChannel",
+                "messages.createChat"
             ],
             "USERPIC_PRIVACY_REQUIRED": [
                 "contacts.getLocated"
@@ -2511,48 +2528,6 @@
             "Timeout": [
                 "messages.getBotCallbackAnswer",
                 "messages.getInlineBotResults"
-            ]
-        },
-        "-504": {
-            "UNHANDLED_EXCEPTION": [
-                "account.getPrivacy",
-                "account.updateStatus",
-                "account.updateUsername",
-                "auth.bindTempAuthKey",
-                "channels.createChannel",
-                "channels.getChannels",
-                "channels.getFullChannel",
-                "channels.getMessages",
-                "channels.getParticipant",
-                "channels.getParticipants",
-                "channels.getSponsoredMessages",
-                "channels.joinChannel",
-                "channels.readHistory",
-                "channels.updateUsername",
-                "contacts.resolveUsername",
-                "help.getCdnConfig",
-                "help.getConfig",
-                "help.getNearestDc",
-                "help.getTermsOfServiceUpdate",
-                "messages.checkChatInvite",
-                "messages.getAllChats",
-                "messages.getChatInviteImporters",
-                "messages.getDialogs",
-                "messages.getDiscussionMessage",
-                "messages.getHistory",
-                "messages.getMessages",
-                "messages.getMessagesViews",
-                "messages.getPeerDialogs",
-                "messages.sendMedia",
-                "messages.sendMessage",
-                "messages.setTyping",
-                "messages.uploadMedia",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "upload.getFile",
-                "upload.saveBigFilePart",
-                "users.getFullUser",
-                "users.getUsers"
             ]
         }
     },
@@ -2610,13 +2585,13 @@
         "CALL_PROTOCOL_FLAGS_INVALID": "Call protocol flags invalid.",
         "CDN_METHOD_INVALID": "You can't call this method in a CDN DC.",
         "CDN_UPLOAD_TIMEOUT": "A server-side timeout occurred while reuploading the file to the CDN DC.",
-        "CHANNEL_FORUM_MISSING": "",
-        "CHANNEL_ID_GENERATE_FAILED": "",
+        "CHANNEL_FORUM_MISSING": "This supergroup is not a forum.",
         "CHANNEL_ID_INVALID": "The specified supergroup ID is invalid.",
         "CHANNEL_INVALID": "The provided channel is invalid.",
         "CHANNEL_PARICIPANT_MISSING": "The current user is not in the channel.",
         "CHANNEL_PRIVATE": "You haven't joined this channel\/supergroup.",
         "CHANNEL_PUBLIC_GROUP_NA": "channel\/supergroup not available.",
+        "CHANNEL_TOO_BIG": "",
         "CHANNEL_TOO_LARGE": "Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change).",
         "CHANNELS_ADMIN_LOCATED_TOO_MUCH": "The user has reached the limit of public geogroups.",
         "CHANNELS_ADMIN_PUBLIC_TOO_MUCH": "You're admin of too many public channels, make some channels private to change the username of this channel.",
@@ -2625,6 +2600,7 @@
         "CHAT_ABOUT_TOO_LONG": "Chat about too long.",
         "CHAT_ADMIN_INVITE_REQUIRED": "You do not have the rights to do this.",
         "CHAT_ADMIN_REQUIRED": "You must be an admin in this chat to do this.",
+        "CHAT_DISCUSSION_UNALLOWED": "You can't enable forum topics in a discussion group linked to a channel.",
         "CHAT_FORWARDS_RESTRICTED": "You can't forward messages from a protected chat.",
         "CHAT_FROM_USERNAME_CHANGED": "",
         "CHAT_GUEST_SEND_FORBIDDEN": "You join the discussion group before commenting, see [here &raquo;](\/api\/discussion#requiring-users-to-join-the-group) for more info.",
@@ -2639,18 +2615,18 @@
         "CHAT_PUBLIC_REQUIRED": "",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
         "CHAT_REVOKE_DATE_UNSUPPORTED": "`min_date` and `max_date` are not available for using with non-user peers.",
-        "CHAT_SEND_AUDIOS_FORBIDDEN": "",
-        "CHAT_SEND_DOCS_FORBIDDEN": "",
+        "CHAT_SEND_AUDIOS_FORBIDDEN": "You can't send audio messages in this chat.",
+        "CHAT_SEND_DOCS_FORBIDDEN": "You can't send documents in this chat.",
         "CHAT_SEND_GAME_FORBIDDEN": "You can't send a game to this chat.",
         "CHAT_SEND_GIFS_FORBIDDEN": "You can't send gifs in this chat.",
         "CHAT_SEND_INLINE_FORBIDDEN": "You can't send inline messages in this group.",
         "CHAT_SEND_MEDIA_FORBIDDEN": "You can't send media in this chat.",
-        "CHAT_SEND_PHOTOS_FORBIDDEN": "",
-        "CHAT_SEND_PLAIN_FORBIDDEN": "",
+        "CHAT_SEND_PHOTOS_FORBIDDEN": "You can't send photos in this chat.",
+        "CHAT_SEND_PLAIN_FORBIDDEN": "You can't send non-media (text) messages in this chat.",
         "CHAT_SEND_POLL_FORBIDDEN": "You can't send polls in this chat.",
         "CHAT_SEND_STICKERS_FORBIDDEN": "You can't send stickers in this chat.",
-        "CHAT_SEND_VIDEOS_FORBIDDEN": "",
-        "CHAT_SEND_VOICES_FORBIDDEN": "",
+        "CHAT_SEND_VIDEOS_FORBIDDEN": "You can't send videos in this chat.",
+        "CHAT_SEND_VOICES_FORBIDDEN": "You can't send voice recordings in this chat.",
         "CHAT_TITLE_EMPTY": "No chat title provided.",
         "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat.",
@@ -2798,7 +2774,6 @@
         "MSG_ID_INVALID": "Invalid message ID provided.",
         "MSG_TOO_OLD": "[`chat_read_mark_expire_period` seconds](https:\/\/core.telegram.org\/api\/config#chat-read-mark-expire-period) have passed since the message was sent, read receipts were deleted.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
-        "MSG_WAIT_TIMEOUT": "",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
         "NEED_DOC_INVALID": "",
         "NEW_SALT_INVALID": "The new salt is invalid.",
@@ -2825,6 +2800,7 @@
         "PASSWORD_TOO_FRESH_%d": "The password was modified less than 24 hours ago, try again in %d seconds.",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid.",
         "PAYMENT_UNSUPPORTED": "",
+        "PEER_HISTORY_EMPTY": "",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
@@ -2898,7 +2874,6 @@
         "REVOTE_NOT_ALLOWED": "You cannot change your vote.",
         "RIGHT_FORBIDDEN": "Your admin rights do not allow you to do this.",
         "RIGHTS_NOT_MODIFIED": "The new admin rights are equal to the old rights, no change was made.",
-        "RPC_SEND_FAIL": "",
         "RSA_DECRYPT_FAILED": "Internal RSA decryption failed.",
         "SCHEDULE_BOT_NOT_ALLOWED": "Bots cannot schedule messages.",
         "SCHEDULE_DATE_INVALID": "Invalid schedule date provided.",
@@ -2913,7 +2888,6 @@
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
-        "SEND_REACTION_RESULT1_INVALID": "",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
         "SESSION_PASSWORD_NEEDED": "2FA is enabled, use a password to login.",
         "SESSION_TOO_FRESH_%d": "This session was created less than 24 hours ago, try again in %d seconds.",
@@ -2965,18 +2939,17 @@
         "TITLE_INVALID": "The specified stickerpack title is invalid.",
         "TMP_PASSWORD_DISABLED": "The temporary password is disabled.",
         "TO_LANG_INVALID": "The specified destination language is invalid.",
-        "TOKEN_EMPTY": "",
+        "TOKEN_EMPTY": "The specified token is empty.",
         "TOKEN_INVALID": "The provided token is invalid.",
-        "TOKEN_TYPE_INVALID": "",
-        "TOPIC_CLOSED": "",
+        "TOKEN_TYPE_INVALID": "The specified token type is invalid.",
+        "TOPIC_CLOSED": "This topic was closed, you can't send messages to it anymore.",
         "TOPIC_DELETED": "The specified topic was deleted.",
-        "TOPIC_ID_INVALID": "",
-        "TRANSCRIPTION_FAILED": "",
+        "TOPIC_ID_INVALID": "The specified topic ID is invalid.",
+        "TRANSCRIPTION_FAILED": "Audio transcription failed.",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
         "TYPES_EMPTY": "No top peer type was provided.",
-        "UNHANDLED_EXCEPTION": "",
         "UNTIL_DATE_INVALID": "Invalid until date provided.",
         "UPDATE_APP_REQUIRED": "Please update to the latest version of MadelineProto.",
         "UPDATE_APP_TO_LOGIN": "Please update to the latest version of MadelineProto to login.",
@@ -3007,7 +2980,7 @@
         "USERNAME_NOT_MODIFIED": "The username was not modified.",
         "USERNAME_NOT_OCCUPIED": "The provided username is not occupied.",
         "USERNAME_OCCUPIED": "The provided username is already occupied.",
-        "USERNAME_PURCHASE_AVAILABLE": "",
+        "USERNAME_PURCHASE_AVAILABLE": "The specified username can be purchased on https:\/\/fragment.com.",
         "USERPIC_PRIVACY_REQUIRED": "You need to disable privacy settings for your profile picture in order to make your geolocation public.",
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation.",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example).",
