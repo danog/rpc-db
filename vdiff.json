@@ -187,6 +187,9 @@
                 "phone.confirmCall",
                 "phone.receivedCall"
             ],
+            "CALL_OCCUPY_FAILED": [
+                "phone.discardCall"
+            ],
             "CALL_PEER_INVALID": [
                 "phone.acceptCall",
                 "phone.confirmCall",
@@ -977,6 +980,7 @@
                 "phone.saveDefaultGroupCallJoinAs"
             ],
             "LANG_CODE_INVALID": [
+                "bots.getBotInfo",
                 "bots.resetBotCommands",
                 "bots.setBotCommands"
             ],
@@ -1854,7 +1858,8 @@
                 "messages.transcribeAudio"
             ],
             "TTL_DAYS_INVALID": [
-                "account.setAccountTTL"
+                "account.setAccountTTL",
+                "account.setAuthorizationTTL"
             ],
             "TTL_MEDIA_INVALID": [
                 "messages.sendMedia"
@@ -1919,6 +1924,7 @@
                 "messages.setInlineBotResults"
             ],
             "USER_BOT_REQUIRED": [
+                "bots.getBotInfo",
                 "bots.getBotMenuButton",
                 "bots.setBotCommands",
                 "bots.setBotGroupDefaultAdminRights",

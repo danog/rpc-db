@@ -12,6 +12,7 @@
         "account.createTheme",
         "account.declinePasswordReset",
         "account.deleteAccount",
+        "account.deleteAutoSaveExceptions",
         "account.deleteSecureValue",
         "account.finishTakeoutSession",
         "account.getAccountTTL",
