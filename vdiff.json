@@ -46,6 +46,7 @@
             "API_ID_INVALID": [
                 "auth.exportLoginToken",
                 "auth.importBotAuthorization",
+                "auth.importWebTokenAuthorization",
                 "auth.sendCode"
             ],
             "API_ID_PUBLISHED_FLOOD": [
@@ -93,6 +94,9 @@
             "BANNED_RIGHTS_INVALID": [
                 "messages.editChatDefaultBannedRights"
             ],
+            "BOT_APP_INVALID": [
+                "messages.getBotApp"
+            ],
             "BOT_CHANNELS_NA": [
                 "channels.editAdmin"
             ],
@@ -123,6 +127,8 @@
             ],
             "BOT_MISSING": [
                 "stickers.addStickerToSet",
+                "stickers.changeSticker",
+                "stickers.deleteStickerSet",
                 "stickers.removeStickerFromSet"
             ],
             "BOT_ONESIDE_NOT_AVAIL": [
@@ -217,6 +223,7 @@
                 "account.updateNotifySettings",
                 "channels.checkUsername",
                 "channels.convertToGigagroup",
+                "channels.createForumTopic",
                 "channels.deleteChannel",
                 "channels.deleteHistory",
                 "channels.deleteMessages",
@@ -242,6 +249,7 @@
                 "channels.leaveChannel",
                 "channels.readHistory",
                 "channels.readMessageContents",
+                "channels.reorderUsernames",
                 "channels.reportSpam",
                 "channels.setDiscussionGroup",
                 "channels.setStickers",
@@ -679,7 +687,8 @@
                 "messages.setChatTheme"
             ],
             "EMOTICON_EMPTY": [
-                "messages.getStickers"
+                "messages.getStickers",
+                "messages.searchCustomEmoji"
             ],
             "EMOTICON_INVALID": [
                 "messages.sendMedia"
@@ -907,6 +916,9 @@
             ],
             "IMPORT_ID_INVALID": [
                 "messages.startHistoryImport"
+            ],
+            "IMPORT_TOKEN_INVALID": [
+                "contacts.importContactToken"
             ],
             "INLINE_RESULT_EXPIRED": [
                 "messages.sendInlineBotResult"
@@ -1226,6 +1238,9 @@
             "OPTIONS_TOO_MUCH": [
                 "messages.sendVote"
             ],
+            "ORDER_INVALID": [
+                "account.reorderUsernames"
+            ],
             "PACK_SHORT_NAME_INVALID": [
                 "stickers.createStickerSet"
             ],
@@ -1288,6 +1303,7 @@
                 "account.getNotifySettings",
                 "account.reportPeer",
                 "account.reportProfilePhoto",
+                "account.saveAutoSaveSettings",
                 "account.updateNotifySettings",
                 "bots.setBotCommands",
                 "channels.editAdmin",
@@ -1437,6 +1453,7 @@
                 "account.verifyPhone",
                 "auth.cancelCode",
                 "auth.checkPhone",
+                "auth.requestFirebaseSms",
                 "auth.resendCode",
                 "auth.sendCode",
                 "auth.signIn",
@@ -1739,6 +1756,7 @@
                 "messages.saveRecentSticker"
             ],
             "STICKER_INVALID": [
+                "stickers.changeSticker",
                 "stickers.changeStickerPosition",
                 "stickers.removeStickerFromSet"
             ],
@@ -1790,6 +1808,8 @@
                 "messages.installStickerSet",
                 "messages.uninstallStickerSet",
                 "stickers.addStickerToSet",
+                "stickers.deleteStickerSet",
+                "stickers.renameStickerSet",
                 "stickers.setStickerSetThumb"
             ],
             "SWITCH_PM_TEXT_EMPTY": [
@@ -1928,6 +1948,7 @@
                 "bots.getBotMenuButton",
                 "bots.setBotCommands",
                 "bots.setBotGroupDefaultAdminRights",
+                "bots.setBotInfo",
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
                 "messages.setBotCallbackAnswer",
@@ -1964,6 +1985,7 @@
                 "messages.search",
                 "phone.requestCall",
                 "photos.getUserPhotos",
+                "photos.uploadContactProfilePhoto",
                 "stickers.createStickerSet",
                 "users.getFullUser",
                 "users.setSecureValueErrors"
@@ -2012,6 +2034,7 @@
             ],
             "USERNAME_INVALID": [
                 "account.checkUsername",
+                "account.toggleUsername",
                 "account.updateUsername",
                 "channels.checkUsername",
                 "channels.updateUsername",
@@ -2562,6 +2585,7 @@
         "AUTOARCHIVE_NOT_AVAILABLE": "The autoarchive setting is not available at this time: please check the value of the [autoarchive_setting_available field in client config &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration) before calling this method.",
         "BANK_CARD_NUMBER_INVALID": "The specified card number is invalid.",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights.",
+        "BOT_APP_INVALID": "The specified bot app is invalid.",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges.",
         "BOT_COMMAND_DESCRIPTION_INVALID": "The specified command description is invalid.",
         "BOT_COMMAND_INVALID": "The specified command is invalid.",
@@ -2728,6 +2752,7 @@
         "IMPORT_FILE_INVALID": "The specified chat export file is invalid.",
         "IMPORT_FORMAT_UNRECOGNIZED": "The specified chat export file was exported from an unsupported chat app.",
         "IMPORT_ID_INVALID": "The specified import ID is invalid.",
+        "IMPORT_TOKEN_INVALID": "The specified token is invalid.",
         "INLINE_BOT_REQUIRED": "Only the inline bot can edit message.",
         "INLINE_RESULT_EXPIRED": "The inline query expired.",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
@@ -2790,6 +2815,7 @@
         "OFFSET_PEER_ID_INVALID": "The provided offset peer is invalid.",
         "OPTION_INVALID": "Invalid option selected.",
         "OPTIONS_TOO_MUCH": "Too many options provided.",
+        "ORDER_INVALID": "",
         "PACK_SHORT_NAME_INVALID": "Short pack name invalid.",
         "PACK_SHORT_NAME_OCCUPIED": "A stickerpack with this name already exists.",
         "PACK_TITLE_INVALID": "The stickerpack title is invalid.",
@@ -2916,7 +2942,7 @@
         "STICKER_GIF_DIMENSIONS": "The specified video sticker has invalid dimensions.",
         "STICKER_ID_INVALID": "The provided sticker ID is invalid.",
         "STICKER_INVALID": "The provided sticker is invalid.",
-        "STICKER_MIME_INVALID": "",
+        "STICKER_MIME_INVALID": "The specified sticker MIME type is invalid.",
         "STICKER_PNG_DIMENSIONS": "Sticker png dimensions invalid.",
         "STICKER_PNG_NOPNG": "One of the specified stickers is not a valid PNG file.",
         "STICKER_TGS_NODOC": "You must send the animated sticker as a document.",
