@@ -1872,7 +1872,11 @@
                 "messages.sendMultiMedia"
             ],
             "TOPIC_ID_INVALID": [
+                "channels.editForumTopic",
                 "messages.getDiscussionMessage"
+            ],
+            "TOPIC_NOT_MODIFIED": [
+                "channels.editForumTopic"
             ],
             "TRANSCRIPTION_FAILED": [
                 "messages.transcribeAudio"
@@ -2815,7 +2819,7 @@
         "OFFSET_PEER_ID_INVALID": "The provided offset peer is invalid.",
         "OPTION_INVALID": "Invalid option selected.",
         "OPTIONS_TOO_MUCH": "Too many options provided.",
-        "ORDER_INVALID": "",
+        "ORDER_INVALID": "The specified username order is invalid.",
         "PACK_SHORT_NAME_INVALID": "Short pack name invalid.",
         "PACK_SHORT_NAME_OCCUPIED": "A stickerpack with this name already exists.",
         "PACK_TITLE_INVALID": "The stickerpack title is invalid.",
@@ -2977,6 +2981,7 @@
         "TOPIC_CLOSED": "This topic was closed, you can't send messages to it anymore.",
         "TOPIC_DELETED": "The specified topic was deleted.",
         "TOPIC_ID_INVALID": "The specified topic ID is invalid.",
+        "TOPIC_NOT_MODIFIED": "The updated topic info is equal to the current topic info, nothing was changed.",
         "TRANSCRIPTION_FAILED": "Audio transcription failed.",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
