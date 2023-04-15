@@ -1269,7 +1269,8 @@
             ],
             "PARTICIPANTS_TOO_FEW": [
                 "channels.convertToGigagroup",
-                "channels.setStickers"
+                "channels.setStickers",
+                "channels.toggleParticipantsHidden"
             ],
             "PASSWORD_EMPTY": [
                 "account.resetPassword",
@@ -2698,7 +2699,7 @@
         "EMAIL_UNCONFIRMED_%d": "The provided email isn't confirmed, %d is the length of the verification code that was just sent to the email: use [account.verifyEmail](https:\/\/core.telegram.org\/method\/account.verifyEmail) to enter the received verification code and enable the recovery email.",
         "EMAIL_VERIFY_EXPIRED": "The verification email has expired.",
         "EMOJI_INVALID": "The specified theme emoji is valid.",
-        "EMOJI_MARKUP_INVALID": "",
+        "EMOJI_MARKUP_INVALID": "The specified `video_emoji_markup` was invalid.",
         "EMOJI_NOT_MODIFIED": "The theme wasn't changed.",
         "EMOTICON_EMPTY": "The emoji is empty.",
         "EMOTICON_INVALID": "The specified emoji is invalid.",
