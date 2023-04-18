@@ -2073,6 +2073,10 @@
                 "channels.checkUsername",
                 "channels.updateUsername"
             ],
+            "USERNAMES_ACTIVE_TOO_MUCH": [
+                "account.toggleUsername",
+                "channels.toggleUsername"
+            ],
             "USERPIC_UPLOAD_REQUIRED": [
                 "contacts.getLocated"
             ],
@@ -2168,29 +2172,8 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
-            "CHAT_FROM_USERNAME_CHANGED": [
-                "channels.getFullChannel"
-            ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
-            ],
-            "CHAT_MEMBERS_CHANNEL": [
-                "messages.checkChatInvite"
-            ],
-            "INVITE_HASH_UNSYNC": [
-                "messages.getChatInviteImporters"
-            ],
-            "MEMBER_CHAT_ADD_FAILED": [
-                "channels.joinChannel"
-            ],
-            "NEED_DOC_INVALID": [
-                "channels.getMessages",
-                "messages.getDialogs",
-                "messages.getHistory",
-                "messages.getPeerDialogs",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "users.getUsers"
             ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
@@ -2645,7 +2628,6 @@
         "CHAT_ADMIN_REQUIRED": "You must be an admin in this chat to do this.",
         "CHAT_DISCUSSION_UNALLOWED": "You can't enable forum topics in a discussion group linked to a channel.",
         "CHAT_FORWARDS_RESTRICTED": "You can't forward messages from a protected chat.",
-        "CHAT_FROM_USERNAME_CHANGED": "",
         "CHAT_GUEST_SEND_FORBIDDEN": "You join the discussion group before commenting, see [here &raquo;](\/api\/discussion#requiring-users-to-join-the-group) for more info.",
         "CHAT_ID_EMPTY": "The provided chat ID is empty.",
         "CHAT_ID_GENERATE_FAILED": "Failure while generating the chat ID.",
@@ -2653,9 +2635,8 @@
         "CHAT_INVALID": "Invalid chat.",
         "CHAT_INVITE_PERMANENT": "You can't set an expiration date on permanent invite links.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
-        "CHAT_MEMBERS_CHANNEL": "",
         "CHAT_NOT_MODIFIED": "The pinned message wasn't modified.",
-        "CHAT_PUBLIC_REQUIRED": "",
+        "CHAT_PUBLIC_REQUIRED": "You can only enable join requests in public groups.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
         "CHAT_REVOKE_DATE_UNSUPPORTED": "`min_date` and `max_date` are not available for using with non-user peers.",
         "CHAT_SEND_AUDIOS_FORBIDDEN": "You can't send audio messages in this chat.",
@@ -2779,7 +2760,6 @@
         "INVITE_HASH_EMPTY": "The invite hash is empty.",
         "INVITE_HASH_EXPIRED": "The invite link has expired.",
         "INVITE_HASH_INVALID": "The invite hash is invalid.",
-        "INVITE_HASH_UNSYNC": "",
         "INVITE_REQUEST_SENT": "You have successfully requested to join this chat or channel.",
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
         "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
@@ -2804,7 +2784,6 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
-        "MEMBER_CHAT_ADD_FAILED": "",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -2820,7 +2799,6 @@
         "MSG_TOO_OLD": "[`chat_read_mark_expire_period` seconds](https:\/\/core.telegram.org\/api\/config#chat-read-mark-expire-period) have passed since the message was sent, read receipts were deleted.",
         "MSG_WAIT_FAILED": "A waiting call returned an error.",
         "MULTI_MEDIA_TOO_LONG": "Too many media files for album.",
-        "NEED_DOC_INVALID": "",
         "NEW_SALT_INVALID": "The new salt is invalid.",
         "NEW_SETTINGS_EMPTY": "No password is set on the current account, and no new password was specified in `new_settings`.",
         "NEW_SETTINGS_INVALID": "The new password settings are invalid.",
@@ -2846,7 +2824,7 @@
         "PASSWORD_TOO_FRESH_%d": "The password was modified less than 24 hours ago, try again in %d seconds.",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid.",
         "PAYMENT_UNSUPPORTED": "",
-        "PEER_HISTORY_EMPTY": "",
+        "PEER_HISTORY_EMPTY": "You can't pin an empty chat with a user.",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
@@ -3028,6 +3006,7 @@
         "USERNAME_NOT_OCCUPIED": "The provided username is not occupied.",
         "USERNAME_OCCUPIED": "The provided username is already occupied.",
         "USERNAME_PURCHASE_AVAILABLE": "The specified username can be purchased on https:\/\/fragment.com.",
+        "USERNAMES_ACTIVE_TOO_MUCH": "The maximum number of active usernames was reached.",
         "USERPIC_PRIVACY_REQUIRED": "You need to disable privacy settings for your profile picture in order to make your geolocation public.",
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation.",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example).",
