@@ -2823,7 +2823,7 @@
         "PASSWORD_REQUIRED": "A [2FA password](https:\/\/core.telegram.org\/api\/srp) must be configured to use Telegram Passport.",
         "PASSWORD_TOO_FRESH_%d": "The password was modified less than 24 hours ago, try again in %d seconds.",
         "PAYMENT_PROVIDER_INVALID": "The specified payment provider is invalid.",
-        "PAYMENT_UNSUPPORTED": "",
+        "PAYMENT_UNSUPPORTED": "A detailed description of the error will be received separately as described [here &raquo;](https:\/\/core.telegram.org\/api\/errors#406-not-acceptable).",
         "PEER_HISTORY_EMPTY": "You can't pin an empty chat with a user.",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
