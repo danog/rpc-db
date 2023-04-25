@@ -119,6 +119,8 @@
                 "messages.getInlineBotResults"
             ],
             "BOT_INVALID": [
+                "bots.reorderUsernames",
+                "bots.toggleUsername",
                 "messages.editMessage",
                 "messages.getAttachMenuBot",
                 "messages.getInlineBotResults",
@@ -809,6 +811,9 @@
                 "upload.reuploadCdnFile"
             ],
             "FILTER_ID_INVALID": [
+                "chatlists.deleteExportedInvite",
+                "chatlists.editExportedInvite",
+                "chatlists.exportChatlistInvite",
                 "messages.updateDialogFilter"
             ],
             "FILTER_INCLUDE_EMPTY": [
@@ -988,6 +993,10 @@
             ],
             "INVITE_REVOKED_MISSING": [
                 "messages.deleteExportedChatInvite"
+            ],
+            "INVITE_SLUG_EMPTY": [
+                "chatlists.checkChatlistInvite",
+                "chatlists.joinChatlistInvite"
             ],
             "INVOICE_PAYLOAD_INVALID": [
                 "payments.exportInvoice"
@@ -1386,6 +1395,7 @@
                 "messages.sendVote",
                 "messages.setChatAvailableReactions",
                 "messages.setChatTheme",
+                "messages.setChatWallPaper",
                 "messages.setGameScore",
                 "messages.setTyping",
                 "messages.startBot",
@@ -1462,6 +1472,7 @@
                 "auth.checkPhone",
                 "auth.requestFirebaseSms",
                 "auth.resendCode",
+                "auth.resetLoginEmail",
                 "auth.sendCode",
                 "auth.signIn",
                 "auth.signUp"
@@ -2763,6 +2774,7 @@
         "INVITE_HASH_INVALID": "The invite hash is invalid.",
         "INVITE_REQUEST_SENT": "You have successfully requested to join this chat or channel.",
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
+        "INVITE_SLUG_EMPTY": "The specified invite slug is empty.",
         "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
         "JOIN_AS_PEER_INVALID": "The specified peer cannot be used to join a group call.",
         "LANG_CODE_INVALID": "The specified language code is invalid.",
