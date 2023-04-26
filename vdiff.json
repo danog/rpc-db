@@ -674,6 +674,9 @@
                 "account.updatePasswordSettings",
                 "account.verifyEmail"
             ],
+            "EMAIL_NOT_SETUP": [
+                "account.sendVerifyEmailCode"
+            ],
             "EMAIL_UNCONFIRMED": [
                 "account.updatePasswordSettings"
             ],
@@ -2688,6 +2691,7 @@
         "EDIT_BOT_INVITE_FORBIDDEN": "Normal users can't edit invites that were created by bots.",
         "EMAIL_HASH_EXPIRED": "Email hash expired.",
         "EMAIL_INVALID": "The specified email is invalid.",
+        "EMAIL_NOT_SETUP": "In order to change the login email with emailVerifyPurposeLoginChange, an existing login email must already be set using emailVerifyPurposeLoginSetup.",
         "EMAIL_UNCONFIRMED": "Email unconfirmed.",
         "EMAIL_UNCONFIRMED_%d": "The provided email isn't confirmed, %d is the length of the verification code that was just sent to the email: use [account.verifyEmail](https:\/\/core.telegram.org\/method\/account.verifyEmail) to enter the received verification code and enable the recovery email.",
         "EMAIL_VERIFY_EXPIRED": "The verification email has expired.",
