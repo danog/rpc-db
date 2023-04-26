@@ -823,6 +823,7 @@
                 "messages.updateDialogFilter"
             ],
             "FILTER_NOT_SUPPORTED": [
+                "chatlists.exportChatlistInvite",
                 "messages.getSearchResultsCalendar",
                 "messages.searchSentMedia"
             ],
@@ -1416,6 +1417,9 @@
             ],
             "PEER_ID_NOT_SUPPORTED": [
                 "messages.search"
+            ],
+            "PEERS_LIST_EMPTY": [
+                "chatlists.exportChatlistInvite"
             ],
             "PERSISTENT_TIMESTAMP_EMPTY": [
                 "updates.getChannelDifference",
@@ -2847,6 +2851,7 @@
         "PEER_HISTORY_EMPTY": "You can't pin an empty chat with a user.",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
+        "PEERS_LIST_EMPTY": "The specified list of peers is empty.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
         "PERSISTENT_TIMESTAMP_INVALID": "Persistent timestamp invalid.",
         "PERSISTENT_TIMESTAMP_OUTDATED": "Channel internal replication issues, try again later (treat this like an RPC_CALL_FAIL).",
