@@ -371,8 +371,6 @@
         "phone.toggleGroupCallSettings",
         "phone.toggleGroupCallStartSubscription",
         "photos.deletePhotos",
-        "photos.updateProfilePhoto",
-        "photos.uploadProfilePhoto",
         "stats.getBroadcastStats",
         "stats.getMegagroupStats",
         "stats.getMessagePublicForwards",

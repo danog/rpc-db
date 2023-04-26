@@ -2121,7 +2121,8 @@
                 "account.getMultiWallPapers",
                 "account.getWallPaper",
                 "account.installWallPaper",
-                "account.saveWallPaper"
+                "account.saveWallPaper",
+                "messages.setChatWallPaper"
             ],
             "WALLPAPER_MIME_INVALID": [
                 "account.uploadWallPaper"
