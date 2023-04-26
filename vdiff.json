@@ -1839,6 +1839,9 @@
             "TAKEOUT_REQUIRED": [
                 "contacts.getSaved"
             ],
+            "TASK_ALREADY_EXISTS": [
+                "auth.resetLoginEmail"
+            ],
             "TEMP_AUTH_KEY_ALREADY_BOUND": [
                 "auth.bindTempAuthKey"
             ],
@@ -2969,6 +2972,7 @@
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
+        "TASK_ALREADY_EXISTS": "An email reset was already requested.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
         "TEMP_AUTH_KEY_EMPTY": "No temporary auth key provided.",
         "THEME_FILE_INVALID": "Invalid theme file provided.",
