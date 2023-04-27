@@ -1002,6 +1002,9 @@
                 "chatlists.checkChatlistInvite",
                 "chatlists.joinChatlistInvite"
             ],
+            "INVITES_TOO_MUCH": [
+                "chatlists.exportChatlistInvite"
+            ],
             "INVOICE_PAYLOAD_INVALID": [
                 "payments.exportInvoice"
             ],
@@ -1433,6 +1436,7 @@
                 "account.changePhone",
                 "account.confirmPhone",
                 "account.verifyPhone",
+                "auth.resendCode",
                 "auth.signIn",
                 "auth.signUp"
             ],
@@ -2302,6 +2306,7 @@
                 "messages.sendMedia"
             ],
             "CHAT_SEND_VOICES_FORBIDDEN": [
+                "messages.forwardMessages",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia"
             ],
@@ -2786,6 +2791,7 @@
         "INVITE_REQUEST_SENT": "You have successfully requested to join this chat or channel.",
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
         "INVITE_SLUG_EMPTY": "The specified invite slug is empty.",
+        "INVITES_TOO_MUCH": "The maximum number of per-folder invites specified by the `chatlist_invites_limit_default`\/`chatlist_invites_limit_premium` [client configuration parameters &raquo;](\/api\/config#chatlist-invites-limit-default) was reached.",
         "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
         "JOIN_AS_PEER_INVALID": "The specified peer cannot be used to join a group call.",
         "LANG_CODE_INVALID": "The specified language code is invalid.",
