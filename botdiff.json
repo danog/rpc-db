@@ -381,6 +381,7 @@
         "stats.loadAsyncGraph",
         "stickers.checkShortName",
         "stickers.suggestShortName",
+        "stories.getUserStories",
         "upload.getCdnFile",
         "upload.getWebFile"
     ]

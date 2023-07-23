@@ -960,9 +960,6 @@
             "INPUT_CHATLIST_INVALID": [
                 "chatlists.getChatlistUpdates"
             ],
-            "INPUT_FETCH_ERROR_%d": [
-                "messages.translateText"
-            ],
             "INPUT_FILTER_INVALID": [
                 "messages.search"
             ],
@@ -1113,6 +1110,12 @@
             ],
             "MEDIA_TTL_INVALID": [
                 "messages.editMessage"
+            ],
+            "MEDIA_TYPE_INVALID": [
+                "stories.sendStory"
+            ],
+            "MEDIA_VIDEO_STORY_MISSING": [
+                "stories.sendStory"
             ],
             "MEGAGROUP_ID_INVALID": [
                 "channels.setDiscussionGroup"
@@ -1781,6 +1784,9 @@
             "SMS_CODE_CREATE_FAILED": [
                 "auth.sendCode"
             ],
+            "Sorry, too many invalid attempts to enter your password. Please try again later.": [
+                "auth.sendCode"
+            ],
             "SRP_ID_INVALID": [
                 "account.updatePasswordSettings",
                 "auth.checkPassword",
@@ -2064,6 +2070,7 @@
                 "photos.getUserPhotos",
                 "photos.uploadContactProfilePhoto",
                 "stickers.createStickerSet",
+                "stories.getUserStories",
                 "users.getFullUser",
                 "users.setSecureValueErrors"
             ],
@@ -2256,6 +2263,11 @@
             "MEMBER_CHAT_ADD_FAILED": [
                 "channels.joinChannel"
             ],
+            "MSG_WAIT_FAILED": [
+                "messages.receivedQueue",
+                "messages.sendEncryptedService",
+                "messages.sendMessage"
+            ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
             ],
@@ -2273,6 +2285,8 @@
             ],
             "STORAGE_CHOOSE_VOLUME_FAILED": [
                 "messages.sendMedia",
+                "messages.uploadMedia",
+                "photos.updateProfilePhoto",
                 "upload.saveBigFilePart"
             ],
             "USERNAME_UNSYNCHRONIZED": [
@@ -2431,6 +2445,7 @@
                 "phone.discardGroupCall",
                 "phone.editGroupCallParticipant",
                 "phone.editGroupCallTitle",
+                "phone.getGroupCall",
                 "phone.inviteToGroupCall",
                 "phone.joinGroupCall",
                 "phone.toggleGroupCallRecord"
@@ -2850,7 +2865,6 @@
         "INLINE_BOT_REQUIRED": "Only the inline bot can edit message.",
         "INLINE_RESULT_EXPIRED": "The inline query expired.",
         "INPUT_CHATLIST_INVALID": "",
-        "INPUT_FETCH_ERROR_%d": "",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
         "INPUT_TEXT_EMPTY": "The specified text is empty.",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted.",
@@ -2885,6 +2899,8 @@
         "MEDIA_NEW_INVALID": "The new media is invalid.",
         "MEDIA_PREV_INVALID": "Previous media invalid.",
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
+        "MEDIA_TYPE_INVALID": "",
+        "MEDIA_VIDEO_STORY_MISSING": "",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
@@ -3029,6 +3045,7 @@
         "SLOWMODE_MULTI_MSGS_DISABLED": "Slowmode is enabled, you cannot forward multiple messages to this group.",
         "SLOWMODE_WAIT_%d": "Slowmode is enabled in this chat: wait %d seconds before sending another message to this chat.",
         "SMS_CODE_CREATE_FAILED": "An error occurred while creating the SMS code.",
+        "Sorry, too many invalid attempts to enter your password. Please try again later.": "",
         "SRP_ID_INVALID": "Invalid SRP ID provided.",
         "SRP_PASSWORD_CHANGED": "Password has changed.",
         "START_PARAM_EMPTY": "The start parameter is empty.",
