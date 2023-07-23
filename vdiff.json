@@ -2283,12 +2283,6 @@
             "SIGN_IN_FAILED": [
                 "auth.signIn"
             ],
-            "STORAGE_CHOOSE_VOLUME_FAILED": [
-                "messages.sendMedia",
-                "messages.uploadMedia",
-                "photos.updateProfilePhoto",
-                "upload.saveBigFilePart"
-            ],
             "USERNAME_UNSYNCHRONIZED": [
                 "users.getFullUser"
             ]
@@ -3072,7 +3066,6 @@
         "STICKERS_TOO_MUCH": "There are too many stickers in this stickerpack, you can't add any more.",
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
-        "STORAGE_CHOOSE_VOLUME_FAILED": "",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
