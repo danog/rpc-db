@@ -46,6 +46,7 @@
         "account.initTakeoutSession",
         "account.installTheme",
         "account.installWallPaper",
+        "account.invalidateSignInCodes",
         "account.registerDevice",
         "account.reorderUsernames",
         "account.reportPeer",
@@ -140,6 +141,7 @@
         "contacts.blockFromReplies",
         "contacts.deleteByPhones",
         "contacts.deleteContacts",
+        "contacts.editCloseFriends",
         "contacts.getBlocked",
         "contacts.getContactIDs",
         "contacts.getContacts",
@@ -152,6 +154,7 @@
         "contacts.resetTopPeerRating",
         "contacts.resolvePhone",
         "contacts.search",
+        "contacts.setBlocked",
         "contacts.toggleTopPeers",
         "contacts.unblock",
         "folders.deleteFolder",
@@ -385,6 +388,7 @@
         "stories.getBoostsStatus",
         "stories.getStoriesByID",
         "stories.getUserStories",
+        "stories.sendStory",
         "upload.getCdnFile",
         "upload.getWebFile"
     ]

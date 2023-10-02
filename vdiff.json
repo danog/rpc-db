@@ -119,6 +119,8 @@
                 "messages.getInlineBotResults"
             ],
             "BOT_INVALID": [
+                "bots.allowSendMessage",
+                "bots.canSendMessage",
                 "bots.reorderUsernames",
                 "bots.toggleUsername",
                 "messages.editMessage",
@@ -229,6 +231,7 @@
             "CHANNEL_INVALID": [
                 "account.updateNotifySettings",
                 "channels.checkUsername",
+                "channels.clickSponsoredMessage",
                 "channels.convertToGigagroup",
                 "channels.createForumTopic",
                 "channels.deleteChannel",
@@ -286,6 +289,7 @@
                 "messages.getPeerSettings",
                 "messages.getReplies",
                 "messages.getUnreadMentions",
+                "messages.hideAllChatJoinRequests",
                 "messages.importChatInvite",
                 "messages.readMentions",
                 "messages.report",
@@ -486,6 +490,7 @@
                 "messages.setChatAvailableReactions",
                 "messages.setTyping",
                 "messages.startBot",
+                "messages.toggleNoForwards",
                 "messages.unpinAllMessages",
                 "messages.updatePinnedMessage",
                 "messages.uploadImportedMedia",
@@ -495,7 +500,8 @@
                 "stats.getBroadcastStats",
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
-                "stats.getMessageStats"
+                "stats.getMessageStats",
+                "stories.getBoostersList"
             ],
             "CHAT_DISCUSSION_UNALLOWED": [
                 "channels.toggleForum"
@@ -575,6 +581,7 @@
                 "channels.toggleForum",
                 "channels.toggleInvites",
                 "channels.toggleJoinRequest",
+                "channels.toggleJoinToSend",
                 "channels.toggleParticipantsHidden",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
@@ -860,6 +867,7 @@
                 "messages.updateDialogFilter"
             ],
             "FILTER_INCLUDE_EMPTY": [
+                "chatlists.joinChatlistInvite",
                 "messages.updateDialogFilter"
             ],
             "FILTER_NOT_SUPPORTED": [
@@ -1056,7 +1064,8 @@
                 "chatlists.joinChatlistInvite"
             ],
             "INVITE_SLUG_EXPIRED": [
-                "chatlists.checkChatlistInvite"
+                "chatlists.checkChatlistInvite",
+                "chatlists.joinChatlistInvite"
             ],
             "INVITES_TOO_MUCH": [
                 "chatlists.exportChatlistInvite"
@@ -1493,6 +1502,12 @@
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stickers.createStickerSet",
+                "stories.canSendStory",
+                "stories.getBoostersList",
+                "stories.getPeerStories",
+                "stories.getStoriesArchive",
+                "stories.getStoriesByID",
+                "stories.sendStory",
                 "upload.getFile"
             ],
             "PEER_ID_NOT_SUPPORTED": [
@@ -2130,6 +2145,7 @@
                 "photos.getUserPhotos",
                 "photos.uploadContactProfilePhoto",
                 "stickers.createStickerSet",
+                "stories.getPinnedStories",
                 "stories.getUserStories",
                 "users.getFullUser",
                 "users.setSecureValueErrors"
@@ -2554,7 +2570,8 @@
                 "upload.reuploadCdnFile"
             ],
             "CHANNEL_ID_GENERATE_FAILED": [
-                "channels.createChannel"
+                "channels.createChannel",
+                "messages.migrateChat"
             ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
@@ -2571,6 +2588,9 @@
             ],
             "MEMBER_CHAT_ADD_FAILED": [
                 "channels.joinChannel"
+            ],
+            "MEMBER_NOT_FOUND": [
+                "auth.importLoginToken"
             ],
             "MSG_WAIT_FAILED": [
                 "messages.editMessage",
@@ -2789,7 +2809,7 @@
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
-        "BROADCAST_FORBIDDEN": "Participants of polls in channels should stay anonymous.",
+        "BROADCAST_FORBIDDEN": "Channel poll voters and reactions cannot be fetched to prevent deanonymization.",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid.",
         "BROADCAST_PUBLIC_VOTERS_FORBIDDEN": "You can't forward polls with public voters.",
         "BROADCAST_REQUIRED": "This method can only be called on a channel, please use stats.getMegagroupStats for supergroups.",
@@ -2996,6 +3016,7 @@
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
         "MEMBER_CHAT_ADD_FAILED": "",
+        "MEMBER_NOT_FOUND": "",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
