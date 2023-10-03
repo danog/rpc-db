@@ -2035,6 +2035,9 @@
                 "messages.sendMessage",
                 "messages.sendMultiMedia"
             ],
+            "TOPIC_HIDE_SEPARATELY": [
+                "channels.editForumTopic"
+            ],
             "TOPIC_ID_INVALID": [
                 "channels.deleteTopicHistory",
                 "channels.editForumTopic",
@@ -3210,6 +3213,7 @@
         "TOPIC_CLOSE_SEPARATELY": "",
         "TOPIC_CLOSED": "This topic was closed, you can't send messages to it anymore.",
         "TOPIC_DELETED": "The specified topic was deleted.",
+        "TOPIC_HIDE_SEPARATELY": "",
         "TOPIC_ID_INVALID": "The specified topic ID is invalid.",
         "TOPIC_NOT_MODIFIED": "The updated topic info is equal to the current topic info, nothing was changed.",
         "TOPIC_TITLE_EMPTY": "The specified topic title is empty.",
