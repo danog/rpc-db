@@ -121,6 +121,7 @@
             "BOT_INVALID": [
                 "bots.allowSendMessage",
                 "bots.canSendMessage",
+                "bots.invokeWebViewCustomMethod",
                 "bots.reorderUsernames",
                 "bots.toggleUsername",
                 "messages.editMessage",
@@ -184,7 +185,8 @@
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage",
-                "messages.setInlineBotResults"
+                "messages.setInlineBotResults",
+                "test.test"
             ],
             "BUTTON_USER_PRIVACY_RESTRICTED": [
                 "messages.sendMessage"
@@ -1502,12 +1504,27 @@
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stickers.createStickerSet",
+                "stories.applyBoost",
+                "stories.canApplyBoost",
                 "stories.canSendStory",
+                "stories.deleteStories",
+                "stories.editStory",
+                "stories.exportStoryLink",
                 "stories.getBoostersList",
+                "stories.getBoostsStatus",
                 "stories.getPeerStories",
+                "stories.getPinnedStories",
                 "stories.getStoriesArchive",
                 "stories.getStoriesByID",
+                "stories.getStoriesViews",
+                "stories.getStoryViewsList",
+                "stories.incrementStoryViews",
+                "stories.readStories",
+                "stories.report",
+                "stories.sendReaction",
                 "stories.sendStory",
+                "stories.togglePeerStoriesHidden",
+                "stories.togglePinned",
                 "upload.getFile"
             ],
             "PEER_ID_NOT_SUPPORTED": [
@@ -2005,6 +2022,9 @@
             "TOKEN_TYPE_INVALID": [
                 "account.registerDevice"
             ],
+            "TOPIC_CLOSE_SEPARATELY": [
+                "channels.editForumTopic"
+            ],
             "TOPIC_CLOSED": [
                 "messages.forwardMessages",
                 "messages.sendMedia",
@@ -2026,6 +2046,9 @@
             ],
             "TOPIC_NOT_MODIFIED": [
                 "channels.editForumTopic"
+            ],
+            "TOPIC_TITLE_EMPTY": [
+                "channels.createForumTopic"
             ],
             "TOPICS_EMPTY": [
                 "channels.getForumTopicsByID"
@@ -2747,21 +2770,6 @@
                 "req_pq_multi"
             ]
         },
-        "-505": {
-            "Nothing stored": [
-                "account.updateProfile",
-                "channels.editBanned",
-                "channels.joinChannel",
-                "channels.updateUsername",
-                "messages.createChat",
-                "messages.forwardMessages",
-                "messages.importChatInvite",
-                "updates.getChannelDifference",
-                "updates.getDifference",
-                "users.getFullUser",
-                "users.getUsers"
-            ]
-        },
         "-503": {
             "Timeout": [
                 "messages.getBotCallbackAnswer",
@@ -3207,10 +3215,12 @@
         "TOKEN_EMPTY": "The specified token is empty.",
         "TOKEN_INVALID": "The provided token is invalid.",
         "TOKEN_TYPE_INVALID": "The specified token type is invalid.",
+        "TOPIC_CLOSE_SEPARATELY": "",
         "TOPIC_CLOSED": "This topic was closed, you can't send messages to it anymore.",
         "TOPIC_DELETED": "The specified topic was deleted.",
         "TOPIC_ID_INVALID": "The specified topic ID is invalid.",
         "TOPIC_NOT_MODIFIED": "The updated topic info is equal to the current topic info, nothing was changed.",
+        "TOPIC_TITLE_EMPTY": "",
         "TOPICS_EMPTY": "",
         "TRANSCRIPTION_FAILED": "Audio transcription failed.",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
