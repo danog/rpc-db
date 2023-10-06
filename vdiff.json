@@ -95,7 +95,8 @@
                 "messages.editChatDefaultBannedRights"
             ],
             "BOOST_NOT_MODIFIED": [
-                "stories.applyBoost"
+                "stories.applyBoost",
+                "stories.canApplyBoost"
             ],
             "BOOSTS_REQUIRED": [
                 "stories.canSendStory"
