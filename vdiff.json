@@ -1689,6 +1689,7 @@
             "PREMIUM_ACCOUNT_REQUIRED": [
                 "stories.applyBoost",
                 "stories.canApplyBoost",
+                "stories.canSendStory",
                 "stories.sendStory"
             ],
             "PRIVACY_KEY_INVALID": [
@@ -1972,6 +1973,9 @@
             "STORIES_NEVER_CREATED": [
                 "stories.getStoriesByID"
             ],
+            "STORIES_TOO_MUCH": [
+                "stories.canSendStory"
+            ],
             "STORY_ID_EMPTY": [
                 "stories.getStoriesByID",
                 "stories.sendReaction"
@@ -1981,6 +1985,12 @@
             ],
             "STORY_PERIOD_INVALID": [
                 "stories.sendStory"
+            ],
+            "STORY_SEND_FLOOD_MONTHLY_%d": [
+                "stories.canSendStory"
+            ],
+            "STORY_SEND_FLOOD_WEEKLY_%d": [
+                "stories.canSendStory"
             ],
             "SWITCH_PM_TEXT_EMPTY": [
                 "messages.setInlineBotResults"
@@ -3203,9 +3213,12 @@
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
         "STORIES_NEVER_CREATED": "",
+        "STORIES_TOO_MUCH": "",
         "STORY_ID_EMPTY": "You specified no story IDs.",
         "STORY_NOT_MODIFIED": "The new story information you passed is equal to the previous story information, thus it wasn't modified.",
         "STORY_PERIOD_INVALID": "",
+        "STORY_SEND_FLOOD_MONTHLY_%d": "",
+        "STORY_SEND_FLOOD_WEEKLY_%d": "",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
