@@ -510,6 +510,7 @@
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
+                "stories.canSendStory",
                 "stories.getBoostersList"
             ],
             "CHAT_DISCUSSION_UNALLOWED": [
