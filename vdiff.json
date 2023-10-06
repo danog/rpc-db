@@ -1686,6 +1686,7 @@
                 "messages.sendMedia"
             ],
             "PREMIUM_ACCOUNT_REQUIRED": [
+                "stories.applyBoost",
                 "stories.canApplyBoost",
                 "stories.sendStory"
             ],
