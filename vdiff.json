@@ -318,6 +318,7 @@
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stories.getBoostersList",
+                "stories.getStoriesByID",
                 "updates.getChannelDifference",
                 "updates.getDifference",
                 "upload.getFile",
@@ -1974,7 +1975,8 @@
                 "stories.getStoriesByID"
             ],
             "STORIES_TOO_MUCH": [
-                "stories.canSendStory"
+                "stories.canSendStory",
+                "stories.sendStory"
             ],
             "STORY_ID_EMPTY": [
                 "stories.getStoriesByID",
@@ -2622,6 +2624,9 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
+            "CHANNEL_ID_GENERATE_FAILED": [
+                "messages.migrateChat"
+            ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
             ],
@@ -2857,6 +2862,7 @@
         "CDN_METHOD_INVALID": "You can't call this method in a CDN DC.",
         "CDN_UPLOAD_TIMEOUT": "A server-side timeout occurred while reuploading the file to the CDN DC.",
         "CHANNEL_FORUM_MISSING": "This supergroup is not a forum.",
+        "CHANNEL_ID_GENERATE_FAILED": "",
         "CHANNEL_ID_INVALID": "The specified supergroup ID is invalid.",
         "CHANNEL_INVALID": "The provided channel is invalid.",
         "CHANNEL_PARICIPANT_MISSING": "The current user is not in the channel.",
@@ -3213,12 +3219,12 @@
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
         "STORIES_NEVER_CREATED": "",
-        "STORIES_TOO_MUCH": "",
+        "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
         "STORY_ID_EMPTY": "You specified no story IDs.",
         "STORY_NOT_MODIFIED": "The new story information you passed is equal to the previous story information, thus it wasn't modified.",
-        "STORY_PERIOD_INVALID": "",
-        "STORY_SEND_FLOOD_MONTHLY_%d": "",
-        "STORY_SEND_FLOOD_WEEKLY_%d": "",
+        "STORY_PERIOD_INVALID": "The specified story period is invalid for this account.",
+        "STORY_SEND_FLOOD_MONTHLY_%d": "You've hit the monthly story limit as specified by the [`stories_sent_monthly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-monthly-limit-default): wait for the specified number of seconds before posting a new story.",
+        "STORY_SEND_FLOOD_WEEKLY_%d": "You've hit the weekly story limit as specified by the [`stories_sent_weekly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): wait for the specified number of seconds before posting a new story.",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
