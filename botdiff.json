@@ -96,6 +96,7 @@
         "auth.importLoginToken",
         "auth.importWebTokenAuthorization",
         "auth.recoverPassword",
+        "auth.requestFirebaseSms",
         "auth.requestPasswordRecovery",
         "auth.resendCode",
         "auth.resetAuthorizations",
