@@ -26,6 +26,9 @@
             "ACCESS_TOKEN_INVALID": [
                 "auth.importBotAuthorization"
             ],
+            "ADDRESS_INVALID": [
+                "channels.createChannel"
+            ],
             "ADMIN_ID_INVALID": [
                 "messages.deleteRevokedExportedChatInvites",
                 "messages.getExportedChatInvites"
@@ -38,6 +41,9 @@
             ],
             "ADMINS_TOO_MUCH": [
                 "channels.editAdmin"
+            ],
+            "AES_DECRYPT_FAILED": [
+                "upload.reuploadCdnFile"
             ],
             "ALBUM_PHOTOS_TOO_MANY": [
                 "photos.updateProfilePhoto",
@@ -226,7 +232,8 @@
                 "invokeWithLayer",
                 "updates.getDifference",
                 "upload.getCdnFileHashes",
-                "upload.getFile"
+                "upload.getFile",
+                "upload.reuploadCdnFile"
             ],
             "CHANNEL_FORUM_MISSING": [
                 "channels.createForumTopic",
@@ -319,6 +326,7 @@
                 "stats.getMessageStats",
                 "stories.getBoostersList",
                 "stories.getStoriesByID",
+                "stories.getStoriesViews",
                 "updates.getChannelDifference",
                 "updates.getDifference",
                 "upload.getFile",
@@ -404,6 +412,8 @@
                 "messages.uploadMedia",
                 "phone.createGroupCall",
                 "stats.getBroadcastStats",
+                "stories.getPeerStories",
+                "stories.getStoriesViews",
                 "updates.getChannelDifference",
                 "updates.getDifference",
                 "upload.getFile",
@@ -512,7 +522,8 @@
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stories.canSendStory",
-                "stories.getBoostersList"
+                "stories.getBoostersList",
+                "stories.getStoriesArchive"
             ],
             "CHAT_DISCUSSION_UNALLOWED": [
                 "channels.toggleForum"
@@ -1175,6 +1186,9 @@
             "MEDIA_VIDEO_STORY_MISSING": [
                 "stories.sendStory"
             ],
+            "MEGAGROUP_GEO_REQUIRED": [
+                "channels.editLocation"
+            ],
             "MEGAGROUP_ID_INVALID": [
                 "channels.setDiscussionGroup"
             ],
@@ -1773,6 +1787,9 @@
             "REPLY_TO_INVALID": [
                 "messages.sendMessage"
             ],
+            "REPLY_TO_USER_INVALID": [
+                "messages.sendMessage"
+            ],
             "RESET_REQUEST_MISSING": [
                 "account.declinePasswordReset"
             ],
@@ -1980,7 +1997,12 @@
             ],
             "STORY_ID_EMPTY": [
                 "stories.getStoriesByID",
+                "stories.incrementStoryViews",
                 "stories.sendReaction"
+            ],
+            "STORY_ID_INVALID": [
+                "messages.sendMessage",
+                "messages.sendScreenshotNotification"
             ],
             "STORY_NOT_MODIFIED": [
                 "stories.editStory"
@@ -2386,6 +2408,7 @@
                 "channels.deleteUserHistory",
                 "channels.editAdmin",
                 "channels.editBanned",
+                "channels.editForumTopic",
                 "channels.editPhoto",
                 "channels.editTitle",
                 "channels.getAdminLog",
@@ -2630,6 +2653,9 @@
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
             ],
+            "CHAT_INVALID": [
+                "messages.migrateChat"
+            ],
             "CHAT_MEMBERS_CHANNEL": [
                 "messages.checkChatInvite"
             ],
@@ -2660,6 +2686,9 @@
                 "messages.sendMultiMedia",
                 "messages.startBot",
                 "updates.getDifference"
+            ],
+            "SEND_MEDIA_INVALID": [
+                "messages.sendInlineBotResult"
             ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
@@ -2807,10 +2836,12 @@
         "ABOUT_TOO_LONG": "About string too long.",
         "ACCESS_TOKEN_EXPIRED": "Access token expired.",
         "ACCESS_TOKEN_INVALID": "Access token invalid.",
+        "ADDRESS_INVALID": "",
         "ADMIN_ID_INVALID": "The specified admin ID is invalid.",
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins.",
+        "AES_DECRYPT_FAILED": "",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ANONYMOUS_REACTIONS_DISABLED": "",
         "API_ID_INVALID": "API ID invalid.",
@@ -2828,8 +2859,8 @@
         "AUTOARCHIVE_NOT_AVAILABLE": "The autoarchive setting is not available at this time: please check the value of the [autoarchive_setting_available field in client config &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration) before calling this method.",
         "BANK_CARD_NUMBER_INVALID": "The specified card number is invalid.",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights.",
-        "BOOST_NOT_MODIFIED": "You're already [boosting](https:\/\/core.telegram.org\/api\/stories#channel-stories) the specified channel.",
-        "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/stories#channel-stories) in order to be able to post stories.",
+        "BOOST_NOT_MODIFIED": "You're already [boosting](https:\/\/core.telegram.org\/api\/boost) the specified channel.",
+        "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/boost) in order to be able to post stories.",
         "BOT_APP_INVALID": "The specified bot app is invalid.",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges.",
         "BOT_COMMAND_DESCRIPTION_INVALID": "The specified command description is invalid.",
@@ -3046,6 +3077,7 @@
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
         "MEDIA_TYPE_INVALID": "The specified media type cannot be used in stories.",
         "MEDIA_VIDEO_STORY_MISSING": "",
+        "MEGAGROUP_GEO_REQUIRED": "",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
@@ -3158,6 +3190,7 @@
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
         "REPLY_TO_INVALID": "The specified `reply_to` field is invalid.",
+        "REPLY_TO_USER_INVALID": "",
         "RESET_REQUEST_MISSING": "No password reset is in progress.",
         "RESULT_ID_DUPLICATE": "You provided a duplicate result ID.",
         "RESULT_ID_EMPTY": "Result ID empty.",
@@ -3179,6 +3212,7 @@
         "SECONDS_INVALID": "Invalid duration provided.",
         "SEND_AS_PEER_INVALID": "You can't send messages as the specified peer.",
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
+        "SEND_MEDIA_INVALID": "",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
@@ -3221,12 +3255,13 @@
         "STORIES_NEVER_CREATED": "",
         "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
         "STORY_ID_EMPTY": "You specified no story IDs.",
+        "STORY_ID_INVALID": "",
         "STORY_NOT_MODIFIED": "The new story information you passed is equal to the previous story information, thus it wasn't modified.",
         "STORY_PERIOD_INVALID": "The specified story period is invalid for this account.",
         "STORY_SEND_FLOOD_MONTHLY_%d": "You've hit the monthly story limit as specified by the [`stories_sent_monthly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-monthly-limit-default): wait for the specified number of seconds before posting a new story.",
         "STORY_SEND_FLOOD_WEEKLY_%d": "You've hit the weekly story limit as specified by the [`stories_sent_weekly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): wait for the specified number of seconds before posting a new story.",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
-        "TAKEOUT_INIT_DELAY_%d": "Wait %d seconds before initializing takeout.",
+        "TAKEOUT_INIT_DELAY_%d": "Sorry, for security reasons, you will be able to begin downloading your data in %d seconds. We have notified all your devices about the export request to make sure it's authorized and to give you time to react if it's not.",
         "TAKEOUT_REQUIRED": "A takeout session has to be initialized, first.",
         "TASK_ALREADY_EXISTS": "An email reset was already requested.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
