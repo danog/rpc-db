@@ -879,6 +879,7 @@
                 "messages.setInlineBotResults"
             ],
             "FILE_TOKEN_INVALID": [
+                "upload.getCdnFileHashes",
                 "upload.reuploadCdnFile"
             ],
             "FILTER_ID_INVALID": [
@@ -1326,6 +1327,7 @@
                 "msgs_state_req",
                 "photos.getUserPhotos",
                 "req_pq_multi",
+                "stories.getPeerStories",
                 "updates.getChannelDifference",
                 "updates.getDifference",
                 "upload.getFile",
@@ -1519,6 +1521,7 @@
                 "messages.startBot",
                 "messages.toggleDialogPin",
                 "messages.toggleNoForwards",
+                "messages.transcribeAudio",
                 "messages.translateText",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
@@ -1997,6 +2000,7 @@
             ],
             "STORY_ID_EMPTY": [
                 "stories.getStoriesByID",
+                "stories.getStoriesViews",
                 "stories.incrementStoryViews",
                 "stories.sendReaction"
             ],
@@ -2568,6 +2572,7 @@
                 "messages.getPollVotes"
             ],
             "PREMIUM_ACCOUNT_REQUIRED": [
+                "channels.createForumTopic",
                 "messages.sendMedia",
                 "messages.sendReaction",
                 "messages.transcribeAudio"
@@ -2647,17 +2652,12 @@
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
-            "CHANNEL_ID_GENERATE_FAILED": [
-                "messages.migrateChat"
-            ],
             "CHAT_ID_GENERATE_FAILED": [
                 "messages.createChat"
             ],
             "CHAT_INVALID": [
+                "channels.createChannel",
                 "messages.migrateChat"
-            ],
-            "CHAT_MEMBERS_CHANNEL": [
-                "messages.checkChatInvite"
             ],
             "GROUPCALL_ADD_PARTICIPANTS_FAILED": [
                 "phone.joinGroupCall"
@@ -2836,7 +2836,7 @@
         "ABOUT_TOO_LONG": "About string too long.",
         "ACCESS_TOKEN_EXPIRED": "Access token expired.",
         "ACCESS_TOKEN_INVALID": "Access token invalid.",
-        "ADDRESS_INVALID": "",
+        "ADDRESS_INVALID": "The specified geopoint address is invalid.",
         "ADMIN_ID_INVALID": "The specified admin ID is invalid.",
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
@@ -2917,7 +2917,6 @@
         "CHAT_INVALID": "Invalid chat.",
         "CHAT_INVITE_PERMANENT": "You can't set an expiration date on permanent invite links.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
-        "CHAT_MEMBERS_CHANNEL": "",
         "CHAT_NOT_MODIFIED": "No changes were made to chat information because the new information you passed is identical to the current information.",
         "CHAT_PUBLIC_REQUIRED": "You can only enable join requests in public groups.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
@@ -3278,10 +3277,10 @@
         "TOKEN_EMPTY": "The specified token is empty.",
         "TOKEN_INVALID": "The provided token is invalid.",
         "TOKEN_TYPE_INVALID": "The specified token type is invalid.",
-        "TOPIC_CLOSE_SEPARATELY": "",
+        "TOPIC_CLOSE_SEPARATELY": "The `close` flag cannot be provided together with any of the other flags.",
         "TOPIC_CLOSED": "This topic was closed, you can't send messages to it anymore.",
         "TOPIC_DELETED": "The specified topic was deleted.",
-        "TOPIC_HIDE_SEPARATELY": "",
+        "TOPIC_HIDE_SEPARATELY": "The `hide` flag cannot be provided together with any of the other flags.",
         "TOPIC_ID_INVALID": "The specified topic ID is invalid.",
         "TOPIC_NOT_MODIFIED": "The updated topic info is equal to the current topic info, nothing was changed.",
         "TOPIC_TITLE_EMPTY": "The specified topic title is empty.",
