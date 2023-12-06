@@ -42,9 +42,6 @@
             "ADMINS_TOO_MUCH": [
                 "channels.editAdmin"
             ],
-            "AES_DECRYPT_FAILED": [
-                "upload.reuploadCdnFile"
-            ],
             "ALBUM_PHOTOS_TOO_MANY": [
                 "photos.updateProfilePhoto",
                 "photos.uploadProfilePhoto"
@@ -325,6 +322,7 @@
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stories.getBoostersList",
+                "stories.getPeerStories",
                 "stories.getStoriesByID",
                 "stories.getStoriesViews",
                 "updates.getChannelDifference",
@@ -2841,7 +2839,6 @@
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMINS_TOO_MUCH": "There are too many admins.",
-        "AES_DECRYPT_FAILED": "",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ANONYMOUS_REACTIONS_DISABLED": "",
         "API_ID_INVALID": "API ID invalid.",
@@ -2893,7 +2890,6 @@
         "CDN_METHOD_INVALID": "You can't call this method in a CDN DC.",
         "CDN_UPLOAD_TIMEOUT": "A server-side timeout occurred while reuploading the file to the CDN DC.",
         "CHANNEL_FORUM_MISSING": "This supergroup is not a forum.",
-        "CHANNEL_ID_GENERATE_FAILED": "",
         "CHANNEL_ID_INVALID": "The specified supergroup ID is invalid.",
         "CHANNEL_INVALID": "The provided channel is invalid.",
         "CHANNEL_PARICIPANT_MISSING": "The current user is not in the channel.",
@@ -3252,7 +3248,7 @@
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
         "STORIES_NEVER_CREATED": "",
-        "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
+        "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#story-expiring-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
         "STORY_ID_EMPTY": "You specified no story IDs.",
         "STORY_ID_INVALID": "",
         "STORY_NOT_MODIFIED": "The new story information you passed is equal to the previous story information, thus it wasn't modified.",
