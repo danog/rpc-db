@@ -39,8 +39,14 @@
             "ADMIN_RANK_INVALID": [
                 "channels.editAdmin"
             ],
+            "ADMIN_RIGHTS_EMPTY": [
+                "messages.sendMessage"
+            ],
             "ADMINS_TOO_MUCH": [
                 "channels.editAdmin"
+            ],
+            "AES_DECRYPT_FAILED": [
+                "upload.getCdnFileHashes"
             ],
             "ALBUM_PHOTOS_TOO_MANY": [
                 "photos.updateProfilePhoto",
@@ -102,6 +108,7 @@
                 "stories.canApplyBoost"
             ],
             "BOOSTS_REQUIRED": [
+                "channels.updateColor",
                 "stories.canSendStory"
             ],
             "BOT_APP_INVALID": [
@@ -261,6 +268,7 @@
                 "channels.exportInvite",
                 "channels.exportMessageLink",
                 "channels.getAdminLog",
+                "channels.getChannelRecommendations",
                 "channels.getChannels",
                 "channels.getForumTopics",
                 "channels.getForumTopicsByID",
@@ -284,6 +292,8 @@
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
                 "channels.toggleSlowMode",
+                "channels.toggleViewForumAsMessages",
+                "channels.updateColor",
                 "channels.updatePinnedMessage",
                 "channels.updateUsername",
                 "channels.viewSponsoredMessage",
@@ -657,6 +667,9 @@
             "CODE_INVALID": [
                 "account.confirmPasswordEmail"
             ],
+            "COLOR_INVALID": [
+                "account.updateColor"
+            ],
             "CONNECTION_API_ID_INVALID": [
                 "help.getConfig",
                 "invokeWithLayer"
@@ -691,6 +704,9 @@
             "CURRENCY_TOTAL_AMOUNT_INVALID": [
                 "messages.sendMedia",
                 "payments.exportInvoice"
+            ],
+            "CUSTOM_REACTIONS_TOO_MANY": [
+                "messages.sendReaction"
             ],
             "DATA_INVALID": [
                 "help.getConfig",
@@ -942,6 +958,9 @@
             ],
             "GIF_ID_INVALID": [
                 "messages.saveGif"
+            ],
+            "GIFT_SLUG_INVALID": [
+                "payments.checkGiftCode"
             ],
             "GRAPH_EXPIRED_RELOAD": [
                 "stats.loadAsyncGraph"
@@ -1523,10 +1542,18 @@
                 "messages.translateText",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
+                "payments.getGiveawayInfo",
+                "payments.launchPrepaidGiveaway",
                 "phone.createGroupCall",
                 "phone.getGroupCallJoinAs",
+                "premium.applyBoost",
+                "premium.getBoostsList",
+                "premium.getBoostsStatus",
+                "premium.getUserBoosts",
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
+                "stats.getStoryPublicForwards",
+                "stats.getStoryStats",
                 "stickers.createStickerSet",
                 "stories.applyBoost",
                 "stories.canApplyBoost",
@@ -2345,6 +2372,9 @@
             "WALLPAPER_MIME_INVALID": [
                 "account.uploadWallPaper"
             ],
+            "WALLPAPER_NOT_FOUND": [
+                "messages.setChatWallPaper"
+            ],
             "WC_CONVERT_URL_INVALID": [
                 "messages.getWebPage",
                 "messages.sendMessage"
@@ -2693,6 +2723,9 @@
             ]
         },
         "406": {
+            "BANNED_RIGHTS_INVALID": [
+                "channels.editBanned"
+            ],
             "CALL_PROTOCOL_COMPAT_LAYER_INVALID": [
                 "phone.acceptCall"
             ],
@@ -2742,6 +2775,9 @@
                 "account.resetAuthorization",
                 "account.setAuthorizationTTL",
                 "auth.resetAuthorizations"
+            ],
+            "GIFTCODE_NOT_ALLOWED": [
+                "payments.applyGiftCode"
             ],
             "INVITE_HASH_EXPIRED": [
                 "channels.joinChannel",
@@ -2838,7 +2874,9 @@
         "ADMIN_ID_INVALID": "The specified admin ID is invalid.",
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
+        "ADMIN_RIGHTS_EMPTY": "",
         "ADMINS_TOO_MUCH": "There are too many admins.",
+        "AES_DECRYPT_FAILED": "",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ANONYMOUS_REACTIONS_DISABLED": "",
         "API_ID_INVALID": "API ID invalid.",
@@ -2936,6 +2974,7 @@
         "CODE_EMPTY": "The provided code is empty.",
         "CODE_HASH_INVALID": "Code hash invalid.",
         "CODE_INVALID": "Code invalid.",
+        "COLOR_INVALID": "",
         "CONNECTION_API_ID_INVALID": "The provided API id is invalid.",
         "CONNECTION_APP_VERSION_EMPTY": "App version is empty.",
         "CONNECTION_LAYER_INVALID": "Layer invalid.",
@@ -2945,6 +2984,7 @@
         "CONTACT_REQ_MISSING": "Missing contact request.",
         "CREATE_CALL_FAILED": "An error occurred while creating the call.",
         "CURRENCY_TOTAL_AMOUNT_INVALID": "The total amount of all prices is invalid.",
+        "CUSTOM_REACTIONS_TOO_MANY": "",
         "DATA_INVALID": "Encrypted data invalid.",
         "DATA_JSON_INVALID": "The provided JSON data is invalid.",
         "DATA_TOO_LONG": "Data too long.",
@@ -3012,6 +3052,8 @@
         "GEO_POINT_INVALID": "Invalid geoposition provided.",
         "GIF_CONTENT_TYPE_INVALID": "GIF content-type invalid.",
         "GIF_ID_INVALID": "The provided GIF ID is invalid.",
+        "GIFT_SLUG_INVALID": "",
+        "GIFTCODE_NOT_ALLOWED": "",
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats.",
@@ -3331,6 +3373,7 @@
         "WALLPAPER_FILE_INVALID": "The specified wallpaper file is invalid.",
         "WALLPAPER_INVALID": "The specified wallpaper is invalid.",
         "WALLPAPER_MIME_INVALID": "The specified wallpaper MIME type is invalid.",
+        "WALLPAPER_NOT_FOUND": "",
         "WC_CONVERT_URL_INVALID": "WC convert URL invalid.",
         "WEBDOCUMENT_INVALID": "Invalid webdocument URL provided.",
         "WEBDOCUMENT_MIME_INVALID": "Invalid webdocument mime type provided.",
