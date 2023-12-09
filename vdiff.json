@@ -45,9 +45,6 @@
             "ADMINS_TOO_MUCH": [
                 "channels.editAdmin"
             ],
-            "AES_DECRYPT_FAILED": [
-                "upload.getCdnFileHashes"
-            ],
             "ALBUM_PHOTOS_TOO_MANY": [
                 "photos.updateProfilePhoto",
                 "photos.uploadProfilePhoto"
@@ -2876,7 +2873,6 @@
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
         "ADMIN_RIGHTS_EMPTY": "",
         "ADMINS_TOO_MUCH": "There are too many admins.",
-        "AES_DECRYPT_FAILED": "",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ANONYMOUS_REACTIONS_DISABLED": "",
         "API_ID_INVALID": "API ID invalid.",
@@ -2895,7 +2891,7 @@
         "BANK_CARD_NUMBER_INVALID": "The specified card number is invalid.",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights.",
         "BOOST_NOT_MODIFIED": "You're already [boosting](https:\/\/core.telegram.org\/api\/boost) the specified channel.",
-        "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/boost) in order to be able to post stories.",
+        "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/boost) in order to perform this action.",
         "BOT_APP_INVALID": "The specified bot app is invalid.",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges.",
         "BOT_COMMAND_DESCRIPTION_INVALID": "The specified command description is invalid.",
