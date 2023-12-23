@@ -104,6 +104,12 @@
                 "stories.applyBoost",
                 "stories.canApplyBoost"
             ],
+            "BOOST_PEER_INVALID": [
+                "payments.getPaymentForm"
+            ],
+            "BOOSTS_EMPTY": [
+                "premium.applyBoost"
+            ],
             "BOOSTS_REQUIRED": [
                 "channels.updateColor",
                 "stories.canSendStory"
@@ -141,6 +147,7 @@
                 "messages.editMessage",
                 "messages.getAttachMenuBot",
                 "messages.getInlineBotResults",
+                "messages.requestWebView",
                 "messages.sendMessage",
                 "messages.startBot",
                 "photos.uploadProfilePhoto"
@@ -522,6 +529,7 @@
                 "messages.uploadMedia",
                 "phone.createGroupCall",
                 "phone.getGroupCallStreamRtmpUrl",
+                "premium.getBoostsList",
                 "stats.getBroadcastStats",
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
@@ -1221,6 +1229,7 @@
                 "auth.sendInvites",
                 "messages.editMessage",
                 "messages.getWebPagePreview",
+                "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.setInlineBotResults"
             ],
@@ -1516,6 +1525,7 @@
                 "messages.reorderPinnedDialogs",
                 "messages.report",
                 "messages.reportSpam",
+                "messages.requestWebView",
                 "messages.saveDefaultSendAs",
                 "messages.saveDraft",
                 "messages.search",
@@ -1913,8 +1923,14 @@
             "SHORT_NAME_OCCUPIED": [
                 "stickers.checkShortName"
             ],
+            "SLOTS_EMPTY": [
+                "premium.applyBoost"
+            ],
             "SLOWMODE_MULTI_MSGS_DISABLED": [
                 "messages.forwardMessages"
+            ],
+            "SLUG_INVALID": [
+                "payments.getPaymentForm"
             ],
             "SMS_CODE_CREATE_FAILED": [
                 "auth.sendCode"
@@ -2014,7 +2030,8 @@
                 "stickers.setStickerSetThumb"
             ],
             "STORIES_NEVER_CREATED": [
-                "stories.getStoriesByID"
+                "stories.getStoriesByID",
+                "stories.readStories"
             ],
             "STORIES_TOO_MUCH": [
                 "stories.canSendStory",
@@ -2028,7 +2045,8 @@
             ],
             "STORY_ID_INVALID": [
                 "messages.sendMessage",
-                "messages.sendScreenshotNotification"
+                "messages.sendScreenshotNotification",
+                "stories.getStoryViewsList"
             ],
             "STORY_NOT_MODIFIED": [
                 "stories.editStory"
@@ -2145,7 +2163,8 @@
                 "contacts.getTopPeers"
             ],
             "UNTIL_DATE_INVALID": [
-                "messages.editChatDefaultBannedRights"
+                "messages.editChatDefaultBannedRights",
+                "payments.getPaymentForm"
             ],
             "URL_INVALID": [
                 "messages.setBotCallbackAnswer",
@@ -2398,6 +2417,12 @@
                 "messages.sendInlineBotResult",
                 "messages.sendMedia"
             ],
+            "WEBPAGE_NOT_FOUND": [
+                "messages.sendMedia"
+            ],
+            "WEBPAGE_URL_INVALID": [
+                "messages.sendMedia"
+            ],
             "WEBPUSH_AUTH_INVALID": [
                 "account.registerDevice"
             ],
@@ -2497,6 +2522,7 @@
             ],
             "CHAT_SEND_PLAIN_FORBIDDEN": [
                 "messages.forwardMessages",
+                "messages.sendMedia",
                 "messages.sendMessage"
             ],
             "CHAT_SEND_POLL_FORBIDDEN": [
@@ -2519,8 +2545,6 @@
                 "messages.sendMedia"
             ],
             "CHAT_WRITE_FORBIDDEN": [
-                "account.updateProfile",
-                "account.updateStatus",
                 "channels.convertToGigagroup",
                 "channels.createForumTopic",
                 "channels.deleteChannel",
@@ -2687,9 +2711,6 @@
             "GROUPCALL_ADD_PARTICIPANTS_FAILED": [
                 "phone.joinGroupCall"
             ],
-            "MEMBER_CHAT_ADD_FAILED": [
-                "channels.joinChannel"
-            ],
             "MEMBER_NOT_FOUND": [
                 "auth.importLoginToken"
             ],
@@ -2824,9 +2845,6 @@
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
-            "UPDATE_APP_REQUIRED": [
-                "account.updateStatus"
-            ],
             "UPDATE_APP_TO_LOGIN": [
                 "auth.sendCode",
                 "auth.signIn"
@@ -2891,6 +2909,8 @@
         "BANK_CARD_NUMBER_INVALID": "The specified card number is invalid.",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights.",
         "BOOST_NOT_MODIFIED": "You're already [boosting](https:\/\/core.telegram.org\/api\/boost) the specified channel.",
+        "BOOST_PEER_INVALID": "The specified `boost_peer` is invalid.",
+        "BOOSTS_EMPTY": "No boost slots were specified.",
         "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/boost) in order to perform this action.",
         "BOT_APP_INVALID": "The specified bot app is invalid.",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges.",
@@ -2966,11 +2986,11 @@
         "CHAT_TITLE_EMPTY": "No chat title provided.",
         "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat.",
-        "CHATLIST_EXCLUDE_INVALID": "",
+        "CHATLIST_EXCLUDE_INVALID": "The specified `exclude_peers` are invalid.",
         "CODE_EMPTY": "The provided code is empty.",
         "CODE_HASH_INVALID": "Code hash invalid.",
         "CODE_INVALID": "Code invalid.",
-        "COLOR_INVALID": "",
+        "COLOR_INVALID": "The specified color palette ID was invalid.",
         "CONNECTION_API_ID_INVALID": "The provided API id is invalid.",
         "CONNECTION_APP_VERSION_EMPTY": "App version is empty.",
         "CONNECTION_LAYER_INVALID": "Layer invalid.",
@@ -2980,7 +3000,7 @@
         "CONTACT_REQ_MISSING": "Missing contact request.",
         "CREATE_CALL_FAILED": "An error occurred while creating the call.",
         "CURRENCY_TOTAL_AMOUNT_INVALID": "The total amount of all prices is invalid.",
-        "CUSTOM_REACTIONS_TOO_MANY": "",
+        "CUSTOM_REACTIONS_TOO_MANY": "Too many custom reactions were specified.",
         "DATA_INVALID": "Encrypted data invalid.",
         "DATA_JSON_INVALID": "The provided JSON data is invalid.",
         "DATA_TOO_LONG": "Data too long.",
@@ -3048,7 +3068,7 @@
         "GEO_POINT_INVALID": "Invalid geoposition provided.",
         "GIF_CONTENT_TYPE_INVALID": "GIF content-type invalid.",
         "GIF_ID_INVALID": "The provided GIF ID is invalid.",
-        "GIFT_SLUG_INVALID": "",
+        "GIFT_SLUG_INVALID": "The specified slug is invalid.",
         "GIFTCODE_NOT_ALLOWED": "",
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
@@ -3110,11 +3130,10 @@
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
         "MEDIA_TYPE_INVALID": "The specified media type cannot be used in stories.",
         "MEDIA_VIDEO_STORY_MISSING": "",
-        "MEGAGROUP_GEO_REQUIRED": "",
+        "MEGAGROUP_GEO_REQUIRED": "This method can only be invoked on a geogroup.",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
-        "MEMBER_CHAT_ADD_FAILED": "",
         "MEMBER_NOT_FOUND": "",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
@@ -3223,7 +3242,7 @@
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
         "REPLY_TO_INVALID": "The specified `reply_to` field is invalid.",
-        "REPLY_TO_USER_INVALID": "",
+        "REPLY_TO_USER_INVALID": "The replied-to user is invalid.",
         "RESET_REQUEST_MISSING": "No password reset is in progress.",
         "RESULT_ID_DUPLICATE": "You provided a duplicate result ID.",
         "RESULT_ID_EMPTY": "Result ID empty.",
@@ -3256,8 +3275,10 @@
         "SHORT_NAME_INVALID": "The specified short name is invalid.",
         "SHORT_NAME_OCCUPIED": "The specified short name is already in use.",
         "SIGN_IN_FAILED": "Failure while signing in.",
+        "SLOTS_EMPTY": "The specified slot list is empty.",
         "SLOWMODE_MULTI_MSGS_DISABLED": "Slowmode is enabled, you cannot forward multiple messages to this group.",
         "SLOWMODE_WAIT_%d": "Slowmode is enabled in this chat: wait %d seconds before sending another message to this chat.",
+        "SLUG_INVALID": "The specified invoice slug is invalid.",
         "SMS_CODE_CREATE_FAILED": "An error occurred while creating the SMS code.",
         "SRP_ID_INVALID": "Invalid SRP ID provided.",
         "SRP_PASSWORD_CHANGED": "Password has changed.",
@@ -3288,7 +3309,7 @@
         "STORIES_NEVER_CREATED": "",
         "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#story-expiring-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
         "STORY_ID_EMPTY": "You specified no story IDs.",
-        "STORY_ID_INVALID": "",
+        "STORY_ID_INVALID": "The specified story ID is invalid.",
         "STORY_NOT_MODIFIED": "The new story information you passed is equal to the previous story information, thus it wasn't modified.",
         "STORY_PERIOD_INVALID": "The specified story period is invalid for this account.",
         "STORY_SEND_FLOOD_MONTHLY_%d": "You've hit the monthly story limit as specified by the [`stories_sent_monthly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-monthly-limit-default): wait for the specified number of seconds before posting a new story.",
@@ -3325,7 +3346,6 @@
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
         "TYPES_EMPTY": "No top peer type was provided.",
         "UNTIL_DATE_INVALID": "Invalid until date provided.",
-        "UPDATE_APP_REQUIRED": "Please update to the latest version of MadelineProto.",
         "UPDATE_APP_TO_LOGIN": "Please update to the latest version of MadelineProto to login.",
         "URL_INVALID": "Invalid URL provided.",
         "USAGE_LIMIT_INVALID": "The specified usage limit is invalid.",
@@ -3361,7 +3381,7 @@
         "USERPIC_UPLOAD_REQUIRED": "You must have a profile picture to publish your geolocation.",
         "USERS_TOO_FEW": "Not enough users (to create a chat, for example).",
         "USERS_TOO_MUCH": "The maximum number of users has been exceeded (to create a chat, for example).",
-        "VENUE_ID_INVALID": "",
+        "VENUE_ID_INVALID": "The specified venue ID is invalid.",
         "VIDEO_CONTENT_TYPE_INVALID": "The video's content type is invalid.",
         "VIDEO_FILE_INVALID": "The specified video file is invalid.",
         "VIDEO_TITLE_EMPTY": "The specified video title is empty.",
@@ -3369,7 +3389,7 @@
         "WALLPAPER_FILE_INVALID": "The specified wallpaper file is invalid.",
         "WALLPAPER_INVALID": "The specified wallpaper is invalid.",
         "WALLPAPER_MIME_INVALID": "The specified wallpaper MIME type is invalid.",
-        "WALLPAPER_NOT_FOUND": "",
+        "WALLPAPER_NOT_FOUND": "The specified wallpaper could not be found.",
         "WC_CONVERT_URL_INVALID": "WC convert URL invalid.",
         "WEBDOCUMENT_INVALID": "Invalid webdocument URL provided.",
         "WEBDOCUMENT_MIME_INVALID": "Invalid webdocument mime type provided.",
@@ -3377,6 +3397,8 @@
         "WEBDOCUMENT_URL_INVALID": "The specified webdocument URL is invalid.",
         "WEBPAGE_CURL_FAILED": "Failure while fetching the webpage with cURL.",
         "WEBPAGE_MEDIA_EMPTY": "Webpage media empty.",
+        "WEBPAGE_NOT_FOUND": "A preview for the specified webpage `url` could not be generated.",
+        "WEBPAGE_URL_INVALID": "The specified webpage `url` is invalid.",
         "WEBPUSH_AUTH_INVALID": "The specified web push authentication secret is invalid.",
         "WEBPUSH_KEY_INVALID": "The specified web push elliptic curve Diffie-Hellman public key is invalid.",
         "WEBPUSH_TOKEN_INVALID": "The specified web push token is invalid.",
