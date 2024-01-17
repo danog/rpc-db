@@ -115,7 +115,11 @@
                 "stories.canSendStory"
             ],
             "BOT_APP_INVALID": [
-                "messages.getBotApp"
+                "messages.getBotApp",
+                "messages.requestAppWebView"
+            ],
+            "BOT_APP_SHORTNAME_INVALID": [
+                "messages.requestAppWebView"
             ],
             "BOT_CHANNELS_NA": [
                 "channels.editAdmin"
@@ -170,6 +174,9 @@
             ],
             "BOT_SCORE_NOT_MODIFIED": [
                 "messages.setGameScore"
+            ],
+            "BOT_WEBVIEW_DISABLED": [
+                "messages.requestWebView"
             ],
             "BOTS_TOO_MUCH": [
                 "channels.editAdmin",
@@ -298,6 +305,7 @@
                 "channels.toggleSlowMode",
                 "channels.toggleViewForumAsMessages",
                 "channels.updateColor",
+                "channels.updateEmojiStatus",
                 "channels.updatePinnedMessage",
                 "channels.updateUsername",
                 "channels.viewSponsoredMessage",
@@ -342,6 +350,7 @@
                 "updates.getChannelDifference",
                 "updates.getDifference",
                 "upload.getFile",
+                "users.getFullUser",
                 "users.getUsers"
             ],
             "CHANNEL_PARICIPANT_MISSING": [
@@ -553,10 +562,13 @@
             "CHAT_ID_INVALID": [
                 "channels.checkUsername",
                 "channels.getSendAs",
+                "channels.setStickers",
                 "channels.toggleJoinRequest",
                 "channels.toggleJoinToSend",
+                "channels.toggleParticipantsHidden",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
+                "channels.toggleSlowMode",
                 "channels.updatePinnedMessage",
                 "folders.editPeerFolders",
                 "messages.acceptEncryption",
@@ -745,6 +757,7 @@
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage",
+                "messages.sendReaction",
                 "messages.setInlineBotResults",
                 "upload.getWebFile"
             ],
@@ -1048,6 +1061,9 @@
             "INPUT_TEXT_EMPTY": [
                 "messages.translateText"
             ],
+            "INPUT_TEXT_TOO_LONG": [
+                "messages.translateText"
+            ],
             "INPUT_USER_DEACTIVATED": [
                 "channels.editAdmin",
                 "channels.editBanned",
@@ -1287,6 +1303,8 @@
                 "messages.deleteHistory"
             ],
             "MSG_ID_INVALID": [
+                "'",
+                "'.$method.'",
                 "account.updateNotifySettings",
                 "channels.deleteMessages",
                 "channels.deleteParticipantHistory",
@@ -1479,6 +1497,7 @@
                 "messages.deleteExportedChatInvite",
                 "messages.deleteHistory",
                 "messages.deleteRevokedExportedChatInvites",
+                "messages.deleteSavedHistory",
                 "messages.editChatAbout",
                 "messages.editChatAdmin",
                 "messages.editChatDefaultBannedRights",
@@ -1507,6 +1526,7 @@
                 "messages.getPeerSettings",
                 "messages.getPollResults",
                 "messages.getReplies",
+                "messages.getSavedHistory",
                 "messages.getScheduledHistory",
                 "messages.getScheduledMessages",
                 "messages.getSearchCounters",
@@ -1545,6 +1565,7 @@
                 "messages.startBot",
                 "messages.toggleDialogPin",
                 "messages.toggleNoForwards",
+                "messages.toggleSavedDialogPin",
                 "messages.transcribeAudio",
                 "messages.translateText",
                 "messages.updatePinnedMessage",
@@ -1575,6 +1596,7 @@
                 "stories.getStoriesArchive",
                 "stories.getStoriesByID",
                 "stories.getStoriesViews",
+                "stories.getStoryReactionsList",
                 "stories.getStoryViewsList",
                 "stories.incrementStoryViews",
                 "stories.readStories",
@@ -1801,6 +1823,7 @@
             "REACTION_INVALID": [
                 "messages.sendReaction",
                 "messages.setDefaultReaction",
+                "messages.updateSavedReactionTag",
                 "stories.sendReaction"
             ],
             "REACTIONS_TOO_MANY": [
@@ -1816,6 +1839,7 @@
                 "messages.setInlineBotResults"
             ],
             "REPLY_MARKUP_TOO_LONG": [
+                "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
@@ -1856,6 +1880,7 @@
                 "upload.reuploadCdnFile"
             ],
             "SCHEDULE_BOT_NOT_ALLOWED": [
+                "messages.forwardMessages",
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
@@ -2171,6 +2196,7 @@
                 "messages.setInlineBotResults"
             ],
             "USAGE_LIMIT_INVALID": [
+                "messages.editExportedChatInvite",
                 "messages.exportChatInvite"
             ],
             "USER_ADMIN_INVALID": [
@@ -2436,6 +2462,7 @@
                 "messages.addChatUser",
                 "messages.forwardMessage",
                 "messages.forwardMessages",
+                "messages.requestWebView",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage",
@@ -2522,6 +2549,7 @@
             ],
             "CHAT_SEND_PLAIN_FORBIDDEN": [
                 "messages.forwardMessages",
+                "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
@@ -2708,12 +2736,6 @@
                 "channels.createChannel",
                 "messages.migrateChat"
             ],
-            "GROUPCALL_ADD_PARTICIPANTS_FAILED": [
-                "phone.joinGroupCall"
-            ],
-            "MEMBER_NOT_FOUND": [
-                "auth.importLoginToken"
-            ],
             "MSG_WAIT_FAILED": [
                 "messages.editMessage",
                 "messages.receivedQueue",
@@ -2873,6 +2895,11 @@
                 "req_pq_multi"
             ]
         },
+        "4": {
+            "MSG_ID_INVALID": [
+                "'.$method.'"
+            ]
+        },
         "-503": {
             "Timeout": [
                 "messages.getBotCallbackAnswer",
@@ -2913,6 +2940,7 @@
         "BOOSTS_EMPTY": "No boost slots were specified.",
         "BOOSTS_REQUIRED": "The specified channel must first be [boosted by its users](https:\/\/core.telegram.org\/api\/boost) in order to perform this action.",
         "BOT_APP_INVALID": "The specified bot app is invalid.",
+        "BOT_APP_SHORTNAME_INVALID": "The specified bot app short name is invalid.",
         "BOT_CHANNELS_NA": "Bots can't edit admin privileges.",
         "BOT_COMMAND_DESCRIPTION_INVALID": "The specified command description is invalid.",
         "BOT_COMMAND_INVALID": "The specified command is invalid.",
@@ -2925,6 +2953,7 @@
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
+        "BOT_WEBVIEW_DISABLED": "",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
         "BROADCAST_FORBIDDEN": "Channel poll voters and reactions cannot be fetched to prevent deanonymization.",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid.",
@@ -3073,7 +3102,6 @@
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats.",
-        "GROUPCALL_ADD_PARTICIPANTS_FAILED": "",
         "GROUPCALL_ALREADY_DISCARDED": "The group call was already discarded.",
         "GROUPCALL_ALREADY_STARTED": "The groupcall has already started, you can join directly using [phone.joinGroupCall](https:\/\/core.telegram.org\/method\/phone.joinGroupCall).",
         "GROUPCALL_FORBIDDEN": "The group call has already ended.",
@@ -3094,6 +3122,7 @@
         "INPUT_CHATLIST_INVALID": "The specified folder is invalid.",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
         "INPUT_TEXT_EMPTY": "The specified text is empty.",
+        "INPUT_TEXT_TOO_LONG": "The specified text is too long.",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted.",
         "Invalid msg_resend_req query": "Invalid msg_resend_req query.",
         "Invalid msgs_ack query": "Invalid msgs_ack query.",
@@ -3134,7 +3163,6 @@
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
         "MEGAGROUP_REQUIRED": "You can only use this method on a supergroup.",
-        "MEMBER_NOT_FOUND": "",
         "MESSAGE_AUTHOR_REQUIRED": "Message author required.",
         "MESSAGE_DELETE_FORBIDDEN": "You can't delete one of the messages you tried to delete, most likely because it is a service message.",
         "MESSAGE_EDIT_TIME_EXPIRED": "You can't edit this message anymore, too much time has passed since its creation.",
@@ -3264,7 +3292,7 @@
         "SECONDS_INVALID": "Invalid duration provided.",
         "SEND_AS_PEER_INVALID": "You can't send messages as the specified peer.",
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
-        "SEND_MEDIA_INVALID": "",
+        "SEND_MEDIA_INVALID": "The specified media is invalid.",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
