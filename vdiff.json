@@ -339,9 +339,6 @@
                 "messages.sendVote",
                 "messages.setTyping",
                 "messages.uploadMedia",
-                "msg_container",
-                "msg_resend_req",
-                "msgs_state_req",
                 "stats.getBroadcastStats",
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
@@ -807,8 +804,7 @@
                 "messages.getStickerSet"
             ],
             "ENCRYPTED_MESSAGE_INVALID": [
-                "auth.bindTempAuthKey",
-                "msgs_ack"
+                "auth.bindTempAuthKey"
             ],
             "ENCRYPTION_ALREADY_ACCEPTED": [
                 "messages.acceptEncryption",
@@ -868,7 +864,6 @@
                 "upload.getFile"
             ],
             "FILE_PART_EMPTY": [
-                "msgs_state_req",
                 "upload.saveBigFilePart",
                 "upload.saveFilePart"
             ],
@@ -1275,7 +1270,6 @@
                 "messages.setGameScore",
                 "messages.setInlineGameScore",
                 "messages.updatePinnedMessage",
-                "msg_container",
                 "payments.getPaymentForm",
                 "payments.getPaymentReceipt",
                 "payments.sendPaymentForm",
@@ -1309,8 +1303,6 @@
                 "messages.deleteHistory"
             ],
             "MSG_ID_INVALID": [
-                "'",
-                "'.$method.'",
                 "account.updateNotifySettings",
                 "channels.deleteMessages",
                 "channels.deleteParticipantHistory",
@@ -1370,10 +1362,7 @@
                 "messages.startBot",
                 "messages.translateText",
                 "messages.uploadMedia",
-                "msg_container",
-                "msgs_state_req",
                 "photos.getUserPhotos",
-                "req_pq_multi",
                 "stories.getPeerStories",
                 "updates.getChannelDifference",
                 "updates.getDifference",
@@ -2316,8 +2305,6 @@
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.setTyping",
-                "msgs_ack",
-                "msgs_state_req",
                 "phone.requestCall"
             ],
             "USER_IS_BOT": [
@@ -2336,7 +2323,6 @@
                 "messages.checkHistoryImportPeer"
             ],
             "USER_NOT_PARTICIPANT": [
-                "-130635115",
                 "channels.getParticipant",
                 "channels.leaveChannel",
                 "messages.deleteChatUser",
@@ -2894,24 +2880,6 @@
                 "contacts.getLocated"
             ]
         },
-        "-500": {
-            "Invalid msg_resend_req query": [
-                "msg_resend_req"
-            ],
-            "Invalid msgs_ack query": [
-                "msgs_ack"
-            ],
-            "Invalid msgs_state_req query": [
-                "msg_resend_req",
-                "msgs_state_req",
-                "req_pq_multi"
-            ]
-        },
-        "4": {
-            "MSG_ID_INVALID": [
-                "'.$method.'"
-            ]
-        },
         "-503": {
             "Timeout": [
                 "messages.getBotCallbackAnswer",
@@ -3137,9 +3105,6 @@
         "INPUT_TEXT_EMPTY": "The specified text is empty.",
         "INPUT_TEXT_TOO_LONG": "The specified text is too long.",
         "INPUT_USER_DEACTIVATED": "The specified user was deleted.",
-        "Invalid msg_resend_req query": "Invalid msg_resend_req query.",
-        "Invalid msgs_ack query": "Invalid msgs_ack query.",
-        "Invalid msgs_state_req query": "Invalid msgs_state_req query.",
         "INVITE_FORBIDDEN_WITH_JOINAS": "If the user has anonymously joined a group call as a channel, they can't invite other users to the group call because that would cause deanonymization, because the invite would be sent using the original user ID, not the anonymized channel ID.",
         "INVITE_HASH_EMPTY": "The invite hash is empty.",
         "INVITE_HASH_EXPIRED": "The invite link has expired.",
