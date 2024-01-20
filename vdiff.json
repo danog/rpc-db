@@ -495,6 +495,7 @@
                 "channels.reportSpam",
                 "channels.setDiscussionGroup",
                 "channels.toggleInvites",
+                "channels.toggleJoinRequest",
                 "channels.toggleJoinToSend",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
@@ -1028,6 +1029,7 @@
                 "messages.hideChatJoinRequest"
             ],
             "IMAGE_PROCESS_FAILED": [
+                "channels.editPhoto",
                 "messages.editChatPhoto",
                 "messages.editMessage",
                 "messages.sendMedia",
@@ -1220,9 +1222,6 @@
                 "messages.editMessage"
             ],
             "MEDIA_TYPE_INVALID": [
-                "stories.sendStory"
-            ],
-            "MEDIA_VIDEO_STORY_MISSING": [
                 "stories.sendStory"
             ],
             "MEGAGROUP_GEO_REQUIRED": [
@@ -1843,6 +1842,9 @@
                 "messages.sendMedia",
                 "messages.sendMessage"
             ],
+            "REPLY_MESSAGE_ID_INVALID": [
+                "messages.sendScreenshotNotification"
+            ],
             "REPLY_TO_INVALID": [
                 "messages.sendMessage"
             ],
@@ -2087,6 +2089,9 @@
             ],
             "SWITCH_PM_TEXT_EMPTY": [
                 "messages.setInlineBotResults"
+            ],
+            "TAKEOUT_INVALID": [
+                "messages.getHistory"
             ],
             "TAKEOUT_REQUIRED": [
                 "contacts.getSaved"
@@ -3158,7 +3163,6 @@
         "MEDIA_PREV_INVALID": "Previous media invalid.",
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
         "MEDIA_TYPE_INVALID": "The specified media type cannot be used in stories.",
-        "MEDIA_VIDEO_STORY_MISSING": "",
         "MEGAGROUP_GEO_REQUIRED": "This method can only be invoked on a geogroup.",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
@@ -3269,6 +3273,7 @@
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty.",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
+        "REPLY_MESSAGE_ID_INVALID": "The specified reply-to message ID is invalid.",
         "REPLY_TO_INVALID": "The specified `reply_to` field is invalid.",
         "REPLY_TO_USER_INVALID": "The replied-to user is invalid.",
         "RESET_REQUEST_MISSING": "No password reset is in progress.",
@@ -3344,6 +3349,7 @@
         "STORY_SEND_FLOOD_WEEKLY_%d": "You've hit the weekly story limit as specified by the [`stories_sent_weekly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): wait for the specified number of seconds before posting a new story.",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "TAKEOUT_INIT_DELAY_%d": "Sorry, for security reasons, you will be able to begin downloading your data in %d seconds. We have notified all your devices about the export request to make sure it's authorized and to give you time to react if it's not.",
+        "TAKEOUT_INVALID": "The specified takeout ID is invalid.",
         "TAKEOUT_REQUIRED": "A [takeout](https:\/\/core.telegram.org\/api\/takeout) session needs to be initialized first, [see here &raquo; for more info](\/api\/takeout).",
         "TASK_ALREADY_EXISTS": "An email reset was already requested.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
@@ -3396,7 +3402,7 @@
         "USER_NOT_MUTUAL_CONTACT": "The provided user is not a mutual contact.",
         "USER_NOT_PARTICIPANT": "You're not a member of this supergroup\/channel.",
         "USER_PRIVACY_RESTRICTED": "The user's privacy settings do not allow you to do this.",
-        "USER_PUBLIC_MISSING": "",
+        "USER_PUBLIC_MISSING": "Cannot generate a link to stories posted by a peer without a username.",
         "USER_RESTRICTED": "You're spamreported, you can't create channels or chats.",
         "USER_VOLUME_INVALID": "The specified user volume is invalid.",
         "USERNAME_INVALID": "The provided username is not valid.",
