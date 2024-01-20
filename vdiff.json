@@ -5,6 +5,9 @@
             "2FA_CONFIRM_WAIT_%d": [
                 "account.deleteAccount"
             ],
+            "PREMIUM_SUB_ACTIVE_UNTIL_%d": [
+                "payments.applyGiftCode"
+            ],
             "SLOWMODE_WAIT_%d": [
                 "messages.forwardMessages",
                 "messages.sendInlineBotResult",
@@ -978,7 +981,11 @@
             "GIF_ID_INVALID": [
                 "messages.saveGif"
             ],
+            "GIFT_SLUG_EXPIRED": [
+                "payments.applyGiftCode"
+            ],
             "GIFT_SLUG_INVALID": [
+                "payments.applyGiftCode",
                 "payments.checkGiftCode"
             ],
             "GRAPH_EXPIRED_RELOAD": [
@@ -2924,7 +2931,7 @@
         "ADMIN_RIGHTS_EMPTY": "",
         "ADMINS_TOO_MUCH": "There are too many admins.",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
-        "ANONYMOUS_REACTIONS_DISABLED": "",
+        "ANONYMOUS_REACTIONS_DISABLED": "Sorry, anonymous administrators cannot leave reactions or participate in polls.",
         "API_ID_INVALID": "API ID invalid.",
         "API_ID_PUBLISHED_FLOOD": "This API id was published somewhere, you can't use it now.",
         "ARTICLE_TITLE_EMPTY": "The title of the article is empty.",
@@ -3102,6 +3109,7 @@
         "GEO_POINT_INVALID": "Invalid geoposition provided.",
         "GIF_CONTENT_TYPE_INVALID": "GIF content-type invalid.",
         "GIF_ID_INVALID": "The provided GIF ID is invalid.",
+        "GIFT_SLUG_EXPIRED": "The specified gift slug has expired.",
         "GIFT_SLUG_INVALID": "The specified slug is invalid.",
         "GIFTCODE_NOT_ALLOWED": "",
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
@@ -3248,6 +3256,7 @@
         "POLL_QUESTION_INVALID": "One of the poll questions is not acceptable.",
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method.",
         "PREMIUM_ACCOUNT_REQUIRED": "A premium account is required to execute this action.",
+        "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have an premium subscription active until unxtime %d.",
         "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": "Import for this chat is already in progress, wait %d minutes before starting a new one.",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
