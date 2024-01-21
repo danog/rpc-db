@@ -3222,7 +3222,7 @@
         "POLL_QUESTION_INVALID": "One of the poll questions is not acceptable.",
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method.",
         "PREMIUM_ACCOUNT_REQUIRED": "A premium account is required to execute this action.",
-        "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have an premium subscription active until unxtime %d.",
+        "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have a premium subscription active until unixtime %d .",
         "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": "Import for this chat is already in progress, wait %d minutes before starting a new one.",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
