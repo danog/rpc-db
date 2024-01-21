@@ -1517,6 +1517,7 @@
                 "messages.getMessageReadParticipants",
                 "messages.getMessagesViews",
                 "messages.getOnlines",
+                "messages.getOutboxReadDate",
                 "messages.getPeerDialogs",
                 "messages.getPeerSettings",
                 "messages.getPollResults",

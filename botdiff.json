@@ -260,6 +260,7 @@
         "messages.getMessagesViews",
         "messages.getOldFeaturedStickers",
         "messages.getOnlines",
+        "messages.getOutboxReadDate",
         "messages.getPeerDialogs",
         "messages.getPeerSettings",
         "messages.getPinnedDialogs",
@@ -451,6 +452,7 @@
         "stories.togglePeerStoriesHidden",
         "stories.togglePinned",
         "upload.getCdnFile",
-        "upload.getWebFile"
+        "upload.getWebFile",
+        "users.getIsPremiumRequiredToContact"
     ]
 }
