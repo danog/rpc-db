@@ -1,0 +1,19 @@
+name: Main
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            bot.json
+            core.json
+            v2.json
+            v3.json
+            v4.json
