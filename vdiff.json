@@ -1175,7 +1175,8 @@
                 "upload.getWebFile"
             ],
             "MAX_DATE_INVALID": [
-                "messages.deleteHistory"
+                "messages.deleteHistory",
+                "messages.readEncryptedHistory"
             ],
             "MAX_ID_INVALID": [
                 "photos.getUserPhotos",
@@ -1325,6 +1326,7 @@
                 "contacts.acceptContact",
                 "contacts.addContact",
                 "contacts.block",
+                "contacts.blockFromReplies",
                 "contacts.unblock",
                 "help.getConfig",
                 "messages.addChatUser",
@@ -1493,6 +1495,7 @@
                 "messages.deleteHistory",
                 "messages.deleteRevokedExportedChatInvites",
                 "messages.deleteSavedHistory",
+                "messages.deleteScheduledMessages",
                 "messages.editChatAbout",
                 "messages.editChatAdmin",
                 "messages.editChatDefaultBannedRights",
@@ -2062,6 +2065,7 @@
                 "stories.sendStory"
             ],
             "STORY_ID_EMPTY": [
+                "stories.exportStoryLink",
                 "stories.getStoriesByID",
                 "stories.getStoriesViews",
                 "stories.incrementStoryViews",
@@ -2815,9 +2819,6 @@
                 "account.setAuthorizationTTL",
                 "auth.resetAuthorizations"
             ],
-            "GIFTCODE_NOT_ALLOWED": [
-                "payments.applyGiftCode"
-            ],
             "INVITE_HASH_EXPIRED": [
                 "channels.joinChannel",
                 "invokeWithLayer",
@@ -2843,6 +2844,9 @@
             ],
             "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": [
                 "messages.initHistoryImport"
+            ],
+            "PRIVACY_PREMIUM_REQUIRED": [
+                "messages.sendMessage"
             ],
             "SEND_CODE_UNAVAILABLE": [
                 "auth.resendCode"
@@ -2897,7 +2901,7 @@
         "ADMIN_ID_INVALID": "The specified admin ID is invalid.",
         "ADMIN_RANK_EMOJI_NOT_ALLOWED": "An admin rank cannot contain emojis.",
         "ADMIN_RANK_INVALID": "The specified admin rank is invalid.",
-        "ADMIN_RIGHTS_EMPTY": "",
+        "ADMIN_RIGHTS_EMPTY": "The chatAdminRights constructor passed in keyboardButtonRequestPeer.peer_type.user_admin_rights has no rights set (i.e. flags is 0).  .",
         "ADMINS_TOO_MUCH": "There are too many admins.",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ANONYMOUS_REACTIONS_DISABLED": "Sorry, anonymous administrators cannot leave reactions or participate in polls.",
@@ -3080,7 +3084,6 @@
         "GIF_ID_INVALID": "The provided GIF ID is invalid.",
         "GIFT_SLUG_EXPIRED": "The specified gift slug has expired.",
         "GIFT_SLUG_INVALID": "The specified slug is invalid.",
-        "GIFTCODE_NOT_ALLOWED": "",
         "GRAPH_EXPIRED_RELOAD": "This graph has expired, please obtain a new graph token.",
         "GRAPH_INVALID_RELOAD": "Invalid graph token provided, please reload the stats and provide the updated token.",
         "GRAPH_OUTDATED_RELOAD": "The graph is outdated, please get a new async token using stats.getBroadcastStats.",
@@ -3225,6 +3228,7 @@
         "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have a premium subscription active until unixtime %d .",
         "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": "Import for this chat is already in progress, wait %d minutes before starting a new one.",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
+        "PRIVACY_PREMIUM_REQUIRED": "You need a [Telegram Premium subscription](https:\/\/core.telegram.org\/api\/premium) to send a message to this user.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
         "PRIVACY_VALUE_INVALID": "The specified privacy rule combination is invalid.",
         "PUBLIC_CHANNEL_MISSING": "You can only export group call invite links for public chats or channels.",
@@ -3314,7 +3318,7 @@
         "STICKERS_TOO_MUCH": "There are too many stickers in this stickerpack, you can't add any more.",
         "STICKERSET_INVALID": "The provided sticker set is invalid.",
         "STICKERSET_OWNER_ANONYMOUS": "Provided stickerset can't be installed as group stickerset to prevent admin deanonymization.",
-        "STORIES_NEVER_CREATED": "",
+        "STORIES_NEVER_CREATED": "This peer hasn't ever posted any stories.",
         "STORIES_TOO_MUCH": "You have hit the maximum active stories limit as specified by the [`story_expiring_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#story-expiring-limit-default): you should buy a [Premium](\/api\/premium) subscription, delete an active story, or wait for the oldest story to expire.",
         "STORY_ID_EMPTY": "You specified no story IDs.",
         "STORY_ID_INVALID": "The specified story ID is invalid.",
