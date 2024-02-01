@@ -277,6 +277,7 @@
                 "channels.editAbout",
                 "channels.editAdmin",
                 "channels.editBanned",
+                "channels.editForumTopic",
                 "channels.editPhoto",
                 "channels.editTitle",
                 "channels.exportInvite",
@@ -710,6 +711,9 @@
                 "contacts.deleteContact",
                 "contacts.unblock"
             ],
+            "CONTACT_MISSING": [
+                "photos.uploadContactProfilePhoto"
+            ],
             "CONTACT_NAME_EMPTY": [
                 "contacts.addContact"
             ],
@@ -918,14 +922,23 @@
                 "chatlists.editExportedInvite",
                 "chatlists.exportChatlistInvite",
                 "chatlists.getChatlistUpdates",
+                "chatlists.getLeaveChatlistSuggestions",
+                "chatlists.hideChatlistUpdates",
+                "chatlists.joinChatlistUpdates",
                 "messages.updateDialogFilter"
             ],
             "FILTER_INCLUDE_EMPTY": [
                 "chatlists.joinChatlistInvite",
+                "chatlists.joinChatlistUpdates",
                 "messages.updateDialogFilter"
             ],
             "FILTER_NOT_SUPPORTED": [
+                "chatlists.deleteExportedInvite",
+                "chatlists.editExportedInvite",
                 "chatlists.exportChatlistInvite",
+                "chatlists.getChatlistUpdates",
+                "chatlists.getLeaveChatlistSuggestions",
+                "chatlists.hideChatlistUpdates",
                 "messages.getSearchResultsCalendar",
                 "messages.searchSentMedia"
             ],
@@ -1081,6 +1094,7 @@
                 "messages.getInlineBotResults",
                 "messages.hideChatJoinRequest",
                 "messages.requestEncryption",
+                "messages.requestWebView",
                 "messages.search",
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
@@ -1227,6 +1241,9 @@
             "MEDIA_TYPE_INVALID": [
                 "stories.sendStory"
             ],
+            "MEDIA_VIDEO_STORY_MISSING": [
+                "stories.sendStory"
+            ],
             "MEGAGROUP_GEO_REQUIRED": [
                 "channels.editLocation"
             ],
@@ -1305,6 +1322,7 @@
             ],
             "MSG_ID_INVALID": [
                 "account.updateNotifySettings",
+                "channels.checkUsername",
                 "channels.deleteMessages",
                 "channels.deleteParticipantHistory",
                 "channels.deleteUserHistory",
@@ -1480,6 +1498,7 @@
                 "account.saveAutoSaveSettings",
                 "account.updateNotifySettings",
                 "bots.setBotCommands",
+                "channels.checkUsername",
                 "channels.editAdmin",
                 "channels.editBanned",
                 "channels.getSendAs",
@@ -1774,6 +1793,7 @@
                 "account.setPrivacy"
             ],
             "PUBLIC_KEY_REQUIRED": [
+                "account.acceptAuthorization",
                 "account.getAuthorizationForm"
             ],
             "QUERY_ID_EMPTY": [
@@ -2163,6 +2183,7 @@
             "TOPIC_ID_INVALID": [
                 "channels.deleteTopicHistory",
                 "channels.editForumTopic",
+                "channels.updatePinnedForumTopic",
                 "messages.getDiscussionMessage",
                 "messages.getReplies"
             ],
@@ -2188,6 +2209,7 @@
             "TTL_PERIOD_INVALID": [
                 "channels.createChannel",
                 "messages.createChat",
+                "messages.setDefaultHistoryTTL",
                 "messages.setHistoryTTL"
             ],
             "TYPES_EMPTY": [
@@ -2657,6 +2679,9 @@
                 "messages.sendReaction",
                 "messages.transcribeAudio"
             ],
+            "PRIVACY_PREMIUM_REQUIRED": [
+                "messages.sendMessage"
+            ],
             "PUBLIC_CHANNEL_MISSING": [
                 "phone.exportGroupCallInvite"
             ],
@@ -2938,7 +2963,7 @@
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
         "BOT_SCORE_NOT_MODIFIED": "The score wasn't modified.",
-        "BOT_WEBVIEW_DISABLED": "",
+        "BOT_WEBVIEW_DISABLED": "A webview cannot be opened in the specified conditions: emitted for example if `from_bot_menu` or `url` are set and `peer` is not the chat with the bot.",
         "BOTS_TOO_MUCH": "There are too many bots in this chat\/channel.",
         "BROADCAST_FORBIDDEN": "Channel poll voters and reactions cannot be fetched to prevent deanonymization.",
         "BROADCAST_ID_INVALID": "Broadcast ID invalid.",
@@ -3010,6 +3035,7 @@
         "CONNECTION_LAYER_INVALID": "Layer invalid.",
         "CONTACT_ADD_MISSING": "Contact to add is missing.",
         "CONTACT_ID_INVALID": "The provided contact ID is invalid.",
+        "CONTACT_MISSING": "The specified user is not a contact.",
         "CONTACT_NAME_EMPTY": "Contact name empty.",
         "CONTACT_REQ_MISSING": "Missing contact request.",
         "CREATE_CALL_FAILED": "An error occurred while creating the call.",
@@ -3140,6 +3166,7 @@
         "MEDIA_PREV_INVALID": "Previous media invalid.",
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
         "MEDIA_TYPE_INVALID": "The specified media type cannot be used in stories.",
+        "MEDIA_VIDEO_STORY_MISSING": "",
         "MEGAGROUP_GEO_REQUIRED": "This method can only be invoked on a geogroup.",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
