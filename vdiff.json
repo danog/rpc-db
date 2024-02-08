@@ -219,6 +219,9 @@
                 "messages.setInlineBotResults",
                 "test.test"
             ],
+            "BUTTON_USER_INVALID": [
+                "messages.sendMessage"
+            ],
             "BUTTON_USER_PRIVACY_RESTRICTED": [
                 "messages.sendMessage"
             ],
@@ -396,6 +399,7 @@
                 "folders.editPeerFolders",
                 "messages.deleteHistory",
                 "messages.editChatAbout",
+                "messages.editChatDefaultBannedRights",
                 "messages.editExportedChatInvite",
                 "messages.editMessage",
                 "messages.exportChatInvite",
@@ -2973,6 +2977,7 @@
         "BUTTON_TEXT_INVALID": "The specified button text is invalid.",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid.",
         "BUTTON_URL_INVALID": "Button URL invalid.",
+        "BUTTON_USER_INVALID": "The `user_id` passed to inputKeyboardButtonUserProfile is invalid!",
         "BUTTON_USER_PRIVACY_RESTRICTED": "The privacy setting of the user specified in a [inputKeyboardButtonUserProfile](\/constructor\/inputKeyboardButtonUserProfile) button do not allow creating such a button.",
         "CALL_ALREADY_ACCEPTED": "The call was already accepted.",
         "CALL_ALREADY_DECLINED": "The call was already declined.",
@@ -3166,7 +3171,7 @@
         "MEDIA_PREV_INVALID": "Previous media invalid.",
         "MEDIA_TTL_INVALID": "The specified media TTL is invalid.",
         "MEDIA_TYPE_INVALID": "The specified media type cannot be used in stories.",
-        "MEDIA_VIDEO_STORY_MISSING": "",
+        "MEDIA_VIDEO_STORY_MISSING": "A non-story video cannot be repubblished as a story (emitted when trying to resend a non-story video as a story using inputDocument).",
         "MEGAGROUP_GEO_REQUIRED": "This method can only be invoked on a geogroup.",
         "MEGAGROUP_ID_INVALID": "Invalid supergroup ID.",
         "MEGAGROUP_PREHISTORY_HIDDEN": "Group with hidden history for new members can't be set as discussion groups.",
