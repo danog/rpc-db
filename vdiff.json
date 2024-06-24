@@ -1333,6 +1333,7 @@
                 "messages.getInlineGameHighScores",
                 "messages.getMessageEditData",
                 "messages.getMessagesReadParticipants",
+                "messages.getOutboxReadDate",
                 "messages.getPollResults",
                 "messages.sendReaction",
                 "messages.sendScheduledMessages",
@@ -1364,6 +1365,9 @@
                 "messages.sendMessage",
                 "messages.setBotCallbackAnswer",
                 "messages.setInlineBotResults"
+            ],
+            "MESSAGE_TOO_OLD": [
+                "messages.getOutboxReadDate"
             ],
             "METHOD_INVALID": [
                 "bots.sendCustomRequest",
@@ -2212,6 +2216,7 @@
                 "messages.setInlineBotResults"
             ],
             "TAKEOUT_INVALID": [
+                "contacts.getSaved",
                 "messages.getHistory"
             ],
             "TAKEOUT_REQUIRED": [
@@ -2877,6 +2882,7 @@
                 "channels.inviteToChannel",
                 "help.getConfig",
                 "messages.addChatUser",
+                "messages.getOutboxReadDate",
                 "phone.requestCall"
             ],
             "USER_RESTRICTED": [
@@ -2886,6 +2892,9 @@
             ],
             "VOICE_MESSAGES_FORBIDDEN": [
                 "messages.forwardMessages"
+            ],
+            "YOUR_PRIVACY_RESTRICTED": [
+                "messages.getOutboxReadDate"
             ],
             "CHAT_FORBIDDEN": []
         },
@@ -3384,6 +3393,7 @@
         "MESSAGE_NOT_MODIFIED": "The provided message data is identical to the previous message data, the message wasn't modified.",
         "MESSAGE_POLL_CLOSED": "Poll closed.",
         "MESSAGE_TOO_LONG": "The provided message is too long.",
+        "MESSAGE_TOO_OLD": "The message is too old, the requested information is not available.",
         "METHOD_INVALID": "The specified method is invalid.",
         "MIN_DATE_INVALID": "The specified minimum date is invalid.",
         "MSG_ID_INVALID": "Invalid message ID provided.",
@@ -3672,6 +3682,7 @@
         "WEBPUSH_AUTH_INVALID": "The specified web push authentication secret is invalid.",
         "WEBPUSH_KEY_INVALID": "The specified web push elliptic curve Diffie-Hellman public key is invalid.",
         "WEBPUSH_TOKEN_INVALID": "The specified web push token is invalid.",
-        "YOU_BLOCKED_USER": "You blocked this user."
+        "YOU_BLOCKED_USER": "You blocked this user.",
+        "YOUR_PRIVACY_RESTRICTED": "You cannot fetch the read date of this message because you have disallowed other users to do so for *your* messages; to fix, allow other users to see *your* exact last online date OR purchase a [Telegram Premium](https:\/\/core.telegram.org\/api\/premium) subscription."
     }
 }
