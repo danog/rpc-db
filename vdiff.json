@@ -319,7 +319,11 @@
                 "channels.readMessageContents",
                 "channels.reorderUsernames",
                 "channels.reportSpam",
+                "channels.reportSponsoredMessage",
+                "channels.restrictSponsoredMessages",
+                "channels.setBoostsToUnblockRestrictions",
                 "channels.setDiscussionGroup",
+                "channels.setEmojiStickers",
                 "channels.setStickers",
                 "channels.toggleInvites",
                 "channels.toggleJoinRequest",
@@ -362,6 +366,8 @@
                 "messages.sendVote",
                 "messages.setTyping",
                 "messages.uploadMedia",
+                "stats.getBroadcastRevenueStats",
+                "stats.getBroadcastRevenueTransactions",
                 "stats.getBroadcastStats",
                 "stats.getMegagroupStats",
                 "stats.getMessagePublicForwards",
@@ -1533,7 +1539,8 @@
                 "account.getTmpPassword",
                 "account.updatePasswordSettings",
                 "auth.checkPassword",
-                "channels.editCreator"
+                "channels.editCreator",
+                "stats.getBroadcastRevenueWithdrawalUrl"
             ],
             "PASSWORD_MISSING": [
                 "channels.editCreator"
@@ -1558,10 +1565,12 @@
                 "messages.toggleDialogPin"
             ],
             "PEER_ID_INVALID": [
+                "account.disablePeerConnectedBot",
                 "account.getNotifySettings",
                 "account.reportPeer",
                 "account.reportProfilePhoto",
                 "account.saveAutoSaveSettings",
+                "account.toggleConnectedBotPaused",
                 "account.updateNotifySettings",
                 "bots.setBotCommands",
                 "channels.checkUsername",
@@ -1577,6 +1586,7 @@
                 "messages.deleteChat",
                 "messages.deleteChatUser",
                 "messages.deleteExportedChatInvite",
+                "messages.deleteFactCheck",
                 "messages.deleteHistory",
                 "messages.deleteRevokedExportedChatInvites",
                 "messages.deleteSavedHistory",
@@ -1587,6 +1597,7 @@
                 "messages.editChatPhoto",
                 "messages.editChatTitle",
                 "messages.editExportedChatInvite",
+                "messages.editFactCheck",
                 "messages.editMessage",
                 "messages.exportChatInvite",
                 "messages.forwardMessage",
@@ -1598,6 +1609,7 @@
                 "messages.getDiscussionMessage",
                 "messages.getExportedChatInvite",
                 "messages.getExportedChatInvites",
+                "messages.getFactCheck",
                 "messages.getFullChat",
                 "messages.getGameHighScores",
                 "messages.getHistory",
@@ -1639,6 +1651,7 @@
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.sendMultiMedia",
+                "messages.sendQuickReplyMessages",
                 "messages.sendReaction",
                 "messages.sendScheduledMessages",
                 "messages.sendScreenshotNotification",
@@ -1659,7 +1672,10 @@
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
                 "payments.getGiveawayInfo",
+                "payments.getStarsStatus",
+                "payments.getStarsTransactions",
                 "payments.launchPrepaidGiveaway",
+                "payments.sendStarsForm",
                 "phone.createGroupCall",
                 "phone.getGroupCallJoinAs",
                 "phone.getGroupCallStreamRtmpUrl",
@@ -1695,6 +1711,7 @@
                 "stories.sendStory",
                 "stories.togglePeerStoriesHidden",
                 "stories.togglePinned",
+                "stories.togglePinnedToTop",
                 "upload.getFile",
                 "users.getUsers"
             ],
@@ -1762,6 +1779,7 @@
                 "account.verifyPhone",
                 "auth.cancelCode",
                 "auth.checkPhone",
+                "auth.reportMissingCode",
                 "auth.requestFirebaseSms",
                 "auth.resendCode",
                 "auth.resetLoginEmail",
@@ -2119,7 +2137,8 @@
             "STICKER_INVALID": [
                 "stickers.changeSticker",
                 "stickers.changeStickerPosition",
-                "stickers.removeStickerFromSet"
+                "stickers.removeStickerFromSet",
+                "stickers.replaceSticker"
             ],
             "STICKER_MIME_INVALID": [
                 "channels.editPhoto",
@@ -2246,6 +2265,9 @@
             ],
             "THEME_TITLE_INVALID": [
                 "account.createTheme"
+            ],
+            "TIMEZONE_INVALID": [
+                "account.updateBusinessWorkHours"
             ],
             "TITLE_INVALID": [
                 "stickers.suggestShortName"
@@ -2390,6 +2412,7 @@
                 "messages.setBotCallbackAnswer",
                 "messages.setGameScore",
                 "messages.setInlineGameScore",
+                "payments.refundStarsCharge",
                 "users.setSecureValueErrors"
             ],
             "USER_CHANNELS_TOO_MUCH": [
@@ -2420,6 +2443,7 @@
                 "messages.reportReaction",
                 "messages.requestEncryption",
                 "messages.search",
+                "payments.refundStarsCharge",
                 "phone.requestCall",
                 "photos.getUserPhotos",
                 "photos.uploadContactProfilePhoto",
@@ -2819,6 +2843,7 @@
                 "messages.getPollVotes"
             ],
             "PREMIUM_ACCOUNT_REQUIRED": [
+                "account.setGlobalPrivacySettings",
                 "channels.createForumTopic",
                 "messages.sendMedia",
                 "messages.sendReaction",
@@ -3598,6 +3623,7 @@
         "THEME_MIME_INVALID": "The theme's MIME type is invalid.",
         "THEME_TITLE_INVALID": "The specified theme title is invalid.",
         "Timeout": "Timeout while fetching data.",
+        "TIMEZONE_INVALID": "",
         "TITLE_INVALID": "The specified stickerpack title is invalid.",
         "TMP_PASSWORD_DISABLED": "The temporary password is disabled.",
         "TMP_PASSWORD_INVALID": "The passed tmp_password is invalid.",
