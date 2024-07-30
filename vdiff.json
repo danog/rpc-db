@@ -107,6 +107,9 @@
             "AUTOARCHIVE_NOT_AVAILABLE": [
                 "account.setGlobalPrivacySettings"
             ],
+            "BALANCE_TOO_LOW": [
+                "payments.sendStarsForm"
+            ],
             "BANK_CARD_NUMBER_INVALID": [
                 "payments.getBankCardData"
             ],
@@ -1076,6 +1079,9 @@
                 "messages.getPinnedDialogs",
                 "messages.searchGlobal"
             ],
+            "FORM_EXPIRED": [
+                "payments.sendStarsForm"
+            ],
             "FORUM_ENABLED": [
                 "channels.convertToGigagroup",
                 "channels.togglePreHistoryHidden"
@@ -1448,6 +1454,9 @@
                 "messages.editInlineBotMessage",
                 "messages.editMessage",
                 "messages.sendReaction"
+            ],
+            "MESSAGE_NOT_READ_YET": [
+                "messages.getOutboxReadDate"
             ],
             "MESSAGE_POLL_CLOSED": [
                 "messages.sendVote"
@@ -3318,6 +3327,7 @@
         "AUTH_TOKEN_INVALID": "The specified auth token is invalid.",
         "AUTH_TOKEN_INVALIDX": "The specified auth token is invalid.",
         "AUTOARCHIVE_NOT_AVAILABLE": "The autoarchive setting is not available at this time: please check the value of the [autoarchive_setting_available field in client config &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration) before calling this method.",
+        "BALANCE_TOO_LOW": "The transaction cannot be completed because the current [Telegram Stars balance](https:\/\/core.telegram.org\/api\/stars) is too low.",
         "BANK_CARD_NUMBER_INVALID": "The specified card number is invalid.",
         "BANNED_RIGHTS_INVALID": "You provided some invalid flags in the banned rights.",
         "BIRTHDAY_INVALID": "An invalid age was specified, must be between 0 and 150 years.",
@@ -3503,6 +3513,7 @@
         "FLOOD_WAIT_%d": "Please wait %d seconds before repeating the action.",
         "FOLDER_ID_EMPTY": "An empty folder ID was specified.",
         "FOLDER_ID_INVALID": "Invalid folder ID.",
+        "FORM_EXPIRED": "The form was generated more than 10 minutes ago and has expired, please re-generate it using [payments.getPaymentForm](https:\/\/core.telegram.org\/method\/payments.getPaymentForm) and pass the new `form_id`.",
         "FORUM_ENABLED": "You can't execute the specified action because the group is a [forum](https:\/\/core.telegram.org\/api\/forum), disable forum functionality to continue.",
         "FRESH_CHANGE_ADMINS_FORBIDDEN": "You were just elected admin, you can't add or modify other admins yet.",
         "FRESH_CHANGE_PHONE_FORBIDDEN": "You can't change phone number right after logging in, please wait at least 24 hours.",
@@ -3592,6 +3603,7 @@
         "MESSAGE_ID_INVALID": "The provided message id is invalid.",
         "MESSAGE_IDS_EMPTY": "No message ids were provided.",
         "MESSAGE_NOT_MODIFIED": "The provided message data is identical to the previous message data, the message wasn't modified.",
+        "MESSAGE_NOT_READ_YET": "The specified message wasn't read yet.",
         "MESSAGE_POLL_CLOSED": "Poll closed.",
         "MESSAGE_TOO_LONG": "The provided message is too long.",
         "MESSAGE_TOO_OLD": "The message is too old, the requested information is not available.",
