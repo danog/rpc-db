@@ -880,6 +880,10 @@
                 "account.updatePasswordSettings",
                 "account.verifyEmail"
             ],
+            "EMAIL_NOT_ALLOWED": [
+                "account.sendVerifyEmailCode",
+                "account.verifyEmail"
+            ],
             "EMAIL_NOT_SETUP": [
                 "account.sendVerifyEmailCode"
             ],
@@ -3446,6 +3450,7 @@
         "EDIT_BOT_INVITE_FORBIDDEN": "Normal users can't edit invites that were created by bots.",
         "EMAIL_HASH_EXPIRED": "Email hash expired.",
         "EMAIL_INVALID": "The specified email is invalid.",
+        "EMAIL_NOT_ALLOWED": "The specified email cannot be used to complete the operation.",
         "EMAIL_NOT_SETUP": "In order to change the login email with emailVerifyPurposeLoginChange, an existing login email must already be set using emailVerifyPurposeLoginSetup.",
         "EMAIL_UNCONFIRMED": "Email unconfirmed.",
         "EMAIL_UNCONFIRMED_%d": "The provided email isn't confirmed, %d is the length of the verification code that was just sent to the email: use [account.verifyEmail](https:\/\/core.telegram.org\/method\/account.verifyEmail) to enter the received verification code and enable the recovery email.",
@@ -3481,6 +3486,8 @@
         "FILE_PART_TOO_BIG": "The uploaded file part is too big.",
         "FILE_PARTS_INVALID": "The number of file parts is invalid.",
         "FILE_REFERENCE_*": "The file reference expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
+        "FILE_REFERENCE_%d_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
+        "FILE_REFERENCE_%d_INVALID": "File reference invalid.",
         "FILE_REFERENCE_EMPTY": "An empty [file reference](https:\/\/core.telegram.org\/api\/file_reference) was specified.",
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid.",
@@ -3830,7 +3837,7 @@
         "USER_BOT_INVALID": "User accounts must provide the `bot` method parameter when calling this method. If there is no such method parameter, this method can only be invoked by bot accounts.",
         "USER_BOT_REQUIRED": "This method can only be called by a bot.",
         "USER_CHANNELS_TOO_MUCH": "One of the users you tried to add is already in too many channels\/supergroups.",
-        "USER_CREATOR": "You can't leave this channel, because you're its creator.",
+        "USER_CREATOR": "For channels.editAdmin: you've tried to edit the admin rights of the owner, but you're not the owner; for channels.leaveChannel: you can't leave this channel, because you're its creator.",
         "USER_DEACTIVATED": "The current account was deleted by the user.",
         "USER_DEACTIVATED_BAN": "The current account was deleted and banned by Telegram's antispam system.",
         "USER_DELETED": "You can't send this secret message because the other participant deleted their account.",
