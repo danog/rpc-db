@@ -1007,6 +1007,9 @@
             "FILE_REFERENCE_%d_EXPIRED": [
                 "messages.sendMultiMedia"
             ],
+            "FILE_REFERENCE_%d_INVALID": [
+                "messages.sendMultiMedia"
+            ],
             "FILE_REFERENCE_EMPTY": [
                 "messages.sendMedia"
             ],
@@ -2956,6 +2959,7 @@
                 "messages.editExportedChatInvite"
             ],
             "GROUPCALL_ALREADY_STARTED": [
+                "phone.startScheduledGroupCall",
                 "phone.toggleGroupCallStartSubscription"
             ],
             "GROUPCALL_FORBIDDEN": [
