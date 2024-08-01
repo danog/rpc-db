@@ -248,6 +248,9 @@
                 "messages.sendMessage",
                 "messages.setInlineBotResults"
             ],
+            "BUTTON_POS_INVALID": [
+                "messages.sendMedia"
+            ],
             "BUTTON_TEXT_INVALID": [
                 "bots.setBotMenuButton"
             ],
@@ -3364,6 +3367,7 @@
         "BUSINESS_WORK_HOURS_EMPTY": "No work hours were specified.",
         "BUSINESS_WORK_HOURS_PERIOD_INVALID": "The specified work hours are invalid, see [here &raquo;](https:\/\/core.telegram.org\/api\/business#opening-hours) for the exact requirements.",
         "BUTTON_DATA_INVALID": "The data of one or more of the buttons you provided is invalid.",
+        "BUTTON_POS_INVALID": "The position of one of the keyboard buttons is invalid (i.e. a Game or Pay button not in the first position, and so on...).",
         "BUTTON_TEXT_INVALID": "The specified button text is invalid.",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid.",
         "BUTTON_URL_INVALID": "Button URL invalid.",
