@@ -190,12 +190,6 @@
                 "messages.toggleBotInAttachMenu",
                 "photos.uploadProfilePhoto"
             ],
-            "BOT_MISSING": [
-                "stickers.addStickerToSet",
-                "stickers.changeSticker",
-                "stickers.deleteStickerSet",
-                "stickers.removeStickerFromSet"
-            ],
             "BOT_NOT_CONNECTED_YET": [
                 "account.disablePeerConnectedBot"
             ],
@@ -3350,7 +3344,6 @@
         "BOT_INLINE_DISABLED": "This bot can't be used in inline mode.",
         "BOT_INVALID": "This is not a valid bot.",
         "BOT_METHOD_INVALID": "The specified method cannot be used by bots.",
-        "BOT_MISSING": "Only bots can call this method, please use [@stickers](https:\/\/t.me\/stickers) if you're a user.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
