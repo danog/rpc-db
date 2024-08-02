@@ -134,6 +134,9 @@
                 "stories.canSendStory",
                 "stories.sendStory"
             ],
+            "BOT_ALREADY_DISABLED": [
+                "account.disablePeerConnectedBot"
+            ],
             "BOT_APP_BOT_INVALID": [
                 "messages.getBotApp"
             ],
@@ -160,6 +163,9 @@
             "BOT_DOMAIN_INVALID": [
                 "messages.editMessage",
                 "messages.sendMessage"
+            ],
+            "BOT_GAMES_DISABLED": [
+                "messages.sendMedia"
             ],
             "BOT_GROUPS_BLOCKED": [
                 "channels.editAdmin",
@@ -1317,6 +1323,9 @@
                 "langpack.getLanguage",
                 "langpack.getLanguages",
                 "langpack.getStrings"
+            ],
+            "LANGUAGE_INVALID": [
+                "langpack.getLangPack"
             ],
             "LASTNAME_INVALID": [
                 "auth.signUp"
@@ -3104,9 +3113,6 @@
                 "phone.acceptCall",
                 "phone.discardCall"
             ],
-            "CDN_SALTS_EMPTY": [
-                "upload.getCdnFileHashes"
-            ],
             "CDN_UPLOAD_TIMEOUT": [
                 "upload.reuploadCdnFile"
             ],
@@ -3340,10 +3346,12 @@
         "BOT_COMMAND_DESCRIPTION_INVALID": "The specified command description is invalid.",
         "BOT_COMMAND_INVALID": "The specified command is invalid.",
         "BOT_DOMAIN_INVALID": "Bot domain invalid.",
+        "BOT_GAMES_DISABLED": "Games can't be sent to channels.",
         "BOT_GROUPS_BLOCKED": "This bot can't be added to groups.",
         "BOT_INLINE_DISABLED": "This bot can't be used in inline mode.",
         "BOT_INVALID": "This is not a valid bot.",
         "BOT_METHOD_INVALID": "The specified method cannot be used by bots.",
+        "BOT_NOT_CONNECTED_YET": "No [business bot](https:\/\/core.telegram.org\/api\/business#connected-bots) is connected to the currently logged in user.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
         "BOT_PAYMENTS_DISABLED": "Please enable bot payments in botfather before calling this method.",
         "BOT_RESPONSE_TIMEOUT": "A timeout occurred while fetching data from the bot.",
@@ -3572,6 +3580,7 @@
         "LANG_CODE_INVALID": "The specified language code is invalid.",
         "LANG_CODE_NOT_SUPPORTED": "The specified language code is not supported.",
         "LANG_PACK_INVALID": "The provided language pack is invalid.",
+        "LANGUAGE_INVALID": "The specified lang_code is invalid.",
         "LASTNAME_INVALID": "The last name is invalid.",
         "LIMIT_INVALID": "The provided limit is invalid.",
         "LINK_NOT_MODIFIED": "Discussion link not modified.",
@@ -3712,6 +3721,7 @@
         "REACTIONS_TOO_MANY": "The message already has exactly `reactions_uniq_max` reaction emojis, you can't react with a new emoji, see [the docs for more info &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
         "RECEIPT_EMPTY": "The specified receipt is empty.",
         "REPLY_MARKUP_BUY_EMPTY": "Reply markup for buy button empty.",
+        "REPLY_MARKUP_GAME_EMPTY": "A game message is being edited, but the newly provided keyboard doesn't have a keyboardButtonGame button.",
         "REPLY_MARKUP_INVALID": "The provided reply markup is invalid.",
         "REPLY_MARKUP_TOO_LONG": "The specified reply_markup is too long.",
         "REPLY_MESSAGE_ID_INVALID": "The specified reply-to message ID is invalid.",
@@ -3830,6 +3840,7 @@
         "TOPIC_TITLE_EMPTY": "The specified topic title is empty.",
         "TOPICS_EMPTY": "You specified no topic IDs.",
         "TRANSCRIPTION_FAILED": "Audio transcription failed.",
+        "TRANSLATE_REQ_QUOTA_EXCEEDED": "Translation is currently unavailable due to a temporary server-side lack of resources.",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
