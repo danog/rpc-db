@@ -178,16 +178,23 @@
             "BOT_INVALID": [
                 "account.acceptAuthorization",
                 "account.getAuthorizationForm",
+                "bots.addPreviewMedia",
                 "bots.allowSendMessage",
                 "bots.canSendMessage",
+                "bots.deletePreviewMedia",
+                "bots.editPreviewMedia",
                 "bots.getBotInfo",
+                "bots.getPreviewInfo",
+                "bots.getPreviewMedias",
                 "bots.invokeWebViewCustomMethod",
+                "bots.reorderPreviewMedias",
                 "bots.reorderUsernames",
                 "bots.toggleUsername",
                 "messages.editMessage",
                 "messages.getAttachMenuBot",
                 "messages.getInlineBotResults",
                 "messages.prolongWebView",
+                "messages.requestMainWebView",
                 "messages.requestSimpleWebView",
                 "messages.requestWebView",
                 "messages.sendMessage",
@@ -3227,6 +3234,9 @@
             "PHONE_PASSWORD_FLOOD": [
                 "auth.sendCode"
             ],
+            "PREMIUM_CURRENTLY_UNAVAILABLE": [
+                "payments.canPurchasePremium"
+            ],
             "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": [
                 "messages.initHistoryImport"
             ],
@@ -3690,6 +3700,7 @@
         "POLL_QUESTION_INVALID": "One of the poll questions is not acceptable.",
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method.",
         "PREMIUM_ACCOUNT_REQUIRED": "A premium account is required to execute this action.",
+        "PREMIUM_CURRENTLY_UNAVAILABLE": "You cannot currently purchase a Premium subscription.",
         "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have a premium subscription active until unixtime %d .",
         "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": "Import for this chat is already in progress, wait %d minutes before starting a new one.",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
