@@ -1018,9 +1018,6 @@
                 "photos.uploadProfilePhoto",
                 "upload.saveBigFilePart"
             ],
-            "FILE_REFERENCE_*": [
-                "upload.getFile"
-            ],
             "FILE_REFERENCE_%d_EXPIRED": [
                 "messages.sendMultiMedia"
             ],
@@ -3509,9 +3506,8 @@
         "FILE_PART_SIZE_INVALID": "The provided file part size is invalid.",
         "FILE_PART_TOO_BIG": "The uploaded file part is too big.",
         "FILE_PARTS_INVALID": "The number of file parts is invalid.",
-        "FILE_REFERENCE_*": "The file reference expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
-        "FILE_REFERENCE_%d_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
-        "FILE_REFERENCE_%d_INVALID": "File reference invalid.",
+        "FILE_REFERENCE_%d_EXPIRED": "The file reference of the media file at index %d in the passed media array expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
+        "FILE_REFERENCE_%d_INVALID": "The file reference of the media file at index %d in the passed media array is invalid.",
         "FILE_REFERENCE_EMPTY": "An empty [file reference](https:\/\/core.telegram.org\/api\/file_reference) was specified.",
         "FILE_REFERENCE_EXPIRED": "File reference expired, it must be refetched as described in [the documentation](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_INVALID": "The specified [file reference](https:\/\/core.telegram.org\/api\/file_reference) is invalid.",
