@@ -626,6 +626,7 @@
                 "messages.updatePinnedMessage",
                 "messages.uploadImportedMedia",
                 "messages.uploadMedia",
+                "payments.getStarsTransactions",
                 "phone.createGroupCall",
                 "phone.getGroupCallStreamRtmpUrl",
                 "premium.getBoostsList",
@@ -1221,6 +1222,9 @@
             ],
             "INPUT_CHATLIST_INVALID": [
                 "chatlists.getChatlistUpdates"
+            ],
+            "INPUT_FILE_INVALID": [
+                "messages.sendMedia"
             ],
             "INPUT_FILTER_INVALID": [
                 "messages.search",
@@ -3084,6 +3088,9 @@
                 "channels.inviteToChannel",
                 "messages.addChatUser"
             ],
+            "USER_NOT_PARTICIPANT": [
+                "phone.inviteToGroupCall"
+            ],
             "USER_PRIVACY_RESTRICTED": [
                 "channels.editAdmin",
                 "channels.inviteToChannel",
@@ -3563,6 +3570,7 @@
         "INPUT_CONSTRUCTOR_INVALID": "The specified TL constructor is invalid.",
         "INPUT_FETCH_ERROR": "An error occurred while parsing the provided TL constructor.",
         "INPUT_FETCH_FAIL": "An error occurred while parsing the provided TL constructor.",
+        "INPUT_FILE_INVALID": "The specified [InputFile](https:\/\/core.telegram.org\/type\/InputFile) is invalid.",
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
         "INPUT_LAYER_INVALID": "The specified layer is invalid.",
         "INPUT_METHOD_INVALID": "The specified method is invalid.",
