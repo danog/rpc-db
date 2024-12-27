@@ -120,6 +120,7 @@
                 "account.updateBirthday"
             ],
             "BOOST_NOT_MODIFIED": [
+                "messages",
                 "stories.applyBoost",
                 "stories.canApplyBoost"
             ],
@@ -138,7 +139,8 @@
                 "account.disablePeerConnectedBot"
             ],
             "BOT_APP_BOT_INVALID": [
-                "messages.getBotApp"
+                "messages.getBotApp",
+                "messages.requestAppWebView"
             ],
             "BOT_APP_INVALID": [
                 "messages.getBotApp",
@@ -181,6 +183,7 @@
                 "bots.addPreviewMedia",
                 "bots.allowSendMessage",
                 "bots.canSendMessage",
+                "bots.checkDownloadFileParams",
                 "bots.deletePreviewMedia",
                 "bots.editPreviewMedia",
                 "bots.getBotInfo",
@@ -189,7 +192,10 @@
                 "bots.invokeWebViewCustomMethod",
                 "bots.reorderPreviewMedias",
                 "bots.reorderUsernames",
+                "bots.setBotInfo",
+                "bots.toggleUserEmojiStatusPermission",
                 "bots.toggleUsername",
+                "bots.updateStarRefProgram",
                 "messages.editMessage",
                 "messages.getAttachMenuBot",
                 "messages.getInlineBotResults",
@@ -202,6 +208,10 @@
                 "messages.startBot",
                 "messages.toggleBotInAttachMenu",
                 "photos.uploadProfilePhoto"
+            ],
+            "BOT_INVOICE_INVALID": [
+                "payments.getPaymentForm",
+                "payments.sendStarsForm"
             ],
             "BOT_NOT_CONNECTED_YET": [
                 "account.disablePeerConnectedBot"
@@ -237,7 +247,14 @@
                 "stats.getBroadcastStats"
             ],
             "BUSINESS_PEER_INVALID": [
-                "messages.sendMessage"
+                "messages.sendMedia",
+                "messages.sendMessage",
+                "messages.sendMultiMedia",
+                "messages.setTyping"
+            ],
+            "BUSINESS_PEER_USAGE_MISSING": [
+                "messages.sendMessage",
+                "messages.setTyping"
             ],
             "BUSINESS_RECIPIENTS_EMPTY": [
                 "account.updateConnectedBot"
@@ -248,12 +265,20 @@
             "BUSINESS_WORK_HOURS_PERIOD_INVALID": [
                 "account.updateBusinessWorkHours"
             ],
+            "BUTTON_COPY_TEXT_INVALID": [
+                "messages.editMessage",
+                "messages.sendMedia",
+                "messages.sendMessage"
+            ],
             "BUTTON_DATA_INVALID": [
                 "messages.editInlineBotMessage",
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage",
                 "messages.setInlineBotResults"
+            ],
+            "BUTTON_ID_INVALID": [
+                "messages.sendMessage"
             ],
             "BUTTON_POS_INVALID": [
                 "messages.sendMedia"
@@ -316,6 +341,7 @@
             ],
             "CHANNEL_FORUM_MISSING": [
                 "channels.createForumTopic",
+                "channels.deleteTopicHistory",
                 "channels.editForumTopic",
                 "channels.getForumTopics",
                 "channels.getForumTopicsByID"
@@ -324,6 +350,7 @@
                 "channels.convertToGigagroup"
             ],
             "CHANNEL_INVALID": [
+                "account.getNotifySettings",
                 "account.updateNotifySettings",
                 "channels.checkUsername",
                 "channels.clickSponsoredMessage",
@@ -389,6 +416,7 @@
                 "channels.updateUsername",
                 "channels.viewSponsoredMessage",
                 "chatlists.editExportedInvite",
+                "chatlists.exportChatlistInvite",
                 "messages.editChatAbout",
                 "messages.editMessage",
                 "messages.exportChatInvite",
@@ -418,6 +446,7 @@
                 "messages.sendVote",
                 "messages.setTyping",
                 "messages.uploadMedia",
+                "premium.getBoostsStatus",
                 "stats.getBroadcastRevenueStats",
                 "stats.getBroadcastRevenueTransactions",
                 "stats.getBroadcastStats",
@@ -438,6 +467,7 @@
                 "channels.deleteHistory"
             ],
             "CHANNEL_PRIVATE": [
+                "account.getNotifySettings",
                 "account.reportPeer",
                 "account.updateNotifySettings",
                 "channels.checkUsername",
@@ -471,6 +501,7 @@
                 "channels.toggleUsername",
                 "channels.updateUsername",
                 "channels.viewSponsoredMessage",
+                "chatlists.exportChatlistInvite",
                 "contacts.addContact",
                 "contacts.block",
                 "contacts.unblock",
@@ -584,12 +615,14 @@
                 "channels.toggleInvites",
                 "channels.toggleJoinRequest",
                 "channels.toggleJoinToSend",
+                "channels.toggleParticipantsHidden",
                 "channels.togglePreHistoryHidden",
                 "channels.toggleSignatures",
                 "channels.toggleSlowMode",
                 "channels.toggleUsername",
                 "channels.updatePinnedMessage",
                 "channels.updateUsername",
+                "chatlists.exportChatlistInvite",
                 "messages.addChatUser",
                 "messages.checkHistoryImportPeer",
                 "messages.deleteChat",
@@ -711,6 +744,9 @@
             "CHAT_LINK_EXISTS": [
                 "channels.togglePreHistoryHidden"
             ],
+            "CHAT_MEMBER_ADD_FAILED": [
+                "channels.inviteToChannel"
+            ],
             "CHAT_NOT_MODIFIED": [
                 "channels.deleteChannel",
                 "channels.editCreator",
@@ -782,6 +818,9 @@
             ],
             "CHATLIST_EXCLUDE_INVALID": [
                 "messages.updateDialogFilter"
+            ],
+            "CHATLISTS_TOO_MUCH": [
+                "chatlists.exportChatlistInvite"
             ],
             "CODE_EMPTY": [
                 "auth.checkRecoveryPassword",
@@ -977,6 +1016,9 @@
             "EXPORT_CARD_INVALID": [
                 "contacts.importCard"
             ],
+            "EXTENDED_MEDIA_AMOUNT_INVALID": [
+                "messages.sendMedia"
+            ],
             "EXTERNAL_URL_INVALID": [
                 "messages.sendMedia"
             ],
@@ -1010,6 +1052,9 @@
             "FILE_PART_TOO_BIG": [
                 "upload.saveBigFilePart"
             ],
+            "FILE_PART_TOO_SMALL": [
+                "upload.saveBigFilePart"
+            ],
             "FILE_PARTS_INVALID": [
                 "channels.editPhoto",
                 "messages.editMessage",
@@ -1026,7 +1071,8 @@
                 "messages.sendMultiMedia"
             ],
             "FILE_REFERENCE_EMPTY": [
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "upload.getFile"
             ],
             "FILE_REFERENCE_EXPIRED": [
                 "messages.sendMedia",
@@ -1090,6 +1136,12 @@
             "FORM_EXPIRED": [
                 "payments.sendStarsForm"
             ],
+            "FORM_ID_EMPTY": [
+                "payments.sendStarsForm"
+            ],
+            "FORM_UNSUPPORTED": [
+                "payments.sendStarsForm"
+            ],
             "FORUM_ENABLED": [
                 "channels.convertToGigagroup",
                 "channels.togglePreHistoryHidden"
@@ -1138,6 +1190,7 @@
                 "stats.loadAsyncGraph"
             ],
             "GROUPCALL_ALREADY_DISCARDED": [
+                "phone.createGroupCall",
                 "phone.discardGroupCall",
                 "phone.discardGroupCallRequest"
             ],
@@ -1190,6 +1243,9 @@
                 "messages.hideAllChatJoinRequests",
                 "messages.hideChatJoinRequest"
             ],
+            "ID_INVALID": [
+                "messages.getPreparedInlineMessage"
+            ],
             "IMAGE_PROCESS_FAILED": [
                 "channels.editPhoto",
                 "messages.editChatPhoto",
@@ -1230,6 +1286,9 @@
                 "messages.search",
                 "messages.searchGlobal"
             ],
+            "INPUT_PEERS_EMPTY": [
+                "messages.getPeerDialogs"
+            ],
             "INPUT_TEXT_EMPTY": [
                 "messages.translateText"
             ],
@@ -1244,6 +1303,7 @@
                 "contacts.block",
                 "messages.addChatUser",
                 "messages.createChat",
+                "messages.deleteChatUser",
                 "messages.editMessage",
                 "messages.forwardMessages",
                 "messages.getInlineBotResults",
@@ -1299,13 +1359,18 @@
             ],
             "INVITE_SLUG_EXPIRED": [
                 "chatlists.checkChatlistInvite",
+                "chatlists.deleteExportedInvite",
                 "chatlists.editExportedInvite",
                 "chatlists.joinChatlistInvite"
+            ],
+            "INVITE_SLUG_INVALID": [
+                "chatlists.deleteExportedInvite"
             ],
             "INVITES_TOO_MUCH": [
                 "chatlists.exportChatlistInvite"
             ],
             "INVOICE_PAYLOAD_INVALID": [
+                "messages.sendMedia",
                 "payments.exportInvoice"
             ],
             "JOIN_AS_PEER_INVALID": [
@@ -1387,6 +1452,7 @@
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMultiMedia",
+                "messages.uploadImportedMedia",
                 "messages.uploadMedia",
                 "payments.exportInvoice"
             ],
@@ -1444,6 +1510,8 @@
                 "messages.getMessagesReadParticipants",
                 "messages.getOutboxReadDate",
                 "messages.getPollResults",
+                "messages.sendBotRequestedPeer",
+                "messages.sendPaidReaction",
                 "messages.sendReaction",
                 "messages.sendScheduledMessages",
                 "messages.sendVote",
@@ -1513,6 +1581,7 @@
                 "contacts.addContact",
                 "contacts.block",
                 "contacts.blockFromReplies",
+                "contacts.deleteContacts",
                 "contacts.unblock",
                 "help.getConfig",
                 "messages.addChatUser",
@@ -1545,6 +1614,7 @@
                 "messages.sendInlineBotResult",
                 "messages.sendMedia",
                 "messages.sendMessage",
+                "messages.sendMultiMedia",
                 "messages.sendReaction",
                 "messages.sendVote",
                 "messages.setTyping",
@@ -1641,6 +1711,7 @@
                 "auth.requestPasswordRecovery"
             ],
             "PASSWORD_HASH_INVALID": [
+                "account.deleteAccount",
                 "account.getPasswordSettings",
                 "account.getTmpPassword",
                 "account.updatePasswordSettings",
@@ -1782,6 +1853,7 @@
                 "messages.startBot",
                 "messages.toggleDialogPin",
                 "messages.toggleNoForwards",
+                "messages.togglePaidReactionPrivacy",
                 "messages.togglePeerTranslations",
                 "messages.toggleSavedDialogPin",
                 "messages.transcribeAudio",
@@ -1790,11 +1862,15 @@
                 "messages.updateDialogFilter",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
+                "payments.changeStarsSubscription",
+                "payments.fulfillStarsSubscription",
+                "payments.getConnectedStarRefBot",
                 "payments.getGiveawayInfo",
                 "payments.getPaymentForm",
                 "payments.getStarsRevenueAdsAccountUrl",
                 "payments.getStarsRevenueStats",
                 "payments.getStarsStatus",
+                "payments.getStarsSubscriptions",
                 "payments.getStarsTransactions",
                 "payments.getStarsTransactionsByID",
                 "payments.launchPrepaidGiveaway",
@@ -1809,6 +1885,8 @@
                 "premium.getBoostsList",
                 "premium.getBoostsStatus",
                 "premium.getUserBoosts",
+                "stats.getBroadcastRevenueStats",
+                "stats.getBroadcastRevenueTransactions",
                 "stats.getMessagePublicForwards",
                 "stats.getMessageStats",
                 "stats.getStoryPublicForwards",
@@ -1842,6 +1920,10 @@
             ],
             "PEER_ID_NOT_SUPPORTED": [
                 "messages.search"
+            ],
+            "PEER_TYPES_INVALID": [
+                "messages.editMessage",
+                "messages.setInlineBotResults"
             ],
             "PEERS_LIST_EMPTY": [
                 "chatlists.editExportedInvite",
@@ -1949,6 +2031,7 @@
                 "photos.uploadProfilePhoto"
             ],
             "PHOTO_FILE_MISSING": [
+                "channels.editPhoto",
                 "photos.uploadProfilePhoto"
             ],
             "PHOTO_ID_INVALID": [
@@ -2002,6 +2085,9 @@
                 "stories.canApplyBoost",
                 "stories.canSendStory",
                 "stories.sendStory"
+            ],
+            "PRICING_CHAT_INVALID": [
+                "messages.exportChatInvite"
             ],
             "PRIVACY_KEY_INVALID": [
                 "account.getPrivacy",
@@ -2114,7 +2200,8 @@
                 "messages.sendMultiMedia"
             ],
             "REPLY_TO_INVALID": [
-                "messages.sendMessage"
+                "messages.sendMessage",
+                "messages.sendMultiMedia"
             ],
             "REPLY_TO_USER_INVALID": [
                 "messages.sendMessage"
@@ -2132,6 +2219,7 @@
                 "messages.sendInlineBotResult"
             ],
             "RESULT_ID_INVALID": [
+                "messages.savePreparedInlineMessage",
                 "messages.sendInlineBotResult",
                 "messages.setInlineBotResults"
             ],
@@ -2217,7 +2305,9 @@
                 "messages.setInlineBotResults"
             ],
             "SESSION_TOO_FRESH_%d": [
-                "channels.editCreator"
+                "channels.editCreator",
+                "payments.getStarsRevenueWithdrawalUrl",
+                "stats.getBroadcastRevenueWithdrawalUrl"
             ],
             "SETTINGS_INVALID": [
                 "account.updateNotifySettings"
@@ -2253,6 +2343,9 @@
                 "smsjobs.finishJob",
                 "smsjobs.getSmsJob"
             ],
+            "SRP_A_INVALID": [
+                "account.getTmpPassword"
+            ],
             "SRP_ID_INVALID": [
                 "account.updatePasswordSettings",
                 "auth.checkPassword",
@@ -2261,6 +2354,31 @@
             "SRP_PASSWORD_CHANGED": [
                 "account.updatePasswordSettings",
                 "auth.checkPassword"
+            ],
+            "STARGIFT_INVALID": [
+                "payments.getPaymentForm"
+            ],
+            "STARGIFT_USAGE_LIMITED": [
+                "payments.sendStarsForm"
+            ],
+            "STARREF_AWAITING_END": [
+                "bots.updateStarRefProgram"
+            ],
+            "STARREF_HASH_REVOKED": [
+                "payments.editConnectedStarRefBot"
+            ],
+            "STARREF_PERMILLE_INVALID": [
+                "bots.updateStarRefProgram"
+            ],
+            "STARREF_PERMILLE_TOO_LOW": [
+                "bots.updateStarRefProgram"
+            ],
+            "STARS_INVOICE_INVALID": [
+                "messages.sendMedia",
+                "payments.exportInvoice"
+            ],
+            "STARS_PAYMENT_REQUIRED": [
+                "messages.importChatInvite"
             ],
             "START_PARAM_EMPTY": [
                 "messages.setInlineBotResults",
@@ -2349,6 +2467,7 @@
                 "stickers.setStickerSetThumb"
             ],
             "STORIES_NEVER_CREATED": [
+                "stats.getStoryStats",
                 "stories.getStoriesByID",
                 "stories.readStories"
             ],
@@ -2384,6 +2503,12 @@
             "STORY_SEND_FLOOD_WEEKLY_%d": [
                 "stories.canSendStory"
             ],
+            "SUBSCRIPTION_EXPORT_MISSING": [
+                "messages.sendMedia"
+            ],
+            "SUBSCRIPTION_PERIOD_INVALID": [
+                "messages.exportChatInvite"
+            ],
             "SWITCH_PM_TEXT_EMPTY": [
                 "messages.setInlineBotResults"
             ],
@@ -2392,6 +2517,7 @@
             ],
             "TAKEOUT_INVALID": [
                 "contacts.getSaved",
+                "messages.getDialogs",
                 "messages.getHistory"
             ],
             "TAKEOUT_REQUIRED": [
@@ -2405,6 +2531,9 @@
             ],
             "TEMP_AUTH_KEY_EMPTY": [
                 "auth.bindTempAuthKey"
+            ],
+            "TERMS_URL_INVALID": [
+                "messages.sendMedia"
             ],
             "THEME_FILE_INVALID": [
                 "account.uploadTheme"
@@ -2421,6 +2550,9 @@
                 "account.createTheme",
                 "account.uploadTheme"
             ],
+            "THEME_PARAMS_INVALID": [
+                "messages.requestWebView"
+            ],
             "THEME_TITLE_INVALID": [
                 "account.createTheme"
             ],
@@ -2432,6 +2564,9 @@
             ],
             "TMP_PASSWORD_DISABLED": [
                 "account.getTmpPassword"
+            ],
+            "TMP_PASSWORD_INVALID": [
+                "payments.sendPaymentForm"
             ],
             "TO_LANG_INVALID": [
                 "messages.translateText"
@@ -2481,6 +2616,9 @@
             "TOPICS_EMPTY": [
                 "channels.getForumTopicsByID"
             ],
+            "TRANSACTION_ID_INVALID": [
+                "payments.getStarsTransactionsByID"
+            ],
             "TRANSCRIPTION_FAILED": [
                 "messages.transcribeAudio"
             ],
@@ -2509,6 +2647,7 @@
             ],
             "URL_INVALID": [
                 "messages.requestSimpleWebView",
+                "messages.requestWebView",
                 "messages.setBotCallbackAnswer",
                 "messages.setInlineBotResults"
             ],
@@ -2571,9 +2710,11 @@
                 "bots.setBotCommands",
                 "bots.setBotGroupDefaultAdminRights",
                 "bots.setBotMenuButton",
+                "bots.updateUserEmojiStatus",
                 "help.setBotUpdatesStatus",
                 "messages.getGameHighScores",
                 "messages.getInlineGameHighScores",
+                "messages.savePreparedInlineMessage",
                 "messages.sendWebViewResultMessage",
                 "messages.setBotCallbackAnswer",
                 "messages.setBotPrecheckoutResults",
@@ -2594,9 +2735,13 @@
                 "channels.editAdmin",
                 "channels.leaveChannel"
             ],
+            "USER_GIFT_UNAVAILABLE": [
+                "payments.getStarsGiftOptions"
+            ],
             "USER_ID_INVALID": [
                 "auth.importAuthorization",
                 "bots.setBotCommands",
+                "bots.updateUserEmojiStatus",
                 "channels.deleteUserHistory",
                 "channels.editAdmin",
                 "channels.editBanned",
@@ -2611,8 +2756,14 @@
                 "messages.hideChatJoinRequest",
                 "messages.reportReaction",
                 "messages.requestEncryption",
+                "messages.savePreparedInlineMessage",
                 "messages.search",
+                "payments.botCancelStarsSubscription",
+                "payments.convertStarGift",
+                "payments.getStarsGiftOptions",
+                "payments.getUserStarGifts",
                 "payments.refundStarsCharge",
+                "payments.saveStarGift",
                 "phone.requestCall",
                 "photos.getUserPhotos",
                 "photos.uploadContactProfilePhoto",
@@ -2721,7 +2872,8 @@
                 "stories.sendStory"
             ],
             "VIDEO_CONTENT_TYPE_INVALID": [
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "messages.setInlineBotResults"
             ],
             "VIDEO_FILE_INVALID": [
                 "photos.uploadProfilePhoto"
@@ -2764,10 +2916,14 @@
             ],
             "WEBDOCUMENT_MIME_INVALID": [
                 "messages.sendMedia",
-                "messages.setInlineBotResults"
+                "messages.setInlineBotResults",
+                "payments.exportInvoice"
             ],
             "WEBDOCUMENT_SIZE_TOO_BIG": [
                 "messages.setInlineBotResults"
+            ],
+            "WEBDOCUMENT_URL_EMPTY": [
+                "payments.exportInvoice"
             ],
             "WEBDOCUMENT_URL_INVALID": [
                 "messages.setInlineBotResults"
@@ -2822,9 +2978,7 @@
             "INPUT_METHOD_INVALID": [],
             "INPUT_REQUEST_TOO_LONG": [],
             "PEER_FLOOD": [],
-            "STICKERSET_NOT_MODIFIED": [],
-            "TMP_PASSWORD_INVALID": [],
-            "WEBDOCUMENT_URL_EMPTY": []
+            "STICKERSET_NOT_MODIFIED": []
         },
         "403": {
             "ANONYMOUS_REACTIONS_DISABLED": [
@@ -2936,6 +3090,9 @@
                 "messages.sendInlineBotResult",
                 "messages.sendMedia"
             ],
+            "CHAT_TYPE_INVALID": [
+                "phone.inviteToGroupCall"
+            ],
             "CHAT_WRITE_FORBIDDEN": [
                 "channels.convertToGigagroup",
                 "channels.createForumTopic",
@@ -2976,6 +3133,7 @@
                 "messages.startBot",
                 "messages.updatePinnedMessage",
                 "messages.uploadMedia",
+                "payments.getStarsRevenueAdsAccountUrl",
                 "updates.getChannelDifference",
                 "updates.getDifference"
             ],
@@ -3014,6 +3172,9 @@
             "PARTICIPANT_JOIN_MISSING": [
                 "phone.joinGroupCallPresentation"
             ],
+            "PEER_ID_INVALID": [
+                "payments.getSuggestedStarRefBots"
+            ],
             "POLL_VOTE_REQUIRED": [
                 "messages.getPollVotes"
             ],
@@ -3029,6 +3190,7 @@
                 "messages.forwardMessages",
                 "messages.reorderQuickReplies",
                 "messages.sendMedia",
+                "messages.sendMessage",
                 "messages.sendQuickReplyMessages",
                 "messages.sendReaction",
                 "messages.toggleDialogFilterTags",
@@ -3113,9 +3275,15 @@
             "CHAT_FORBIDDEN": []
         },
         "500": {
+            "AUTH_KEY_UNSYNCHRONIZED": [
+                "auth.checkPassword"
+            ],
             "AUTH_RESTART": [
                 "auth.sendCode",
                 "auth.signIn"
+            ],
+            "AUTH_RESTART_%d": [
+                "auth.sendCode"
             ],
             "CALL_OCCUPY_FAILED": [
                 "phone.acceptCall",
@@ -3156,6 +3324,9 @@
             ],
             "SIGN_IN_FAILED": [
                 "auth.signIn"
+            ],
+            "TRANSLATE_REQ_FAILED": [
+                "messages.translateText"
             ]
         },
         "406": {
@@ -3286,6 +3457,11 @@
             ],
             "AUTH_KEY_DUPLICATED": []
         },
+        "404": {
+            "PEER_ID_INVALID": [
+                "messages.sendMessage"
+            ]
+        },
         "-503": {
             "Timeout": [
                 "messages.getBotCallbackAnswer",
@@ -3334,7 +3510,9 @@
         "AUTH_KEY_INVALID": "The specified auth key is invalid.",
         "AUTH_KEY_PERM_EMPTY": "The method is unavailable for temporary authorization keys, not bound to a permanent authorization key.",
         "AUTH_KEY_UNREGISTERED": "The specified authorization key is not registered in the system (for example, a PFS temporary key has expired).",
+        "AUTH_KEY_UNSYNCHRONIZED": "Internal error, please repeat the method call.",
         "AUTH_RESTART": "Restart the authorization process.",
+        "AUTH_RESTART_%d": "Internal error (debug info %d), please repeat the method call.",
         "AUTH_TOKEN_ALREADY_ACCEPTED": "The specified auth token was already accepted.",
         "AUTH_TOKEN_EXCEPTION": "An error occurred while importing the auth token.",
         "AUTH_TOKEN_EXPIRED": "The authorization token has expired.",
@@ -3362,6 +3540,7 @@
         "BOT_GROUPS_BLOCKED": "This bot can't be added to groups.",
         "BOT_INLINE_DISABLED": "This bot can't be used in inline mode.",
         "BOT_INVALID": "This is not a valid bot.",
+        "BOT_INVOICE_INVALID": "The specified invoice is invalid.",
         "BOT_METHOD_INVALID": "The specified method cannot be used by bots.",
         "BOT_NOT_CONNECTED_YET": "No [business bot](https:\/\/core.telegram.org\/api\/business#connected-bots) is connected to the currently logged in user.",
         "BOT_ONESIDE_NOT_AVAIL": "Bots can't pin messages in PM just for themselves.",
@@ -3376,10 +3555,13 @@
         "BROADCAST_REQUIRED": "This method can only be called on a channel, please use stats.getMegagroupStats for supergroups.",
         "BUSINESS_ADDRESS_ACTIVE": "The user is currently advertising a [Business Location](https:\/\/core.telegram.org\/api\/business#location), the location may only be changed (or removed) using [account.updateBusinessLocation &raquo;](https:\/\/core.telegram.org\/method\/account.updateBusinessLocation).  .",
         "BUSINESS_PEER_INVALID": "Messages can't be set to the specified peer through the current [business connection](https:\/\/core.telegram.org\/api\/business#connected-bots).",
+        "BUSINESS_PEER_USAGE_MISSING": "You cannot send a message to a user through a [business connection](https:\/\/core.telegram.org\/api\/business#connected-bots) if the user hasn't recently contacted us.",
         "BUSINESS_RECIPIENTS_EMPTY": "You didn't set any flag in inputBusinessBotRecipients, thus the bot cannot work with *any* peer.",
         "BUSINESS_WORK_HOURS_EMPTY": "No work hours were specified.",
         "BUSINESS_WORK_HOURS_PERIOD_INVALID": "The specified work hours are invalid, see [here &raquo;](https:\/\/core.telegram.org\/api\/business#opening-hours) for the exact requirements.",
+        "BUTTON_COPY_TEXT_INVALID": "The specified [keyboardButtonCopy](https:\/\/core.telegram.org\/constructor\/keyboardButtonCopy).`copy_text` is invalid.",
         "BUTTON_DATA_INVALID": "The data of one or more of the buttons you provided is invalid.",
+        "BUTTON_ID_INVALID": "The specified button ID is invalid.",
         "BUTTON_POS_INVALID": "The position of one of the keyboard buttons is invalid (i.e. a Game or Pay button not in the first position, and so on...).",
         "BUTTON_TEXT_INVALID": "The specified button text is invalid.",
         "BUTTON_TYPE_INVALID": "The type of one or more of the buttons you provided is invalid.",
@@ -3421,6 +3603,7 @@
         "CHAT_INVALID": "Invalid chat.",
         "CHAT_INVITE_PERMANENT": "You can't set an expiration date on permanent invite links.",
         "CHAT_LINK_EXISTS": "The chat is public, you can't hide the history to new users.",
+        "CHAT_MEMBER_ADD_FAILED": "Could not add participants.",
         "CHAT_NOT_MODIFIED": "No changes were made to chat information because the new information you passed is identical to the current information.",
         "CHAT_PUBLIC_REQUIRED": "You can only enable join requests in public groups.",
         "CHAT_RESTRICTED": "You can't send messages in this chat, you were restricted.",
@@ -3440,11 +3623,13 @@
         "CHAT_SEND_VOICES_FORBIDDEN": "You can't send voice recordings in this chat.",
         "CHAT_TITLE_EMPTY": "No chat title provided.",
         "CHAT_TOO_BIG": "This method is not available for groups with more than `chat_read_mark_size_threshold` members, [see client configuration &raquo;](https:\/\/core.telegram.org\/api\/config#client-configuration).",
+        "CHAT_TYPE_INVALID": "The specified user type is invalid.",
         "CHAT_WRITE_FORBIDDEN": "You can't write in this chat.",
         "CHATLINK_SLUG_EMPTY": "The specified slug is empty.",
         "CHATLINK_SLUG_EXPIRED": "The specified [business chat link](https:\/\/core.telegram.org\/api\/business#business-chat-links) has expired.",
         "CHATLINKS_TOO_MUCH": "Too many [business chat links](https:\/\/core.telegram.org\/api\/business#business-chat-links) were created, please delete some older links.",
         "CHATLIST_EXCLUDE_INVALID": "The specified `exclude_peers` are invalid.",
+        "CHATLISTS_TOO_MUCH": "You have created too many folder links, hitting the `chatlist_invites_limit_default`\/`chatlist_invites_limit_premium` [limits &raquo;](https:\/\/core.telegram.org\/api\/config#chatlist-invites-limit-default).",
         "CODE_EMPTY": "The provided code is empty.",
         "CODE_HASH_INVALID": "Code hash invalid.",
         "CODE_INVALID": "Code invalid.",
@@ -3500,6 +3685,7 @@
         "ERROR_TEXT_EMPTY": "The provided error message is empty.",
         "EXPIRE_DATE_INVALID": "The specified expiration date is invalid.",
         "EXPORT_CARD_INVALID": "Provided card is invalid.",
+        "EXTENDED_MEDIA_AMOUNT_INVALID": "The specified `stars_amount` of the passed [inputMediaPaidMedia](https:\/\/core.telegram.org\/constructor\/inputMediaPaidMedia) is invalid.",
         "EXTERNAL_URL_INVALID": "External URL invalid.",
         "FILE_CONTENT_TYPE_INVALID": "File content-type is invalid.",
         "FILE_EMTPY": "An empty file was provided.",
@@ -3512,6 +3698,7 @@
         "FILE_PART_SIZE_CHANGED": "Provided file part size has changed.",
         "FILE_PART_SIZE_INVALID": "The provided file part size is invalid.",
         "FILE_PART_TOO_BIG": "The uploaded file part is too big.",
+        "FILE_PART_TOO_SMALL": "The size of the uploaded file part is too small, please see the documentation for the allowed sizes.",
         "FILE_PARTS_INVALID": "The number of file parts is invalid.",
         "FILE_REFERENCE_%d_EXPIRED": "The file reference of the media file at index %d in the passed media array expired, it [must be refreshed](https:\/\/core.telegram.org\/api\/file_reference).",
         "FILE_REFERENCE_%d_INVALID": "The file reference of the media file at index %d in the passed media array is invalid.",
@@ -3531,6 +3718,8 @@
         "FOLDER_ID_EMPTY": "An empty folder ID was specified.",
         "FOLDER_ID_INVALID": "Invalid folder ID.",
         "FORM_EXPIRED": "The form was generated more than 10 minutes ago and has expired, please re-generate it using [payments.getPaymentForm](https:\/\/core.telegram.org\/method\/payments.getPaymentForm) and pass the new `form_id`.",
+        "FORM_ID_EMPTY": "The specified form ID is empty.",
+        "FORM_UNSUPPORTED": "Please update your client.",
         "FORUM_ENABLED": "You can't execute the specified action because the group is a [forum](https:\/\/core.telegram.org\/api\/forum), disable forum functionality to continue.",
         "FRESH_CHANGE_ADMINS_FORBIDDEN": "You were just elected admin, you can't add or modify other admins yet.",
         "FRESH_CHANGE_PHONE_FORBIDDEN": "You can't change phone number right after logging in, please wait at least 24 hours.",
@@ -3558,6 +3747,7 @@
         "HASH_INVALID": "The provided hash is invalid.",
         "HASHTAG_INVALID": "The specified hashtag is invalid.",
         "HIDE_REQUESTER_MISSING": "The join request was missing or was already handled.",
+        "ID_INVALID": "The passed ID is invalid.",
         "IMAGE_PROCESS_FAILED": "Failure while processing image.",
         "IMPORT_FILE_INVALID": "The specified chat export file is invalid.",
         "IMPORT_FORMAT_DATE_INVALID": "The date specified in the import file is invalid.",
@@ -3574,6 +3764,7 @@
         "INPUT_FILTER_INVALID": "The specified filter is invalid.",
         "INPUT_LAYER_INVALID": "The specified layer is invalid.",
         "INPUT_METHOD_INVALID": "The specified method is invalid.",
+        "INPUT_PEERS_EMPTY": "The specified peer array is empty.",
         "INPUT_REQUEST_TOO_LONG": "The request payload is too long.",
         "INPUT_TEXT_EMPTY": "The specified text is empty.",
         "INPUT_TEXT_TOO_LONG": "The specified text is too long.",
@@ -3586,6 +3777,7 @@
         "INVITE_REVOKED_MISSING": "The specified invite link was already revoked or is invalid.",
         "INVITE_SLUG_EMPTY": "The specified invite slug is empty.",
         "INVITE_SLUG_EXPIRED": "The specified chat folder link has expired.",
+        "INVITE_SLUG_INVALID": "The specified invitation slug is invalid.",
         "INVITES_TOO_MUCH": "The maximum number of per-folder invites specified by the `chatlist_invites_limit_default`\/`chatlist_invites_limit_premium` [client configuration parameters &raquo;](https:\/\/core.telegram.org\/api\/config#chatlist-invites-limit-default) was reached.",
         "INVOICE_PAYLOAD_INVALID": "The specified invoice payload is invalid.",
         "JOIN_AS_PEER_INVALID": "The specified peer cannot be used to join a group call.",
@@ -3665,6 +3857,7 @@
         "PEER_HISTORY_EMPTY": "You can't pin an empty chat with a user.",
         "PEER_ID_INVALID": "The provided peer id is invalid.",
         "PEER_ID_NOT_SUPPORTED": "The provided peer ID is not supported.",
+        "PEER_TYPES_INVALID": "The passed [keyboardButtonSwitchInline](https:\/\/core.telegram.org\/constructor\/keyboardButtonSwitchInline).`peer_types` field is invalid.",
         "PEERS_LIST_EMPTY": "The specified list of peers is empty.",
         "PERSISTENT_TIMESTAMP_EMPTY": "Persistent timestamp empty.",
         "PERSISTENT_TIMESTAMP_INVALID": "Persistent timestamp invalid.",
@@ -3707,6 +3900,7 @@
         "PREMIUM_CURRENTLY_UNAVAILABLE": "You cannot currently purchase a Premium subscription.",
         "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have a premium subscription active until unixtime %d .",
         "PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_%dMIN": "Import for this chat is already in progress, wait %d minutes before starting a new one.",
+        "PRICING_CHAT_INVALID": "The pricing for the [subscription](https:\/\/core.telegram.org\/api\/subscriptions) is invalid, the maximum price is specified in the [`stars_subscription_amount_max` config key &raquo;](https:\/\/core.telegram.org\/api\/config#stars-subscription-amount-max).",
         "PRIVACY_KEY_INVALID": "The privacy key is invalid.",
         "PRIVACY_PREMIUM_REQUIRED": "You need a [Telegram Premium subscription](https:\/\/core.telegram.org\/api\/premium) to send a message to this user.",
         "PRIVACY_TOO_LONG": "Too many privacy rules were specified, the current limit is 1000.",
@@ -3786,8 +3980,17 @@
         "SLUG_INVALID": "The specified invoice slug is invalid.",
         "SMS_CODE_CREATE_FAILED": "An error occurred while creating the SMS code.",
         "SMSJOB_ID_INVALID": "The specified job ID is invalid.",
+        "SRP_A_INVALID": "The specified inputCheckPasswordSRP.A value is invalid.",
         "SRP_ID_INVALID": "Invalid SRP ID provided.",
         "SRP_PASSWORD_CHANGED": "Password has changed.",
+        "STARGIFT_INVALID": "The passed [inputInvoiceStarGift](https:\/\/core.telegram.org\/constructor\/inputInvoiceStarGift) is invalid.",
+        "STARGIFT_USAGE_LIMITED": "The gift is sold out.",
+        "STARREF_AWAITING_END": "The previous referral program was terminated less than 24 hours ago: further changes can be made after the date specified in userFull.starref_program.end_date.",
+        "STARREF_HASH_REVOKED": "The specified affiliate link was already revoked.",
+        "STARREF_PERMILLE_INVALID": "The specified commission_permille is invalid: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
+        "STARREF_PERMILLE_TOO_LOW": "The specified commission_permille is too low: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
+        "STARS_INVOICE_INVALID": "The specified Telegram Star invoice is invalid.",
+        "STARS_PAYMENT_REQUIRED": "To import this chat invite link, you must first [pay for the associated Telegram Star subscription &raquo;](https:\/\/core.telegram.org\/api\/subscriptions#channel-subscriptions).",
         "START_PARAM_EMPTY": "The start parameter is empty.",
         "START_PARAM_INVALID": "Start parameter invalid.",
         "START_PARAM_TOO_LONG": "Start parameter is too long.",
@@ -3822,6 +4025,8 @@
         "STORY_PERIOD_INVALID": "The specified story period is invalid for this account.",
         "STORY_SEND_FLOOD_MONTHLY_%d": "You've hit the monthly story limit as specified by the [`stories_sent_monthly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-monthly-limit-default): wait for the specified number of seconds before posting a new story.",
         "STORY_SEND_FLOOD_WEEKLY_%d": "You've hit the weekly story limit as specified by the [`stories_sent_weekly_limit_*` client configuration parameters](https:\/\/core.telegram.org\/api\/config#stories-sent-weekly-limit-default): wait for the specified number of seconds before posting a new story.",
+        "SUBSCRIPTION_EXPORT_MISSING": "You cannot send a [bot subscription invoice](https:\/\/core.telegram.org\/api\/subscriptions#bot-subscriptions) directly, you may only create invoice links using [payments.exportInvoice](https:\/\/core.telegram.org\/method\/payments.exportInvoice).",
+        "SUBSCRIPTION_PERIOD_INVALID": "The specified subscription_pricing.period is invalid.",
         "SWITCH_PM_TEXT_EMPTY": "The switch_pm.text field was empty.",
         "SWITCH_WEBVIEW_URL_INVALID": "The URL specified in switch_webview.url is invalid!",
         "TAKEOUT_INIT_DELAY_%d": "Sorry, for security reasons, you will be able to begin downloading your data in %d seconds. We have notified all your devices about the export request to make sure it's authorized and to give you time to react if it's not.",
@@ -3830,10 +4035,12 @@
         "TASK_ALREADY_EXISTS": "An email reset was already requested.",
         "TEMP_AUTH_KEY_ALREADY_BOUND": "The passed temporary key is already bound to another **perm_auth_key_id**.",
         "TEMP_AUTH_KEY_EMPTY": "No temporary auth key provided.",
+        "TERMS_URL_INVALID": "The specified [invoice](https:\/\/core.telegram.org\/constructor\/invoice).`terms_url` is invalid.",
         "THEME_FILE_INVALID": "Invalid theme file provided.",
         "THEME_FORMAT_INVALID": "Invalid theme format provided.",
         "THEME_INVALID": "Invalid theme provided.",
         "THEME_MIME_INVALID": "The theme's MIME type is invalid.",
+        "THEME_PARAMS_INVALID": "The specified `theme_params` field is invalid.",
         "THEME_TITLE_INVALID": "The specified theme title is invalid.",
         "Timeout": "Timeout while fetching data.",
         "TIMEZONE_INVALID": "The specified timezone does not exist.",
@@ -3852,7 +4059,9 @@
         "TOPIC_NOT_MODIFIED": "The updated topic info is equal to the current topic info, nothing was changed.",
         "TOPIC_TITLE_EMPTY": "The specified topic title is empty.",
         "TOPICS_EMPTY": "You specified no topic IDs.",
+        "TRANSACTION_ID_INVALID": "The specified transaction ID is invalid.",
         "TRANSCRIPTION_FAILED": "Audio transcription failed.",
+        "TRANSLATE_REQ_FAILED": "Translation failed, please try again later.",
         "TRANSLATE_REQ_QUOTA_EXCEEDED": "Translation is currently unavailable due to a temporary server-side lack of resources.",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
@@ -3875,6 +4084,7 @@
         "USER_DEACTIVATED": "The current account was deleted by the user.",
         "USER_DEACTIVATED_BAN": "The current account was deleted and banned by Telegram's antispam system.",
         "USER_DELETED": "You can't send this secret message because the other participant deleted their account.",
+        "USER_GIFT_UNAVAILABLE": "Gifts are not available in the current region ([stars_gifts_enabled](https:\/\/core.telegram.org\/api\/config#stars-gifts-enabled) is equal to false).",
         "USER_ID_INVALID": "The provided user ID is invalid.",
         "USER_INVALID": "Invalid user provided.",
         "USER_IS_BLOCKED": "You were blocked by this user.",
