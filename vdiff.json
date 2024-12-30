@@ -1243,6 +1243,9 @@
                 "messages.hideAllChatJoinRequests",
                 "messages.hideChatJoinRequest"
             ],
+            "ID_EXPIRED": [
+                "messages.getPreparedInlineMessage"
+            ],
             "ID_INVALID": [
                 "messages.getPreparedInlineMessage"
             ],
@@ -2889,7 +2892,8 @@
             ],
             "VOICE_MESSAGES_FORBIDDEN": [
                 "messages.sendInlineBotResult",
-                "messages.sendMedia"
+                "messages.sendMedia",
+                "messages.uploadMedia"
             ],
             "WALLPAPER_FILE_INVALID": [
                 "account.uploadWallPaper"
@@ -3747,6 +3751,7 @@
         "HASH_INVALID": "The provided hash is invalid.",
         "HASHTAG_INVALID": "The specified hashtag is invalid.",
         "HIDE_REQUESTER_MISSING": "The join request was missing or was already handled.",
+        "ID_EXPIRED": "The passed prepared inline message ID has expired.",
         "ID_INVALID": "The passed ID is invalid.",
         "IMAGE_PROCESS_FAILED": "Failure while processing image.",
         "IMPORT_FILE_INVALID": "The specified chat export file is invalid.",
