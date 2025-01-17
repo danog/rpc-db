@@ -419,6 +419,7 @@
                 "channels.viewSponsoredMessage",
                 "chatlists.editExportedInvite",
                 "chatlists.exportChatlistInvite",
+                "folders.editPeerFolders",
                 "messages.editChatAbout",
                 "messages.editMessage",
                 "messages.exportChatInvite",
@@ -1559,6 +1560,7 @@
                 "messages.getOutboxReadDate"
             ],
             "METHOD_INVALID": [
+                "bots.invokeWebViewCustomMethod",
                 "bots.sendCustomRequest",
                 "messages.searchGifs"
             ],
@@ -1681,6 +1683,7 @@
                 "messages.getDialogs"
             ],
             "OPTION_INVALID": [
+                "messages.report",
                 "messages.sendVote"
             ],
             "OPTIONS_TOO_MUCH": [
@@ -2374,6 +2377,9 @@
             ],
             "STARREF_AWAITING_END": [
                 "bots.updateStarRefProgram"
+            ],
+            "STARREF_EXPIRED": [
+                "contacts.resolveUsername"
             ],
             "STARREF_HASH_REVOKED": [
                 "payments.editConnectedStarRefBot"
@@ -3999,6 +4005,7 @@
         "STARGIFT_INVALID": "The passed [inputInvoiceStarGift](https:\/\/core.telegram.org\/constructor\/inputInvoiceStarGift) is invalid.",
         "STARGIFT_USAGE_LIMITED": "The gift is sold out.",
         "STARREF_AWAITING_END": "The previous referral program was terminated less than 24 hours ago: further changes can be made after the date specified in userFull.starref_program.end_date.",
+        "STARREF_EXPIRED": "The specified referral link is invalid.",
         "STARREF_HASH_REVOKED": "The specified affiliate link was already revoked.",
         "STARREF_PERMILLE_INVALID": "The specified commission_permille is invalid: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
         "STARREF_PERMILLE_TOO_LOW": "The specified commission_permille is too low: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
