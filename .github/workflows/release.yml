@@ -14,7 +14,6 @@ jobs:
           tag_name: latest
           files: |
             bot.json
-            business.json
             core.json
             v2.json
             v3.json
