@@ -8,6 +8,22 @@ See [here](https://github.com/danog/telerpc) for the error reporting API.
 
 Structure:
 
+* `errors` - All error messages and codes for each method (object).
+  * Keys: Error codes as strings (numeric strings)
+  * Values: All error messages for each method (object)
+    * Keys: Error messages (string)
+    * Values: An array of methods which may emit this error (array of strings, may be empty for errors that can be emitted by any method)
+* `descriptions` - Descriptions for every error mentioned in `errors` (and a few other errors not related to a specific method)
+  * Keys: Error messages
+  * Values: Error descriptions
+* `user_only` - A list of methods that can only be used by users, **not** bots.
+* `bot_only` - A list of methods that can only be used by bots, **not** users.
+* `business_supported` - A list of methods that can be used by bots over a [business connection with invokeWithBusinessConnection](https://core.telegram.org/api/business).
+
+Error messages and error descriptions may contain `printf` placeholders in key positions, for now only `%d` is used to map durations contained in error messages to error descriptions.
+
+Example:
+
 ```json
 {
     "errors": {
