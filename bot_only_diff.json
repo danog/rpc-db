@@ -1,0 +1,29 @@
+{
+    "ok": true,
+    "result": [
+        "bots.answerWebhookJSONQuery",
+        "bots.getBotCommands",
+        "bots.sendCustomRequest",
+        "messages.setInlineBotResults",
+        "users.setSecureValueErrors",
+        "bots.getBotMenuButton",
+        "bots.resetBotCommands",
+        "bots.setBotBroadcastDefaultAdminRights",
+        "bots.setBotCommands",
+        "bots.setBotGroupDefaultAdminRights",
+        "bots.setBotMenuButton",
+        "bots.updateUserEmojiStatus",
+        "help.setBotUpdatesStatus",
+        "messages.getGameHighScores",
+        "messages.getInlineGameHighScores",
+        "messages.savePreparedInlineMessage",
+        "messages.sendWebViewResultMessage",
+        "messages.setBotCallbackAnswer",
+        "messages.setBotPrecheckoutResults",
+        "messages.setBotShippingResults",
+        "messages.setGameScore",
+        "messages.setInlineGameScore",
+        "payments.exportInvoice",
+        "payments.refundStarsCharge"
+    ]
+}

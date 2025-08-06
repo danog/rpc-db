@@ -1,0 +1,24 @@
+{
+    "ok": true,
+    "result": [
+        "account.setGlobalPrivacySettings",
+        "account.updateProfile",
+        "messages.deleteMessages",
+        "messages.editMessage",
+        "messages.readHistory",
+        "messages.sendMedia",
+        "messages.sendMessage",
+        "messages.sendMultiMedia",
+        "messages.setTyping",
+        "messages.updatePinnedMessage",
+        "payments.convertStarGift",
+        "payments.exportInvoice",
+        "payments.getPaymentForm",
+        "payments.getSavedStarGifts",
+        "payments.getStarsStatus",
+        "payments.sendStarsForm",
+        "payments.transferStarGift",
+        "payments.upgradeStarGift",
+        "stories.deleteStories"
+    ]
+}
