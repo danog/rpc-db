@@ -3,11 +3,9 @@
     "result": [
         "bots.answerWebhookJSONQuery",
         "bots.getBotCommands",
-        "bots.sendCustomRequest",
-        "messages.setInlineBotResults",
-        "users.setSecureValueErrors",
         "bots.getBotMenuButton",
         "bots.resetBotCommands",
+        "bots.sendCustomRequest",
         "bots.setBotBroadcastDefaultAdminRights",
         "bots.setBotCommands",
         "bots.setBotGroupDefaultAdminRights",
@@ -22,8 +20,10 @@
         "messages.setBotPrecheckoutResults",
         "messages.setBotShippingResults",
         "messages.setGameScore",
+        "messages.setInlineBotResults",
         "messages.setInlineGameScore",
         "payments.exportInvoice",
-        "payments.refundStarsCharge"
+        "payments.refundStarsCharge",
+        "users.setSecureValueErrors"
     ]
 }

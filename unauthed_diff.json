@@ -2,10 +2,12 @@
     "ok": true,
     "result": [
         "account.deleteAccount",
+        "account.getPassword",
         "account.sendVerifyEmailCode",
         "account.verifyEmail",
         "auth.bindTempAuthKey",
         "auth.cancelCode",
+        "auth.checkPassword",
         "auth.exportLoginToken",
         "auth.importAuthorization",
         "auth.importBotAuthorization",

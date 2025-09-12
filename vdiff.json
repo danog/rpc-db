@@ -3700,12 +3700,8 @@
                 "channels.inviteToChannel"
             ],
             "USER_BOT_INVALID": [
-                "bots.answerWebhookJSONQuery",
-                "bots.getBotCommands",
                 "bots.getBotInfo",
-                "bots.sendCustomRequest",
-                "bots.setBotInfo",
-                "messages.setInlineBotResults"
+                "bots.setBotInfo"
             ],
             "USER_BOT_REQUIRED": [
                 "bots.answerWebhookJSONQuery",
@@ -4410,12 +4406,6 @@
                 "account.finishTakeoutSession",
                 "channels.getLeftChannels",
                 "contacts.getSaved"
-            ],
-            "USER_BOT_INVALID": [
-                "bots.answerWebhookJSONQuery",
-                "bots.sendCustomRequest",
-                "messages.setInlineBotResults",
-                "users.setSecureValueErrors"
             ],
             "USER_CHANNELS_TOO_MUCH": [
                 "channels.editAdmin",
