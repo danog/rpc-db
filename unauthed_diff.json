@@ -31,7 +31,6 @@
         "langpack.getLanguage",
         "langpack.getLanguages",
         "langpack.getStrings",
-        "messages.uploadMedia",
         "payments.assignAppStoreTransaction",
         "payments.assignPlayMarketTransaction",
         "payments.canPurchaseStore",
