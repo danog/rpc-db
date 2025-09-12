@@ -1039,8 +1039,7 @@
                 "messages.editMessage",
                 "messages.sendMedia",
                 "messages.sendMessage",
-                "messages.setInlineBotResults",
-                "test.test"
+                "messages.setInlineBotResults"
             ],
             "BUTTON_USER_INVALID": [
                 "messages.sendMessage"
@@ -5190,9 +5189,6 @@
             "CHP_BAD_EVENT": [
                 "messages.forwardMessages",
                 "messages.sendMedia"
-            ],
-            "FIRSTNAME_INVALID": [
-                "sendMessage"
             ],
             "MSG_WAIT_FAILED": [
                 "messages.editMessage",
