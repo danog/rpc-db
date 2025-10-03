@@ -35,9 +35,6 @@
             "ABOUT_TOO_LONG": [
                 "account.updateProfile"
             ],
-            "ACCESS_FORBIDDEN": [
-                "messages.translateText"
-            ],
             "ACCESS_TOKEN_EXPIRED": [
                 "auth.importBotAuthorization"
             ],
@@ -117,6 +114,7 @@
             ],
             "BALANCE_TOO_LOW": [
                 "messages.sendMessage",
+                "messages.sendPaidReaction",
                 "payments.sendStarsForm"
             ],
             "BANK_CARD_NUMBER_INVALID": [
@@ -3374,10 +3372,6 @@
             "STARGIFT_RESELL_CURRENCY_NOT_ALLOWED": [
                 "payments.getPaymentForm"
             ],
-            "STARGIFT_RESELL_NOT_ALLOWED": [
-                "payments.getPaymentForm",
-                "payments.sendStarsForm"
-            ],
             "STARGIFT_SLUG_INVALID": [
                 "payments.getPaymentForm",
                 "payments.getSavedStarGift",
@@ -5262,19 +5256,12 @@
                 "channels.createChannel",
                 "messages.migrateChat"
             ],
-            "CHP_BAD_EVENT": [
-                "messages.forwardMessages",
-                "messages.sendMedia"
-            ],
             "MSG_WAIT_FAILED": [
                 "messages.editMessage",
                 "messages.receivedQueue",
                 "messages.sendEncrypted",
                 "messages.sendEncryptedService",
                 "messages.sendMessage"
-            ],
-            "PARTICIPANT_CALL_FAILED": [
-                "phone.requestCall"
             ],
             "PERSISTENT_TIMESTAMP_OUTDATED": [
                 "updates.getChannelDifference"
@@ -5337,6 +5324,7 @@
         "ADMIN_RIGHTS_EMPTY": "The chatAdminRights constructor passed in keyboardButtonRequestPeer.peer_type.user_admin_rights has no rights set (i.e. flags is 0).",
         "ADMINS_TOO_MUCH": "There are too many admins.",
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
+        "ALLOW_PAYMENT_REQUIRED": "This peer only accepts [paid messages &raquo;](https:\/\/core.telegram.org\/api\/paid-messages): this error is only emitted for older layers without paid messages support, so the client must be updated in order to use paid messages.  .",
         "ALLOW_PAYMENT_REQUIRED_%d": "This peer charges %d [Telegram Stars](https:\/\/core.telegram.org\/api\/stars) per message, but the `allow_paid_stars` was not set or its value is smaller than %d.",
         "ANONYMOUS_REACTIONS_DISABLED": "Sorry, anonymous administrators cannot leave reactions or participate in polls.",
         "API_GIFT_RESTRICTED_UPDATE_APP": "Please update the app to access the gift API.",
@@ -5583,6 +5571,7 @@
         "FROM_MESSAGE_BOT_DISABLED": "Bots can't use fromMessage min constructors.",
         "FROM_PEER_INVALID": "The specified from_id is invalid.",
         "FROZEN_METHOD_INVALID": "The current account is [frozen](https:\/\/core.telegram.org\/api\/auth#frozen-accounts), and thus cannot execute the specified action.",
+        "FROZEN_PARTICIPANT_MISSING": "The current account is [frozen](https:\/\/core.telegram.org\/api\/auth#frozen-accounts), and cannot access the specified peer.",
         "GAME_BOT_INVALID": "Bots can't send another bot's game.",
         "GENERAL_MODIFY_ICON_FORBIDDEN": "You can't modify the icon of the \"General\" topic.",
         "GEO_POINT_INVALID": "Invalid geoposition provided.",
@@ -5696,6 +5685,7 @@
         "NEW_SETTINGS_EMPTY": "No password is set on the current account, and no new password was specified in `new_settings`.",
         "NEW_SETTINGS_INVALID": "The new password settings are invalid.",
         "NEXT_OFFSET_INVALID": "The specified offset is longer than 64 bytes.",
+        "NO_PAYMENT_NEEDED": "The upgrade\/transfer of the specified gift was already paid for or is free.",
         "NOGENERAL_HIDE_FORBIDDEN": "Only the \"General\" topic with `id=1` can be hidden.",
         "NOT_ELIGIBLE": "The current user is not eligible to join the Peer-to-Peer Login Program.",
         "NOT_JOINED": "The current user hasn't joined the Peer-to-Peer Login Program.",
@@ -5768,6 +5758,7 @@
         "POLL_OPTION_INVALID": "Invalid poll option provided.",
         "POLL_QUESTION_INVALID": "One of the poll questions is not acceptable.",
         "POLL_VOTE_REQUIRED": "Cast a vote in the poll before calling this method.",
+        "PRECHECKOUT_FAILED": "Precheckout failed, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here &raquo;](https:\/\/core.telegram.org\/api\/errors#406-not-acceptable).",
         "PREMIUM_ACCOUNT_REQUIRED": "A premium account is required to execute this action.",
         "PREMIUM_CURRENTLY_UNAVAILABLE": "You cannot currently purchase a Premium subscription.",
         "PREMIUM_SUB_ACTIVE_UNTIL_%d": "You already have a premium subscription active until unixtime %d .",
@@ -5836,9 +5827,11 @@
         "SEARCH_WITH_LINK_NOT_SUPPORTED": "You cannot provide a search query and an invite link at the same time.",
         "SECONDS_INVALID": "Invalid duration provided.",
         "SECURE_SECRET_REQUIRED": "A secure secret is required.",
+        "SELF_DELETE_RESTRICTED": "Business bots can't delete messages just for the user, `revoke` **must** be set.",
         "SEND_AS_PEER_INVALID": "You can't send messages as the specified peer.",
         "SEND_CODE_UNAVAILABLE": "Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).",
         "SEND_MEDIA_INVALID": "The specified media is invalid.",
+        "SEND_MESSAGE_GAME_INVALID": "An inputBotInlineMessageGame can only be contained in an inputBotInlineResultGame, not in an inputBotInlineResult\/inputBotInlineResultPhoto\/etc.",
         "SEND_MESSAGE_MEDIA_INVALID": "Invalid media provided.",
         "SEND_MESSAGE_TYPE_INVALID": "The message type is invalid.",
         "SENSITIVE_CHANGE_FORBIDDEN": "You can't change your sensitive content settings.",
@@ -5864,11 +5857,15 @@
         "STARGIFT_ALREADY_CONVERTED": "The specified star gift was already converted to Stars.",
         "STARGIFT_ALREADY_REFUNDED": "The specified star gift was already refunded.",
         "STARGIFT_ALREADY_UPGRADED": "The specified gift was already upgraded to a collectible gift.",
+        "STARGIFT_EXPORT_IN_PROGRESS": "A gift export is in progress, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here &raquo;](https:\/\/core.telegram.org\/api\/errors#406-not-acceptable).",
         "STARGIFT_INVALID": "The passed gift is invalid.",
         "STARGIFT_NOT_FOUND": "The specified gift was not found.",
+        "STARGIFT_OWNER_INVALID": "You cannot transfer or sell a gift owned by another user.",
         "STARGIFT_PEER_INVALID": "The specified inputSavedStarGiftChat.peer is invalid.",
+        "STARGIFT_RESELL_CURRENCY_NOT_ALLOWED": "You can't buy the gift using the specified currency (i.e. trying to pay in Stars for TON gifts).",
         "STARGIFT_SLUG_INVALID": "The specified gift slug is invalid.",
         "STARGIFT_TRANSFER_TOO_EARLY_%d": "You cannot transfer this gift yet, wait %d seconds.",
+        "STARGIFT_UPGRADE_UNAVAILABLE": "A received gift can only be upgraded to a collectible gift if the [messageActionStarGift](https:\/\/core.telegram.org\/constructor\/messageActionStarGift)\/[savedStarGift](https:\/\/core.telegram.org\/constructor\/savedStarGift).`can_upgrade` flag is set.",
         "STARGIFT_USAGE_LIMITED": "The gift is sold out.",
         "STARGIFT_USER_USAGE_LIMITED": "You've reached the starGift.limited_per_user limit, you can't buy any more gifts of this type.",
         "STARREF_AWAITING_END": "The previous referral program was terminated less than 24 hours ago: further changes can be made after the date specified in userFull.starref_program.end_date.",
@@ -5877,6 +5874,7 @@
         "STARREF_PERMILLE_INVALID": "The specified commission_permille is invalid: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
         "STARREF_PERMILLE_TOO_LOW": "The specified commission_permille is too low: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-min-commission-permille) and [starref_max_commission_permille](https:\/\/core.telegram.org\/api\/config#starref-max-commission-permille) client configuration parameters.",
         "STARS_AMOUNT_INVALID": "The specified amount in stars is invalid.",
+        "STARS_FORM_AMOUNT_MISMATCH": "The form amount has changed, please fetch the new form using [payments.getPaymentForm](https:\/\/core.telegram.org\/method\/payments.getPaymentForm) and restart the process.",
         "STARS_INVOICE_INVALID": "The specified Telegram Star invoice is invalid.",
         "STARS_PAYMENT_REQUIRED": "To import this chat invite link, you must first [pay for the associated Telegram Star subscription &raquo;](https:\/\/core.telegram.org\/api\/subscriptions#channel-subscriptions).",
         "START_PARAM_EMPTY": "The start parameter is empty.",
@@ -5960,6 +5958,7 @@
         "TRANSLATE_REQ_FAILED": "Translation failed, please try again later.",
         "TRANSLATE_REQ_QUOTA_EXCEEDED": "Translation is currently unavailable due to a temporary server-side lack of resources.",
         "TRANSLATION_TIMEOUT": "A timeout occurred while translating the specified text.",
+        "TRANSLATIONS_DISABLED": "Translations are unavailable, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here &raquo;](https:\/\/core.telegram.org\/api\/errors#406-not-acceptable).",
         "TTL_DAYS_INVALID": "The provided TTL is invalid.",
         "TTL_MEDIA_INVALID": "Invalid media Time To Live was provided.",
         "TTL_PERIOD_INVALID": "The specified TTL period is invalid.",
