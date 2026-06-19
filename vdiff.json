@@ -185,6 +185,9 @@
             "BOT_COMMAND_INVALID": [
                 "bots.setBotCommands"
             ],
+            "BOT_CREATE_LIMIT_EXCEEDED": [
+                "bots.createBot"
+            ],
             "BOT_DOMAIN_INVALID": [
                 "messages.editMessage",
                 "messages.sendMessage"
@@ -2481,6 +2484,9 @@
             "MANAGER_INVALID": [
                 "bots.createBot"
             ],
+            "MANAGER_PERMISSION_MISSING": [
+                "bots.createBot"
+            ],
             "MAX_DATE_INVALID": [
                 "messages.deleteHistory",
                 "messages.readEncryptedHistory"
@@ -4273,6 +4279,7 @@
                 "account.toggleUsername",
                 "account.updateUsername",
                 "bots.checkUsername",
+                "bots.createBot",
                 "channels.checkUsername",
                 "channels.toggleUsername",
                 "channels.updateUsername",
@@ -4297,6 +4304,7 @@
                 "account.checkUsername",
                 "account.updateUsername",
                 "bots.checkUsername",
+                "bots.createBot",
                 "channels.checkUsername",
                 "channels.updateUsername",
                 "users.getFullUser"
@@ -4308,7 +4316,8 @@
                 "channels.updateUsername"
             ],
             "USERNAME_SUFFIX_MISSING": [
-                "bots.checkUsername"
+                "bots.checkUsername",
+                "bots.createBot"
             ],
             "USERNAMES_ACTIVE_TOO_MUCH": [
                 "account.toggleUsername",
