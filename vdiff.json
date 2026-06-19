@@ -2478,6 +2478,9 @@
                 "upload.getWebFile",
                 "upload.reuploadCdnFile"
             ],
+            "MANAGER_INVALID": [
+                "bots.createBot"
+            ],
             "MAX_DATE_INVALID": [
                 "messages.deleteHistory",
                 "messages.readEncryptedHistory"
@@ -4293,6 +4296,7 @@
             "USERNAME_OCCUPIED": [
                 "account.checkUsername",
                 "account.updateUsername",
+                "bots.checkUsername",
                 "channels.checkUsername",
                 "channels.updateUsername",
                 "users.getFullUser"
@@ -4302,6 +4306,9 @@
                 "account.updateUsername",
                 "channels.checkUsername",
                 "channels.updateUsername"
+            ],
+            "USERNAME_SUFFIX_MISSING": [
+                "bots.checkUsername"
             ],
             "USERNAMES_ACTIVE_TOO_MUCH": [
                 "account.toggleUsername",
