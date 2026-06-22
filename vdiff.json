@@ -4475,9 +4475,6 @@
                 "messages.sendMessage",
                 "messages.sendMultiMedia"
             ],
-            "ANONYMOUS_REACTIONS_DISABLED": [
-                "messages.sendReaction"
-            ],
             "BOT_ACCESS_FORBIDDEN": [
                 "account.setGlobalPrivacySettings",
                 "messages.deleteMessages",
@@ -4714,7 +4711,6 @@
                 "account.editBusinessChatLink",
                 "account.setGlobalPrivacySettings",
                 "account.updateColor",
-                "account.updateConnectedBot",
                 "account.updateEmojiStatus",
                 "channels.createForumTopic",
                 "channels.searchPosts",
@@ -5858,7 +5854,6 @@
         "ALBUM_PHOTOS_TOO_MANY": "You have uploaded too many profile photos, delete some before retrying.",
         "ALLOW_PAYMENT_REQUIRED": "This peer only accepts [paid messages &raquo;](https:\/\/core.telegram.org\/api\/paid-messages): this error is only emitted for older layers without paid messages support, so the client must be updated in order to use paid messages.  .",
         "ALLOW_PAYMENT_REQUIRED_%d": "This peer charges %d [Telegram Stars](https:\/\/core.telegram.org\/api\/stars) per message, but the `allow_paid_stars` was not set or its value is smaller than %d.",
-        "ANONYMOUS_REACTIONS_DISABLED": "Sorry, anonymous administrators cannot leave reactions or participate in polls.",
         "API_GIFT_RESTRICTED_UPDATE_APP": "Please update the app to access the gift API.",
         "API_ID_INVALID": "API ID invalid.",
         "API_ID_PUBLISHED_FLOOD": "This API id was published somewhere, you can't use it now.",
